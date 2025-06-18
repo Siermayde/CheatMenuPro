@@ -1,0 +1,3377 @@
+window = {
+    name = "sakuya_seven_window"
+    parentanchor = center
+    position = { 0 50 } #主GUI的大小和位置
+    size = { 1200 900 }
+    layer = windows_layer
+    filter_mouse = all
+    allow_outside = yes
+    alwaystransparent = no
+    
+    using = Window_Background
+    using = Window_Decoration
+    movable = yes
+    
+    datacontext = "[GetVariableSystem]"
+    datacontext = "[GetPlayer]"
+        visible = "[GetVariableSystem.Exists('sakuya_seven_visible')]"
+    
+    state = {
+        name = _show
+        using = Animation_FadeIn_Quick
+    }
+    
+    state = {
+        name = _hide
+        using = Animation_FadeOut_Quick
+    }
+    
+    vbox = {
+        restrictparent_min = yes
+        using = Window_Margins
+        
+    
+                    }
+                    vbox = {
+        restrictparent_min = yes
+        using = Window_Margins
+        
+        header_pattern = {
+            layoutpolicy_horizontal = expanding
+
+
+            blockoverride "header_text"
+            {
+                text = "SAKUYA_POWER_BLOC_3"
+            }
+
+            blockoverride "button_close"
+            {
+                onclick = "[GetVariableSystem.Toggle('sakuya_seven_visible')]"
+            }
+        }
+                scrollbox = {
+            name = "characters_scroll_area" #滚动条虽然支持，但一旦设置排版就乱套了
+            layoutpolicy_vertical = expanding
+            layoutpolicy_horizontal = expanding
+            blockoverride "scrollbox_content" {
+                }
+            }
+        }
+    
+########################################################
+            
+            widget = {  #菜单按钮组1
+                position = { 40 80 }
+                size = { 450 60 }
+                hbox = {
+                    
+                    vbox = {
+
+                        layoutpolicy_horizontal = expanding
+                        button_icon_square = {
+
+                            blockoverride "primary_visible" {
+                                texture = none
+                            }
+                            blockoverride "primary_texture" {
+                                texture = "gfx/interface/buttons/expand_button_bg.dds"
+                            }
+
+                            layoutpolicy_horizontal = expanding
+                            name = "sakuya_money_1"
+
+                            onclick = "[GetVariableSystem.Set( 'seven_tabs', 'seven_tabs_1' )]" down = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
+
+                            tooltip = "SAKUYA_POWER_BLOC_4"
+                            using = tooltip_ne
+                            size = { 150 60 }
+                            
+                            blockoverride "icon" {
+                                texture = "gfx/interface/icons/war_goals/join_power_bloc.dds"
+                                                            }
+                            blockoverride "icon_size" {
+                                size = { 35 35 }
+                            }
+                        }
+                    }
+                    
+                    vbox = { 
+
+                        layoutpolicy_horizontal = expanding
+                        button_icon_square = {
+
+                            blockoverride "primary_visible" {
+                                texture = none
+                            }
+                            blockoverride "primary_texture" {
+                                texture = "gfx/interface/buttons/expand_button_bg.dds"
+                            }
+
+                            layoutpolicy_horizontal = expanding
+                            name = "sakuya_money_1"
+
+                            onclick = "[GetVariableSystem.Set( 'seven_tabs', 'seven_tabs_2' )]" down = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_2' ) )]"
+
+                            tooltip = "SAKUYA_POWER_BLOC_5"
+                            using = tooltip_ne
+                            size = { 150 60 }
+                            
+                            blockoverride "icon" {
+                                texture = "gfx/interface/icons/ai_strategy_icons/economic_imperialism.dds"                          
+                            }
+                            blockoverride "icon_size" {
+                                size = { 35 35 }
+                            }
+                        }
+                    }
+                    vbox = { 
+
+                        layoutpolicy_horizontal = expanding
+                        button_icon_square = {
+
+                            blockoverride "primary_visible" {
+                                texture = none
+                            }
+                            blockoverride "primary_texture" {
+                                texture = "gfx/interface/buttons/expand_button_bg.dds"
+                            }
+
+                            layoutpolicy_horizontal = expanding
+                            name = "sakuya_money_1"
+
+                            onclick = "[GetVariableSystem.Set( 'seven_tabs', 'seven_tabs_3' )]" down = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_3' ) )]"
+
+                            tooltip = "SAKUYA_POWER_BLOC_6"
+                            using = tooltip_ne
+                            size = { 150 60 }
+                            
+                            blockoverride "icon" {
+                                texture = "gfx/interface/icons/ai_strategy_icons/revolutionary.dds"                         
+                            }
+                            blockoverride "icon_size" {
+                                size = { 35 35 }
+                            }
+                        }
+                    }
+                    #vbox = {#你看见隐藏的废弃代码了。
+
+                    #   layoutpolicy_horizontal = expanding
+                #       button_icon_square = {
+#
+                        #   blockoverride "primary_visible" {
+                        #       texture = none
+                        #   }
+                        #   blockoverride "primary_texture" {
+                        #       texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        #   }
+
+                        #   layoutpolicy_horizontal = expanding
+                        #   name = "sakuya_money_1"
+
+                        #   onclick = "[GetVariableSystem.Set( 'seven_tabs', 'seven_tabs_3' )]" down = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_3' ) )]"
+
+                        #   tooltip = "SAKUYA_POWER_BLOC_7"
+                        #   using = tooltip_ne
+                        #   size = { 150 60 }
+                        #   
+                        #   blockoverride "icon" {
+                        #       texture = "gfx/interface/icons/ai_strategy_icons/economic_imperialism.dds"
+                        #                                   }
+                        #   blockoverride "icon_size" {
+                        #       size = { 35 35 }
+                        #   }
+                    #   }
+                #   }
+
+                }
+            }
+            ###############################
+            widget = {
+                 position = { 550 77 }
+                size = { 450 60 }
+                    hbox = {
+                    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
+                    visible = "yes" 
+                    vbox = {
+                        spacing = 5
+                    text_multi = {
+                        autoresize = yes
+                        align = nobaseline
+                        maximumsize = { -1 -1 }
+                        multiline = yes
+                        using = header_font_fancy
+                    raw_text = "SAKUYA_POWER_BLOC_8"
+                        
+                        using = header_font_fancy
+                        using = header_font_fancy_size
+                        default_format = "#medium"  
+                            }
+                        }
+                    }
+                }
+                widget = {
+                 position = { 550 77 }
+                size = { 450 60 }
+                    hbox = {
+                    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_2' ) )]"
+                    visible = "yes" 
+                    vbox = {
+                        spacing = 5
+                    text_multi = {
+                        autoresize = yes
+                        align = nobaseline
+                        maximumsize = { -1 -1 }
+                        multiline = yes
+                        using = header_font_fancy
+                    raw_text = "SAKUYA_POWER_BLOC_9"
+                        
+                        using = header_font_fancy
+                        using = header_font_fancy_size
+                        default_format = "#medium"  
+                            }
+                        }
+                    }
+                }
+                widget = {
+                 position = { 550 77 }
+                size = { 450 60 }
+                    hbox = {
+                    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_3' ) )]"
+                    visible = "yes" 
+                    vbox = {
+                        spacing = 5
+                    text_multi = {
+                        autoresize = yes
+                        align = nobaseline
+                        maximumsize = { -1 -1 }
+                        multiline = yes
+                        using = header_font_fancy
+                    raw_text = "SAKUYA_POWER_BLOC_10"
+                        
+                        using = header_font_fancy
+                        using = header_font_fancy_size
+                        default_format = "#medium"  
+                            }
+                        }
+                    }
+                }
+            
+widget = {
+                 position = { 800 77 }
+                size = { 450 60 }
+                    hbox = {
+                    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
+                    visible = "yes" 
+                    vbox = {
+                        country_stats_entry = {
+                    visible = "[Country.IsInPowerBloc]"
+                    datacontext = "[Country.GetPowerBloc]"
+
+                    blockoverride "stats_tooltip" {
+                        tooltipwidget = {
+                            FancyTooltip_PowerBloc = {}
+                        }
+                    }
+
+                    ### POWER BLOC EMBLEM BUTTON
+
+                    blockoverride "entire_icon" {
+                        button_icon_round = {
+                            parentanchor = right|vcenter
+                            position = { -5 0 }
+                            alpha = 1
+                            #onclick = "[InformationPanelBar.OpenPowerBlocPanelTab( PowerBloc.Self, 'default' )]"
+                            #onrightclick = "[RightClickMenuManager.ShowForPowerBloc( PowerBloc.AccessSelf )]"
+                            #onclick = "[PowerBlocPanel.ShowLeverage]"
+
+                            blockoverride "size" {
+                                size = { 45 45 }
+                            }
+
+                            blockoverride "icon_size" {
+                                size = { 80% 80% }
+                            }
+
+                            blockoverride "icon" {
+                                alpha = 1
+                                texture = "[PowerBloc.GetFlag.GetMediumPowerBlocCoaTexture]"
+                                size = { 45 45 }
+                                frame = "[PowerBloc.GetFlag.GetMediumPowerBlocCoaFrame]"
+                                framesize = "[GetMediumPowerBlocCoaFrameSize]"
+                            }
+                        }
+                    }
+
+                    blockoverride "stats_label" {
+                        text = "SAKUYA_POWER_BLOC_12" #无用
+                    }
+
+                    blockoverride "stats_value" {
+                        text = "SAKUYA_POWER_BLOC_13" #集团名称
+                    }
+
+                    blockoverride "stats_rank" {
+                        text = "SAKUYA_POWER_BLOC_14" #排名
+                    }
+                }
+                        }
+                    }
+                }
+            widget = {
+                 position = { 800 77 }
+                size = { 450 60 }
+                    hbox = {
+                    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_2' ) )]"
+                    visible = "yes" 
+                    vbox = {
+                        country_stats_entry = {
+                    blockoverride "stats_tooltip" {
+                        tooltip = "SAKUYA_POWER_BLOC_15"
+                    }
+
+                    blockoverride "entire_icon" {
+                        rank_badge = {
+                            size = { 50 50 }
+                            parentanchor = right|vcenter
+
+                            blockoverride "datacontext " {}
+
+                            blockoverride "rank_text" {
+                                raw_text = "SAKUYA_POWER_BLOC_16"
+                            }
+                            blockoverride "rank_text_2" {
+                                raw_text = "SAKUYA_POWER_BLOC_17"
+                                visible = no
+                            }
+                        }
+                    }
+
+                    blockoverride "information_icon" {
+                        texture = "gfx/interface/icons/generic_icons/gdp.dds"
+                    }
+
+                    blockoverride "stats_label" {
+                        text = "SAKUYA_POWER_BLOC_18"
+                    }
+                    
+                    blockoverride "stats_value" {
+                        raw_text = "SAKUYA_POWER_BLOC_19"
+                    }
+
+                    blockoverride "textsize" {
+                        size = { 160 20 }
+                        elide = right
+                        fontsize_min = 15
+                    }
+                }
+                        }
+                    }
+                }
+
+                widget = { #大标志隐藏
+                    alpha = 0.001
+                 position = { 600 500 }
+                size = { 1 1 }
+                    hbox = {
+                    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
+                    visible = "yes" 
+                    vbox = {
+                        country_stats_entry = {
+                    visible = "[Country.IsInPowerBloc]"
+                    datacontext = "[Country.GetPowerBloc]" #生效领域
+
+                    blockoverride "stats_tooltip" {
+                        tooltipwidget = {
+                            FancyTooltip_PowerBloc = {}
+                        }
+                    }
+
+                    ### POWER BLOC EMBLEM BUTTON
+
+                    blockoverride "entire_icon" {
+                        button_icon_round = {
+                            alpha = 0.00001
+                            scissor = yes
+                            parentanchor = right|vcenter
+                            position = { -5 0 }
+                            alpha = 1
+                            blockoverride "size" {
+                                size = { 800 800 }
+                            }
+                            blockoverride "icon" {
+                                scissor = yes
+                                position = { -400 0 }
+                                alpha = 10000000 #想不到吧？我怕虽然不知道怎么直接放图标，但我可以用透明度控制！
+                                texture = "[PowerBloc.GetFlag.GetMediumPowerBlocCoaTexture]"
+                                size = { 45 45 }
+                                frame = "[PowerBloc.GetFlag.GetMediumPowerBlocCoaFrame]"
+                                framesize = "[GetMediumPowerBlocCoaFrameSize]"
+                            }
+                        }
+                    }
+
+                    
+                }
+                        }
+                    }
+                }
+                widget = {
+                position = { -287 150 }
+                size = { 1200 50 }
+                    hbox = {
+                    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1','seven_tabs_2' ) )]"
+                    visible = "yes" 
+                    vbox = {
+
+                        spacing = 5
+                    default_header_clean = {
+                        maximumsize = { 494 -1 }
+                        blockoverride "text" {
+                            parentanchor = left
+                            raw_text = "SAKUYA_POWER_BLOC_21"
+                            autoresize = yes
+                        multiline = yes
+                        using = fontsize_xl
+                        default_format = "#medium" 
+                                        }
+                        autoresize = yes
+                        multiline = yes
+                        default_format = "#medium"  
+                            }
+                        }
+
+                    }
+                }
+                
+                widget = {
+                position = { 350 150 }
+                size = { 1200 50 }
+                    hbox = {
+                    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1','seven_tabs_2' ) )]"
+                    visible = "yes" 
+                    vbox = {
+
+                        spacing = 5
+                    default_header_clean = {
+                        maximumsize = { 494 -1 }
+                        blockoverride "text" {
+                            parentanchor = left
+                            raw_text = "SAKUYA_POWER_BLOC_22"
+                            autoresize = yes
+                        multiline = yes
+                        using = fontsize_xl
+                        default_format = "#medium" 
+                                        }
+                        autoresize = yes
+                        multiline = yes
+                        default_format = "#medium"  
+                            }
+                        }
+                        
+                    }
+                }
+                widget = {
+                position = { 200 150 }
+                size = { 1200 50 }
+                    hbox = {
+                    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
+                    visible = "yes" 
+                    vbox = {
+
+                        spacing = 5
+                    default_header_clean = {
+                        maximumsize = { 494 -1 }
+                        blockoverride "text" {
+                            parentanchor = left
+                            raw_text = "SAKUYA_POWER_BLOC_23"
+                            autoresize = yes
+                        multiline = yes
+                        using = fontsize_xl
+                        default_format = "#medium" 
+                                        }
+                        autoresize = yes
+                        multiline = yes
+                        default_format = "#medium"  
+                            }
+                        }
+                        
+                    }
+                }
+                widget = {
+                position = { 200 150 }
+                size = { 1200 50 }
+                    hbox = {
+                    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_2' ) )]"
+                    visible = "yes" 
+                    vbox = {
+
+                        spacing = 5
+                    default_header_clean = {
+                        maximumsize = { 494 -1 }
+                        blockoverride "text" {
+                            parentanchor = left
+                            raw_text = "SAKUYA_POWER_BLOC_24"
+                            tooltip = "SAKUYA_POWER_BLOC_25"
+                            autoresize = yes
+                        multiline = yes
+                        using = fontsize_xl
+                        default_format = "#medium" 
+                                        }
+                        autoresize = yes
+                        multiline = yes
+                        default_format = "#medium"  
+                            }
+                        }
+                        
+                    }
+                }
+                widget = {
+                position = { 200 150 }
+                size = { 1200 50 }
+                    hbox = {
+                    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_3' ) )]"
+                    visible = "yes" 
+                    vbox = {
+
+                        spacing = 5
+                    default_header_clean = {
+                        maximumsize = { 494 -1 }
+                        blockoverride "text" {
+                            parentanchor = left
+                            raw_text = "SAKUYA_POWER_BLOC_26"
+                            tooltip = "SAKUYA_POWER_BLOC_27"
+                            autoresize = yes
+                        multiline = yes
+                        using = fontsize_xl
+                        default_format = "#medium" 
+                                        }
+                        autoresize = yes
+                        multiline = yes
+                        default_format = "#medium"  
+                            }
+                        }
+                        
+                    }
+                }
+
+
+widget = {  #按钮占位 #下方按钮
+    position = { 60 75.4% }
+    size = { 200 160 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
+                    visible = "yes" 
+        hbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.4 0.9 0.8 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/31.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_a1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_a10').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_28"
+                using = tooltip_ne
+                size = { 200 50 }
+                text_multi = {
+                    position = { 6% 10% }
+                    size = { 330 90 }
+                    text = "SAKUYA_POWER_BLOC_29"
+                    using = header_font_fancy
+                    using = header_font_size
+                    default_format = "#medium"        
+                }
+            }
+        }
+        hbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.1 0.1 0.9 1 }
+                    
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/41.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken" #改善关系速度加快
+                onclick = "[GetScriptedGui('seven_a2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_a20').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_30"
+                using = tooltip_ne
+                size = { 200 50 }
+                text_multi = {
+                    position = { 6% 10% }
+                    size = { 330 90 }
+                    text = "SAKUYA_POWER_BLOC_31" 
+                    using = header_font_fancy
+                    using = header_font_size
+                    default_format = "#medium"        
+                }
+            }
+        }
+        hbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.4 1 0.3 0.8 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/11.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_a3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_a30').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_32"
+                using = tooltip_ne
+                size = { 200 50 }
+                text_multi = {
+                    position = { 6% 10% }
+                    size = { 330 90 }
+                    text = "SAKUYA_POWER_BLOC_33"
+                    using = header_font_fancy
+                    using = header_font_size
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+widget = {  #按钮占位 #下方按钮
+    position = { 265 75.7% }
+    size = { 250 155 }
+
+    hbox = {
+        visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
+                    visible = "yes" 
+        vbox = {
+            button_icon_square = {
+                vfx = {
+                            blockoverride "entity_instance" {
+                        entity_instance = vfx_entity_ui_mobilize
+                        alpha = 8
+                            }
+                        }
+                        vfx = {
+                            blockoverride "entity_instance" {
+                        entity_instance = vfx_entity_ui_to_arms_background
+                        alpha = 5
+                            }
+                        }
+
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 1 0.5 0.3 1 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/21.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.1
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_s1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_s10').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_34"
+                using = tooltip_ne
+                size = { 250 155 }
+                text_multi = {
+                    position = { 30% 5% }
+                        autoresize = yes
+                        align = nobaseline
+                        maximumsize = { 110 -1 }
+                        multiline = yes
+                        using = header_font_fancy
+                    raw_text = "SAKUYA_POWER_BLOC_35"
+                        
+                        using = header_font_fancy
+                        using = header_font_fancy_size
+                        default_format = "#medium"  
+                            }
+            }
+        }
+    }
+}
+
+widget = {  #按钮占位 #下方按钮
+    position = { 530 33.4% }
+    size = { 600 100 }
+    hbox = {
+        visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
+                    visible = "yes" 
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.4 0.9 0.8 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/11.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_11').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_110').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_36"
+                using = tooltip_ne
+                size = { 200 100 }
+                text_multi = {
+                    position = { 6% 60% }
+                    size = { 330 90 }
+                    text = "SAKUYA_POWER_BLOC_37"
+                    using = header_font_fancy
+                    using = header_font_size
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.5 0.9 0.5 0.7 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/13.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_12').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_120').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_38"
+                using = tooltip_ne
+                size = { 100 100 }
+                text_multi = {
+                    position = { 5% 70% }
+                    size = { 100 40 }
+                    text = "SAKUYA_POWER_BLOC_39"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.5 0.9 0.5 0.6 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/13.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_13').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_130').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_40"
+                using = tooltip_ne
+                size = { 100 100 }
+                text_multi = {
+                    position = { 5% 70% }
+                    size = { 140 40 }
+                    text = "SAKUYA_POWER_BLOC_41"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.5 0.9 0.5 0.5 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/14.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_14').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_140').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_42"
+                using = tooltip_ne
+                size = { 100 100 }
+                text_multi = {
+                    position = { 5% 70% }
+                    size = { 140 40 }
+                    text = "SAKUYA_POWER_BLOC_43"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.5 0.9 0.5 0.4 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/15.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_15').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_150').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_44"
+                using = tooltip_ne
+                size = { 100 100 }
+                text_multi = {
+                    position = { 5% 70% }
+                    size = { 140 40 }
+                    text = "SAKUYA_POWER_BLOC_45"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+widget = {  #按钮占位 #下方按钮
+    position = { 530 45.4% }
+    size = { 600 100 }
+    hbox = {
+        visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
+                    visible = "yes" 
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.6 0.6 0.8 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/21.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_21').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_210').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_46"
+                using = tooltip_ne
+                size = { 200 100 }
+                text_multi = {
+                    position = { 6% 60% }
+                    size = { 330 90 }
+                    text = "SAKUYA_POWER_BLOC_47"
+                    using = header_font_fancy
+                    using = header_font_size
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.6 0.6 0.7 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/22.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_22').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_220').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                
+                tooltip = "SAKUYA_POWER_BLOC_48"
+                using = tooltip_ne
+                size = { 100 100 }
+                text_multi = {
+                    position = { 5% 70% }
+                    size = { 100 40 }
+                    text = "SAKUYA_POWER_BLOC_49"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.6 0.6 0.6 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/23.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_23').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_230').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_50"
+                using = tooltip_ne
+                size = { 100 100 }
+                text_multi = {
+                    position = { 5% 70% }
+                    size = { 140 40 }
+                    text = "SAKUYA_POWER_BLOC_51"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.6 0.6 0.5 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/24.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_24').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_240').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_52"
+                using = tooltip_ne
+                size = { 100 100 }
+                text_multi = {
+                    position = { 5% 70% }
+                    size = { 140 40 }
+                    text = "SAKUYA_POWER_BLOC_53"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.6 0.6 0.4 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/25.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_25').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_250').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_54"
+                using = tooltip_ne
+                size = { 100 100 }
+                text_multi = {
+                    position = { 5% 70% }
+                    size = { 140 40 }
+                    text = "SAKUYA_POWER_BLOC_55"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+widget = {  #按钮占位 #下方按钮
+    position = { 530 57.4% }
+    size = { 600 100 }
+    hbox = {
+        visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
+                    visible = "yes" 
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.8 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/31.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_31').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_310').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_56"
+                using = tooltip_ne
+                size = { 200 100 }
+                text_multi = {
+                    position = { 6% 60% }
+                    size = { 330 90 }
+                    text = "SAKUYA_POWER_BLOC_57"
+                    using = header_font_fancy
+                    using = header_font_size
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.7 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/32.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_32').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_320').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_58"
+                using = tooltip_ne
+                size = { 100 100 }
+                text_multi = {
+                    position = { 5% 70% }
+                    size = { 100 40 }
+                    text = "SAKUYA_POWER_BLOC_59"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.6 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/33.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_33').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_330').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_60"
+                using = tooltip_ne
+                size = { 100 100 }
+                text_multi = {
+                    position = { 5% 70% }
+                    size = { 140 40 }
+                    text = "SAKUYA_POWER_BLOC_61"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.5 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/34.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_34').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_340').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_62"
+                using = tooltip_ne
+                size = { 100 100 }
+                text_multi = {
+                    position = { 5% 70% }
+                    size = { 140 40 }
+                    text = "SAKUYA_POWER_BLOC_63"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.4 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/35.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_35').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_350').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_64"
+                using = tooltip_ne
+                size = { 100 100 }
+                text_multi = {
+                    position = { 5% 70% }
+                    size = { 140 40 }
+                    text = "SAKUYA_POWER_BLOC_65"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+widget = {  #按钮占位 #下方按钮
+    position = { 530 69.4% }
+    size = { 600 100 }
+    hbox = {
+                            visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
+                    visible = "yes" 
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.4 0.9 0.8 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/41.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_41').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_410').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_66"
+                using = tooltip_ne
+                size = { 200 100 }
+                text_multi = {
+                    position = { 6% 60% }
+                    size = { 330 90 }
+                    text = "SAKUYA_POWER_BLOC_67"
+                    using = header_font_fancy
+                    using = header_font_size
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.7 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/42.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_42').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_420').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_68"
+                using = tooltip_ne
+                size = { 100 100 }
+                text_multi = {
+                    position = { 5% 70% }
+                    size = { 100 40 }
+                    text = "SAKUYA_POWER_BLOC_69"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.6 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/43.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_43').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_430').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_70"
+                using = tooltip_ne
+                size = { 100 100 }
+                text_multi = {
+                    position = { 5% 70% }
+                    size = { 140 40 }
+                    text = "SAKUYA_POWER_BLOC_71"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.5 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/44.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_44').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_440').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_72"
+                using = tooltip_ne
+                size = { 100 100 }
+                text_multi = {
+                    position = { 5% 70% }
+                    size = { 140 40 }
+                    text = "SAKUYA_POWER_BLOC_73"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.4 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/45.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_45').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_450').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" #你发现咯！
+                tooltip = "SAKUYA_POWER_BLOC_74"
+                using = tooltip_ne
+                size = { 100 100 }
+                text_multi = {
+                    position = { 5% 70% }
+                    size = { 140 40 }
+                    text = "SAKUYA_POWER_BLOC_75"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+widget = {  #按钮占位 #下方按钮
+    position = { 530 81.4% }
+    size = { 600 100 }
+    hbox = {
+                            visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
+                    visible = "yes" 
+        vbox = {
+            button_icon_square = {
+                datacontext = "[Country.GetPowerBloc]"
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.4 0.9 0.8 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/51.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_51').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_510').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "ss510" #测试短接口 #sakuya seven 5 1
+                using = tooltip_ne
+                size = { 200 100 }
+                text_multi = {
+                    position = { 6% 60% }
+                    size = { 330 90 }
+                    text = "ss51"
+                    using = header_font_fancy
+                    using = header_font_size
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.7 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/52.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_52').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_520').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_79"
+                using = tooltip_ne
+                size = { 100 100 }
+                text_multi = {
+                    position = { 5% 70% }
+                    size = { 100 40 }
+                    text = "SAKUYA_POWER_BLOC_80"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.6 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/53.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_53').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_530').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_81"
+                using = tooltip_ne
+                size = { 100 100 }
+                text_multi = {
+                    position = { 5% 70% }
+                    size = { 140 40 }
+                    text = "SAKUYA_POWER_BLOC_82"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.5 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/54.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_54').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_540').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_83"
+                using = tooltip_ne
+                size = { 100 100 }
+                text_multi = {
+                    position = { 5% 70% }
+                    size = { 140 40 }
+                    text = "SAKUYA_POWER_BLOC_84"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.4 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/55.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_55').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_550').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_85"
+                using = tooltip_ne
+                size = { 100 100 }
+                text_multi = {
+                    position = { 5% 70% }
+                    size = { 140 40 }
+                    text = "SAKUYA_POWER_BLOC_86"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+            widget = {
+                    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
+                    visible = "yes" 
+                position = { 60 290 }
+                size = { 400 50 }
+                    hbox = {
+                    #visible = "[GetVariableSystem.HasValue( 'sakuya_money_tabs', 'sakuya_money_tabs_1' ) )]"
+                    #visible = "yes" 
+                    vbox = {
+                        spacing = 5
+                    default_header_clean = {
+                        maximumsize = { 455 -1 }
+                        blockoverride "text" {
+                            parentanchor = top
+                            raw_text = "SAKUYA_POWER_BLOC_87"
+                            autoresize = yes
+                        multiline = yes
+                        using = fontsize
+                        default_format = "#medium" 
+                                        }
+                        autoresize = yes
+                        multiline = yes
+                        default_format = "#medium"  
+                            }
+                        }
+                    }
+                }
+                widget = {  #背景
+                    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
+                datacontext = "[Country.GetPowerBloc]"
+                position = { 60 335 }
+                size = { 0 0 }
+                vbox = {
+
+                    #visible = "[GetVariableSystem.HasValue( 'sakuya_money_tabs', 'sakuya_money_tabs_1' ) )]"
+                    hbox = {
+                        visible = "[(Country.IsInPowerBloc)]"
+                        button_icon_square = {
+
+                            alpha = 0.4
+                            blockoverride "primary_visible" {}
+                            blockoverride "primary_texture" {
+                                texture = "gfx/interface/buttons/expand_button_bg.dds"
+                                color = { 0.1 0.02 0.1 1 } #按钮自身是绿色的。为了更加纯粹，需要适当调整RGB。
+                            }
+                            name = "sakuya_money_1_back_1"
+                            using = tooltip_ne
+                            size = { 455 340 }
+                            
+                            text_multi = {
+                                alpha = 4
+                    position = { 3% 5% }
+                    size = { 440 40 }
+                    text = "SAKUYA_POWER_BLOC_89"
+                    using = header_font_fancy
+                    #using = header_font
+                    default_format = "#medium"        
+                }
+                text_multi = {
+                                alpha = 4
+                    position = { 3% 19% }
+                    size = { 435 240 }
+                    text = "SAKUYA_POWER_BLOC_90"
+"
+                    #using = header_font_fancy
+                    #using = header_font
+                    default_format = "#medium"        
+                }
+                            }
+                        }
+                    }
+                }
+            }
+                widget = {  #背景
+                    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
+                    visible = "yes" 
+                datacontext = "[Country.GetPowerBloc]"
+                position = { 60 335 }
+                size = { 0 0 }
+                vbox = {
+                    visible = "[Not(Country.IsInPowerBloc)]"
+                    hbox = {
+                        button_icon_square = {
+                            alpha = 1
+                            blockoverride "primary_visible" {}
+                            blockoverride "primary_texture" {
+                                texture = "gfx/interface/buttons/expand_button_bg.dds"
+                                color = { 1 0.8 0.8 1 } #按钮自身是绿色的。为了更加纯粹，需要适当调整RGB。
+                            }
+                            name = "sakuya_money_1_back_1"
+                            using = tooltip_ne
+                            size = { 455 340 }
+                            
+                            text_multi = {
+                                alpha = 4
+                    position = { 3% 5% }
+                    size = { 440 40 }
+                    text = "SAKUYA_POWER_BLOC_92"
+                    using = header_font_fancy
+                    #using = header_font
+                    default_format = "#medium"        
+                }
+                text_multi = {
+                                alpha = 4
+                    position = { 3% 19% }
+                    size = { 435 240 }
+                    text = "SAKUYA_POWER_BLOC_93"
+" #别问太多。不知为何，删除了就会出错。
+                    using = tooltip_font
+                    #using = header_font
+                    #default_format = "#medium"        
+                }
+                            }
+                        }
+                    }
+                }
+            }
+#################################################################################################
+            #  目前尚未掌握如何通过标记国家来达到外交目的。如果这个不会，那么做外交菜单，真的这有必要吗？
+widget = {  #你好啊，toyosatomimi no miko！我说啊厩户王丰聪耳太子，你起的是什么鬼名字啊。
+    position = { 360 207 }
+    size = { 179 125 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_interest_group_approval_add"
+                using = tooltip_ne
+                size = { 179 125 }
+                scissor = yes 
+                texture = none
+                alpha = 0.001
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/Toyosatomiminomiko.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 700
+                    position = { 0 0 }
+                }
+                blockoverride "icon_size" {
+                    size = { 179 125 }                  
+                }
+            }
+        }
+    }
+}
+
+widget = {  #按钮占位 #下方按钮
+    position = { 530 27.4% }
+    size = { 600 50 }
+    hbox = {
+        visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
+                    visible = "yes" 
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.6 0.6 1 0.8 }
+                }
+                blockoverride "icon" {
+                    #texture = "gfx/interface/sakuya/seven/11.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_p1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_p10').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "ssp10"
+                using = tooltip_ne
+                size = { 120 50 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 100 40 }
+                    text = "SAKUYA_POWER_BLOC_95"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.6 0.6 1 0.8 }
+                }
+                blockoverride "icon" {
+                    #texture = "gfx/interface/sakuya/seven/13.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_p2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_p20').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "ssp20"
+                using = tooltip_ne
+                size = { 120 50 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 100 40 }
+                    text = "SAKUYA_POWER_BLOC_97"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.6 0.6 1 0.8 }
+                }
+                blockoverride "icon" {
+                   # texture = "gfx/interface/sakuya/seven/13.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_p3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_p30').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_98"
+                using = tooltip_ne
+                size = { 120 50 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "SAKUYA_POWER_BLOC_99"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.6 0.6 1 0.8 }
+                }
+                blockoverride "icon" {
+                   # texture = "gfx/interface/sakuya/seven/14.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_p4').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_p40').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_100"
+                using = tooltip_ne
+                size = { 120 50 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "SAKUYA_POWER_BLOC_101"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.6 0.6 1 0.8 }
+                }
+                blockoverride "icon" {
+                   # texture = "gfx/interface/sakuya/seven/15.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('seven_p5').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('seven_p50').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_102"
+                using = tooltip_ne
+                size = { 120 50 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "SAKUYA_POWER_BLOC_103"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+
+widget = {  #按钮占位 #下方按钮
+    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_3' ) )]"
+                    visible = "yes" 
+    position = { 4% 23% }
+    size = { 640 60 }
+    hbox = {
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.4 0.9 0.8 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/41.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('mil_01').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('mil_010').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_104"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 100 40 }
+                    text = "sakuya_mil_01"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.7 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/42.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('mil_02').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('mil_020').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_106"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 100 40 }
+                    text = "sakuya_mil_02"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.6 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/43.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('mil_03').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('mil_030').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_108"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "sakuya_mil_03"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.5 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/41.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('mil_04').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('mil_040').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_110"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "sakuya_mil_04"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.4 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/42.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('mil_05').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('mil_050').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" #你发现咯！
+                tooltip = "SAKUYA_POWER_BLOC_112"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "sakuya_mil_05"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+
+
+widget = {  #按钮占位 #下方按钮
+    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_3' ) )]"
+                    visible = "yes" 
+    position = { 4% 31% }
+    size = { 640 60 }
+    hbox = {
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.4 0.9 0.8 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/11.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('mil_14').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('mil_140').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "sakuya_mil_14_t"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 100 40 }
+                    text = "sakuya_mil_14"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.7 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/13.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('mil_15').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('mil_150').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_116"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 100 40 }
+                    text = "sakuya_mil_15"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.6 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/53.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('mil_11').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('mil_110').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_118"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "sakuya_mil_11"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.5 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/52.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('mil_12').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('mil_120').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_POWER_BLOC_120"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "sakuya_mil_12"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.4 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/51.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('mil_13').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('mil_130').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" #你发现咯！
+                tooltip = "SAKUYA_POWER_BLOC_122"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "sakuya_mil_13"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+
+widget = {
+    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_3' ) )]"
+                    visible = "yes" 
+                position = { 60 385}
+                size = { 620 155 }
+                    hbox = {
+                    visible = "yes" 
+                    vbox = {
+                        spacing = 5
+                    text_multi = {
+                    text = "SAKUYA_MIL_TEXT"  # 利益集团更新 提示
+                        size = { 620 225 }
+                        default_format = "#medium"  
+                            }
+                        }
+                    }
+                }
+
+
+widget = {  #按钮占位 #下方按钮
+    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_2' ) )]"
+                    visible = "yes" 
+    position = { 4% 38% }
+    size = { 1100 60 }
+    hbox = {
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.4 0.9 0.8 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/41.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('weiwang_01').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('weiwang_010').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "sakuya_weiwang_01_t"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 100 40 }
+                    text = "sakuya_weiwang_01"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.7 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/42.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('weiwang_02').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('weiwang_020').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "sakuya_weiwang_02_t"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 100 40 }
+                    text = "sakuya_weiwang_02"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.6 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/43.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('weiwang_03').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('weiwang_030').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "sakuya_weiwang_03_t"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "sakuya_weiwang_03"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.5 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/41.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('weiwang_04').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('weiwang_040').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "sakuya_weiwang_04_t"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "sakuya_weiwang_04"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.4 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/42.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('weiwang_05').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('weiwang_050').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" #你发现咯！
+                tooltip = "sakuya_weiwang_05_t"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "sakuya_weiwang_05"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.7 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/42.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('weiwang_06').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('weiwang_060').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "sakuya_weiwang_06_t"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 100 40 }
+                    text = "sakuya_weiwang_06"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.6 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/43.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('weiwang_07').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('weiwang_070').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "sakuya_weiwang_07_t"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "sakuya_weiwang_07"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.5 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/41.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('weiwang_08').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('weiwang_080').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "sakuya_weiwang_08_t"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "sakuya_weiwang_08"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.4 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/42.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('weiwang_09').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('weiwang_090').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" #你发现咯！
+                tooltip = "sakuya_weiwang_09_t"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "sakuya_weiwang_09"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+
+
+widget = {  #按钮占位 #下方按钮
+    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_2' ) )]"
+                    visible = "yes" 
+    position = { 4% 45% }
+    size = { 1100 60 }
+    hbox = {
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.4 0.9 0.8 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/53.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('weiwang_14').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('weiwang_140').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "sakuya_weiwang_14_t"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 100 40 }
+                    text = "sakuya_weiwang_14"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.7 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/53.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('weiwang_15').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('weiwang_150').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "sakuya_weiwang_15_t"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 100 40 }
+                    text = "sakuya_weiwang_15"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.6 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/53.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('weiwang_11').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('weiwang_110').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "sakuya_weiwang_11_t"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "sakuya_weiwang_11"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.5 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/53.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('weiwang_12').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('weiwang_120').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "sakuya_weiwang_12_t"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "sakuya_weiwang_12"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.4 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/53.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('weiwang_13').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('weiwang_130').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" #你发现咯！
+                tooltip = "sakuya_weiwang_13_t"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "sakuya_weiwang_13"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+    button_icon_square = {
+        alpha = 1
+        blockoverride "primary_visible" {}
+        blockoverride "primary_texture" {
+            texture = "gfx/interface/buttons/expand_button_bg.dds"
+            #color = { 0.9 0.9 0.4 0.5 }
+        }
+        blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/53.png" #信仰是为了虚幻之人
+            scissor = yes
+            alpha = 0.8
+        }
+        name = "sakuya_seven_add_country_loan_interest_broken"
+        onclick = "[GetScriptedGui('weiwang_16').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+        onrightclick = "[GetScriptedGui('weiwang_160').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+        tooltip = "sakuya_weiwang_16_t"
+        using = tooltip_ne
+        size = { 120 60 }
+        text_multi = {
+            position = { 5% 30% }
+            size = { 140 40 }
+            text = "sakuya_weiwang_16"
+            using = header_font_fancy
+            using = header_font
+            default_format = "#medium"
+        }
+    }
+}
+
+vbox = {
+    button_icon_square = {
+        alpha = 1
+        blockoverride "primary_visible" {}
+        blockoverride "primary_texture" {
+            texture = "gfx/interface/buttons/expand_button_bg.dds"
+            #color = { 0.9 0.9 0.4 0.5 }
+        }
+        blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/53.png" #信仰是为了虚幻之人
+            scissor = yes
+            alpha = 0.8
+        }
+        name = "sakuya_seven_add_country_loan_interest_broken"
+        onclick = "[GetScriptedGui('weiwang_17').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+        onrightclick = "[GetScriptedGui('weiwang_170').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+        tooltip = "sakuya_weiwang_17_t"
+        using = tooltip_ne
+        size = { 120 60 }
+        text_multi = {
+            position = { 5% 30% }
+            size = { 140 40 }
+            text = "sakuya_weiwang_17"
+            using = header_font_fancy
+            using = header_font
+            default_format = "#medium"
+        }
+    }
+}
+
+vbox = {
+    button_icon_square = {
+        alpha = 1
+        blockoverride "primary_visible" {}
+        blockoverride "primary_texture" {
+            texture = "gfx/interface/buttons/expand_button_bg.dds"
+            #color = { 0.9 0.9 0.4 0.5 }
+        }
+        blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/53.png" #信仰是为了虚幻之人
+            scissor = yes
+            alpha = 0.8
+        }
+        name = "sakuya_seven_add_country_loan_interest_broken"
+        onclick = "[GetScriptedGui('weiwang_18').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+        onrightclick = "[GetScriptedGui('weiwang_180').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+        tooltip = "sakuya_weiwang_18_t"
+        using = tooltip_ne
+        size = { 120 60 }
+        text_multi = {
+            position = { 5% 30% }
+            size = { 140 40 }
+            text = "sakuya_weiwang_18"
+            using = header_font_fancy
+            using = header_font
+            default_format = "#medium"
+        }
+    }
+}
+
+vbox = {
+    button_icon_square = {
+        alpha = 1
+        blockoverride "primary_visible" {}
+        blockoverride "primary_texture" {
+            texture = "gfx/interface/buttons/expand_button_bg.dds"
+            #color = { 0.9 0.9 0.4 0.5 }
+        }
+        blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/53.png" #信仰是为了虚幻之人
+            scissor = yes
+            alpha = 0.8
+        }
+        name = "sakuya_seven_add_country_loan_interest_broken"
+        onclick = "[GetScriptedGui('weiwang_19').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+        onrightclick = "[GetScriptedGui('weiwang_190').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+        tooltip = "sakuya_weiwang_19_t"
+        using = tooltip_ne
+        size = { 120 60 }
+        text_multi = {
+            position = { 5% 30% }
+            size = { 140 40 }
+            text = "sakuya_weiwang_19"
+            using = header_font_fancy
+            using = header_font
+            default_format = "#medium"
+        }
+    }
+}
+
+    }
+}
+widget = {  #按钮占位 #下方按钮
+    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_2' ) )]"
+                    visible = "yes" 
+    position = { 4% 61% }
+    size = { 1100 60 }
+    hbox = {
+        
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.6 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/13.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('weiwang_21').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('weiwang_210').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "sakuya_weiwang_21_t"
+                using = tooltip_ne
+                size = { 120 50 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "sakuya_weiwang_21"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.5 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/13.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('weiwang_22').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('weiwang_220').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "sakuya_weiwang_22_t"
+                using = tooltip_ne
+                size = { 120 50 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "sakuya_weiwang_22"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.4 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/13.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('weiwang_23').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('weiwang_230').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" #你发现咯！
+                tooltip = "sakuya_weiwang_23_t"
+                using = tooltip_ne
+                size = { 120 50 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "sakuya_weiwang_23"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.4 0.9 0.8 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/13.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('weiwang_24').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('weiwang_240').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "sakuya_weiwang_24_t"
+                using = tooltip_ne
+                size = { 120 50 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 100 40 }
+                    text = "sakuya_weiwang_24"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.7 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/13.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('weiwang_25').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('weiwang_250').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "sakuya_weiwang_25_t"
+                using = tooltip_ne
+                size = { 120 50 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 100 40 }
+                    text = "sakuya_weiwang_25"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+    button_icon_square = {
+        alpha = 1
+        blockoverride "primary_visible" {}
+        blockoverride "primary_texture" {
+            texture = "gfx/interface/buttons/expand_button_bg.dds"
+            #color = { 0.9 0.9 0.4 0.5 }
+        }
+        blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/13.png" #信仰是为了虚幻之人
+            scissor = yes
+            alpha = 0.8
+        }
+        name = "sakuya_seven_add_country_loan_interest_broken"
+        onclick = "[GetScriptedGui('weiwang_26').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+        onrightclick = "[GetScriptedGui('weiwang_260').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+        tooltip = "sakuya_weiwang_26_t"
+        using = tooltip_ne
+        size = { 120 50 }
+        text_multi = {
+            position = { 5% 30% }
+            size = { 140 40 }
+            text = "sakuya_weiwang_26"
+            using = header_font_fancy
+            using = header_font
+            default_format = "#medium"
+        }
+    }
+}
+
+vbox = {
+    button_icon_square = {
+        alpha = 1
+        blockoverride "primary_visible" {}
+        blockoverride "primary_texture" {
+            texture = "gfx/interface/buttons/expand_button_bg.dds"
+            #color = { 0.9 0.9 0.4 0.5 }
+        }
+        blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/13.png" #信仰是为了虚幻之人
+            scissor = yes
+            alpha = 0.8
+        }
+        name = "sakuya_seven_add_country_loan_interest_broken"
+        onclick = "[GetScriptedGui('weiwang_27').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+        onrightclick = "[GetScriptedGui('weiwang_270').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+        tooltip = "sakuya_weiwang_27_t"
+        using = tooltip_ne
+        size = { 120 50 }
+        text_multi = {
+            position = { 5% 30% }
+            size = { 140 40 }
+            text = "sakuya_weiwang_27"
+            using = header_font_fancy
+            using = header_font
+            default_format = "#medium"
+        }
+    }
+}
+
+vbox = {
+    button_icon_square = {
+        alpha = 1
+        blockoverride "primary_visible" {}
+        blockoverride "primary_texture" {
+            texture = "gfx/interface/buttons/expand_button_bg.dds"
+            #color = { 0.9 0.9 0.4 0.5 }
+        }
+        blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/13.png" #信仰是为了虚幻之人
+            scissor = yes
+            alpha = 0.8
+        }
+        name = "sakuya_seven_add_country_loan_interest_broken"
+        onclick = "[GetScriptedGui('weiwang_28').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+        onrightclick = "[GetScriptedGui('weiwang_280').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+        tooltip = "sakuya_weiwang_28_t"
+        using = tooltip_ne
+        size = { 120 50 }
+        text_multi = {
+            position = { 5% 30% }
+            size = { 140 40 }
+            text = "sakuya_weiwang_28"
+            using = header_font_fancy
+            using = header_font
+            default_format = "#medium"
+        }
+    }
+}
+
+vbox = {
+    button_icon_square = {
+        alpha = 1
+        blockoverride "primary_visible" {}
+        blockoverride "primary_texture" {
+            texture = "gfx/interface/buttons/expand_button_bg.dds"
+            #color = { 0.9 0.9 0.4 0.5 }
+        }
+        blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/13.png" #信仰是为了虚幻之人
+            scissor = yes
+            alpha = 0.8
+        }
+        name = "sakuya_seven_add_country_loan_interest_broken"
+        onclick = "[GetScriptedGui('weiwang_29').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+        onrightclick = "[GetScriptedGui('weiwang_290').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+        tooltip = "sakuya_weiwang_29_t"
+        using = tooltip_ne
+        size = { 120 50 }
+        text_multi = {
+            position = { 5% 30% }
+            size = { 140 40 }
+            text = "sakuya_weiwang_29"
+            using = header_font_fancy
+            using = header_font
+            default_format = "#medium"
+        }
+    }
+}
+
+    }
+}
+
+
+
+widget = {  #按钮占位 #下方按钮
+    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_2' ) )]"
+                    visible = "yes" 
+    position = { 4% 67% }
+    size = { 1100 60 }
+    hbox = {
+        
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.6 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/22.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('weiwang_31').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('weiwang_310').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "sakuya_weiwang_31_t"
+                using = tooltip_ne
+                size = { 120 50 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "sakuya_weiwang_31"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.5 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/22.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('weiwang_32').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('weiwang_320').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "sakuya_weiwang_32_t"
+                using = tooltip_ne
+                size = { 120 50 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "sakuya_weiwang_32"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.4 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/22.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('weiwang_33').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('weiwang_330').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" #你发现咯！
+                tooltip = "sakuya_weiwang_33_t"
+                using = tooltip_ne
+                size = { 120 50 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "sakuya_weiwang_33"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.4 0.9 0.8 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/22.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('weiwang_34').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('weiwang_340').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "sakuya_weiwang_34_t"
+                using = tooltip_ne
+                size = { 120 50 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 100 40 }
+                    text = "sakuya_weiwang_34"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.7 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/22.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('weiwang_35').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('weiwang_350').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "sakuya_weiwang_35_t"
+                using = tooltip_ne
+                size = { 120 50 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 100 40 }
+                    text = "sakuya_weiwang_35"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+    button_icon_square = {
+        alpha = 1
+        blockoverride "primary_visible" {}
+        blockoverride "primary_texture" {
+            texture = "gfx/interface/buttons/expand_button_bg.dds"
+            #color = { 0.9 0.9 0.4 0.5 }
+        }
+        blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/22.png" #信仰是为了虚幻之人
+            scissor = yes
+            alpha = 0.8
+        }
+        name = "sakuya_seven_add_country_loan_interest_broken"
+        onclick = "[GetScriptedGui('weiwang_36').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+        onrightclick = "[GetScriptedGui('weiwang_360').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+        tooltip = "sakuya_weiwang_36_t"
+        using = tooltip_ne
+        size = { 120 50 }
+        text_multi = {
+            position = { 5% 30% }
+            size = { 140 40 }
+            text = "sakuya_weiwang_36"
+            using = header_font_fancy
+            using = header_font
+            default_format = "#medium"
+        }
+    }
+}
+
+vbox = {
+    button_icon_square = {
+        alpha = 1
+        blockoverride "primary_visible" {}
+        blockoverride "primary_texture" {
+            texture = "gfx/interface/buttons/expand_button_bg.dds"
+            #color = { 0.9 0.9 0.4 0.5 }
+        }
+        blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/22.png" #信仰是为了虚幻之人
+            scissor = yes
+            alpha = 0.8
+        }
+        name = "sakuya_seven_add_country_loan_interest_broken"
+        onclick = "[GetScriptedGui('weiwang_37').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+        onrightclick = "[GetScriptedGui('weiwang_370').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+        tooltip = "sakuya_weiwang_37_t"
+        using = tooltip_ne
+        size = { 120 50 }
+        text_multi = {
+            position = { 5% 30% }
+            size = { 140 40 }
+            text = "sakuya_weiwang_37"
+            using = header_font_fancy
+            using = header_font
+            default_format = "#medium"
+        }
+    }
+}
+
+vbox = {
+    button_icon_square = {
+        alpha = 1
+        blockoverride "primary_visible" {}
+        blockoverride "primary_texture" {
+            texture = "gfx/interface/buttons/expand_button_bg.dds"
+            #color = { 0.9 0.9 0.4 0.5 }
+        }
+        blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/22.png" #信仰是为了虚幻之人
+            scissor = yes
+            alpha = 0.8
+        }
+        name = "sakuya_seven_add_country_loan_interest_broken"
+        onclick = "[GetScriptedGui('weiwang_38').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+        onrightclick = "[GetScriptedGui('weiwang_380').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+        tooltip = "sakuya_weiwang_38_t"
+        using = tooltip_ne
+        size = { 120 50 }
+        text_multi = {
+            position = { 5% 30% }
+            size = { 140 40 }
+            text = "sakuya_weiwang_38"
+            using = header_font_fancy
+            using = header_font
+            default_format = "#medium"
+        }
+    }
+}
+
+vbox = {
+    button_icon_square = {
+        alpha = 1
+        blockoverride "primary_visible" {}
+        blockoverride "primary_texture" {
+            texture = "gfx/interface/buttons/expand_button_bg.dds"
+            #color = { 0.9 0.9 0.4 0.5 }
+        }
+        blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/22.png" #信仰是为了虚幻之人
+            scissor = yes
+            alpha = 0.8
+        }
+        name = "sakuya_seven_add_country_loan_interest_broken"
+        onclick = "[GetScriptedGui('weiwang_39').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+        onrightclick = "[GetScriptedGui('weiwang_390').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+        tooltip = "sakuya_weiwang_39_t"
+        using = tooltip_ne
+        size = { 120 50 }
+        text_multi = {
+            position = { 5% 30% }
+            size = { 140 40 }
+            text = "sakuya_weiwang_39"
+            using = header_font_fancy
+            using = header_font
+            default_format = "#medium"
+        }
+    }
+}
+
+    }
+}
+
+widget = {  #按钮占位 #下方按钮
+    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_2' ) )]"
+                    visible = "yes" 
+    position = { 4% 53.5% }
+    size = { 1100 60 }
+    hbox = {
+        
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.2 0.2 0.3 1 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/about/1.jpg" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.5
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('weiwang_s').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('weiwang_s1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "sakuya_weiwang_st"
+                using = tooltip_ne
+                size = { 120 50 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "sakuya_weiwang_s"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+
+widget = {
+    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_2' ) )]"
+                    visible = "yes" 
+                position = { 50 245}
+                size = { 1100 155 }
+                    hbox = {
+                    visible = "yes" 
+                    vbox = {
+                        spacing = 5
+                    text_multi = {
+                    text = "sakuya_weiwang_TEXT"  # 利益集团更新 提示
+                        size = { 1070 155 }
+                        default_format = "#medium"  
+                            }
+                        }
+                    }
+                }
+widget = {
+    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_2' ) )]"
+                    visible = "yes" 
+                position = { 50 445}
+                size = { 1100 605 }
+                    hbox = {
+                    visible = "yes" 
+                    vbox = {
+                        spacing = 5
+                    text_multi = {
+                    text = "sakuya_weiwang_TEXT2"  # 利益集团更新 提示
+                        size = { 1100 155 }
+                        default_format = "#medium"  
+                            }
+                        }
+                    }
+                }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                }
+            }
+        }
+    }
+}
+
+}
+}
+}
+}

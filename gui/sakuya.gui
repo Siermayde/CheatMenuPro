@@ -1,0 +1,2514 @@
+#没错。这个界面是从法律的GUI改的。
+#以下指令：visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]" 决定了标签页面分类。我懒得改名字。
+#本质上按钮和文字是完全独立的。
+# 快速跳转：势力：P100 支持度：P800 修正：2050
+################################################################
+window = {
+	name = "sakuya_window"
+	parentanchor = top
+	position = { 53% 15.5% } #主GUI的大小和位置
+	size = { 640 910 }
+	layer = windows_layer
+	filter_mouse = all
+	allow_outside = yes
+	alwaystransparent = no
+	
+	using = Window_Background
+	using = Window_Decoration
+	movable = yes
+    
+    datacontext = "[GetVariableSystem]"
+	datacontext = "[GetPlayer]"
+		visible = "[GetVariableSystem.Exists('sakuya_visible')]"
+	
+	state = {
+		name = _show
+		using = Animation_FadeIn_Quick
+	}
+	
+	state = {
+		name = _hide
+		using = Animation_FadeOut_Quick
+	}
+	
+	vbox = {
+		restrictparent_min = yes
+		using = Window_Margins
+		
+		header_pattern = {
+			layoutpolicy_horizontal = expanding
+
+
+			blockoverride "header_text"
+			{
+				text = "SAKUYA_IG_1"
+			}
+
+			blockoverride "button_close"
+			{
+				onclick = "[GetVariableSystem.Toggle('sakuya_visible')]"
+			}
+		}
+			
+		hbox = {
+			layoutpolicy_horizontal = expanding
+			button_tab = {
+				layoutpolicy_horizontal = expanding
+				text = "SAKUYA_IG_2"
+
+				onclick = "[GetVariableSystem.Set( 'sakuya_tabs', 'sakuya_tabs_1' )]"
+				down = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+			}
+			
+		
+			button_tab = {
+				layoutpolicy_horizontal = expanding
+				text = "SAKUYA_IG_3"
+
+				onclick = "[GetVariableSystem.Set( 'sakuya_tabs', 'sakuya_tabs_2' )]"
+				down = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+			}
+			
+			button_tab = {
+				layoutpolicy_horizontal = expanding
+				text = "SAKUYA_IG_4"
+
+				onclick = "[GetVariableSystem.Set( 'sakuya_tabs', 'sakuya_tabs_3' )]"
+				down = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_3' ) )]"
+			}
+		} ####################################################################
+		
+		scrollbox = {
+			name = "characters_scroll_area" #滚动条虽然支持，但一旦设置排版就乱套了
+			layoutpolicy_vertical = expanding
+			layoutpolicy_horizontal = expanding
+			blockoverride "scrollbox_content" {
+				
+			widget = {
+                position = { 10 20 }
+                size = { 580 0 }
+					hbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+					vbox = {
+						spacing = 5
+						text_single = {
+							text = "SAKUYA_IG_5"
+						}
+					}
+
+					}
+				}
+			} #此括号删除后可以启用滚动条。但排版会爆炸。
+			widget = {  #贸易工会
+                position = { 10 50 }
+                size = { 150 70 }
+				vbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+					hbox = {
+						button_icon_square = {
+							name = "advcm_trade_unions"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_trade_unions_1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_remove_sakuya_trade_unions_1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_6"
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/ig_icons/trade_unions.dds" 
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+					}
+				}
+			}
+			widget = {  #农村人口
+                position = { 10 120 }
+                size = { 150 70 }
+				vbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+					hbox = {
+						button_icon_square = {
+							name = "advcm_rural_folk"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_rural_folk_1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_remove_sakuya_rural_folk_1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_7"
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/ig_icons/rural_folk.dds" 
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+					}
+				}
+			}
+			widget = {  #小资产阶级
+                position = { 10 190 }
+                size = { 150 70 }
+				vbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+					hbox = {
+						button_icon_square = {
+							name = "advcm_petty_bourgeoisie"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_petty_bourgeoisie_1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_remove_sakuya_petty_bourgeoisie_1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_8"
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/ig_icons/petty_bourgeoisie.dds" 
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+					}
+				}
+			}
+			widget = {  #地主
+                position = { 10 260 }
+                size = { 150 70 }
+				vbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+					hbox = {
+						button_icon_square = {
+							name = "advcm_landowners"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_landowners_1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_remove_sakuya_landowners_1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_9"
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/ig_icons/landowners.dds" 
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+					}
+				}
+			}
+						widget = {  #知识分子
+                position = { 10 330 }
+                size = { 150 70 }
+				vbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+					hbox = {
+						button_icon_square = {
+							name = "advcm_intelligensia"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_intelligensia_1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_remove_sakuya_intelligensia_1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_10"
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/ig_icons/intelligensia.dds" 
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+					}
+				}
+			}
+			widget = {  #资本家
+                position = { 10 400 }
+                size = { 150 70 }
+				vbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+					hbox = {
+						button_icon_square = {
+							name = "advcm_industrialists"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_industrialists_1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_remove_sakuya_industrialists_1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_11"
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/ig_icons/industrialists.dds" 
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+					}
+				}
+			}
+			widget = {  #神棍
+                position = { 10 470 }
+                size = { 150 70 }
+				vbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+					hbox = {
+						button_icon_square = {
+							name = "advcm_devout"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_devout_1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_remove_sakuya_devout_1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_12"
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/ig_icons/devout.dds" 
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+					}
+				}
+			}
+			widget = {  #武装力量
+                position = { 10 540 }
+                size = { 150 70 }
+				vbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+					hbox = {
+						button_icon_square = {
+							name = "advcm_armed_forces"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_armed_forces_1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_remove_sakuya_armed_forces_1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_13"
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/ig_icons/armed_forces.dds" 
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+					}
+				}
+			}
+			widget = {  #政治中立者
+                position = { 10 610 }
+                size = { 150 70 }
+				vbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+					hbox = {
+						button_icon_square = {
+							name = "advcm_politically_unaligned"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_politically_unaligned_1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_remove_sakuya_politically_unaligned_1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_14"
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/ig_icons/politically_unaligned.dds" 
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+					}
+				}
+			}
+			widget = {  #工会 文本
+				position = { 170 58 }
+				size = { 0 0 }
+				hbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+					visible = "yes"  
+					vbox = {
+					spacing = 5
+					text_multi = {
+						text = "SAKUYA_IG_15"
+						size = { 290 65 }
+						default_format = "#medium"  
+							}
+						}
+					}
+				}
+				widget = {  #工会 文本
+				position = { 170 128 }
+				size = { 0 0 }
+				hbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+					visible = "yes"  
+					vbox = {
+					spacing = 5
+					text_multi = {
+						text = "SAKUYA_IG_16"
+						size = { 290 65 }
+						default_format = "#medium"  
+							}
+						}
+					}
+				}
+				widget = {  #工会 文本
+				position = { 170 198 }
+				size = { 0 0 }
+				hbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+					visible = "yes"  
+					vbox = {
+					spacing = 5
+					text_multi = {
+					text = "SAKUYA_IG_17"
+						size = { 290 65 }
+						default_format = "#medium"  
+							}
+						}
+					}
+				}
+				widget = {  #工会 文本
+				position = { 170 268 }
+				size = { 0 0 }
+				hbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+					visible = "yes"  
+					vbox = {
+					spacing = 5
+					text_multi = {
+					text = "SAKUYA_IG_18"
+						size = { 290 65 }
+						default_format = "#medium"  
+							}
+						}
+					}
+				}
+				widget = {  #工会 文本
+				position = { 170 333 }
+				size = { 0 0 }
+				hbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+					visible = "yes"  
+					vbox = {
+					spacing = 5
+					text_multi = {
+					text = "SAKUYA_IG_19"
+						size = { 290 65 }
+						default_format = "#medium"  
+							}
+						}
+					}
+				}
+				widget = {  #工会 文本
+				position = { 170 408 }
+				size = { 0 0 }
+				hbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+					visible = "yes"  
+					vbox = {
+					spacing = 5
+					text_multi = {
+					text = "SAKUYA_IG_20"
+						size = { 290 65 }
+						default_format = "#medium"  
+							}
+						}
+					}
+				}
+				widget = {  #工会 文本
+				position = { 170 474 }
+				size = { 0 0 }
+				hbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+					visible = "yes"  
+					vbox = {
+					spacing = 5
+					text_multi = {
+					text = "SAKUYA_IG_21"
+						size = { 290 65 }
+						default_format = "#medium"  
+							}
+						}
+					}
+				}
+				widget = {  #工会 文本
+				position = { 170 544 }
+				size = { 0 0 }
+				hbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+					visible = "yes"  
+					vbox = {
+					spacing = 5
+					text_multi = {
+					text = "SAKUYA_IG_22"
+						size = { 290 65 }
+						default_format = "#medium"  
+							}
+						}
+					}
+				}
+				widget = {  #工会 文本
+				position = { 170 616 }
+				size = { 0 0 }
+				hbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+					visible = "yes"  
+					vbox = {
+					spacing = 5
+					text_multi = {
+					text = "SAKUYA_IG_23"
+						size = { 290 65 }
+						default_format = "#medium"  
+							}
+						}
+					}
+				}
+				widget = {  #肌肉笨蛋
+                position = { 480 50 }
+                size = { 70 70 }
+				vbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+					hbox = {
+						sidepanel_button_small = {
+							name = "advcm_trade_unions_1_clear"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_trade_unions_1_clear').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_add_sakuya_trade_unions_1_clear_all').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_24"
+							using = tooltip_ne
+							size = { 60 60 }
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/ig_icons/trade_unions.dds" 
+							}
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+					}
+				}
+			}
+				widget = {  #桌饺雅座一位
+                position = { 480 120 }
+                size = { 70 70 }
+				vbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+					hbox = {
+						sidepanel_button_small = {
+							name = "advcm_rural_folk_1_clear"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_rural_folk_1_clear').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_add_sakuya_rural_folk_1_clear_all').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_25"
+							using = tooltip_ne
+							size = { 60 60 }
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/ig_icons/rural_folk.dds" 
+							}
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+					}
+				}
+			}
+					widget = {  #尖酸刻薄
+						position = { 480 190 }
+						size = { 70 70 }
+						vbox = {
+							visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+							hbox = {
+						sidepanel_button_small = {
+							name = "advcm_add_sakuya_petty_bourgeoisie_1"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_petty_bourgeoisie_1_clear').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_add_sakuya_petty_bourgeoisie_1_clear_all').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_26"
+							using = tooltip_ne
+							size = { 60 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/ig_icons/petty_bourgeoisie.dds"
+								}
+							blockoverride "icon_size" {
+								size = { 50 50 }
+							}
+						}
+					}
+				}
+			}
+			widget = {  #周扒皮
+						position = { 480 260 }
+						size = { 70 70 }
+						vbox = {
+							visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+							hbox = {
+						sidepanel_button_small = {
+							name = "advcm_add_sakuya_landowners_1_clear"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_landowners_1_clear').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_add_sakuya_landowners_1_clear_all').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_27"
+							using = tooltip_ne
+							size = { 60 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/ig_icons/landowners.dds"
+								}
+							blockoverride "icon_size" {
+								size = { 50 50 }
+							}
+						}
+					}
+				}
+			}
+			widget = {  #臭老九
+						position = { 480 330 }
+						size = { 70 70 }
+						vbox = {
+							visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+							hbox = {
+						sidepanel_button_small = {
+							name = "advcm_add_sakuya_intelligensia_1_clear"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_intelligensia_1_clear').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_add_sakuya_intelligensia_1_clear_all').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_28"
+							using = tooltip_ne
+							size = { 60 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/ig_icons/intelligensia.dds"
+								}
+							blockoverride "icon_size" {
+								size = { 50 50 }
+							}
+						}
+					}
+				}
+			}
+			widget = {  #路灯挂件
+						position = { 480 400 }
+						size = { 70 70 }
+						vbox = {
+							visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+							hbox = {
+						sidepanel_button_small = {
+							name = "advcm_add_sakuya_industrialists_1_clear"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_industrialists_1_clear').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_add_sakuya_industrialists_1_clear_all').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_29"
+							using = tooltip_ne
+							size = { 60 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/ig_icons/industrialists.dds"
+								}
+							blockoverride "icon_size" {
+								size = { 50 50 }
+							}
+						}
+					}
+				}
+			}
+			widget = {  #他都信上帝了...（摊手）（看傻子的眼神）
+						position = { 480 470 }
+						size = { 70 70 }
+						vbox = {
+							visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+							hbox = {
+						sidepanel_button_small = {
+							name = "advcm_add_sakuya_devout_1_clear"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_devout_1_clear').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_add_sakuya_devout_1_clear_all').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_30"
+							using = tooltip_ne
+							size = { 60 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/ig_icons/devout.dds"
+								}
+							blockoverride "icon_size" {
+								size = { 50 50 }
+							}
+						}
+					}
+				}
+			}
+			widget = {  #肌肉笨蛋加强版（更没价值版）
+						position = { 480 540 }
+						size = { 70 70 }
+						vbox = {
+							visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+							hbox = {
+						sidepanel_button_small = {
+							name = "advcm_add_sakuya_armed_forces_1_clear"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_armed_forces_1_clear').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_add_sakuya_armed_forces_1_clear_all').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_31"
+							using = tooltip_ne
+							size = { 60 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/ig_icons/armed_forces.dds"
+								}
+							blockoverride "icon_size" {
+								size = { 50 50 }
+							}
+						}
+					}
+				}
+			}
+			widget = {  #有时候我好羡慕⑨。无知是福呢。
+						position = { 480 610 }
+						size = { 70 70 }
+						vbox = {
+							visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+							hbox = {
+						sidepanel_button_small = {
+							name = "advcm_add_sakuya_politically_unaligned_1_clear"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_politically_unaligned_1_clear').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_add_sakuya_politically_unaligned_1_clear_all').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_32"
+							using = tooltip_ne
+							size = { 60 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/ig_icons/politically_unaligned.dds"
+								}
+							blockoverride "icon_size" {
+								size = { 50 50 }
+							}
+						}
+					}
+				}
+			}
+			
+			#widget = {
+				#vbox = { #纯粹的装饰品。玩玩VFX格式。
+				#	visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+				#	position = { 5 680 }
+				#	scissor = yes
+				#	widget = {
+				#		scissor = yes
+				#		size = { 640 300 }
+				#		vfx = {
+				#			blockoverride "entity_instance" {
+				#			entity_instance = vfx_ui_plane_war_panel_fire_plane_entity
+				#				}
+				#			}
+				#		}
+				#	}
+				#vbox = { #纯粹的装饰品。当然，也是测试GUI用的小功能。
+				#	visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+				#	position = { -5 680 }
+				#	scissor = yes
+				#	size = { 660 100 }
+				#	hbox = {
+
+				#	button_standard = {
+				#		blockoverride "primary_visible" {}
+				#		blockoverride "primary_texture" {
+				#		texture = "gfx/interface/buttons/default_button_texture.dds"
+				#			alpha = 0.9
+				#		}
+						
+				#		layoutpolicy_horizontal = expanding
+				#		size = { 640 75 }
+				#		onclick = none
+				#			}
+				#		}
+				#	}
+				#} #测试失败。有一段诡异的错位。为了避免影响排版，就此封印。
+
+			
+				widget = {  #全部，加
+					vbox = { #纯粹的装饰品。玩玩VFX格式。
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+					position = { 0 -3 }
+					scissor = yes
+					widget = {
+						scissor = yes
+						size = { 220 2000 } #没什么用。但毕竟数值越大材质越大，如果数字够大可以改变彩条的一些特征.请修改第二位数字。
+						vfx = {
+							blockoverride "entity_instance" {
+							entity_instance = vfx_ui_plane_war_panel_fire_plane_entity
+								}
+							}
+						}
+					}
+					position = { 10 695 }
+					size = { 230 70 }
+					vbox = {
+						visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+						hbox = {
+							button_icon_square = {
+							texture = "gfx/interface/buttons/expand_button_bg_mouse_enter.dds"
+							name = "advcm_sakuya_all_1"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_all_1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_remove_sakuya_all_1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_33"
+							using = tooltip_ne
+							size = { 230 60 }
+							blockoverride "primary_visible" {}
+							blockoverride "primary_texture" {
+								alpha = 1
+								texture = "gfx/interface/buttons/default_button_frame.dds"
+							}
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/buttons/button_icons/check.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+
+						}
+					}
+				}
+			}
+			widget = {  #全部，复原
+				#widget = {
+				vbox = { #纯粹的装饰品。玩玩VFX格式。
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+					position = { 0 -3 }
+					scissor = yes
+					widget = {
+						scissor = yes
+						size = { 220 1000 } #没什么用。但毕竟数值越大材质越大，如果数字够大可以改变彩条的一些特征.请修改第二位数字。
+						vfx = {
+							blockoverride "entity_instance" {
+							entity_instance = vfx_ui_plane_war_panel_fire_plane_entity
+								}
+							}
+						}
+					}
+					position = { 327 695 }
+					size = { 230 70 }
+					vbox = {
+						visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_1' ) )]"
+						hbox = {
+							button_icon_square = {
+							texture = "gfx/interface/buttons/expand_button_bg_mouse_enter.dds"
+							name = "advcm_sakuya_all_remove_1"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_all_remove_1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_remove_sakuya_all_remove_1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_34"
+							using = tooltip_ne
+							size = { 230 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/buttons/button_icons/back.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+							blockoverride "primary_visible" {}
+							blockoverride "primary_texture" {
+								alpha = 1
+								texture = "gfx/interface/buttons/default_button_frame.dds"
+
+							}
+						}
+					}
+				}
+			}
+##############################################################################
+##############################################################################
+
+			widget = {
+                position = { -30 7 }
+                size = { 640 0 }
+					hbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+					visible = "yes" 
+					vbox = {
+						spacing = 5
+					text_multi = {
+					text = "SAKUYA_IG_35"
+						size = { 520 65 }
+						default_format = "#medium"  
+							}
+						}
+					}
+				}
+				widget = {  #贸易工会 极端
+                position = { 10 60 }
+                size = { 70 70 }
+				vbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+					hbox = {
+						button_icon_square = {
+							name = "advcm_add_sakuya_trade_unions_2_plus"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_trade_unions_2_plus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_remove_sakuya_trade_unions_2_plus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_36"
+							using = tooltip_ne
+							size = { 60 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/buttons/button_icons/move_left.dds" #所有极端类别都是相同图标。只有普通的才是正常不同图标。
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+					}
+				}
+			}
+			widget = {  #贸易工会
+                position = { 75 60 }
+                size = { 120 70 }
+				vbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+					hbox = {
+						button_icon_square = {
+							name = "advcm_add_sakuya_trade_unions_2"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_trade_unions_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_remove_sakuya_trade_unions_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_37"
+							using = tooltip_ne
+							size = { 120 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/ig_icons/trade_unions.dds" 
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+					}
+				}
+			}
+			widget = {  #乡野民众 极端
+                position = { 10 130 }
+                size = { 70 70 }
+				vbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+					hbox = {
+						button_icon_square = {
+							name = "advcm_add_sakuya_rural_folk_2_plus"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_rural_folk_2_plus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_remove_sakuya_rural_folk_2_plus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_38"
+							using = tooltip_ne
+							size = { 60 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/buttons/button_icons/move_left.dds" #所有极端类别都是相同图标。只有普通的才是正常不同图标。
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+					}
+				}
+			}
+			widget = {  #乡野民众
+                position = { 75 130 }
+                size = { 120 70 }
+				vbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+					hbox = {
+						button_icon_square = {
+							name = "advcm_add_sakuya_rural_folk_2"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_rural_folk_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_remove_sakuya_rural_folk_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_39"
+							using = tooltip_ne
+							size = { 120 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/ig_icons/rural_folk.dds" 
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+					}
+				}
+			}
+			widget = {  #小资产阶级 极端
+			position = { 10 200 }
+			size = { 70 70 }
+			vbox = {
+			visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+			hbox = {
+			button_icon_square = {
+				name = "advcm_add_sakuya_petty_bourgeoisie_2_plus"
+				onclick = "[GetScriptedGui('advcm_add_sakuya_petty_bourgeoisie_2_plus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+				onrightclick = "[GetScriptedGui('advcm_remove_sakuya_petty_bourgeoisie_2_plus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+				tooltip = "SAKUYA_IG_40"
+				using = tooltip_ne
+				size = { 60 60 }
+                
+				blockoverride "icon" {
+                    texture = "gfx/interface/buttons/button_icons/move_left.dds"  #所有极端类别都是相同图标。
+				}
+                
+				blockoverride "icon_size" {
+                    size = { 60 60 }
+				}
+			}
+		}
+	}
+}
+widget = {  #小资产阶级
+    position = { 75 200 }
+    size = { 120 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_petty_bourgeoisie_2"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_petty_bourgeoisie_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_petty_bourgeoisie_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_41"
+                using = tooltip_ne
+                size = { 120 60 }
+                
+                blockoverride "icon" {
+                    texture = "gfx/interface/icons/ig_icons/petty_bourgeoisie.dds"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 60 60 }
+                }
+            }
+        }
+    }
+}
+widget = {  #地主 极端
+    position = { 10 270 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_landowners"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_landowners_2_plus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_landowners_2_plus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_42"
+                using = tooltip_ne
+                size = { 60 60 }
+                
+                blockoverride "icon" {
+                    texture = "gfx/interface/buttons/button_icons/move_left.dds"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 60 60 }
+                }
+            }
+        }
+    }
+}
+widget = {  #地主
+    position = { 75 270 }
+    size = { 120 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_landowners"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_landowners_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_landowners_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_43"
+                using = tooltip_ne
+                size = { 120 60 }
+                
+                blockoverride "icon" {
+                    texture = "gfx/interface/icons/ig_icons/landowners.dds"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 60 60 }
+                }
+            }
+        }
+    }
+}
+
+widget = {  #知识分子 极端
+    position = { 10 340 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_intelligensia"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_intelligensia_2_plus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_intelligensia_2_plus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_44"
+                using = tooltip_ne
+                size = { 60 60 }
+                
+                blockoverride "icon" {
+                    texture = "gfx/interface/buttons/button_icons/move_left.dds"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 60 60 }
+                }
+            }
+        }
+    }
+}
+widget = {  #知识分子
+    position = { 75 340 }
+    size = { 120 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_intelligensia"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_intelligensia_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_intelligensia_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_45"
+                using = tooltip_ne
+                size = { 120 60 }
+                
+                blockoverride "icon" {
+                    texture = "gfx/interface/icons/ig_icons/intelligensia.dds"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 60 60 }
+                }
+            }
+        }
+    }
+}
+widget = {  #工业家 极端
+    position = { 10 410 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_industrialists"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_industrialists_2_plus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_industrialists_2_plus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_46"
+                using = tooltip_ne
+                size = { 60 60 }
+                
+                blockoverride "icon" {
+                    texture = "gfx/interface/buttons/button_icons/move_left.dds"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 60 60 }
+                }
+            }
+        }
+    }
+}
+widget = {  #工业家
+    position = { 75 410 }
+    size = { 120 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_industrialists"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_industrialists_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_industrialists_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_47"
+                using = tooltip_ne
+                size = { 120 60 }
+                
+                blockoverride "icon" {
+                    texture = "gfx/interface/icons/ig_icons/industrialists.dds"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 60 60 }
+                }
+            }
+        }
+    }
+}
+
+widget = {  #虔诚者 极端
+    position = { 10 480 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_devout"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_devout_2_plus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_devout_2_plus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_48"
+                using = tooltip_ne
+                size = { 60 60 }
+                
+                blockoverride "icon" {
+                    texture = "gfx/interface/buttons/button_icons/move_left.dds"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 60 60 }
+                }
+            }
+        }
+    }
+}
+widget = {  #虔诚者
+    position = { 75 480 }
+    size = { 120 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_devout"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_devout_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_devout_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_49"
+                using = tooltip_ne
+                size = { 120 60 }
+                
+                blockoverride "icon" {
+                    texture = "gfx/interface/icons/ig_icons/devout.dds"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 60 60 }
+                }
+            }
+        }
+    }
+}
+widget = {  #武装力量 极端
+    position = { 10 550 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_armed_forces"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_armed_forces_2_plus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_armed_forces_2_plus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_50"
+                using = tooltip_ne
+                size = { 60 60 }
+                
+                blockoverride "icon" {
+                    texture = "gfx/interface/buttons/button_icons/move_left.dds"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 60 60 }
+                }
+            }
+        }
+    }
+}
+widget = {  #武装力量
+    position = { 75 550 }
+    size = { 120 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_armed_forces"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_armed_forces_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_armed_forces_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_51"
+                using = tooltip_ne
+                size = { 120 60 }
+                
+                blockoverride "icon" {
+                    texture = "gfx/interface/icons/ig_icons/armed_forces.dds"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 60 60 }
+                }
+            }
+        }
+    }
+}
+			widget = {  #贸易工会 小
+				position = { 190 60 }
+				size = { 70 70 }
+				vbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+					hbox = {
+						button_icon_square = {
+							name = "advcm_add_sakuya_trade_unions_2_min"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_trade_unions_2_min').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_remove_sakuya_trade_unions_2_min').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_52"
+							using = tooltip_ne
+							size = { 60 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/buttons/button_icons/move_right.dds" #这种小类别也都是相同图标。只有普通的才是正常不同图标。
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+					}
+				}
+			}
+			widget = {  #乡野民众 小
+    position = { 190 130 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_rural_folk_2_min"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_rural_folk_2_min').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_rural_folk_2_min').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_53"
+                using = tooltip_ne
+                size = { 60 60 }
+                
+                blockoverride "icon" {
+                    texture = "gfx/interface/buttons/button_icons/move_right.dds"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 60 60 }
+                }
+            }
+        }
+    }
+}
+
+widget = {  #小资产阶级 小
+    position = { 190 200 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_petty_bourgeoisie_2_min"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_petty_bourgeoisie_2_min').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_petty_bourgeoisie_2_min').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_54"
+                using = tooltip_ne
+                size = { 60 60 }
+                
+                blockoverride "icon" {
+                    texture = "gfx/interface/buttons/button_icons/move_right.dds"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 60 60 }
+                }
+            }
+        }
+    }
+}
+
+widget = {  #地主 小
+    position = { 190 270 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_landowners_2_min"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_landowners_2_min').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_landowners_2_min').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_55"
+                using = tooltip_ne
+                size = { 60 60 }
+                
+                blockoverride "icon" {
+                    texture = "gfx/interface/buttons/button_icons/move_right.dds"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 60 60 }
+                }
+            }
+        }
+    }
+}
+
+widget = {  #知识分子 小
+    position = { 190 340 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_intelligensia_2_min"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_intelligensia_2_min').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_intelligensia_2_min').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_56"
+                using = tooltip_ne
+                size = { 60 60 }
+                
+                blockoverride "icon" {
+                    texture = "gfx/interface/buttons/button_icons/move_right.dds"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 60 60 }
+                }
+            }
+        }
+    }
+}
+widget = {  #工业家 小
+    position = { 190 410 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_industrialists_2_min"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_industrialists_2_min').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_industrialists_2_min').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_57"
+                using = tooltip_ne
+                size = { 60 60 }
+                
+                blockoverride "icon" {
+                    texture = "gfx/interface/buttons/button_icons/move_right.dds"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 60 60 }
+                }
+            }
+        }
+    }
+}
+
+widget = {  #虔诚者 小
+    position = { 190 480 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_devout_2_min"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_devout_2_min').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_devout_2_min').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_58"
+                using = tooltip_ne
+                size = { 60 60 }
+                
+                blockoverride "icon" {
+                    texture = "gfx/interface/buttons/button_icons/move_right.dds"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 60 60 }
+                }
+            }
+        }
+    }
+}
+
+widget = {  #武装力量 小
+    position = { 190 550 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_armed_forces_2_min"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_armed_forces_2_min').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_armed_forces_2_min').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_59"
+                using = tooltip_ne
+                size = { 60 60 }
+                
+                blockoverride "icon" {
+                    texture = "gfx/interface/buttons/button_icons/move_right.dds"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 60 60 }
+                }
+            }
+        }
+    }
+}
+			widget = {  #贸易工会 复原
+				position = { 240 60 }
+				size = { 70 70 }
+				vbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+					hbox = {
+						button_icon_square = {
+							name = "advcm_add_sakuya_trade_unions_2_clear"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_trade_unions_2_clear').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_60"
+							using = tooltip_ne
+							size = { 40 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/buttons/button_icons/back.dds" #这种小类别也都是相同图标。只有普通的才是正常不同图标。
+							}
+							
+							blockoverride "icon_size" {
+								size = { 40 40 }
+							}
+						}
+					}
+				}
+			}
+			widget = {  #乡野民众 复原
+    position = { 240 130 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_rural_folk_2_clear"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_rural_folk_2_clear').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_61"
+                using = tooltip_ne
+                size = { 40 60 }
+                
+                blockoverride "icon" {
+                    texture = "gfx/interface/buttons/button_icons/back.dds"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 40 40 }
+                }
+            }
+        }
+    }
+}
+
+widget = {  #小资产阶级 复原
+    position = { 240 200 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_petty_bourgeoisie_2_clear"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_petty_bourgeoisie_2_clear').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_62"
+                using = tooltip_ne
+                size = { 40 60 }
+                
+                blockoverride "icon" {
+                    texture = "gfx/interface/buttons/button_icons/back.dds"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 40 40 }
+                }
+            }
+        }
+    }
+}
+
+widget = {  #地主 复原
+    position = { 240 270 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_landowners_2_clear"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_landowners_2_clear').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_63"
+                using = tooltip_ne
+                size = { 40 60 }
+                
+                blockoverride "icon" {
+                    texture = "gfx/interface/buttons/button_icons/back.dds"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 40 40 }
+                }
+            }
+        }
+    }
+}
+
+widget = {  #知识分子 复原
+    position = { 240 340 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_intelligensia_2_clear"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_intelligensia_2_clear').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_64"
+                using = tooltip_ne
+                size = { 40 60 }
+                
+                blockoverride "icon" {
+                    texture = "gfx/interface/buttons/button_icons/back.dds"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 40 40 }
+                }
+            }
+        }
+    }
+}
+widget = {  #工业家 复原
+    position = { 240 410 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_industrialists_2_clear"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_industrialists_2_clear').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_65"
+                using = tooltip_ne
+                size = { 40 60 }
+                
+                blockoverride "icon" {
+                    texture = "gfx/interface/buttons/button_icons/back.dds"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 40 40 }
+                }
+            }
+        }
+    }
+}
+
+widget = {  #虔诚者 复原
+    position = { 240 480 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_devout_2_clear"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_devout_2_clear').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_66"
+                using = tooltip_ne
+                size = { 40 60 }
+                
+                blockoverride "icon" {
+                    texture = "gfx/interface/buttons/button_icons/back.dds"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 40 40 }
+                }
+            }
+        }
+    }
+}
+
+widget = {  #武装力量 复原
+    position = { 240 550 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_armed_forces_2_clear"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_armed_forces_2_clear').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_67"
+                using = tooltip_ne
+                size = { 40 60 }
+                
+                blockoverride "icon" {
+                    texture = "gfx/interface/buttons/button_icons/back.dds"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 40 40 }
+                }
+            }
+        }
+    }
+}
+			widget = {  #贸易工会 唯一
+                position = { 490 60 }
+                size = { 70 70 }
+				vbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+					hbox = {
+						button_icon_round_action = {
+							name = "advcm_add_sakuya_trade_unions_2_only"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_trade_unions_2_only').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_remove_sakuya_trade_unions_2_only').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_68"
+							using = tooltip_ne
+							size = { 60 60 }
+							scissor = yes 
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/ig_icons/trade_unions.dds" 
+								scissor = yes
+							}
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+					}
+				}
+			}
+			widget = {  #乡野民众 唯一
+    position = { 490 130 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_round_action = {
+                name = "advcm_add_sakuya_rural_folk_2_only"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_rural_folk_2_only').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_rural_folk_2_only').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_69"
+                using = tooltip_ne
+                size = { 60 60 }
+                scissor = yes 
+                blockoverride "icon" {
+                    texture = "gfx/interface/icons/ig_icons/rural_folk.dds"
+                    scissor = yes
+                }
+                blockoverride "icon_size" {
+                    size = { 60 60 }
+                }
+            }
+        }
+    }
+}
+
+widget = {  #小资产阶级 唯一
+    position = { 490 200 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_round_action = {
+                name = "advcm_add_sakuya_petty_bourgeoisie_2_only"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_petty_bourgeoisie_2_only').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_petty_bourgeoisie_2_only').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_70"
+                using = tooltip_ne
+                size = { 60 60 }
+                scissor = yes 
+                blockoverride "icon" {
+                    texture = "gfx/interface/icons/ig_icons/petty_bourgeoisie.dds"
+                    scissor = yes
+                }
+                blockoverride "icon_size" {
+                    size = { 50 50 }
+                }
+            }
+        }
+    }
+}
+widget = {  #地主 唯一
+    position = { 490 270 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_round_action = {
+                name = "advcm_add_sakuya_landowners_2_only"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_landowners_2_only').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_landowners_2_only').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_71"
+                using = tooltip_ne
+                size = { 60 60 }
+                scissor = yes 
+                blockoverride "icon" {
+                    texture = "gfx/interface/icons/ig_icons/landowners.dds"
+                    scissor = yes
+                }
+                blockoverride "icon_size" {
+                    size = { 60 60 }
+                }
+            }
+        }
+    }
+}
+
+widget = {  #知识分子 唯一
+    position = { 490 340 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_round_action = {
+                name = "advcm_add_sakuya_intelligensia_2_only"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_intelligensia_2_only').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_intelligensia_2_only').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_72"
+                using = tooltip_ne
+                size = { 60 60 }
+                scissor = yes 
+                blockoverride "icon" {
+                    texture = "gfx/interface/icons/ig_icons/intelligensia.dds"
+                    scissor = yes
+                }
+                blockoverride "icon_size" {
+                    size = { 60 60 }
+                }
+            }
+        }
+    }
+}
+widget = {  #工业家 唯一
+    position = { 490 410 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_round_action = {
+                name = "advcm_add_sakuya_industrialists_2_only"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_industrialists_2_only').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_industrialists_2_only').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_73"
+                using = tooltip_ne
+                size = { 60 60 }
+                scissor = yes 
+                blockoverride "icon" {
+                    texture = "gfx/interface/icons/ig_icons/industrialists.dds"
+                    scissor = yes
+                }
+                blockoverride "icon_size" {
+                    size = { 60 60 }
+                }
+            }
+        }
+    }
+}
+
+widget = {  #虔诚者 唯一
+    position = { 490 480 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_round_action = {
+                name = "advcm_add_sakuya_devout_2_only"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_devout_2_only').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_devout_2_only').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_74"
+                using = tooltip_ne
+                size = { 60 60 }
+                scissor = yes 
+                blockoverride "icon" {
+                    texture = "gfx/interface/icons/ig_icons/devout.dds"
+                    scissor = yes
+                }
+                blockoverride "icon_size" {
+                    size = { 60 60 }
+                }
+            }
+        }
+    }
+}
+widget = {  #武装力量 唯一
+    position = { 490 550 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+        hbox = {
+            button_icon_round_action = {
+                name = "advcm_add_sakuya_armed_forces_2_only"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_armed_forces_2_only').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_armed_forces_2_only').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_75"
+                using = tooltip_ne
+                size = { 60 60 }
+                scissor = yes 
+                blockoverride "icon" {
+                    texture = "gfx/interface/icons/ig_icons/armed_forces.dds"
+                    scissor = yes
+                }
+                blockoverride "icon_size" {
+                    size = { 60 60 }
+                }
+            }
+        }
+    }
+}
+widget = {  #支持度 文本
+				position = { 160 70 }
+				size = { 290 90 }
+				hbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+					visible = "yes"  
+					textbox = {
+						multiline = yes
+						spacing = 5
+						text_multi = {
+						text = "SAKUYA_IG_76"
+						position = { 70 -10 }
+						size = { 170 50 }
+						default_format = "#medium" 
+						using = header_font_fancy
+						using = header_font_fancy_size 
+							}
+						}
+						textbox = {
+						multiline = yes
+						spacing = 5
+						text_multi = {
+						text = "SAKUYA_IG_77"
+						size = { 180 530 }
+						position = { -70 29 }
+						default_format = "#medium" 
+							}
+						}
+					}
+				}
+				widget = {  #大按钮 删除全部 正面
+                position = { 10 620 }
+                size = { 185 20 }
+				vbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+					hbox = {
+						button_icon_square = {
+							name = "advcm_add_sakuya_all_remove_2_positive"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_all_remove_2_positive').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							#onrightclick = #"[GetScriptedGui('advcm_remove_sakuya_trade_unions_2_plus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_78"
+							using = tooltip_ne
+							size = { 185 30 }
+							text_multi = {
+								position = { 40 7 }
+								size = { 100 20 }
+							text = "SAKUYA_IG_79" 
+							default_format = "#medium" 		
+							}
+						}
+					}
+				}
+			}
+			widget = {  #大按钮 删除全部 负面
+                position = { 191 620 }
+                size = { 190 20 }
+				vbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+					hbox = {
+						button_icon_square = {
+							name = "advcm_add_sakuya_all_remove_2_negative"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_all_remove_2_negative').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							#onrightclick = #"[GetScriptedGui('advcm_remove_sakuya_trade_unions_2_plus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_80"
+							using = tooltip_ne
+							size = { 185 30 }
+							text_multi = {
+								position = { 40 7 }
+								size = { 100 20 }
+							text = "SAKUYA_IG_81" 
+							default_format = "#small" 		
+							}
+						}
+					}
+				}
+			}
+			widget = {  #大按钮 删除全部 一党执政
+                position = { 375 620 }
+                size = { 180 20 }
+				vbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+					hbox = {
+						button_icon_square = {
+							name = "advcm_add_sakuya_all_remove_2_only"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_all_remove_2_only').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							#onrightclick = #"[GetScriptedGui('advcm_remove_sakuya_trade_unions_2_plus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_82"
+							using = tooltip_ne
+							size = { 185 30 }
+							text_multi = {
+								position = { 40 7 }
+								size = { 100 20 }
+							text = "SAKUYA_IG_83" 
+							default_format = "#small" 		
+							}
+						}
+					}
+				}
+			}
+			widget = {  #全部，加
+					vbox = { #纯粹的装饰品。玩玩VFX格式。
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+					position = { 0 -3 }
+					scissor = yes
+					widget = {
+						scissor = yes
+						size = { 220 2000 } #没什么用。但毕竟数值越大材质越大，如果数字够大可以改变彩条的一些特征.请修改第二位数字。
+						vfx = {
+							blockoverride "entity_instance" {
+							entity_instance = vfx_ui_plane_war_panel_fire_plane_entity
+								}
+							}
+						}
+					}
+					position = { 10 695 }
+					size = { 230 70 }
+					vbox = {
+						visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+						hbox = {
+							button_icon_square = {
+							texture = "gfx/interface/buttons/expand_button_bg_mouse_enter.dds"
+							name = "advcm_add_sakuya_all_2"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_all_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_remove_sakuya_all_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_84"
+							using = tooltip_ne
+							size = { 230 60 }
+							blockoverride "primary_visible" {}
+							blockoverride "primary_texture" {
+								alpha = 1
+								texture = "gfx/interface/buttons/default_button_frame.dds"
+							}
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/generic_icons/in_opposition_icon.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 50 50 }
+							}
+
+						}
+					}
+				}
+			}
+			widget = {  #全部，复原
+				#widget = {
+				vbox = { #纯粹的装饰品。玩玩VFX格式。
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+					position = { 0 -3 }
+					scissor = yes
+					widget = {
+						scissor = yes
+						size = { 220 1000 } #没什么用。但毕竟数值越大材质越大，如果数字够大可以改变彩条的一些特征.请修改第二位数字。
+						vfx = {
+							blockoverride "entity_instance" {
+							entity_instance = vfx_ui_plane_war_panel_fire_plane_entity
+								}
+							}
+						}
+					}
+					position = { 327 695 }
+					size = { 230 70 }
+					vbox = {
+						visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+						hbox = {
+							button_icon_square = {
+							texture = "gfx/interface/buttons/expand_button_bg_mouse_enter.dds"
+							name = "advcm_sakuya_all_remove_2"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_all_remove_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_remove_sakuya_all_remove_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_IG_85"
+							using = tooltip_ne
+							size = { 230 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/buttons/button_icons/back.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+							blockoverride "primary_visible" {}
+							blockoverride "primary_texture" {
+								alpha = 1
+								texture = "gfx/interface/buttons/default_button_frame.dds"
+
+							}
+						}
+					}
+				}
+			}
+			widget = {  #支持度 文本
+				position = { -90 660 }
+				size = { 200 30 }
+				hbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_2' ) )]"
+					visible = "yes"  
+					textbox = {
+						multiline = yes
+						spacing = 5
+						text_multi = {
+						text = "SAKUYA_IG_86"
+						position = { 7 0 }
+						size = { 470 30 }
+						default_format = "#medium" 
+						 
+							}
+						}
+					}
+				}
+#####################################################################
+#####################################################################
+							widget = {
+                position = { -50 7 }
+                size = { 640 0 }
+					hbox = {
+					visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_3' ) )]"
+					visible = "yes" 
+					vbox = {
+						spacing = 5
+					text_multi = {
+					text = "SAKUYA_IG_87"
+						size = { 520 85 }
+						default_format = "#medium"  
+							}
+						}
+					}
+				}
+
+widget = {  #利益集团吸引力
+    position = { 0 100 }
+    size = { 140 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_3' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_interest_group_approval_add"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_interest_group_approval_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_interest_group_approval_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_88"
+                using = tooltip_ne
+                size = { 120 60 }
+                scissor = yes 
+                blockoverride "icon" {
+                    texture = "gfx/interface/buttons/button_icons/location_finder.dds"
+                    scissor = yes
+                }
+                blockoverride "icon_size" {
+                    size = { 60 60 }                  
+                }
+            }
+        }
+    }
+}
+widget = {  #利益集团吸引力 被扶持
+    position = { 115 100 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_3' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_interest_group_in_government_approval_add"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_interest_group_in_government_approval_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_interest_group_in_government_approval_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_89"
+                using = tooltip_ne
+                size = { 40 60 }
+                scissor = yes 
+                blockoverride "icon" {
+                    texture = "gfx/interface/buttons/button_icons/check.dds"
+                    scissor = yes
+                }
+                blockoverride "icon_size" {
+                    size = { 50 50 }                  
+                }
+            }
+        }
+    }
+}
+widget = {  #利益集团吸引力 被打压
+    position = { 155 100 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_3' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_interest_group_in_opposition_approval_add"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_interest_group_in_opposition_approval_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_interest_group_in_opposition_approval_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_90"
+                using = tooltip_ne
+                size = { 40 60 }
+                scissor = yes 
+                blockoverride "icon" {
+                    texture = "gfx/interface/buttons/button_icons/close.dds"
+                    scissor = yes
+                }
+                blockoverride "icon_size" {
+                    size = { 50 50 }                  
+                }
+            }
+        }
+    }
+}
+widget = {  #利益集团吸引力 各个政党-工会
+    position = { 195 100 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_3' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_interest_group_trade_unions_approval_add"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_interest_group_trade_unions_approval_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_interest_group_trade_unions_approval_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_91"
+                using = tooltip_ne
+                size = { 40 60 }
+                scissor = yes 
+                blockoverride "icon" {
+                    texture = "gfx/interface/icons/ig_icons/trade_unions.dds"
+                    scissor = yes
+                }
+                blockoverride "icon_size" {
+                    size = { 45 45 }                  
+                }
+            }
+        }
+    }
+}
+widget = {  #利益集团吸引力 各个政党-乡野民众
+    position = { 235 100 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_3' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_interest_group_rural_folk_approval_add"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_interest_group_rural_folk_approval_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_interest_group_rural_folk_approval_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_92"
+                using = tooltip_ne
+                size = { 40 60 }
+                scissor = yes 
+                blockoverride "icon" {
+                    texture = "gfx/interface/icons/ig_icons/rural_folk.dds"
+                    scissor = yes
+                }
+                blockoverride "icon_size" {
+                    size = { 45 45 }
+                }
+            }
+        }
+    }
+}
+widget = {  #利益集团吸引力 各个政党-小资产阶级
+    position = { 275 100 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_3' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_interest_group_petty_bourgeoisie_approval_add"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_interest_group_petty_bourgeoisie_approval_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_interest_group_petty_bourgeoisie_approval_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_93"
+                using = tooltip_ne
+                size = { 40 60 }
+                scissor = yes 
+                blockoverride "icon" {
+                    texture = "gfx/interface/icons/ig_icons/petty_bourgeoisie.dds"
+                    scissor = yes
+                }
+                blockoverride "icon_size" {
+                    size = { 45 45 }
+                }
+            }
+        }
+    }
+}
+widget = {  #利益集团吸引力 各个政党-地主
+    position = { 315 100 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_3' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_interest_group_landowners_approval_add"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_interest_group_landowners_approval_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_interest_group_landowners_approval_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_94"
+                using = tooltip_ne
+                size = { 40 60 }
+                scissor = yes 
+                blockoverride "icon" {
+                    texture = "gfx/interface/icons/ig_icons/landowners.dds"
+                    scissor = yes
+                }
+                blockoverride "icon_size" {
+                    size = { 45 45 }
+                }
+            }
+        }
+    }
+}
+widget = {  #利益集团吸引力 各个政党-知识分子
+    position = { 355 100 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_3' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_interest_group_intelligensia_approval_add"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_interest_group_intelligensia_approval_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_interest_group_intelligensia_approval_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_95"
+                using = tooltip_ne
+                size = { 40 60 }
+                scissor = yes 
+                blockoverride "icon" {
+                    texture = "gfx/interface/icons/ig_icons/intelligensia.dds"
+                    scissor = yes
+                }
+                blockoverride "icon_size" {
+                    size = { 45 45 }
+                }
+            }
+        }
+    }
+}
+widget = {  #利益集团吸引力 各个政党-工业家
+    position = { 395 100 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_3' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_interest_group_industrialists_approval_add"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_interest_group_industrialists_approval_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_interest_group_industrialists_approval_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_96"
+                using = tooltip_ne
+                size = { 40 60 }
+                scissor = yes 
+                blockoverride "icon" {
+                    texture = "gfx/interface/icons/ig_icons/industrialists.dds"
+                    scissor = yes
+                }
+                blockoverride "icon_size" {
+                    size = { 45 45 }
+                }
+            }
+        }
+    }
+}
+widget = {  #利益集团吸引力 各个政党-虔诚者
+    position = { 435 100 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_3' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_interest_group_devout_approval_add"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_interest_group_devout_approval_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_interest_group_devout_approval_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_97"
+                using = tooltip_ne
+                size = { 40 60 }
+                scissor = yes 
+                blockoverride "icon" {
+                    texture = "gfx/interface/icons/ig_icons/devout.dds"
+                    scissor = yes
+                }
+                blockoverride "icon_size" {
+                    size = { 45 45 }
+                }
+            }
+        }
+    }
+}
+widget = {  #利益集团吸引力 各个政党-武装力量
+    position = { 475 100 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_3' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_interest_group_armed_forces_approval_add"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_interest_group_armed_forces_approval_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_interest_group_armed_forces_approval_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_98"
+                using = tooltip_ne
+                size = { 40 60 }
+                scissor = yes 
+                blockoverride "icon" {
+                    texture = "gfx/interface/icons/ig_icons/armed_forces.dds"
+                    scissor = yes
+                }
+                blockoverride "icon_size" {
+                    size = { 42 42 }
+                }
+            }
+        }
+    }
+}
+widget = {  #利益集团吸引力 还原
+    position = { 510 100 }
+    size = { 70 70 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_3' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_interest_group_approval_clear"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_interest_group_approval_clear').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_99"
+                using = tooltip_ne
+                size = { 30 60 }
+                scissor = yes 
+                blockoverride "icon" {
+                    texture = "gfx/interface/buttons/button_icons/reset.dds"
+                    scissor = yes
+                }
+                blockoverride "icon_size" {
+                    size = { 35 35 }
+                }
+            }
+        }
+    }
+}
+widget = {  #利益集团吸引力 文字
+    position = { 10 169 }
+    size = { 0 0 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_3' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_interest_group_approval_add_notes"
+                onclick = none
+                using = tooltip_ne
+                size = { 550 40 }
+                scissor = yes
+                texture = "gfx/interface/buttons/default_button_texture.dds"
+                alpha = 0.6
+                text_multi = {
+								position = { 10 5 }
+								size = { 550 40 }
+							text = "SAKUYA_IG_100" 
+							default_format = "#medium" 	
+							alpha = 2	
+							}
+                }
+            }
+        }
+    }
+
+
+#新更新
+    widget = {  #利益集团吸引力
+    position = { 0 210 }
+    size = { 250 70 }
+    hbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_3' ) )]"
+        vbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_interest_group_approval_add"
+                onclick = "[GetScriptedGui('sakuya_ig_1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('sakuya_ig_10').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_101"
+                using = tooltip_ne
+                size = { 120 60 }
+                scissor = yes 
+                text_multi = {
+								position = { 10% 25% }
+								size = { 550 40 }
+							text = "SAKUYA_IG_102" 
+							default_format = "#medium" 	
+							alpha = 2	
+							}
+                blockoverride "icon_size" {
+                    size = { 60 60 }                  
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_interest_group_approval_add"
+                onclick = "[GetScriptedGui('sakuya_ig_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('sakuya_ig_20').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_103"
+                using = tooltip_ne
+                size = { 120 60 }
+                scissor = yes 
+                text_multi = {
+								position = { 10% 25% }
+								size = { 550 40 }
+							text = "SAKUYA_IG_104" 
+							default_format = "#medium" 	
+							alpha = 2	
+							}
+                blockoverride "icon_size" {
+                    size = { 60 60 }                  
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    widget = {  #本质上就是一个大按钮，只是按钮实际操控尺寸为0，皮肤为空白而已。
+    position = { 0 280 }
+    size = { 0 0 }
+    vbox = {
+        visible = "[GetVariableSystem.HasValue( 'sakuya_tabs', 'sakuya_tabs_3' ) )]"
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_interest_group_approval_add"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_interest_group_approval_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_interest_group_approval_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "SAKUYA_IG_105"
+                using = tooltip_ne
+                size = { 600 600 }
+                scissor = yes 
+                texture = none
+                text_multi = {
+								position = { 300 175 }
+								size = { 210 220 }
+							text = "SAKUYA_IG_106" 
+							default_format = "#xxl" 	
+							alpha = 1.4	
+							}
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/Th075Sakuya.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.7
+                    position = { -100 -20 }
+                }
+                blockoverride "icon_size" {
+                    size = { 409 484 }                  
+                }
+            }
+        }
+    }
+}
+
+
+			
+						}
+					}
+				}
+
+			}
+			
+			
+			}
+					}
+				}
+			}
+		}
+	}
+}

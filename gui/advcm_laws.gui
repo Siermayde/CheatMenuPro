@@ -1,0 +1,1958 @@
+#TGF3cyBXaW5kb3cgYnkgbXJ0YXRz
+window = {
+	name = "advcm_law_window"
+	parentanchor = center
+	position = { -8% 13% }
+	size = { 640 650 }
+	layer = windows_layer
+	filter_mouse = all
+	allow_outside = yes
+	alwaystransparent = no
+	
+	using = Window_Background
+	using = Window_Decoration
+	movable = yes
+	visible = "[GetVariableSystem.Exists('advcm_laws_visible')]"
+    
+    datacontext = "[GetVariableSystem]"
+	datacontext = "[GetPlayer]"
+	
+	
+	state = {
+		name = _show
+		using = Animation_FadeIn_Quick
+	}
+	
+	state = {
+		name = _hide
+		using = Animation_FadeOut_Quick
+	}
+
+	vbox = {
+		restrictparent_min = yes
+		using = Window_Margins
+		
+		header_pattern = {
+			layoutpolicy_horizontal = expanding
+
+
+			blockoverride "header_text"
+			{
+				text = "SAKUYA_LAW_LAW" # 法律
+			}
+
+			blockoverride "button_close"
+			{
+				onclick = "[GetVariableSystem.Toggle('advcm_laws_visible')]"
+			}
+		}
+			
+		hbox = {
+			layoutpolicy_horizontal = expanding
+			button_tab = {
+				layoutpolicy_horizontal = expanding
+				text = "SAKUYA_LAW_POWER_STRUCTURE" # 权力结构
+
+				onclick = "[GetVariableSystem.Set( 'advcm_laws_tabs', 'power_structure' )]"
+				down = "[GetVariableSystem.HasValue( 'advcm_laws_tabs', 'power_structure' ) )]"
+			}
+			
+		
+			button_tab = {
+				layoutpolicy_horizontal = expanding
+				text = "SAKUYA_LAW_ECONOMY" # 经济
+
+				onclick = "[GetVariableSystem.Set( 'advcm_laws_tabs', 'economy' )]"
+				down = "[GetVariableSystem.HasValue( 'advcm_laws_tabs', 'economy' ) )]"
+			}
+			
+			button_tab = {
+				layoutpolicy_horizontal = expanding
+				text = "SAKUYA_LAW_HUMAN_RIGHTS" # 人权
+
+				onclick = "[GetVariableSystem.Set( 'advcm_laws_tabs', 'human_rights' )]"
+				down = "[GetVariableSystem.HasValue( 'advcm_laws_tabs', 'human_rights' ) )]"
+			}
+		}
+		
+		scrollbox = {
+			name = "characters_scroll_area"
+			layoutpolicy_vertical = expanding
+			layoutpolicy_horizontal = expanding
+
+			blockoverride "scrollbox_content" {
+			
+				hbox = {
+					visible = "[GetVariableSystem.HasValue( 'advcm_laws_tabs', 'power_structure' ) )]"
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					vbox = {
+						spacing = 5
+						text_single = {
+							text = "SAKUYA_LAW_STATE" # 国家
+						}
+						
+
+						divider_clean = {
+							layoutpolicy_horizontal = expanding
+						}
+						
+						button_icon_square = {
+							name = "advcm_monarchy"
+							onclick = "[GetScriptedGui('advcm_law_monarchy').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_MONARCHY_TOOLTIP" # 点击以实施君主制政体.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/monarchy.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+
+						button_icon_square = {
+							name = "advcm_presidential_republic"
+							onclick = "[GetScriptedGui('advcm_law_presidential_republic').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_PRESIDENCY_TOOLTIP" # 点击以当总统。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/presidential_republic.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_parliamentary_republic"
+							onclick = "[GetScriptedGui('advcm_law_parliamentary_republic').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_PARLIAMENTARY_REPUBLIC_TOOLTIP" # 点击以实施议会共和制政体.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/parliamentary_republic.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_theocracy"
+							onclick = "[GetScriptedGui('advcm_law_theocracy').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_THEOCRACY_TOOLTIP" # 点击以实施神权政体.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/theocracy.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_council_republic"
+							onclick = "[GetScriptedGui('advcm_law_council_republic').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_SOVIET_REPUBLIC_TOOLTIP" # 点击以实施苏维埃共和政体.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/council_republic.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_law_chiefdom_sakuya"
+							onclick = "[GetScriptedGui('advcm_law_chiefdom_sakuya').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_NON_RULER_TOOLTIP" # 点击当非酋。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/chiefdom.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}	
+						
+						button_icon_square = {
+							name = "advcm_law_fatuan"
+							onclick = "[GetScriptedGui('advcm_law_fatuan').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_FATUAN_TOOLTIP" # 点击当法团国家
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/corporate_state.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						text_single = {
+							text = "SAKUYA_LAW_RELIGION" # 宗教
+						}
+						
+						divider_clean = {
+							layoutpolicy_horizontal = expanding
+						}
+						
+						button_icon_square = {
+							name = "advcm_state_religion"
+							onclick = "[GetScriptedGui('advcm_law_state_religion').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_NATIONAL_CHURCH_TOOLTIP" # 点击以颁布国教。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/state_religion.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_freedom_of_conscience"
+							onclick = "[GetScriptedGui('advcm_law_freedom_of_conscience').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_FREEDOM_OF_FAITH_TOOLTIP" # 点击以实施信仰自由政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/freedom_of_conscience.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_total_separation"
+							onclick = "[GetScriptedGui('advcm_law_total_separation').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_SEPARATION_OF_CHURCH_AND_STATE_TOOLTIP" # 点击以实施政教分离政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/total_separation.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "'advcm_law_state_atheism_sakuya"
+							onclick = "[GetScriptedGui('advcm_law_state_atheism_sakuya').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_STATE_ATHEISM_TOOLTIP" # 点击以实施国家无神论。这世界上没有什么救世主，也没有神仙皇帝！
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/state_atheism.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+
+						
+						text_single = {
+							text = "SAKUYA_LAW_STABILITY" # 维稳
+						}
+						
+						divider_clean = {
+							layoutpolicy_horizontal = expanding
+						}
+						
+						button_icon_square = {
+							name = "advcm_no_home_affairs"
+							onclick = "[GetScriptedGui('advcm_law_no_home_affairs').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_IGNORE_POLICY_TOOLTIP" # 点击以甩手不管爱咋咋地.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/no_home_affairs.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_national_guard"
+							onclick = "[GetScriptedGui('advcm_law_national_guard').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_NATIONAL_GUARD_POLICY_TOOLTIP" # 点击以实施国民警卫队政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/national_guard.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_secret_police"
+							onclick = "[GetScriptedGui('advcm_law_secret_police').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_SECRET_POLICE_TOOLTIP" # 点击以实施秘密警察政策.开门，盖世太保！
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/secret_police.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_guaranteed_liberties"
+							onclick = "[GetScriptedGui('advcm_law_guaranteed_liberties').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_RIGHTS_PROTECTION_POLICY_TOOLTIP" # 点击以实施保障权利政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/guaranteed_liberties.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+				
+					}
+					
+					vertical_divider_stronger_full = {}
+					
+					vbox = {
+						spacing = 5
+						layoutpolicy_vertical = expanding
+					
+						text_single = {
+							text = "SAKUYA_LAW_POWER" # 权力
+						}
+						
+						divider_clean = {
+							layoutpolicy_horizontal = expanding
+						}
+						
+						button_icon_square = {
+							name = "advcm_autocracy"
+							onclick = "[GetScriptedGui('advcm_law_autocracy').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_DICTATORSHIP_TOOLTIP" # 点击以实施独裁。别人好歹装一下，老子不演啦！爷就是法律！是权威！朕即国家！
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/autocracy.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_technocracy_sakuya"
+							onclick = "[GetScriptedGui('advcm_law_technocracy_sakuya').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_TECHNOCRACY_TOOLTIP" # 点击以实施技术治国。专业的才应该干专业的事，小孩一边去！
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/technocracy.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_oligarchy"
+							onclick = "[GetScriptedGui('advcm_law_oligarchy').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_OLIGARCHY_TOOLTIP" # 点击以实施寡头政体。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/oligarchy.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_landed_voting"
+							onclick = "[GetScriptedGui('advcm_law_landed_voting').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_LANDBASED_SUFFRAGE_TOOLTIP" # 点击以实施土地选举权政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/landed_voting.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_wealth_voting"
+							onclick = "[GetScriptedGui('advcm_law_wealth_voting').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_WEALTHBASED_SUFFRAGE_TOOLTIP" # 点击以实施财富选举权政策。有钱就是爷
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/wealth_voting.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_census_suffrage"
+							onclick = "[GetScriptedGui('advcm_law_census_suffrage').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_CENSUS_SUFFRAGE_TOOLTIP" # 点击以实施人口普查选举权政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/census_voting.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_universal_suffrage"
+							onclick = "[GetScriptedGui('advcm_law_universal_suffrage').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_UNIVERSAL_SUFFRAGE_TOOLTIP" # 点击以实施普遍选举权政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/universal_suffrage.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_anarchy"
+							onclick = "[GetScriptedGui('advcm_law_anarchy').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_ANARCHY_TOOLTIP" # 点击以实施无政府.你说的对，但是感觉不如....安那其...名字
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/anarchy.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_law_single_party_state_sakuya"
+							onclick = "[GetScriptedGui('advcm_law_single_party_state_sakuya').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_SINGLE_PARTY_TOOLTIP" # 点击实行一党制，配合选举委员会风味更佳
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/single_party_state.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_law_elder_council_sakuya"
+							onclick = "[GetScriptedGui('advcm_law_elder_council_sakuya').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_ELDER_COUNCIL_TOOLTIP" # 点击召开非酋晒卡（不是）长老会。需要政体是非酋政体，否则会有意想不到的bug。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/elder_council.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						
+						
+						text_single = {
+							text = "SAKUYA_LAW_BUREAUCRACY" # 官僚
+						}
+						
+						divider_clean = {
+							layoutpolicy_horizontal = expanding
+						}
+						
+						button_icon_square = {
+							name = "hereditary_bureaucrats"
+							onclick = "[GetScriptedGui('advcm_law_hereditary_bureaucrats').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_HEREDITARY_BUREAUCRACY_TOOLTIP" # 点击以实施世袭官僚政策。年轻的女将军虽然10岁，但她多么慈爱！慈祥！慈禧！
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/hereditary_bureaucrats.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "appointed_bureaucrats"
+							onclick = "[GetScriptedGui('advcm_law_appointed_bureaucrats').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_APPOINTED_BUREAUCRACY_TOOLTIP" # 点击以实施任命官僚政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/appointed_bureaucrats.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "elected_bureaucrats"
+							onclick = "[GetScriptedGui('advcm_law_elected_bureaucrats').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_ELECTED_BUREAUCRACY_TOOLTIP" # 点击以实施选举官僚政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/elected_bureaucrats.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						expand = {}
+						
+				
+					}
+					
+					vertical_divider_stronger_full = {}
+					
+					
+					vbox = {
+						spacing = 5
+						layoutpolicy_vertical = expanding
+					
+						text_single = {
+							text = "SAKUYA_LAW_CITIZEN" # 公民
+						}
+						
+						divider_clean = {
+							layoutpolicy_horizontal = expanding
+						}
+						
+						button_icon_square = {
+							name = "advcm_ethnostate"
+							onclick = "[GetScriptedGui('advcm_law_ethnostate').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_SINGLE_NATION_POLICY_TOOLTIP" # 点击以实施单一民族国家政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/ethnostate.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_national_supremacy"
+							onclick = "[GetScriptedGui('advcm_law_national_supremacy').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_NATIONAL_SUPREMACY_TOOLTIP" # 点击以实施民族至上政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/national_supremacy.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_racial_segregation"
+							onclick = "[GetScriptedGui('advcm_law_racial_segregation').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_RACIAL_SEGREGATION_TOOLTIP" # 点击实行种族隔离。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/racial_segregation.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_cultural_exclusion"
+							onclick = "[GetScriptedGui('advcm_law_cultural_exclusion').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_CULTURAL_EXCLUSION_TOOLTIP" # 点击实行文化排斥。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/cultural_exclusion.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_multiculturalism"
+							onclick = "[GetScriptedGui('advcm_law_multiculturalism').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_MULTICULTURALISM_TOOLTIP" # 点击实行多元文化主义。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/multicultural.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						text_single = {
+							text = "SAKUYA_LAW_MILITARY" # 军队
+						}
+						
+						divider_clean = {
+							layoutpolicy_horizontal = expanding
+						}
+						
+						button_icon_square = {
+							name = "advcm_peasant_levies"
+							onclick = "[GetScriptedGui('advcm_law_peasant_levies').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_PEASANT_CONSCRIPTION_TOOLTIP" # 点击实行农民征召制度。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/peasant_levies.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_professional_army"
+							onclick = "[GetScriptedGui('advcm_law_professional_army').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_PROFESSIONAL_ARMY_TOOLTIP" # 点击实行职业军队。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/professional_army.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_national_militia"
+							onclick = "[GetScriptedGui('advcm_law_national_militia').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_NATIONAL_MILITIA_TOOLTIP" # 点击实行国民民兵。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/national_militia.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_mass_conscription"
+							onclick = "[GetScriptedGui('advcm_law_mass_conscription').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_MASS_CONSCRIPTION_TOOLTIP" # 点击实行大规模征兵。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/mass_conscription.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						expand = {}
+				
+					}
+					
+				}
+				
+				hbox = {
+					visible = "[GetVariableSystem.HasValue( 'advcm_laws_tabs', 'economy' ) )]"
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					vbox = {
+						spacing = 5
+						text_single = {
+							text = "SAKUYA_LAW_ECONOMIC_SYSTEM" # 经济系统
+							
+						}
+						
+						divider_clean = {
+							layoutpolicy_horizontal = expanding
+						}
+						
+						button_icon_square = {
+							name = "advcm_traditionalism"
+							onclick = "[GetScriptedGui('advcm_law_traditionalism').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_TRADITIONALISM_TOOLTIP" # 点击实行传统主义。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/traditionalism.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_interventionism"
+							onclick = "[GetScriptedGui('advcm_law_interventionism').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_INTERVENTIONISM_TOOLTIP" # 点击实行干预主义。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/interventionism.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_agrarianism"
+							onclick = "[GetScriptedGui('advcm_law_agrarianism').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_AGRARIANISM_TOOLTIP" # 点击实行农本主义。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/agrarianism.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_laissez_faire"
+							onclick = "[GetScriptedGui('advcm_law_laissez_faire').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_LAISSZ_FAIRE_TOOLTIP" # 点击实行自由放任。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/laissez_faire.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_coop_ownership"
+							onclick = "[GetScriptedGui('advcm_law_coop_ownership').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_COOPERATIVE_OWNERSHIP_TOOLTIP" # 点击实行合作社所有制。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/cooperative_ownership.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_command_economy"
+							onclick = "[GetScriptedGui('advcm_law_command_economy').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_PLANNED_ECONOMY_TOOLTIP" # 点击实行计划经济。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/command_economy.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "ladvcm_law_industry_banned_sakuya"
+							onclick = "[GetScriptedGui('advcm_law_industry_banned_sakuya').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_BAN_MACHINES_TOOLTIP" # 点击Ban掉任何工业机器。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/industry_banned.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						
+						
+						text_single = {
+							text = "SAKUYA_LAW_COLONIAL_AFFAIRS" # 殖民
+							
+						}
+						
+						divider_clean = {
+							layoutpolicy_horizontal = expanding
+						}
+						
+						button_icon_square = {
+							name = "advcm_no_colonial_affairs"
+							onclick = "[GetScriptedGui('advcm_law_no_colonial_affairs').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_NO_COLONIAL_AFFAIRS_TOOLTIP" # 点击实行无殖民地事务。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/no_colonial_affairs.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_colonial_resettlement"
+							onclick = "[GetScriptedGui('advcm_law_colonial_resettlement').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_ENCOURAGE_SETTLEMENT_TOOLTIP" # 点击实行鼓励移民建立新家园。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/colonial_resettlement.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_colonial_exploitation"
+							onclick = "[GetScriptedGui('advcm_law_colonial_exploitation').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_COLONIAL_EXPLOITATION_TOOLTIP" # 点击实行殖民地剥削。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/colonial_exploitation.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_law_frontier_colonization_sakuya"
+							onclick = "[GetScriptedGui('advcm_law_frontier_colonization_sakuya').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_BORDER_COLONIZATION_TOOLTIP" # 点击实行边境殖民。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/frontier_colonization.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						
+						text_single = {
+							text = "SAKUYA_LAW_HEALTH" # 卫生
+							
+						}
+						
+						divider_clean = {
+							layoutpolicy_horizontal = expanding
+						}
+						
+						button_icon_square = {
+							name = "advcm_no_health_system"
+							onclick = "[GetScriptedGui('advcm_law_no_health_system').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_IGNORE_WELLBEING_TOOLTIP" # 点击以不管人民死活。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/no_health_system.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_charity_hospitals"
+							onclick = "[GetScriptedGui('advcm_law_charity_hospitals').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_CHARITY_HOSPITALS_TOOLTIP" # 点击实行慈善医院。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/charitable_health_system.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_private_health_insurance"
+							onclick = "[GetScriptedGui('advcm_law_private_health_insurance').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_PRIVATE_HEALTH_INSURANCE_TOOLTIP" # 点击实行私人健康保险。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/private_health_insurance.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_public_health_insurance"
+							onclick = "[GetScriptedGui('advcm_law_public_health_insurance').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_PUBLIC_HEALTH_INSURANCE_TOOLTIP" # 点击实行公共健康保险。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/public_health_insurance.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+					}
+					
+					vertical_divider_stronger_full = {}
+					
+					vbox = {
+						layoutpolicy_vertical = expanding
+						spacing = 5
+						text_single = {
+							text = "SAKUYA_LAW_COMMERCE" # 商贸
+							
+						}
+						
+						divider_clean = {
+							layoutpolicy_horizontal = expanding
+						}
+						
+						button_icon_square = {
+							name = "advcm_mercantilism"
+							onclick = "[GetScriptedGui('advcm_law_mercantilism').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_MERCANTILISM_TOOLTIP" # 点击实行重商主义。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/mercantilism.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_protectionism"
+							onclick = "[GetScriptedGui('advcm_law_protectionism').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_PROTECTIONISM_TOOLTIP" # 点击实行贸易保护主义。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/protectionism.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_free_trade"
+							onclick = "[GetScriptedGui('advcm_law_free_trade').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_FREE_TRADE_TOOLTIP" # 点击实行自由贸易。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/free_trade.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_isolationism"
+							onclick = "[GetScriptedGui('advcm_law_isolationism').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_ISOLATIONISM_TOOLTIP" # 点击实行孤立主义。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/isolationism.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						text_single = {
+							text = "SAKUYA_LAW_POLICE" # 警察
+							
+						}
+						
+						divider_clean = {
+							layoutpolicy_horizontal = expanding
+						}
+						
+						button_icon_square = {
+							name = "advcm_no_police"
+							onclick = "[GetScriptedGui('advcm_law_no_police').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_NO_POLICE_TOOLTIP" # 点击实行无警察。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/no_police.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_local_police_force"
+							onclick = "[GetScriptedGui('advcm_law_local_police_force').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_LOCAL_POLICE_TOOLTIP" # 点击以启用地方警察力量.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/local_police.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_dedicated_police_force"
+							onclick = "[GetScriptedGui('advcm_law_dedicated_police_force').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_SPECIALIZED_POLICE_TOOLTIP" # 点击以实施专用警察力量.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/dedicated_police.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_militarized_police_force"
+							onclick = "[GetScriptedGui('advcm_law_militarized_police_force').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_MILITARIZED_POLICE_TOOLTIP" # 点击以实施军事化警察部队.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/militarized_police.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+									
+						text_single = {
+							text = "SAKUYA_LAW_LAND_REFORM" # 土地改革
+							
+						}
+						
+						divider_clean = {
+							layoutpolicy_horizontal = expanding
+						}
+						
+						button_icon_square = {
+							name = "advcm_serfdom_sakuya"
+							onclick = "[GetScriptedGui('advcm_law_serfdom_sakuya').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_SERFDOM_TOOLTIP" # 点击以实行农奴制。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/serfdom.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_tenant_farmers_sakuya"
+							onclick = "[GetScriptedGui('advcm_law_tenant_farmers_sakuya').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_YANG_BAILAO_TOOLTIP" # 点击以成为杨白劳。你地主爷爷回来啦
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/tenant_farmers.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_commercialized_agriculture_sakuya"
+							onclick = "[GetScriptedGui('advcm_law_commercialized_agriculture_sakuya').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_COMMERCIAL_AGRICULTURE_TOOLTIP" # 点击以商业化农业。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/commercial_agriculture.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_homesteading_sakuya"
+							onclick = "[GetScriptedGui('advcm_law_homesteading_sakuya').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_HOMESTEAD_ACT_TOOLTIP" # 点击以实行宅基地法令。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/freeholders.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_collectivized_agriculture_sakuya"
+							onclick = "[GetScriptedGui('advcm_law_collectivized_agriculture_sakuya').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_COLLECTIVE_FARM_TOOLTIP" # 点击以建立集体农庄。吃大锅饭，看样板戏，享蜂群人生
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/collectivized_agriculture.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+
+						
+						expand = {}
+					}
+					
+					vertical_divider_stronger_full = {}
+					
+					vbox = {
+						spacing = 5
+						layoutpolicy_vertical = expanding
+						text_single = {
+							text = "SAKUYA_LAW_TAXATION" # 税务
+							
+						}
+						
+						divider_clean = {
+							layoutpolicy_horizontal = expanding
+						}
+						
+						button_icon_square = {
+							name = "advcm_consumption_based_taxation"
+							onclick = "[GetScriptedGui('advcm_law_consumption_based_taxation').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_CONSUMPTION_BASED_TAX_TOOLTIP" # 点击以实施基于消费的税收.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/consumption_based_taxation.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_land_based_taxation"
+							onclick = "[GetScriptedGui('advcm_law_land_based_taxation').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_LAND_BASED_TAX_TOOLTIP" # 点击以实施基于土地的税收。摊丁入亩？
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/land_based_taxation.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_per_capita_taxation"
+							onclick = "[GetScriptedGui('advcm_law_per_capita_taxation').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_PER_CAPITA_TAX_TOOLTIP" # 点击以实施人均税收.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/per_capita_based_taxation.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_proportional_taxation"
+							onclick = "[GetScriptedGui('advcm_law_proportional_taxation').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_PROPORTIONAL_TAX_TOOLTIP" # 点击以实施比例税收.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/proportional_taxation.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_graduated_taxation"
+							onclick = "[GetScriptedGui('advcm_law_graduated_taxation').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_GRADUATED_TAX_TOOLTIP" # 点击以实施分级税收.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/graduated_taxation.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						text_single = {
+							text = "SAKUYA_LAW_EDUCATION" # 教育
+							
+						}
+						
+						divider_clean = {
+							layoutpolicy_horizontal = expanding
+						}
+						
+						button_icon_square = {
+							name = "advcm_no_schools"
+							onclick = "[GetScriptedGui('advcm_law_no_schools').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_NO_SCHOOL_POLICY_TOOLTIP" # 点击以实施无学校政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/no_schools.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_religious_schools"
+							onclick = "[GetScriptedGui('advcm_law_religious_schools').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_RELIGIOUS_SCHOOL_TOOLTIP" # 点击以实施宗教学校政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/religious_schools.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_private_schools"
+							onclick = "[GetScriptedGui('advcm_law_private_schools').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_PRIVATE_SCHOOL_TOOLTIP" # 点击以实施私立学校政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/private_schools.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_public_schools"
+							onclick = "[GetScriptedGui('advcm_law_public_schools').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_PUBLIC_SCHOOL_TOOLTIP" # 点击以实施公共学校政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/public_schools.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						expand = {}
+					}
+				}
+				
+				hbox = {
+					visible = "[GetVariableSystem.HasValue( 'advcm_laws_tabs', 'human_rights' ) )]"
+					layoutpolicy_horizontal = expanding
+					spacing = 5
+					vbox = {
+						layoutpolicy_vertical = expanding
+						spacing = 5
+						text_single = {
+							text = "SAKUYA_LAW_FREEDOM" # 自由
+							
+						}
+						
+						divider_clean = {
+							layoutpolicy_horizontal = expanding
+						}
+						
+						button_icon_square = {
+							name = "advcm_outlawed_dissent"
+							onclick = "[GetScriptedGui('advcm_law_outlawed_dissent').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_SUPPRESS_DISSIDENTS_TOOLTIP" # 点击以实施取缔异议政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/outlawed_dissent.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_censorship"
+							onclick = "[GetScriptedGui('advcm_law_censorship').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_CENSORSHIP_TOOLTIP" # 点击以实施审查制度。**，****了，****的
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/censorship.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_right_of_assembly"
+							onclick = "[GetScriptedGui('advcm_law_right_of_assembly').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_ASSEMBLY_RIGHT_TOOLTIP" # 点击以实施集会权.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/right_of_assembly.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_protected_speech"
+							onclick = "[GetScriptedGui('advcm_law_protected_speech').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_FREE_SPEECH_TOOLTIP" # 点击以实施言论保护。    我反对你说的每句话，但我保护你说每句话的权利。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/protected_speech.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						text_single = {
+							text = "SAKUYA_LAW_WOMENS_RIGHTS" # 女权
+							
+						}
+						
+						divider_clean = {
+							layoutpolicy_horizontal = expanding
+						}
+						
+						button_icon_square = {
+							name = "advcm_legal_guardianship"
+							onclick = "[GetScriptedGui('advcm_law_legal_guardianship').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_GUARDIANSHIP_TOOLTIP" # 点击以实施法定监护人制度.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/no_womens_rights.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_propertied_women"
+							onclick = "[GetScriptedGui('advcm_law_propertied_women').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_PROPERTY_WOMEN_TOOLTIP" # 点击以实施有产阶级的妇女权益.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/women_own_property.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_women_in_the_workplace"
+							onclick = "[GetScriptedGui('advcm_law_women_in_the_workplace').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_HALF_SKY_WOMEN_TOOLTIP" # 点击以让女人能顶半边天。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/women_in_the_workplace.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_womens_suffrage"
+							onclick = "[GetScriptedGui('advcm_law_womens_suffrage').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_WOMENS_SUFFRAGE_TOOLTIP" # 点击以实施妇女选举权政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/womens_suffrage.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						text_single = {
+							text = "SAKUYA_LAW_SERVITUDE" # 奴仆
+							
+						}
+						
+						divider_clean = {
+							layoutpolicy_horizontal = expanding
+						}
+						
+						button_icon_square = {
+							name = "advcm_slavery_banned"
+							onclick = "[GetScriptedGui('advcm_law_slavery_banned').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_SUMMON_LINCOLN_TOOLTIP" # 点击以召唤林肯。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/slavery_banned.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_debt_slavery"
+							onclick = "[GetScriptedGui('advcm_law_debt_slavery').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_DEBT_SLAVERY_TOOLTIP" # 点击以实施债务奴隶制政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/debt_slavery.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_slave_trade"
+							onclick = "[GetScriptedGui('advcm_law_slave_trade').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_SCALPING_TOOLTIP" # 点击以剥头皮做靴子.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/slave_trade.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_legacy_slavery"
+							onclick = "[GetScriptedGui('advcm_law_legacy_slavery').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_TRADITIONAL_SLAVERY_TOOLTIP" # 点击以实施传统奴隶制度.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/legacy_slavery.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+					}
+					
+					vertical_divider_stronger_full = {}
+					
+					vbox = {
+						layoutpolicy_vertical = expanding
+						spacing = 5
+						text_single = {
+							text = "SAKUYA_LAW_LABOR_RIGHTS" # 工权
+							
+						}
+						
+						divider_clean = {
+							layoutpolicy_horizontal = expanding
+						}
+						
+						button_icon_square = {
+							name = "advcm_no_workers_rights_sakuya"
+							onclick = "[GetScriptedGui('advcm_law_no_workers_rights_sakuya').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_REPEAL_LABOR_RIGHTS_TOOLTIP" # 废除一切劳工权益。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/no_workers_rights.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+												
+						button_icon_square = {
+							name = "advcm_regulatory_bodies"
+							onclick = "[GetScriptedGui('advcm_law_regulatory_bodies').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_REGULATORY_AGENCIES_TOOLTIP" # 点击以实施监管机构政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/regulatory_bodies.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_workers_protections"
+							onclick = "[GetScriptedGui('advcm_law_workers_protections').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_LABOR_PROTECTION_TOOLTIP" # 点击以实施劳工保护政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/worker_protections.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						text_single = {
+							text = "SAKUYA_LAW_SOCIAL_SECURITY" # 社保
+							
+						}
+						
+						divider_clean = {
+							layoutpolicy_horizontal = expanding
+						}
+						
+						button_icon_square = {
+							name = "advcm_no_social_security"
+							onclick = "[GetScriptedGui('advcm_law_no_social_security').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_NO_SOCIAL_SECURITY_TOOLTIP" # 点击以实施无社会保障政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/no_social_security.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_poor_laws"
+							onclick = "[GetScriptedGui('advcm_law_poor_laws').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_POOR_LAWS_TOOLTIP" # 点击以实施贫民法案政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/poor_laws.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_wage_subsidies"
+							onclick = "[GetScriptedGui('advcm_law_wage_subsidies').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_WAGE_SUBSIDIES_TOOLTIP" # 点击以实施工资补贴政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/wage_controls.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_old_age_pension"
+							onclick = "[GetScriptedGui('advcm_law_old_age_pension').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_PENSION_TOOLTIP" # 点击以实施养老金政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/old_age_pension.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						expand = {}
+					}
+					
+					vertical_divider_stronger_full = {}
+					
+					vbox = {
+						layoutpolicy_vertical = expanding
+						spacing = 5
+						text_single = {
+							text = "SAKUYA_LAW_CHILDREN" # 儿童
+							
+						}
+						
+						divider_clean = {
+							layoutpolicy_horizontal = expanding
+						}
+						
+						button_icon_square = {
+							name = "advcm_child_labor_allowed"
+							onclick = "[GetScriptedGui('advcm_law_child_labor_allowed').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_ALLOW_CHILD_LABOR_TOOLTIP" # 点击以实施允许童工政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/child_labor_allowed.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_restricted_child_labor"
+							onclick = "[GetScriptedGui('advcm_law_restricted_child_labor').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_RESTRICT_CHILD_LABOR_TOOLTIP" # 点击以实施限制童工政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/restricted_child_labor.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_compulsory_primary_school"
+							onclick = "[GetScriptedGui('advcm_law_compulsory_primary_school').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_MANDATORY_EDUCATION_TOOLTIP" # 点击以实施义务教育政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/compulsory_primary_school.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						text_single = {
+							text = "SAKUYA_LAW_IMMIGRATION" # 移民
+							
+						}
+						
+						divider_clean = {
+							layoutpolicy_horizontal = expanding
+						}
+						
+						button_icon_square = {
+							name = "advcm_no_migration_controls"
+							onclick = "[GetScriptedGui('advcm_law_no_migration_controls').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_NO_IMMIGRATION_CONTROL_TOOLTIP" # 点击以实施无移民管制政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/no_migration_controls.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_migration_controls"
+							onclick = "[GetScriptedGui('advcm_law_migration_controls').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_IMMIGRATION_CONTROL_TOOLTIP" # 点击以实施移民管制政策.
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/migration_controls.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						button_icon_square = {
+							name = "advcm_closed_borders"
+							onclick = "[GetScriptedGui('advcm_law_closed_borders').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_LAW_ISOLATIONISM_TOOLTIP" # 点击以闭关锁国（物理）。
+							using = tooltip_ne
+							size = { 150 60 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/icons/law_icons/closed_borders.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 60 60 }
+							}
+						}
+						
+						expand = {}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+

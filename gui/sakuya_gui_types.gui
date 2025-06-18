@@ -1,0 +1,111 @@
+#######################################################################################
+#        /######  /###### /##   /##/##   /##/##     /##/######                        #
+#       /##__  ##/##__  #| ##  /##| ##  | #|  ##   /##/##__  ##   #######  #######    #
+#      | ##  \__| ##  \ #| ## /##/| ##  | ##\  ## /##| ##  \ ##   #######  #######    #
+#      |  ######| #######| #####/ | ##  | ## \  ####/| ########    #####    #####     #
+#       \____  #| ##__  #| ##  ## | ##  | ##  \  ##/ | ##__  ##                       #
+#       /##  \ #| ##  | #| ##\  ##| ##  | ##   | ##  | ##  | ##        #    #         #
+#      |  ######| ##  | #| ## \  #|  ######/   | ##  | ##  | ##         ####          #
+#       \______/|__/  |__|__/  \__/\______/    |__/  |__/  |__/                       #
+#######################################################################################
+
+template selected_sidepanel_sakuya_fire_gui
+{
+
+	widget = {
+		size = { 150% 150% }
+		parentanchor = center
+		block "selected_visibility" {}
+		
+		icon = {
+			using = rotate_glow_animation #也可以自定义参数
+		}
+		
+		state = {
+			name = _show
+			duration = 0.4
+			using = Animation_Curve_Default
+			alpha = 0.5
+		}
+		state = {
+			name = _hide #无需。
+			duration = 0.7
+			using = Animation_Curve_Default
+			alpha = 0
+		}
+	}
+}
+
+template shimmer_fade_in_alpha_1000 {
+	modify_texture = {
+		name = "glow"
+		texture = "gfx/interface/animation/shimmer.dds"
+		blend_mode = colordodge
+		translate_uv = { 0 0 }
+	}
+
+	state = {
+		block "trigger" {
+			trigger_on_create = yes
+			name = start
+		}
+		next = shimmer
+		duration = 0
+		alpha = 0
+
+		modify_texture = {
+			name = "glow"
+			translate_uv = { -0.5 -0.5 }
+		}
+	}
+
+	state = {
+		name = shimmer
+		duration = 1.2
+		alpha = 1
+		
+		using = Animation_Curve_Default
+
+		modify_texture = {
+			name = "glow"
+			translate_uv = { 1 1 }
+		}
+	}
+}
+
+template shimmer_fade_in_long {
+	modify_texture = {
+		name = "glow"
+		texture = "gfx/interface/animation/shimmer.dds"
+		blend_mode = colordodge
+		translate_uv = { 0 0 }
+	}
+
+	state = {
+		block "trigger" {
+			trigger_on_create = yes
+			name = start
+		}
+		next = shimmer
+		duration = 0
+		alpha = 0
+
+		modify_texture = {
+			name = "glow"
+			translate_uv = { -0.5 -0.5 }
+		}
+	}
+
+	state = {
+		name = shimmer
+		duration = 1.2
+		alpha = 1
+		
+		using = Animation_Curve_Default
+
+		modify_texture = {
+			name = "glow"
+			translate_uv = { 1 1 }
+		}
+	}
+}

@@ -1,0 +1,43 @@
+widget = {
+    layer = top
+    
+    name = advcm_button
+    position = { -10 870}
+    size = { 80 80 }
+    alpha = 0.7
+    using = Animation_ShowHide_Quick
+    
+
+    sidepanel_button_small = {
+            tooltip = "SAKUYA_TEXT_MENU_BUTTON_1"
+            onclick = "[GetVariableSystem.Toggle('advcm_main_visible')]"
+            using = maplens_generic_sound
+            input_action = go_to_details
+        name = "advcm_shortcut_button"
+        size = { 80 80 }
+        alpha = 0.6
+        blockoverride "icon" {
+            texture = "gfx/interface/icons/character_role_icons/ruler.dds"
+            alpha = 0.6
+                }
+                
+
+            blockoverride "icon_size" {
+                    size = { 120 120 }
+                }
+        
+        state = {
+            name = _mouse_enter
+            alpha = 1
+            duration = 0.7
+            using = Animation_Curve_Default
+        }
+
+        state = {
+            name = _mouse_leave
+            alpha = 0.7
+            duration = 0.2
+            using = Animation_Curve_Default
+        }
+    }
+}

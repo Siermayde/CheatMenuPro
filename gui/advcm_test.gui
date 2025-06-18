@@ -1,0 +1,2315 @@
+#有用信息：侧边：宽450像素
+window = {
+	name = "test_window"
+	parentanchor = center
+	position = { 0 0 } #主GUI的大小和位置
+	size = { 1400 1000 }
+	layer = windows_layer
+	filter_mouse = all
+	allow_outside = yes
+	alwaystransparent = no
+	using = Window_Background
+	using = Window_Decoration
+	movable = yes
+    
+    datacontext = "[GetVariableSystem]"
+	datacontext = "[GetPlayer]"
+	
+	
+	
+	
+	vbox = {
+		restrictparent_min = yes
+		using = Window_Margins
+		
+	
+					}
+					vbox = {
+		restrictparent_min = yes
+		using = Window_Margins
+		position = { 0 -450 }
+		header_pattern = {
+
+			layoutpolicy_horizontal = expanding
+			blockoverride "header_text"
+			{
+				using = shimmer_fade_in
+				text = "SAKUYA_TEXT_MENU_TITLE_1"
+				tooltip = "#V 十六夜 花开夜"
+			}
+
+			blockoverride "button_close"
+			{
+				onclick = "[ExecuteConsoleCommand('GUI.ClearWidgets test_window')]"
+			}
+		}
+	}
+widget = {  #半黑色背景
+                position = { 27 400 }
+                size = { 0 0 }
+				vbox = {
+
+					visible = "[GetVariableSystem.HasValue( 'sakuya_money_tabs', 'sakuya_money_tabs_1' ) )]"
+					hbox = {
+						scissor = yes
+						button_icon_square = {
+							scissor = yes
+							alpha = 0.4
+							blockoverride "primary_visible" {}
+							blockoverride "primary_texture" {
+								texture = "gfx/interface/buttons/expand_button_bg.dds"
+								scissor = yes
+								color = { 0.1 0.02 0.1 1 } #按钮自身是绿色的。为了更加纯粹，需要适当调整RGB。
+							}
+							name = "sakuya_money_1_back_1"
+							using = tooltip_ne
+							size = { 458 575 }
+							
+							
+							}
+						}
+					}
+				}
+widget = {
+                position = { 480 72 }
+                size = { 0 0 }
+					vbox = {
+					hbox = {
+						button_icon_square = {
+			                position = { 0 0 }
+			                size = { 0 0 }
+			                name = "sakuya_test_button"
+			                onclick = "[GetScriptedGui('sakuya_money_add_country_loan_interest_rate_mult_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+			                #
+			                 blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+								flag_icon = {
+									size = { 6 905 }
+									datacontext = "[GetPlayer]"
+									color = { 0.5 0.5 0.5 1}
+									alpha = 0.3
+								}
+							}
+						}
+					}
+				}
+			}
+
+widget = {
+
+                position = { 30 70 }
+                size = { 4 250 }
+					vbox = {
+					hbox = {
+						button_icon_square = {
+			                position = { 4 250 }
+			                size = { 4 250 }
+			                name = "sakuya_test_button"
+			                onclick = "[GetScriptedGui('sakuya_money_add_country_loan_interest_rate_mult_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+			                #
+			                 blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+								flag_icon = {
+									size = { 225 300 }
+									datacontext = "[GetPlayer]"
+									alpha = 1
+								}
+							}
+						}
+					}
+				}
+			}
+			widget = {
+
+                position = { 255 70 }
+                size = { 4 250 }
+					vbox = {
+					hbox = {
+						button_icon_square = {
+			                position = { 4 250 }
+			                size = { 4 250 }
+			                name = "sakuya_test_button"
+			                onclick = "[GetScriptedGui('sakuya_money_add_country_loan_interest_rate_mult_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+			                #
+			                 blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+								flag_icon = {
+									size = { 225 300 }
+									datacontext = "[GetPlayer]"
+									alpha = 1
+								}
+							}
+						}
+					}
+				}
+			}
+			widget = {
+
+                position = { 255 70 }
+                size = { 4 250 }
+					vbox = {
+					hbox = {
+						button_icon_square = {
+			                position = { 4 250 }
+			                size = { 4 250 }
+			                name = "sakuya_test_button"
+			                onclick = "[GetScriptedGui('sakuya_money_add_country_loan_interest_rate_mult_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+			                #
+			                 blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+								flag_icon = {
+									size = { 225 300 }
+									datacontext = "[GetPlayer]"
+									alpha = 1
+								}
+							}
+						}
+					}
+				}
+			}
+			widget = { 
+                position = { 28 70 }
+                size = { 0 250 }
+					vbox = {
+					hbox = {
+						button_icon_square = {
+			                position = { 4 250 }
+			                size = { 0 250 }
+			                name = "sakuya_test_button"
+			                onclick = "[GetScriptedGui('sakuya_money_add_country_loan_interest_rate_mult_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+			                #
+			                                 blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/mian_player_bk.png" #图标
+                    scissor = yes
+                    alpha = 1
+                    position = { 0 0 }
+                }
+                blockoverride "icon_size" {
+                	position = { 225 24 }
+                    size = { 454 300 }                  
+                }
+                blockoverride "primary_texture" {}
+							}
+						}
+					}
+				}
+				widget = { #ruler
+					 visible = "[GetScriptedGui('sakuya_main_heir').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                position = { 190 480 }
+                size = { 0 0 }
+					hbox = {
+						 position = { 0 0 } 
+					vbox = {
+
+						character_portrait_xl_torso = {
+							datacontext = "[Country.AccessRuler]"
+							size = { 0 0 }
+							blockoverride "show_hat" {}
+							blockoverride "highlight" {}
+							blockoverride "commander_order_icon" {}
+						}
+					}
+				}
+			}
+				widget = { #ruler
+					visible = "[Not(Country.HasHeir)]"
+                position = { 260 480 }
+                size = { 0 0 }
+					hbox = {
+						 position = { 0 0 } #idk why but it seems...
+					vbox = {
+
+						character_portrait_xl_torso = {
+							datacontext = "[Country.AccessRuler]"
+							size = { 0 0 }
+							blockoverride "show_hat" {}
+							blockoverride "highlight" {}
+							blockoverride "commander_order_icon" {}#thanks for discord , @1230james
+						}
+					}
+				}
+			}
+							widget = { #ruler
+					 visible = "[GetScriptedGui('sakuya_main_heir_too_young').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                position = { 260 480 }
+                size = { 0 0 }
+					hbox = {
+						 position = { 0 0 } 
+					vbox = {
+
+						character_portrait_xl_torso = {
+							datacontext = "[Country.AccessRuler]"
+							size = { 0 0 }
+							blockoverride "show_hat" {}
+							blockoverride "highlight" {}
+							blockoverride "commander_order_icon" {}#thanks for discord , @1230james
+						}
+					}
+				}
+			}
+			widget = {
+				name = "heir_character_portrait_duel"
+				#visible = "[Country.HasHeir]" 
+				 visible = "[GetScriptedGui('sakuya_main_heir').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+                position = { 360 520 }
+                size = { 0 0 }
+                    hbox = {
+                         position = { 0 0 }
+                    vbox = {
+
+                        character_portrait_duel_02 = {
+                            datacontext = "[Country.AccessHeir]"
+                            size = { 0 0 }
+                            blockoverride "show_hat" {}
+                            blockoverride "highlight" {}
+                            blockoverride "commander_order_icon" {}
+                        }
+                    }
+                }
+            }
+widget = {
+
+                position = { 30 348 }
+                size = { 0 250 }
+					vbox = {
+					hbox = {
+						button_icon_square = {
+			                position = { 0 0 }
+			                size = { 0 250 }
+			                name = "sakuya_test_button"
+			                onclick = "[GetScriptedGui('sakuya_money_add_country_loan_interest_rate_mult_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+			                #
+			                 blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+								flag_icon = {
+									size = { 160 120 }
+									datacontext = "[GetPlayer]"
+									alpha = 1
+								}
+							}
+						}
+					}
+				}
+			}
+			widget = {  #我忘了这个干什么呀的 #芝士半透明图层
+                position = { 26 459 }
+                size = { 0 0 }
+				vbox = {
+					hbox = {
+						button_icon_square = {
+							alpha = 1
+							blockoverride "primary_visible" {}
+							blockoverride "primary_texture" {
+								 texture = "gfx/interface/sakuya/bk.png" 
+								color = { 0.6 0.6 0.6 1 } #按钮自身是绿色的。为了更加纯粹，需要适当调整RGB。
+							}
+							name = "sakuya_money_1_back_1"
+							using = tooltip_ne
+							size = { 456 521 }
+							}
+						}
+					}
+				}
+widget = {
+
+                position = { 30 283 }
+                size = { 0 250 }
+					vbox = {
+					hbox = {
+						button_icon_square = {
+							
+			                position = { 0 0 }
+			                size = { 0 1 }
+			                name = "sakuya_test_button"
+			                #onclick = "[GetScriptedGui('sakuya_money_add_country_loan_interest_rate_mult_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+			                #
+			                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/mian_player_tittle.png" #图标
+                    scissor = yes
+                    alpha = 1
+                    position = { 0 0 }
+                }
+                blockoverride "icon_size" {
+                	position = { 225 0 }
+                    size = { 450 120 }                  
+                }
+                blockoverride "primary_texture" {}
+							}
+						}
+					}
+				}
+			widget = { #国家名
+                position = { 30 338 }
+                size = { 450 120 }
+				vbox = {
+					hbox = {
+
+							text_multi = {
+						autoresize = yes
+					    align = vcenter
+					    maximumsize = { 400 -1 }
+						multiline = yes
+						using = header_font_fancy
+					raw_text = "[Country.GetNameNoFlag]"
+						size = { 450 120 } 
+						using = header_font_fancy
+										using = header_font_fancy_size
+						default_format = "#medium"  
+							}
+
+						}
+
+}			
+}
+
+
+
+widget = {  #大按钮  
+                position = { 30 480 }
+				size = { 112.5 160 }
+				vbox = {
+					hbox = {
+						button_icon_square = {
+							blockoverride "icon" {
+								alpha = 1000
+             			       texture = "gfx/interface/icons/generic_icons/gdp.dds"
+             			   }
+             			   	blockoverride "icon_size" {
+                  			  size = { 60 60 }
+             			   }
+             			   alpha = 0.001
+							name = "advcm_add_sakuya_all_remove_2_negative"
+							#onclick = "[GetScriptedGui('advcm_add_sakuya_all_remove_2_negative').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = " "
+							using = tooltip_ne
+							size = { 112.5 100 }
+						}
+					}
+					hbox = {
+						button_icon_square = {
+							name = "advcm_add_sakuya_all_remove_2_negative"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_all_remove_2_negative').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = " "
+							using = tooltip_ne
+							size = { 112.5 60 }
+							textbox = {
+								raw_text = "[Country.GetGDP|DV]"
+								autoresize = yes
+								align = nobaseline
+								parentanchor = center
+							}
+						}
+					}
+				}
+			}
+			widget = {  #大按钮  
+                position = { 140 480 }
+				size = { 112.5 160 }
+				vbox = {
+					hbox = {
+						button_icon_square = {
+							blockoverride "icon" {
+								alpha = 1000
+             			       texture = "[Country.GetInfamyIconTexture]"
+             			   }
+             			   	blockoverride "icon_size" {
+                  			  size = { 60 60 }
+             			   }
+							texture = none
+              				alpha = 0.001
+							name = "advcm_add_sakuya_all_remove_2_negative"
+							#onclick = "[GetScriptedGui('sakuya_money_remove_tax_dividends_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = " "
+							using = tooltip_ne
+							size = { 112.5 100 }
+						}
+					}
+					hbox = {
+						button_icon_square = {
+							name = "advcm_add_sakuya_all_remove_2_negative"
+							onclick = "[GetScriptedGui('sakuya_money_remove_tax_dividends_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = " "
+							using = tooltip_ne
+							size = { 112.5 60 }
+							textbox = {
+							raw_text = "#BOLD [Country.GetInfamyLabel|-]#!"
+							autoresize = yes
+							align = nobaseline
+							parentanchor = center
+						}
+						}
+					}
+				}
+			}
+			widget = {  #大按钮  
+                position = { 251 480 }
+				size = { 112.5 160 }
+				vbox = {
+					hbox = {
+				button_icon_square = {
+					text_multi = {
+						alpha = 1000
+						autoresize = yes
+					    align = vcenter
+					    maximumsize = { 400 -1 }
+						multiline = yes
+						using = header_font_fancy
+						raw_text = "[LabelingHelper.GetIconForStandardOfLivingCFixedPoint(Country.GetAverageSoLByPopulation)|v]"
+						position = { 25 5 }
+						size = { 450 120 } 
+						using = header_font_fancy
+										using = header_font_fancy_size
+						default_format = "#medium"  
+							}
+							alpha = 0.001
+					name = "advcm_add_sakuya_all_remove_2_negative"
+					#onclick = "[GetScriptedGui('sakuya_money_remove_tax_dividends_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					tooltip = " "
+					using = tooltip_ne
+					size = { 112.5 100 }
+						}
+					}
+					hbox = {
+						button_icon_square = {
+							name = "advcm_add_sakuya_all_remove_2_negative"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_all_remove_2_negative').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = " "
+							using = tooltip_ne
+							size = { 112.5 60 }
+							textbox = {
+							raw_text = "[LabelingHelper.GetLabelForStandardOfLivingNoIconCFixedPoint(Country.GetAverageSoLByPopulation)|v]"
+							autoresize = yes
+							align = nobaseline
+							parentanchor = center
+						}
+						}
+					}
+				}
+			}
+			widget = {  #大按钮  
+                position = { 362 480 }
+				size = { 112.5 160 }
+				vbox = {
+					hbox = {
+						button_icon_square = {
+							blockoverride "icon" {
+								alpha = 1000
+                    texture = "[Country.GetStateReligion.GetTexture]"
+                }
+                blockoverride "icon_size" {
+                    size = { 60 60 }
+                }
+							name = "advcm_add_sakuya_all_remove_2_negative"
+							onclick = "[GetScriptedGui('sakuya_money_remove_tax_dividends_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = " "
+							using = tooltip_ne
+							size = { 112.5 100 }
+							alpha = 0.001
+						}
+					}
+					hbox = {
+						button_icon_square = {
+							name = "advcm_add_sakuya_all_remove_2_negative"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_all_remove_2_negative').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = " "
+							using = tooltip_ne
+							size = { 112.5 60 }
+							textbox = {
+							raw_text = "#v [Country.GetStateReligion.GetName]#!"
+							autoresize = yes
+							align = nobaseline
+							parentanchor = center
+						}
+						}
+					}
+				}
+			}
+			widget = {  #报告
+    position = { 45 890 }
+    size = { 360 70 }
+    vbox = {
+        hbox = {
+            button_icon_square = {
+            	text_multi = {
+                    position = { 5% 20% }
+                    size = { 200 60 }
+                    text = "点击查看国家报告！"
+                    using = header_font_fancy
+                    using = header_font_fancy_size
+                    default_format = "#medium"        
+                }
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.1 0.9 0.9 0.8 }
+                }
+                name = "sakuya_BAOGAO"
+                onclick = " none "
+                tooltip = " "
+                using = tooltip_ne
+                size = { 360 70 }
+                
+            }
+        }
+    }
+}
+
+
+widget = {  #按钮占位 #经济
+	name = "sakuya_main_j"
+    position = { 500 90 }
+    using = shimmer_fade_in
+    size = { 350 260 }
+    					state = {
+                          name = "sakuya_main_j"
+                          using = Animation_Curve_Default
+                          duration = 0.3 
+                          position = { 500 192 }            
+                          size = { 175 60 }
+                      }
+                    	state = {
+                          name = "sakuya_main_j_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.3  
+                          position = { 500 90 }            
+                          size = { 350 260 }
+                      }
+    vbox = {
+        hbox = {
+            button_icon_square = {
+            	    state = {
+                          name = "sakuya_main_j"
+                          using = Animation_Curve_Default
+                          duration = 0.3             
+                          size = { 350 60 }
+                          next = sakuya_main_j_2
+                      }
+                      state = {
+                          name = "sakuya_main_j_2"
+                          using = Animation_Curve_Default
+                          duration = 0.3          
+                          size = { 175 60 }
+                      }
+                      state = {
+                          name = "sakuya_main_j_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4   
+                          position = { 500 90 }            
+                          size = { 350 260 }
+                      }
+            	start_sound = {
+					soundeffect = "event:/SFX/UI/Frontend/start_panel_show"
+				}
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                	using = shimmer_fade_in
+                    blockoverride "trigger" {
+											trigger_on_create = yes
+											name = ui_guide_shimmer_fade_in
+										}
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 1 0.7 0.2 1 }
+                }
+                name = "sakuya_money_add_country_loan_interest_broken"
+                onclick = "[ExecuteConsoleCommand('gui.createwidget gui/sakuya_money.gui sakuya_money_window')]"
+				onclick = "[GetVariableSystem.Set( 'sakuya_money_tabs', 'sakuya_money_tabs_1' )]"
+				onrightclick = "[ExecuteConsoleCommand('GUI.ClearWidgets sakuya_money_window')]"
+                tooltip = "#p 左键开启#gold 经济#!菜单#!。"
+                using = tooltip_ne
+                size = { 350 260 }
+                blockoverride "icon" {
+                	  state = {
+                          name = "sakuya_main_j"
+                          using = Animation_Curve_Default
+                          duration = 0.6             
+                          alpha = 0.1
+                      }
+                      state = {
+                          name = "sakuya_main_j_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4   
+                          alpha = 1
+                      }
+                	using = shimmer_fade_in
+                    blockoverride "trigger" {
+											trigger_on_create = yes
+											name = ui_guide_shimmer_fade_in
+										}
+                    texture = "gfx/interface/sakuya/main/jingji.png"
+                }
+                blockoverride "icon_size" {
+                    size = { 98% 98% }
+                }
+                text_multi = {
+                	state = {
+                          name = "sakuya_main_j"
+                          using = Animation_Curve_Default
+                          duration = 0.3             
+                          alpha = 0
+                      }
+                      state = {
+                          name = "sakuya_main_j_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4   
+                          alpha = 1
+                      }
+                    position = { 12 185 }
+                    size = { 350 100 }
+                    text = "经济"
+                    using = header_font_fancy
+                    using = header_font_fancy_size
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+widget = {  #按钮占位 #经济
+	state = {
+                          name = "sakuya_main_j"
+                          using = Animation_Curve_Default
+                          duration = 0.3             
+                          alpha = 0
+                      }
+                      state = {
+                          name = "sakuya_main_j_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4   
+                          alpha = 1
+                      }
+	using = shimmer_fade_in
+    position = { 855 90 }
+    size = { 170 150 }
+    vbox = {
+        hbox = {
+            button_icon_square = {
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.8 0.4 0.2 1 }
+                }
+                name = "sakuya_money_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('sakuya_money_1_add_100000000').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('sakuya_money_1_remove_100000000').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "左键#p 增加#!尽可能多的黄金储存。#n 右键#!相反。 #bold 更多功能请直接点击左侧的“经济”窗口。"
+                using = tooltip_ne
+                size = { 170 150 }
+                blockoverride "icon" {
+                	            		using = shimmer_fade_in
+                    blockoverride "trigger" {
+											trigger_on_create = yes
+											name = ui_guide_shimmer_fade_in
+										}
+                    texture = "gfx/interface/sakuya/main/jinku.png"	
+                }
+                blockoverride "icon_size" {
+                    size = { 96% 96% }
+                }
+                text_multi = {
+                    position = { 12 90 }
+                    size = { 170 50 }
+                    text = "金库"
+                    using = header_font_fancy
+                    using = header_font_fancy_size
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+widget = {  #按钮占位 #经济
+	state = {
+                          name = "sakuya_main_j"
+                          using = Animation_Curve_Default
+                          duration = 0.3             
+                          alpha = 0
+                      }
+                      state = {
+                          name = "sakuya_main_j_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4   
+                          alpha = 1
+                      }
+	using = shimmer_fade_in
+    position = { 855 240 }
+    size = { 170 110 }
+    vbox = {
+        hbox = {
+            button_icon_square = {
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = {1 1 1 1 }
+                }
+                name = "sakuya_money_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('sakuya_money_add_country_tax_income_add_7').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('sakuya_money_add_country_tax_income_clear').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "#bold 左键增加收支流水，右键删除。#!    #v 更多功能请去#gold 经济#!按钮。#!"
+                using = tooltip_ne
+                size = { 170 110 }
+                blockoverride "icon" {
+                	            		using = shimmer_fade_in
+                    blockoverride "trigger" {
+											trigger_on_create = yes
+											name = ui_guide_shimmer_fade_in
+										}
+                    texture = "gfx/interface/sakuya/main/jieyu.png"
+                }
+                blockoverride "icon_size" {
+                    size = { 96% 95% }
+                }
+                text_multi = {
+                    position = { 12 52	 }
+                    size = { 170 50 }
+                    text = "结余"
+                    using = header_font_fancy
+                    using = header_font_fancy_size
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+
+widget = {  #按钮占位 #快捷菜单_背景板
+	using = shimmer_fade_in
+	name = "sakuya_main_k"
+state = {
+                          name = sakuya_main_k
+                          using = Animation_Curve_Default
+                          duration = 0.2                  
+                          position_x = 1030
+                          position_y = -100
+                          next = sakuya_main_k_2
+                      }
+                      state = {
+                          name = sakuya_main_k_2
+                          using = Animation_Curve_Default
+                          duration = 0.4                 
+                          position_x = 500
+                          position_y = -100
+                          size = { 820 479 }
+                          next = reset
+                      }
+
+                      state = {
+                          name = sakuya_main_k_button_reset
+                          duration = 0.4
+                          position_x = 1030
+                          position_y = 90
+                          size = { 320 479 }
+                                }
+    position = { 1030 90 }
+    size = { 320 479 }
+    vbox = {
+        hbox = {
+            button_icon_square = {
+            	name = "sakuya_main_k_button"
+            	state = {
+                          name = sakuya_main_k_button
+                          using = Animation_Curve_Default
+                          duration = 0.2                 
+                          size = { 320 100 }
+                          next = sakuya_main_k_button_2
+                        }
+                        state = {
+                          name = sakuya_main_k_button_2
+                          using = Animation_Curve_Default
+                          duration = 0.4                 
+                          size = { 850 100 }
+                          next = reset
+                      }
+
+                 state = {
+                          name = sakuya_main_k_button_reset
+                          duration = 0.4
+                          size = { 320 479 }
+                                }
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.7 0.5 0.3 1 }
+                }
+                size = { 320 479 }
+            }
+        }
+    }
+}
+widget = {  #按钮占位 #快捷菜单
+	name = "sakuya_main_k"
+	using = shimmer_fade_in
+    position = { 1030 90 }
+    size = { 320 479 }
+    					state = {
+                          name = sakuya_main_k
+                          using = Animation_Curve_Default
+                          duration = 0.2                  
+                          position_x = 1030
+                          position_y = -100
+                          next = sakuya_main_k_2
+                      }
+                      state = {
+                          name = sakuya_main_k_2
+                          using = Animation_Curve_Default
+                          duration = 0.4                 
+                          position_x = 500
+                          position_y = -100
+                          size = { 820 479 }
+                          next = reset
+                      }
+
+                      state = {
+                          name = sakuya_main_k_button_reset
+                          duration = 0.4
+                          position_x = 1030
+                          position_y = 90
+                          size = { 320 479 }
+                                }
+
+    vbox = {
+        hbox = {
+            button = {
+
+            	background = {
+            		using = shimmer_fade_in
+            		name = "sakuya_main_k_button"
+                    texture = "gfx/interface/sakuya/main/kuaijiecaidan.png"
+                    alpha = 0.8
+                    fittype = centercrop
+                    parentanchor = center
+                    #scissor = yes
+                    blockoverride "trigger" {
+						trigger_on_create = yes
+					
+
+                      state = {
+                          name = sakuya_main_k_button_reset
+                          duration = 0.4
+                          position_x = 1030
+                          position_y = 90
+                          size = { 320 479 }
+                                }
+					}
+                }
+                blockoverride "icon_size" {
+                    size = { 98% 98% }
+                }
+            	alpha = 1
+                name = "sakuya_main_k_button"
+                onclick = "[PdxGuiTriggerAllAnimations('sakuya_main_k_button')]"
+                onclick = "[PdxGuiTriggerAllAnimations('sakuya_main_k')]"
+                onclick = "[PdxGuiTriggerAllAnimations('sakuya_main_j')]"
+                onclick = "[PdxGuiTriggerAllAnimations('sakuya_main_l')]"
+                onclick = "[PdxGuiTriggerAllAnimations('sakuya_main_m')]"
+                onclick = "[PdxGuiTriggerAllAnimations('sakuya_main_n')]"
+                onclick = "[PdxGuiTriggerAllAnimations('sakuya_main_o')]"
+                onclick = "[PdxGuiTriggerAllAnimations('sakuya_main_o_tittle')]"
+                onclick = "[PdxGuiTriggerAllAnimations('sakuya_main_k_tittle')]"
+                onrightclick = "[PdxGuiTriggerAllAnimations('sakuya_main_k_button_reset')]"
+                onrightclick = "[PdxGuiTriggerAllAnimations('sakuya_main_k_reset')]"
+                onrightclick = "[PdxGuiTriggerAllAnimations('sakuya_main_j_reset')]"
+                onrightclick = "[PdxGuiTriggerAllAnimations('sakuya_main_l_reset')]"
+                onrightclick = "[PdxGuiTriggerAllAnimations('sakuya_main_m_reset')]"
+                onrightclick = "[PdxGuiTriggerAllAnimations('sakuya_main_n_reset')]"
+                onrightclick = "[PdxGuiTriggerAllAnimations('sakuya_main_o_reset')]"
+                onrightclick = "[PdxGuiTriggerAllAnimations('sakuya_main_k_tittle_reset')]"
+                onrightclick = "[PdxGuiTriggerAllAnimations('sakuya_main_o_tittle_reset')]"    
+
+                state = {
+                          name = sakuya_main_k_button
+                          using = Animation_Curve_Default
+                          duration = 0.2                 
+                          size = { 320 100 }
+                          next = sakuya_main_k_button_2
+                        }
+                        state = {
+                          name = sakuya_main_k_button_2
+                          using = Animation_Curve_Default
+                          duration = 0.4                 
+                          size = { 850 100 }
+                          next = reset
+                      }
+
+                 state = {
+                          name = sakuya_main_k_button_reset
+                          duration = 0.4
+                          size = { 320 479 }
+                                }
+
+
+                tooltip = "#V #P 左键#!#!打开快捷菜单。#V #N 右键#!关闭。 切勿按的太过频繁了！ "
+                using = tooltip_ne
+                size = { 320 479 }
+                text_multi = {
+
+                	name = "sakuya_main_k_tittle"
+                    position = { 5% 83% }
+                    size = { 300 100 }
+                    text = "#white 快捷修改"
+                    using = header_font_fancy
+                    using = header_font_fancy_size
+                    default_format = "#medium"  
+
+                state = {
+                          name = sakuya_main_k_tittle
+                          using = Animation_Curve_Default
+                          duration = 0.2                 
+                          position_x = 20
+                          position_y = 10
+                          #next = sakuya_main_k_button_2
+                        }
+                state = {
+                          name = sakuya_main_k_tittle_reset
+                          using = Animation_Curve_Default
+                          duration = 0.4                 
+                          position_x = 5
+                          position_y = 389
+                          next = reset
+                      }      
+                }
+            }
+        }
+    }
+}
+			
+
+
+
+widget = {  #按钮占位 #经济
+	name = "sakuya_main_l"
+	using = shimmer_fade_in
+    position = { 500 355 }
+    size = { 350 140 }
+    state = {
+                          name = "sakuya_main_l"
+                          using = Animation_Curve_Default
+                          duration = 0.4
+                          position = { 576 355 }      
+                          next = "sakuya_main_l_1"     
+                      }
+                      state = {
+                          name = "sakuya_main_l_1"
+                          using = Animation_Curve_Default
+                          duration = 0.4
+                          position = { 586 152 }           
+                      }
+                    	state = {
+                          name = "sakuya_main_l_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4   
+                          position = { 500 355 }
+                          size = { 350 140 }           
+                      }
+    
+    vbox = {
+        hbox = {
+            button_icon_square = {
+            	state = {
+                          name = "sakuya_main_l"
+                          using = Animation_Curve_Default
+                          duration = 0.4            
+                          size = { 175 140 }
+                          next = sakuya_main_l_2
+                      }
+                      state = {
+                          name = "sakuya_main_l_2"
+                          using = Animation_Curve_Default
+                          duration = 0.4          
+                          size = { 175 60 }
+                      }
+                      state = {
+                          name = "sakuya_main_l_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4  
+                          position = { 500 355 }           
+                          size = { 350 140 }
+                      }
+            	using = shimmer_fade_in
+            	alpha = 1
+            	blockoverride "icon" {
+            		state = {
+                          name = "sakuya_main_j"
+                          using = Animation_Curve_Default
+                          duration = 0.4            
+                          alpha = 0.1
+                      }
+                      state = {
+                          name = "sakuya_main_j_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4   
+                          alpha = 1
+                      }
+
+            		#using = shimmer_fade_in
+                    blockoverride "trigger" {
+											trigger_on_create = yes
+											name = ui_guide_shimmer_fade_in
+										}
+            		alpha = 0.6
+                    texture = "gfx/interface/sakuya/main/liyijituan.png"
+                }
+                blockoverride "icon_size" {
+                    size = { 98% 94% }
+                }
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                	name = "sakuya_main_l"
+                	state = {
+                          name = "sakuya_main_l"
+                          using = Animation_Curve_Default
+                          duration = 0.4         
+                          size = { 175 140 }
+                          next = sakuya_main_l_2
+
+                      }
+                      state = {
+                          name = "sakuya_main_l_2"
+                          using = Animation_Curve_Default
+                          duration = 0.4        
+                          size = { 175 60 }
+                      }
+                      state = {
+                          name = "sakuya_main_l_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4             
+                          size = { 350 140 }
+                      }
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.1 0.5 0.7 1 }
+                }
+                name = "sakuya_money_add_country_loan_interest_broken"
+                onclick = "[ExecuteConsoleCommand('gui.createwidget gui/sakuya.gui sakuya_window')]"
+ 				onclick = "[GetVariableSystem.Set( 'sakuya_tabs', 'sakuya_tabs_1' )]"
+ 				onrightclick = "[ExecuteConsoleCommand('GUI.ClearWidgets sakuya_window')]"
+                tooltip = "#p 左键开启#gold 利益集团#!菜单#!,#n 右键关闭#!。"
+                using = tooltip_ne
+                size = { 350 140 }
+                text_multi = {
+                	state = {
+                          name = "sakuya_main_j"
+                          using = Animation_Curve_Default
+                          duration = 0.3             
+                          alpha = 0
+                      }
+                      state = {
+                          name = "sakuya_main_j_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4   
+                          alpha = 1
+                      }
+                    position = { 12 65 }
+                    size = { 350 100 }
+                    text = "利益集团"
+                    using = header_font_fancy
+                    using = header_font_fancy_size
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+widget = {  #按钮占位 #支持度
+	state = {
+                          name = "sakuya_main_j"
+                          using = Animation_Curve_Default
+                          duration = 0.3             
+                          alpha = 0
+                      }
+                      state = {
+                          name = "sakuya_main_j_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4   
+                          alpha = 1
+                      }
+	using = shimmer_fade_in
+    position = { 655 499 }
+    size = { 195 70 }
+    vbox = {
+        hbox = {
+            button_icon_square = {
+            	blockoverride "icon" {
+            		            		using = shimmer_fade_in
+                    blockoverride "trigger" {
+											trigger_on_create = yes
+											name = ui_guide_shimmer_fade_in
+										}
+                    texture = "gfx/interface/sakuya/main/zhichidu.png"
+                    alpha = 0.8
+                }
+                blockoverride "icon_size" {
+                    size = { 96% 94% }
+                }
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.3 1 0 1 }
+                }
+                name = "sakuya_money_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('advcm_add_sakuya_all_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('advcm_remove_sakuya_all_remove_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "#v 左键增加全部 #p 利益集团#!的支持度，右键取消。 #!#bold 更多功能请点击上方的#gold 利益集团#!大按钮。#!"
+                using = tooltip_ne
+                size = { 195 70 }
+                text_multi = {
+                    position = { 5 15 }
+                    size = { 180 50 }
+                    text = "支持度"
+                    using = header_font_fancy
+                    using = header_font_fancy_size
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+widget = {  #按钮占位 #法律
+	name = "sakuya_main_m"
+	 state = {
+                          name = "sakuya_main_m"
+                          using = Animation_Curve_Default
+                          duration = 0.3 
+                          position = { 850 355 }     
+                          next = "sakuya_main_m_1"     
+                      }
+                      state = {
+                          name = "sakuya_main_m_1"
+                          using = Animation_Curve_Default
+                          duration = 0.3
+                          position = { 850 115 }           
+                      }
+                    	state = {
+                          name = "sakuya_main_m_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4   
+                          position = { 855 355 }          
+                      }
+	using = shimmer_fade_in
+    position = { 855 355 }
+    size = { 170 214 }
+    vbox = {
+        hbox = {
+            button_icon_square = {
+            	name = "sakuya_main_m"
+            		state = {
+                          name = "sakuya_main_m"
+                          using = Animation_Curve_Default
+                          duration = 0.3             
+                          size = { 175 214 }
+                          next = sakuya_main_m_2
+                      }
+                      state = {
+                          name = "sakuya_main_m_2"
+                          using = Animation_Curve_Default
+                          duration = 0.3          
+                          size = { 175 60 }
+                      }
+                      state = {
+                          name = "sakuya_main_m_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4   
+                            position = { 855 355 }
+    						size = { 170 214 }
+                      }
+            	blockoverride "icon" {
+            		state = {
+                          name = "sakuya_main_j"
+                          using = Animation_Curve_Default
+                          duration = 0.6             
+                          alpha = 0.1
+                      }
+                      state = {
+                          name = "sakuya_main_j_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4   
+                          alpha = 1
+                      }
+            		            		using = shimmer_fade_in
+                    blockoverride "trigger" {
+											trigger_on_create = yes
+											name = ui_guide_shimmer_fade_in
+										}
+                    texture = "gfx/interface/sakuya/main/falv.png"
+                    alpha = 0.8
+                }
+                blockoverride "icon_size" {
+                    size = { 96% 96% }
+                }
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.3 1 1 1 }
+                }
+                name = "sakuya_money_add_country_loan_interest_broken"
+                onclick = "[ExecuteConsoleCommand('gui.createwidget gui/advcm_laws.gui advcm_law_window')]"
+				onclick = "[GetVariableSystem.Set( 'advcm_laws_tabs', 'power_structure' )]"
+				onrightclick = "[ExecuteConsoleCommand('GUI.ClearWidgets advcm_law_window')]"
+                tooltip = "#p 左键开启#gold 法律#!菜单#!,#n 右键关闭#!。"
+                using = tooltip_ne
+                size = { 170 214 }
+                text_multi = {
+                	state = {
+                          name = "sakuya_main_j"
+                          using = Animation_Curve_Default
+                          duration = 0.3             
+                          alpha = 0
+                      }
+                      state = {
+                          name = "sakuya_main_j_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4   
+                          alpha = 1
+                      }
+                    position = { 10 68% }
+                    size = { 140 80 }
+                    text = "法律"
+                    using = header_font_fancy
+                    using = header_font_fancy_size
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+			widget = { #解决kawashiro图标总是莫名其妙消失的问题
+
+				using = shimmer_fade_in
+                position = { 28 70 }
+                size = { 0 250 }
+					vbox = {
+					hbox = {
+						button_icon_square = {
+			                position = { 4 250 }
+			                size = { 0 250 }
+			                name = "sakuya_test_button"
+			                onclick = "[GetScriptedGui('sakuya_money_add_country_loan_interest_rate_mult_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+			                #
+			                                 blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/Kawashiromain.png" #图标 不知为什么，相同的图标可能会消失，只能复制一个。
+                    scissor = yes
+                    alpha = 0.8
+                    position = { 0 0 }
+                }
+                blockoverride "icon_size" {
+                	position = { 350 690 }
+                    size = { 205 142 }                  
+                }
+                blockoverride "primary_texture" {}
+							}
+						}
+					}
+				}
+widget = {  #按钮占位 #下方按钮
+	state = {
+                          name = "sakuya_main_j"
+                          using = Animation_Curve_Default
+                          duration = 0.3             
+                          alpha = 0
+                      }
+                      state = {
+                          name = "sakuya_main_j_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4   
+                          alpha = 1
+                      }
+	using = shimmer_fade_in
+    position = { 600 66.4% }
+    size = { 745 50 }
+    hbox = {
+        vbox = {
+            button_icon_square = {
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.5 0.8 0.7 0.7 }
+                }
+                name = "sakuya_money_add_country_loan_interest_broken"
+                onclick = " none "
+                tooltip = " "
+                using = tooltip_ne
+                size = { 135 50 }
+                text_multi = {
+                    position = { 36% 40% }
+                    size = { 90 40 }
+                    text = "识字率"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.4 0.4 0.7 0.7 }
+                }
+                name = "sakuya_money_add_country_loan_interest_broken"
+                onclick = " none "
+                tooltip = " "
+                using = tooltip_ne
+                size = { 120 50 }
+                text_multi = {
+                    position = { 5% 40% }
+                    size = { 100 40 }
+                    text = "水平"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.8 0.8 0.5 0.7 }
+                }
+                name = "sakuya_money_add_country_loan_interest_broken"
+                onclick = " none "
+                tooltip = " "
+                using = tooltip_ne
+                size = { 120 50 }
+                text_multi = {
+                    position = { 5% 40% }
+                    size = { 140 40 }
+                    text = "人口"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.8 0.3 0.4 0.6 }
+                }
+                name = "sakuya_money_add_country_loan_interest_broken"
+                onclick = " none "
+                tooltip = " "
+                using = tooltip_ne
+                size = { 120 50 }
+                text_multi = {
+                    position = { 5% 40% }
+                    size = { 140 40 }
+                    text = "激进派"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.3 0.8 0.4 0.3 }
+                }
+                name = "sakuya_money_add_country_loan_interest_broken"
+                onclick = " none "
+                tooltip = " "
+                using = tooltip_ne
+                size = { 120 50 }
+                text_multi = {
+                    position = { 5% 40% }
+                    size = { 140 40 }
+                    text = "效忠派"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.2 0.1 0.2 0.5 }
+                }
+                name = "sakuya_money_add_country_loan_interest_broken"
+                onclick = " none "
+                tooltip = " "
+                using = tooltip_ne
+                size = { 120 50 }
+                text_multi = {
+                    position = { 5% 40% }
+                    size = { 140 40 }
+                    text = "恶名"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+
+    }
+}
+widget = {
+	state = {
+                          name = "sakuya_main_j"
+                          using = Animation_Curve_Default
+                          duration = 0.3             
+                          alpha = 0
+                      }
+                      state = {
+                          name = "sakuya_main_j_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4   
+                          alpha = 1
+                      }
+				using = shimmer_fade_in  #圆形按钮 #底座
+                position = { 485 540 }
+                size = { 180 180 }
+				vbox = {
+					hbox = {
+						button = {
+							alpha = 0.8
+                    texture = "gfx/interface/sakuya/main/Lunadial.png"
+                    color = { 0.6 0.5 0.5 0.8 }
+							cogwheel_animation_small = {
+									size = { 80 80 }
+									position = { 10 33 }
+									}
+									cogwheel_animation_small = {
+									size = { 100 100 }
+									alpha = 0.5
+									position = { 40 83 }
+									}
+									cogwheel_animation_small = {
+									size = { 100 100 }
+									alpha = 1
+									position = { 70 33 }
+									}
+									cogwheel_animation_small = {
+									size = { 40 40 }
+									alpha = 1
+									color = { 1 0.5 0.5 1 }
+									position = { 50 63 }
+									}
+									cogwheel_animation_small = {
+									size = { 70 70 }
+									alpha = 1
+									position = { 70 83 }
+									}
+									cogwheel_animation_small = {
+									size = { 60 60 }
+									alpha = 1
+									position = { 28 13 }
+									}
+									cogwheel_animation_small = {
+									size = { 50 50 }
+									alpha = 1
+									position = { 78 33 }
+									}
+							name = "advcm_luna"
+							size = { 180 180 }
+							scissor = yes 
+							
+						}
+					}
+				}
+			}
+			widget = {
+				state = {
+                          name = "sakuya_main_j"
+                          using = Animation_Curve_Default
+                          duration = 0.3             
+                          alpha = 0
+                      }
+                      state = {
+                          name = "sakuya_main_j_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4   
+                          alpha = 1
+                      }
+				using = shimmer_fade_in  #按钮占位 #关于
+    			position = { 485 540 }
+                size = { 180 180 }
+   				 vbox = {
+       				 hbox = {
+           				 button = {
+            	            	icon = {
+            	            		visible = "[EqualTo_int32(TimeKeeper.GetTickOfDay,'(int32)0')]"
+            	            		size = { 85% 85% }
+            	            		position = { 16% 10% }
+            		using = shimmer_fade_in
+                    blockoverride "trigger" {
+											trigger_on_create = yes
+											name = ui_guide_shimmer_fade_in
+										}
+                    texture = "gfx/interface/sakuya/main/luna.png"
+                    alpha = 1
+                }
+								icon = {
+            	            		visible = "[EqualTo_int32(TimeKeeper.GetTickOfDay,'(int32)1')]"
+            	            		size = { 66% 66% }
+            	            		position = { -10% 16% }
+            		using = shimmer_fade_in
+                    blockoverride "trigger" {
+											trigger_on_create = yes
+											name = ui_guide_shimmer_fade_in
+										}
+                    texture = "gfx/interface/sakuya/main/sunny.png"
+                }
+                icon = {
+            	            		visible = "[EqualTo_int32(TimeKeeper.GetTickOfDay,'(int32)2')]"
+            	            		size = { 66% 66% }
+            	            		position = { 16% 16% }
+            		using = shimmer_fade_in
+                    blockoverride "trigger" {
+											trigger_on_create = yes
+											name = ui_guide_shimmer_fade_in
+										}
+                    texture = "gfx/interface/sakuya/main/sunny.png"
+                }
+                icon = {
+            	            		visible = "[EqualTo_int32(TimeKeeper.GetTickOfDay,'(int32)3')]"
+            	            		size = { 66% 66% }
+            	            		position = { 46% 16% }
+            		using = shimmer_fade_in
+                    blockoverride "trigger" {
+											trigger_on_create = yes
+											name = ui_guide_shimmer_fade_in
+										}
+                    texture = "gfx/interface/sakuya/main/sunny.png"
+                }
+                blockoverride "icon_size" {
+                    size = { 97% 96% }
+                }
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                }
+                name = "sakuya_money_add_country_loan_interest_broken"
+                using = tooltip_ne
+                size = { 130 130 }
+            }
+        }
+    }
+}
+widget = {  #圆形按钮 #表盘
+	state = {
+                          name = "sakuya_main_j"
+                          using = Animation_Curve_Default
+                          duration = 0.3             
+                          alpha = 0
+                      }
+                      state = {
+                          name = "sakuya_main_j_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4   
+                          alpha = 1
+                      }
+					using = shimmer_fade_in
+                position = { 485 540 }
+
+                size = { 180 180 }
+				vbox = {
+					hbox = {
+						button = {
+							alpha = 1
+                    texture = "gfx/interface/sakuya/main/issakuyaswatch.png"
+                    color = { 0.8 0.76 0.9 1 }
+
+							name = "advcm_add_sakuya_trade_unions_2_only"
+							onclick = "[GetScriptedGui('advcm_add_sakuya_trade_unions_2_only').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							onrightclick = "[GetScriptedGui('advcm_remove_sakuya_trade_unions_2_only').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "#p 左键#!让工会成为你这个国家#v 唯一#!的执政党，而且对你绝对忠诚，绝对支持。    #n 右键#!直接掏出你那铁拳，一拳把工会#v 打回原形， #!不能自理。"
+							using = tooltip_ne
+							size = { 180 180 }
+							scissor = yes 
+							
+						}
+					}
+				}
+			}
+			
+widget = {  #按钮占位 #上方按钮 #行政力
+	state = {
+                          name = "sakuya_main_j"
+                          using = Animation_Curve_Default
+                          duration = 0.3             
+                          alpha = 0
+                      }
+                      state = {
+                          name = "sakuya_main_j_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4   
+                          alpha = 1
+                      }
+	using = shimmer_fade_in
+    position = { 695 60% }
+    size = { 668 63 }
+    hbox = {
+        vbox = {
+            button_icon_square = {
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.5 0.6 0.7 0.7 }
+                }
+                name = "sakuya_money_add_country_loan_interest_broken"
+                onclick = " none "
+                tooltip = " "
+                using = tooltip_ne
+                size = { 150 40 }
+                text_multi = {
+                    position = { 25% 0% }
+                    size = { 140 40 }
+                    raw_text = "#bold [GetPlayer.GetPowerDelta('bureaucracy')|D=+]#!"
+                    #using = header_font_fancy
+                    using = header_font_fancy_size
+                    #default_format = "#medium"        
+                }
+            }
+        }
+        vbox = { #权威力
+            button_icon_square = {
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.5 0.6 0.7 0.7 }
+                }
+                name = "sakuya_money_add_country_loan_interest_broken"
+                onclick = " none "
+                tooltip = " "
+                using = tooltip_ne
+                size = { 130 40 }
+                text_multi = {
+                    position = { 25% 0% }
+                    size = { 140 40 }
+                    raw_text = "#bold [GetPlayer.GetPowerDelta('authority')|=+D]#!"
+                    using = header_font_fancy
+                    using = header_font_fancy_size
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = { #影响力
+            button_icon_square = {
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.5 0.6 0.7 0.7 }
+                }
+                name = "sakuya_money_add_country_loan_interest_broken"
+                onclick = " none "
+                tooltip = " "
+                using = tooltip_ne
+                size = { 130 40 }
+                text_multi = {
+                    position = { 25% 0% }
+                    size = { 140 40 }
+                    raw_text = "#bold [GetPlayer.GetPowerDelta('influence')|=+D]#!"
+                    using = header_font_fancy
+                    using = header_font_fancy_size
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = { #商船
+            button_icon_square = {
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.5 0.6 0.7 0.7 }
+                }
+                name = "sakuya_money_add_country_loan_interest_broken"
+                onclick = " none "
+                tooltip = " "
+                using = tooltip_ne
+                size = { 130 40 }
+                text_multi = {
+                    position = { 25% 0% }
+                    size = { 140 40 }
+                    raw_text = "#bold [GetPlayer.GetNumAvailableConvoys|=+D]#!"
+                    using = header_font_fancy
+                    using = header_font_fancy_size
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+			widget = { #四大金刚
+				state = {
+                          name = "sakuya_main_j"
+                          using = Animation_Curve_Default
+                          duration = 0.3             
+                          alpha = 0
+                      }
+                      state = {
+                          name = "sakuya_main_j_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4   
+                          alpha = 1
+                      }
+				using = shimmer_fade_in
+                position = { 630 50% }
+                size = { 668 60 }
+					hbox = {
+					vbox = {
+						button_icon_square = {
+							using = shimmer_fade_in
+			                position = { 4 250 }
+			                size = { 0 250 }
+			                name = "sakuya_test_button"
+			                onclick = "[GetScriptedGui('sakuya_money_add_country_loan_interest_rate_mult_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+			                #
+			                                 blockoverride "icon" {
+                    texture = "gfx/interface/icons/topbar/bureaucracy_icon.dds" #图标 不知为什么，相同的图标可能会消失，只能复制一个。
+                    scissor = yes
+                    alpha = 0.8
+                }
+                blockoverride "icon_size" {
+                    size = { 75 75 }                  
+                }
+                blockoverride "primary_texture" {}
+							}
+						}
+
+				vbox = {
+						button_icon_square = {
+							using = shimmer_fade_in
+			                position = { 4 250 }
+			                size = { 0 250 }
+			                name = "sakuya_test_button"
+			                onclick = "[GetScriptedGui('sakuya_money_add_country_loan_interest_rate_mult_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+			                #
+			                                 blockoverride "icon" {
+                    texture = "gfx/interface/icons/topbar/authority_icon.dds" #图标 不知为什么，相同的图标可能会消失，只能复制一个。
+                    scissor = yes
+                    alpha = 0.8
+                }
+                blockoverride "icon_size" {
+                    size = { 75 75 }                  
+                }
+                blockoverride "primary_texture" {}
+							}
+						}
+
+				vbox = {
+						button_icon_square = {
+							using = shimmer_fade_in
+			                position = { 4 250 }
+			                size = { 0 250 }
+			                name = "sakuya_test_button"
+			                onclick = "[GetScriptedGui('sakuya_money_add_country_loan_interest_rate_mult_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+			                #
+			                                 blockoverride "icon" {
+                    texture = "gfx/interface/icons/topbar/influence_icon.dds" #图标 不知为什么，相同的图标可能会消失，只能复制一个。
+                    scissor = yes
+                    alpha = 0.8
+                }
+                blockoverride "icon_size" {
+                    size = { 75 75 }                  
+                }
+                blockoverride "primary_texture" {}
+							}
+						}
+
+				vbox = {
+						button_icon_square = {
+							using = shimmer_fade_in
+			                position = { 4 250 }
+			                size = { 0 250 }
+			                name = "sakuya_test_button"
+			                onclick = "[GetScriptedGui('sakuya_money_add_country_loan_interest_rate_mult_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+			                #
+			                                 blockoverride "icon" {
+                    texture = "gfx/interface/icons/generic_icons/convoys.dds" #图标 不知为什么，相同的图标可能会消失，只能复制一个。
+                    scissor = yes
+                    alpha = 0.8
+                }
+                blockoverride "icon_size" {
+                    size = { 75 75 }                  
+                }
+                blockoverride "primary_texture" {}
+							}
+						}
+					}
+				}
+widget = {  #按钮占位 #buff
+	state = {
+                          name = "sakuya_main_j"
+                          using = Animation_Curve_Default
+                          duration = 0.3             
+                          alpha = 0
+                      }
+                      state = {
+                          name = "sakuya_main_j_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4   
+                          alpha = 1
+                      }
+    position = { 500 72.5% }
+    size = { 350 238 }
+    vbox = {
+        hbox = {
+            button_icon_square = {
+            	blockoverride "icon" {
+            		using = shimmer_fade_in
+                    blockoverride "trigger" {
+											trigger_on_create = yes
+											name = ui_guide_shimmer_fade_in
+										}
+                    texture = "gfx/interface/sakuya/main/buff.png"
+                }
+                blockoverride "icon_size" {
+                    size = { 98% 98% }
+                }
+            	alpha = 0.8
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.8 0.9 1 0.7 }
+                }
+                name = "sakuya_money_add_country_loan_interest_broken"
+                onclick = " none "
+                tooltip = " "
+                using = tooltip_ne
+                size = { 350 238 }
+                text_multi = {
+                    position = { 2% 68% }
+                    size = { 350 100 }
+                    text = "BUFF自助餐"
+                    using = header_font_fancy
+                    using = header_font_fancy_size
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+widget = { #作为败犬的无奈宣告。
+                position = { 10 640 }
+                size = { 500 60 }
+                Hbox = {
+                    spacing = 2
+                    tooltip = "MR_1TT"
+                    text_multi = {
+                        autoresize = yes
+                        align = left
+                        maximumsize = { 450 -1 }
+                        multiline = yes
+                        using = fontsize_xl
+                    raw_text = "TEST_TEXTBOX_1"
+                        
+                        using = header_font
+                        using = header_font_size
+                        default_format = "#medium"  
+                            }
+                        }
+                    }
+widget = {  #按钮占位 #波波
+	state = {
+                          name = "sakuya_main_j"
+                          using = Animation_Curve_Default
+                          duration = 0.3             
+                          alpha = 0
+                      }
+                      state = {
+                          name = "sakuya_main_j_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4   
+                          alpha = 1
+                      }
+    position = { 855 72.5% }
+    size = { 170 238 }
+    vbox = {
+        hbox = {
+            button_icon_square = {
+            	blockoverride "icon" {
+            		using = shimmer_fade_in
+                    blockoverride "trigger" {
+											trigger_on_create = yes
+											name = ui_guide_shimmer_fade_in
+										}
+                    texture = "gfx/interface/sakuya/main/polpot.png"
+                }
+                blockoverride "icon_size" {
+                    size = { 98% 98% }
+                }
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 1 0 0 0.7 }
+                }
+                name = "sakuya_money_add_country_loan_interest_broken"
+                onclick = " none "
+                tooltip = " "
+                using = tooltip_ne
+                size = { 170 238 }
+                text_multi = {
+                    position = { 2% 75% }
+                    size = { 150 100 }
+                    text = "波波模式"
+                    using = header_font_fancy
+                    using = header_font_fancy_size
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+widget = {  #按钮占位 #关于
+	 name = "sakuya_main_n"
+		 state = {
+                          name = "sakuya_main_n"
+                          using = Animation_Curve_Default
+                          duration = 0.3 
+                          position = { 1030 725 }     
+                          next = "sakuya_main_n_1"     
+                      }
+                      state = {
+                          name = "sakuya_main_n_1"
+                          using = Animation_Curve_Default
+                          duration = 0.3
+                          position = { 1026 103 }           
+                      }
+                    	state = {
+                          name = "sakuya_main_n_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4   
+                          position = { 1030 725 }         
+                      }
+    position = { 1030 725 }
+    size = { 315 238 }
+    vbox = {
+        hbox = {
+            button_icon_square = {
+            	name = "sakuya_main_n"
+            		state = {
+                          name = "sakuya_main_m"
+                          using = Animation_Curve_Default
+                          duration = 0.3             
+                          size = { 315 300 }
+                          next = sakuya_main_m_2
+                      }
+                      state = {
+                          name = "sakuya_main_m_2"
+                          using = Animation_Curve_Default
+                          duration = 0.3          
+                          size = { 324 60 }
+                      }
+                      state = {
+                          name = "sakuya_main_m_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4   
+						  position = { 1030 725 }
+						  size = { 315 238 }
+                      }
+            	            	icon = {
+            	            		state = {
+                          name = "sakuya_main_j"
+                          using = Animation_Curve_Default
+                          duration = 0.6             
+                          alpha = 0.1
+                      }
+                      state = {
+                          name = "sakuya_main_j_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4   
+                          alpha = 1
+                      }
+            	            		size = { 98% 97% }
+            		using = shimmer_fade_in
+                    blockoverride "trigger" {
+											trigger_on_create = yes
+											name = ui_guide_shimmer_fade_in
+										}
+                    texture = "gfx/interface/sakuya/main/about.png"
+                }
+                
+                blockoverride "icon_size" {
+                    size = { 97% 96% }
+                }
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.5 0.6 0.7 0.7 }
+                }
+                name = "sakuya_money_add_country_loan_interest_broken"
+                onclick = " none "
+                tooltip = " "
+                using = tooltip_ne
+                size = { 315 238 }
+                text_multi = {
+                	state = {
+                          name = "sakuya_main_j"
+                          using = Animation_Curve_Default
+                          duration = 0.3             
+                          alpha = 0
+                      }
+                      state = {
+                          name = "sakuya_main_j_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.4   
+                          alpha = 1
+                      }
+                    position = { 2% 70% }
+                    size = { 150 100 }
+                    text = "关于"
+                    using = header_font_fancy
+                    using = header_font_fancy_size
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+widget = {  #按钮占位 #buff
+	alpha = 0
+	name = "sakuya_main_o"
+    position = { 500 725 }
+    size = { 0 0 }
+    state = {
+                          name = "sakuya_main_o"
+                          using = Animation_Curve_Default
+                          duration = 0.2
+                          alpha = 0.3
+                          position = { 500 725 }      
+                          next = "sakuya_main_o_1"     
+                      }
+                      state = {
+                          name = "sakuya_main_o_1"
+                          using = Animation_Curve_Default
+                          duration = 0.4
+                          alpha = 0.4
+                          position = { 500 725 }   
+                          next = "sakuya_main_o_2"        
+                      }
+                      state = {
+                          name = "sakuya_main_o_2"
+                          alpha = 0.5
+                          using = Animation_Curve_Default
+                          duration = 0.4
+                          position = { 500 255 }           
+                      }
+                    	state = {
+                          name = "sakuya_main_o_reset"
+                          alpha = 0
+                          using = Animation_Curve_Default
+                          duration = 0.2   
+                          position = { 500 725 }
+                          #size = { 350 140 }   
+                          next = "sakuya_main_o_reset_1"        
+                      }
+                      
+    vbox = {
+        hbox = {
+            button_icon_square = {
+            	state = {
+                          name = "sakuya_main_o"
+                          using = Animation_Curve_Default
+                          duration = 0.2            
+                          size = { 350 238 }
+                          next = sakuya_main_o_1
+                      }
+            	    state = {
+                          name = "sakuya_main_o_1"
+                          using = Animation_Curve_Default
+                          duration = 0.4            
+                          size = { 850 238 }
+                          next = sakuya_main_o_2
+                      }
+                      state = {
+                          name = "sakuya_main_o_2"
+                          using = Animation_Curve_Default
+                          duration = 0.4         
+                          size = { 850 705 }
+                      }
+                      state = {
+                          name = "sakuya_main_o_reset"
+                          using = Animation_Curve_Default
+                          duration = 0.2  
+   						  size = { 350 238 }
+                      }
+
+            	blockoverride "icon" {
+            		using = shimmer_fade_in
+                    blockoverride "trigger" {
+											trigger_on_create = yes
+											name = ui_guide_shimmer_fade_in
+										}
+                }
+                blockoverride "icon_size" {
+                    size = { 98% 98% }
+                }
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.3 0.3 0.3 0.7 }
+                }
+                name = "sakuya_money_add_country_loan_interest_broken"
+                using = tooltip_ne
+                size = { 350 238 }
+                text_multi = {
+                	alpha = 0
+                	state = {
+                          name = "sakuya_main_o"
+                          using = Animation_Curve_Default
+                          duration = 0.4
+                          alpha = 0
+                          position = { 430 725 }       
+                          next = "sakuya_main_o_1"     
+                      }
+                      state = {
+                          name = "sakuya_main_o_1"
+                          using = Animation_Curve_Default
+                          duration = 0.4
+                          alpha = 0.4
+                          position = { 430 725 }   
+                          next = "sakuya_main_o_2"        
+                      }
+                      state = {
+                          name = "sakuya_main_o_2"
+                          alpha = 1
+                          using = Animation_Curve_Default
+                          duration = 0.1
+                          position = { 30 -47 }           
+                      }
+                    	state = {
+                          name = "sakuya_main_o_reset"
+                          alpha = 0
+                          using = Animation_Curve_Default
+                          duration = 0.2   
+                          position = { 500 725 }
+                          #size = { 350 140 }   
+                          next = "sakuya_main_o_reset_1"        
+                      }
+                    position = { 1 71 }
+                    size = { 700 30 }
+                    text = "#white #bold #v 经济#!#!#!"
+                    using = header_font_fancy
+                    using = header_font_fancy_size
+                    default_format = "#medium"        
+                }
+                text_multi = {
+                	alpha = 0
+                	state = {
+                          name = "sakuya_main_o"
+                          using = Animation_Curve_Default
+                          duration = 0.3
+                          alpha = 0
+                          position = { 130 -47 }       
+                          next = "sakuya_main_o_1"     
+                      }
+                      state = {
+                          name = "sakuya_main_o_1"
+                          using = Animation_Curve_Default
+                          duration = 0.2
+                          alpha = 0
+                          position = { 330 -47 }  
+                          next = "sakuya_main_o_2"        
+                      }
+                      state = {
+                          name = "sakuya_main_o_2"
+                          alpha = 1
+                          using = Animation_Curve_Default
+                          duration = 0.4
+                          position = { 190 -47 }           
+                      }
+                    	state = {
+                          name = "sakuya_main_o_reset"
+                          alpha = 0
+                          using = Animation_Curve_Default
+                          duration = 0.2   
+                          position = { 130 -47 }
+                          #size = { 350 140 }   
+                          next = "sakuya_main_o_reset_1"        
+                      }
+                    position = { 1 71 }
+                    size = { 700 30 }
+                    text = "#white #bold #v 利益集团#!#!#!"
+                    using = header_font_fancy
+                    using = header_font_fancy_size
+                    default_format = "#medium"        
+                }
+                text_multi = {
+                	alpha = 0
+                	state = {
+                          name = "sakuya_main_o"
+                          using = Animation_Curve_Default
+                          duration = 0.4
+                          alpha = 0
+                          position = { 130 -47 }       
+                          next = "sakuya_main_o_1"     
+                      }
+                      state = {
+                          name = "sakuya_main_o_1"
+                          using = Animation_Curve_Default
+                          duration = 0.2
+                          alpha = 0
+                          position = { 330 -47 }  
+                          next = "sakuya_main_o_2"        
+                      }
+                      state = {
+                          name = "sakuya_main_o_2"
+                          alpha = 1
+                          using = Animation_Curve_Default
+                          duration = 0.3
+                          position = { 360 -47 }           
+                      }
+                    	state = {
+                          name = "sakuya_main_o_reset"
+                          alpha = 0
+                          using = Animation_Curve_Default
+                          duration = 0.2   
+                          position = { 130 -47 }
+                          #size = { 350 140 }   
+                          next = "sakuya_main_o_reset_1"        
+                      }
+                    position = { 1 71 }
+                    size = { 700 30 }
+                    text = "#white #bold #v 法律#!#!#!"
+                    using = header_font_fancy
+                    using = header_font_fancy_size
+                    default_format = "#medium"        
+                }
+
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+}
+}
+}
+}
+}
+}
+}

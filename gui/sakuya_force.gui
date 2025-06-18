@@ -1,0 +1,1608 @@
+window = {
+    name = "sakuya_force_window"
+    parentanchor = center
+    position = { 0 0 } #主GUI的大小和位置
+    size = { 1250 900 }
+    layer = windows_layer
+    filter_mouse = all
+    allow_outside = yes
+    alwaystransparent = no
+    
+    using = Window_Background
+    using = Window_Decoration
+    movable = yes
+    
+    datacontext = "[GetVariableSystem]"
+    datacontext = "[GetPlayer]"
+        visible = "[GetVariableSystem.Exists('sakuya_force_visible')]"
+
+
+    background = {margin = { -23 -17 }
+    visible = "[GetVariableSystem.HasValue('sakuya_force_tabs', 'sakuya_force_tabs_2')]"
+
+        spriteType = Stretched 
+        fittype = cover
+        #spriteborder = { 15 150 }
+        #texture_density = 0.5
+        #blend_mode = overlay
+        texture = "gfx/interface/sakuya/Kawashiro_bk_o1.png"
+        alpha = 0.3
+        fittype = fit
+        scale = 0.75
+    }
+
+background = {margin = { -23 -17 }
+    visible = "[GetVariableSystem.HasValue('sakuya_force_tabs', 'sakuya_force_tabs_1')]"
+        spriteType = Stretched 
+        fittype = cover
+        #spriteborder = { 15 150 }
+        #texture_density = 0.5
+        #blend_mode = overlay
+        texture = "gfx/interface/sakuya/Kawashiro_bk_o2.png"
+        alpha = 0.1
+        fittype = fit
+        scale = 0.75
+    }
+
+    state = {
+        name = _show
+        using = Animation_FadeIn_Quick
+    }
+    
+    state = {
+        name = _hide
+        using = Animation_FadeOut_Quick
+    }
+    
+    vbox = {
+        restrictparent_min = yes
+        using = Window_Margins
+                    }
+                    vbox = {
+        restrictparent_min = yes
+        using = Window_Margins
+        
+        header_pattern = {
+            layoutpolicy_horizontal = expanding
+
+
+            blockoverride "header_text"
+            {
+                text = "SAKUYA_FORCE_HEADER"
+            }
+
+            blockoverride "button_close"
+            {
+                onclick = "[GetVariableSystem.Clear('sakuya_force_visible')]"
+            }
+        }
+                scrollbox = {
+            name = "characters_scroll_area" #滚动条虽然支持，但一旦设置排版就乱套了
+            layoutpolicy_vertical = expanding
+            layoutpolicy_horizontal = expanding
+            blockoverride "scrollbox_content" {
+
+                }
+            }
+        }
+    
+########################################################
+            
+#       按钮区域隐藏掉 需要直接去seven.gui复制粘贴
+
+########################################################
+        widget = { #TITTLE
+            visible = "[GetVariableSystem.HasValue('sakuya_force_tabs', 'sakuya_force_tabs_1')]"
+                 position = { 66% 10% }
+                size = { 450 60 }
+                    hbox = {
+                    vbox = {
+                        spacing = 5
+                    text_multi = {
+                        autoresize = yes
+                        align = nobaseline
+                        maximumsize = { -1 -1 }
+                        multiline = yes
+                        using = header_font_fancy
+                    raw_text = "SAKUYA_FORCE_TITTLE"
+                        using = header_font_fancy
+                        using = header_font_fancy_size
+                        default_format = "#medium"  
+                            }
+                        }
+                    }
+                }
+            widget = { #TITTLE
+            visible = "[GetVariableSystem.HasValue('sakuya_force_tabs', 'sakuya_force_tabs_2')]"
+                 position = { 66% 10% }
+                size = { 450 60 }
+                    hbox = {
+                    vbox = {
+                        spacing = 5
+                    text_multi = {
+                        autoresize = yes
+                        align = nobaseline
+                        maximumsize = { -1 -1 }
+                        multiline = yes
+                        using = header_font_fancy
+                    raw_text = "SAKUYA_FORCE_TITTLE2"
+                        using = header_font_fancy
+                        using = header_font_fancy_size
+                        default_format = "#medium"  
+                            }
+                        }
+                    }
+                }
+        widget = { #TITTLE
+            visible = "[GetVariableSystem.HasValue('sakuya_force_tabs', 'sakuya_force_tabs_1')]"
+                 position = { 5% 22% }
+                size = { 100 60 }
+                    hbox = {
+                    vbox = {
+                        spacing = 5
+                    text_multi = {
+                        autoresize = yes
+                        align = nobaseline
+                        maximumsize = { -1 -1 }
+                        multiline = yes
+                        using = header_font_fancy
+                    raw_text = "SAKUYA_FORCE_TITTLE1"
+                        
+                        using = header_font_fancy
+                        using = header_font_fancy_size
+                        default_format = "#medium"  
+                            }
+                        }
+                    }
+                }
+            widget = { #TITTLE2
+            visible = "[GetVariableSystem.HasValue('sakuya_force_tabs', 'sakuya_force_tabs_2')]"
+                 position = { 5% 22% }
+                size = { 450 60 }
+                    hbox = {
+                    vbox = {
+                        spacing = 5
+                    text_multi = {
+                        autoresize = yes
+                        align = nobaseline
+                        maximumsize = { -1 -1 }
+                        multiline = yes
+                        using = header_font_fancy
+                    raw_text = "SAKUYA_FORCE_TITTLE2"
+                        
+                        using = header_font_fancy
+                        using = header_font_fancy_size
+                        default_format = "#medium"  
+                            }
+                        }
+                    }
+                }
+            
+            widget = {
+                position = { -287 150 }
+                size = { 1200 50 }
+                    hbox = {
+                    vbox = {
+
+                        spacing = 5
+                    default_header_clean = {
+                        maximumsize = { 494 -1 }
+                        blockoverride "text" {
+                            parentanchor = left
+                            raw_text = " "
+                            autoresize = yes
+                        multiline = yes
+                        using = fontsize_xl
+                        default_format = "#medium" 
+                                        }
+                        autoresize = yes
+                        multiline = yes
+                        default_format = "#medium"  
+                            }
+                        }
+
+                    }
+                }
+                
+                widget = {
+                position = { 400 150 }
+                size = { 1200 50 }
+                    hbox = {
+                    vbox = {
+
+                        spacing = 5
+                    default_header_clean = {
+                        maximumsize = { 494 -1 }
+                        blockoverride "text" {
+                            parentanchor = left
+                            raw_text = " "
+                            autoresize = yes
+                        multiline = yes
+                        using = fontsize_xl
+                        default_format = "#medium" 
+                                        }
+                        autoresize = yes
+                        multiline = yes
+                        default_format = "#medium"  
+                            }
+                        }
+                        
+                    }
+                }
+                widget = {
+                position = { 200 150 }
+                size = { 1200 50 }
+                    hbox = {
+                    vbox = {
+
+                        spacing = 5
+                    default_header_clean = {
+                        maximumsize = { 494 -1 }
+                        blockoverride "text" {
+                            parentanchor = left
+                            raw_text = "MT2"
+                            autoresize = yes
+                        multiline = yes
+                        using = fontsize_xl
+                        default_format = "#medium" 
+                                        }
+                        autoresize = yes
+                        multiline = yes
+                        default_format = "#medium"  
+                            }
+                        }
+                    }
+                }
+
+
+widget = { #TITTLE
+            visible = "[GetVariableSystem.HasValue('sakuya_force_tabs', 'sakuya_force_tabs_1')]"
+                 position = { 5% 41.5% }
+                size = { 100 60 }
+                    hbox = {
+                    vbox = {
+                        spacing = 5
+                    text_multi = {
+                        autoresize = yes
+                        align = left
+                        maximumsize = { -1 -1 }
+                        multiline = yes
+                        using = header_font_fancy
+                       raw_text = "SAKUYA_FORCE_TITTLE1_1"
+                        tooltip = "SAKUYA_FORCE_TITTLE1_1_tooltip"
+                        using = header_font_fancy
+                        using = header_font_fancy_size
+                        default_format = "#medium"  
+                            }
+                        }
+                    }
+                }
+widget = { #TITTLE
+            visible = "[GetVariableSystem.HasValue('sakuya_force_tabs', 'sakuya_force_tabs_1')]"
+                 position = { 5% 61% }
+                size = { 100 60 }
+                    hbox = {
+                    vbox = {
+                        spacing = 5
+                    text_multi = {
+                        autoresize = yes
+                        align = nobaseline
+                        maximumsize = { -1 -1 }
+                        multiline = yes
+                        using = header_font_fancy
+                       raw_text = "SAKUYA_FORCE_TITTLE1_2"
+                        tooltip = "SAKUYA_FORCE_TITTLE1_2_tooltip"
+                        using = header_font_fancy
+                        using = header_font_fancy_size
+                        default_format = "#medium"  
+                            }
+                        }
+                    }
+                }
+widget = { #TITTLE
+            visible = "[GetVariableSystem.HasValue('sakuya_force_tabs', 'sakuya_force_tabs_1')]"
+                 position = { 5% 80.5% }
+                size = { 100 60 }
+                    hbox = {
+                    vbox = {
+                        spacing = 5
+                    text_multi = {
+                        autoresize = yes
+                        align = nobaseline
+                        maximumsize = { -1 -1 }
+                        multiline = yes
+                        using = header_font_fancy
+                       raw_text = "SAKUYA_FORCE_TITTLE1_3"
+                        tooltip = "SAKUYA_FORCE_TITTLE1_3_tooltip"
+                        using = header_font_fancy
+                        using = header_font_fancy_size
+                        default_format = "#medium"  
+                            }
+                        }
+                    }
+                }
+
+
+            widget = {
+                position = { 50 450 }
+                size = { 500 60 }
+                Hbox = {
+                    spacing = 2
+                    tooltip = "SAKUYA_FORCE_2"
+                    text_multi = {
+                        autoresize = yes
+                        align = left
+                        maximumsize = { -1 -1 }
+                        multiline = yes
+                        using = fontsize_xl
+                   # raw_text = "SAKUYA_FORCE_3"
+                        
+                        #using = header_font
+                        #using = header_font_size
+                        #default_format = "#medium"  
+                            }
+                        }
+                    }
+
+
+
+
+
+
+
+
+######################################################################################################################
+##############################################         按钮的炼狱        ##############################################
+######################################################################################################################
+
+widget = {  # 菜单按钮组1
+    position = { 40 80 }
+    size = { 300 60 }
+    hbox = {
+        vbox = {
+            layoutpolicy_horizontal = expanding
+            button_icon_square = {
+                blockoverride "primary_visible" {
+                    texture = none
+                }
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.8 0.2 0.2 1 }
+                }
+                layoutpolicy_horizontal = expanding
+                name = "sakuya_force_4"
+                onclick = "[GetVariableSystem.Set('sakuya_force_tabs', 'sakuya_force_tabs_1')]"
+                down = "[GetVariableSystem.HasValue('sakuya_force_tabs', 'sakuya_force_tabs_1')]"
+                tooltip = "SAKUYA_FORCE_5"
+                using = tooltip_ne
+                size = { 150 60 }
+                blockoverride "icon" {
+                    texture = "gfx/interface/icons/ai_strategy_icons/reactionary_agenda.dds"
+                }
+                blockoverride "icon_size" {
+                    size = { 35 35 }
+                }
+            }
+        }
+        vbox = {
+            layoutpolicy_horizontal = expanding
+            button_icon_square = {
+                blockoverride "primary_visible" {
+                    texture = none
+                }
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.2 0.4 0.8 1 }
+                }
+                layoutpolicy_horizontal = expanding
+                name = "sakuya_force_6"
+                onclick = "[GetVariableSystem.Set('sakuya_force_tabs', 'sakuya_force_tabs_2')]"
+                down = "[GetVariableSystem.HasValue('sakuya_force_tabs', 'sakuya_force_tabs_2')]"
+                tooltip = "SAKUYA_FORCE_7"
+                using = tooltip_ne
+                size = { 150 60 }
+                blockoverride "icon" {
+                    texture = "gfx/interface/icons/ai_strategy_icons/protect_region.dds"
+                }
+                blockoverride "icon_size" {
+                    size = { 35 35 }
+                }
+            }
+        }
+    }
+}
+          
+
+######################################################################################################################
+##############################################         按钮的炼狱        ##############################################
+######         visible = "[GetVariableSystem.HasValue('sakuya_force_tabs', 'sakuya_force_tabs_1')]"        ###########
+##############################################         按钮的炼狱        ##############################################
+######################################################################################################################
+widget = {  # 按钮占位 #选择
+    position = { 50 270 }
+    size = { 1150 90 }
+    visible = "[GetVariableSystem.HasValue('sakuya_force_tabs', 'sakuya_force_tabs_1')]"
+    scrollbox = {
+        scrollbarpolicy_horizontal = always_on
+        scrollbar_vertical = always_off
+        scrollbar_horizontal = {
+            using = Scrollbar_Horizontal
+        }
+        name = "characters_scroll_area"  # 滚动条
+        layoutpolicy_vertical = expanding
+        layoutpolicy_horizontal = expanding
+        size = { 1150 100 }
+        blockoverride "scrollbox_content" {
+            hbox = {
+                # 按钮 1-12（完整结构）
+                vbox = {  # 按钮1
+                    button_icon_square = {
+                vfx = {
+                            blockoverride "entity_instance" {
+                        entity_instance = vfx_entity_ui_mobilize
+                        alpha = 8
+                            }
+                        }
+                        vfx = {
+                            blockoverride "entity_instance" {
+                        entity_instance = vfx_entity_ui_to_arms_background
+                        alpha = 5
+                            }
+                        }
+
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 1 0.5 0.3 1 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/21.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.1
+                    
+                }
+                        name = "sakuya_seven_add_country_loan_interest_broken_1"
+                        onclick = "[GetScriptedGui('sakuya_force_b').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_b_remove').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_90"
+                        using = tooltip_ne
+                        size = { 200 70 }
+                        text_multi = {
+                            position = { 11% 18% } size = { 150 70 }
+                            size = { 150 70 }
+                            text = "SAKUYA_FORCE_7"
+                            using = header_font_fancy_size
+                            default_format = "#medium"        
+                        }
+                    }
+                }
+                vbox = {  # 按钮2
+                    button_icon_square = {
+                        alpha = 1  # 独立alpha固定为1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds" 
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/69.png"
+                            color = { 0.10 0.57 0.57 1.00 }  # RGB递减5%（0.60→0.57）
+                            scissor = yes
+                        }
+                        name = "sakuya_seven_add_country_loan_interest_broken_2"
+                        onclick = "[GetScriptedGui('sakuya_force_b1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_b1_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_1"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            size = { 100 70 }
+                            text = "SAKUYA_FORCE_8"  # 文本递增
+                            using = header_font_fancy
+                            default_format = "#medium"        
+                        }
+                    }
+                }
+                vbox = {  # 按钮3
+                    button_icon_square = {
+                        alpha = 1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds" 
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/69.png"
+                            color = { 0.09 0.54 0.54 1.00 }  # RGB再递减5%
+                            scissor = yes
+                        }
+                        name = "sakuya_seven_add_country_loan_interest_broken_3"
+                        onclick = "[GetScriptedGui('sakuya_force_b2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_b2_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_1"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_9"
+                            using = header_font_fancy
+                            default_format = "#medium"        
+                        }
+                    }
+                }
+                               vbox = {  # 按钮4
+                    button_icon_square = {
+                        alpha = 1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds" 
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/69.png"
+                            color = { 0.09 0.51 0.51 1.00 }
+                            scissor = yes
+                        }
+                        name = "sakuya_seven_add_country_loan_interest_broken_4"
+                        onclick = "[GetScriptedGui('sakuya_force_b3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_b3_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"  # 新增右键
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_1"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_10"
+                            using = header_font_fancy
+                            default_format = "#medium"        
+                        }
+                    }
+                }
+                vbox = {  # 按钮5
+                    button_icon_square = {
+                        alpha = 1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds" 
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/69.png"
+                            color = { 0.09 0.48 0.48 1.00 }
+                            scissor = yes
+                        }
+                        name = "sakuya_seven_add_country_loan_interest_broken_5"
+                        onclick = "[GetScriptedGui('sakuya_force_b4').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_b4_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"  # 新增右键
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_1"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_11"
+                            using = header_font_fancy
+                            default_format = "#medium"        
+                        }
+                    }
+                }
+                vbox = {  # 按钮6
+                    button_icon_square = {
+                        alpha = 1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds" 
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/69.png"
+                            color = { 0.08 0.46 0.46 1.00 }
+                            scissor = yes
+                        }
+                        name = "sakuya_seven_add_country_loan_interest_broken_6"
+                        onclick = "[GetScriptedGui('sakuya_force_b5').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_b5_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"  # 新增右键
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_1"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_12"
+                            using = header_font_fancy
+                            default_format = "#medium"        
+                        }
+                    }
+                }
+                vbox = {  # 按钮7
+                    button_icon_square = {
+                        alpha = 1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds" 
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/69.png"
+                            color = { 0.08 0.44 0.44 1.00 }
+                            scissor = yes
+                        }
+                        name = "sakuya_seven_add_country_loan_interest_broken_7"
+                        onclick = "[GetScriptedGui('sakuya_force_b6').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_b6_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"  # 新增右键
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_1"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_13"
+                            using = header_font_fancy
+                            default_format = "#medium"        
+                        }
+                    }
+                }
+                vbox = {  # 按钮8
+                    button_icon_square = {
+                        alpha = 1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds" 
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/69.png"
+                            color = { 0.07 0.42 0.42 1.00 }
+                            scissor = yes
+                        }
+                        name = "sakuya_seven_add_country_loan_interest_broken_8"
+                        onclick = "[GetScriptedGui('sakuya_force_b7').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_b7_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"  # 新增右键
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_1"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_14"
+                            using = header_font_fancy
+                            default_format = "#medium"        
+                        }
+                    }
+                }
+                vbox = {  # 按钮9
+                    button_icon_square = {
+                        alpha = 1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds" 
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/69.png"
+                            color = { 0.07 0.40 0.40 1.00 }
+                            scissor = yes
+                        }
+                        name = "sakuya_seven_add_country_loan_interest_broken_9"
+                        onclick = "[GetScriptedGui('sakuya_force_b8').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_b8_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"  # 新增右键
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_1"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_15"
+                            using = header_font_fancy
+                            default_format = "#medium"        
+                        }
+                    }
+                }
+                vbox = {  # 按钮10
+                    button_icon_square = {
+                        alpha = 1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds" 
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/69.png"
+                            color = { 0.07 0.38 0.38 1.00 }
+                            scissor = yes
+                        }
+                        name = "sakuya_seven_add_country_loan_interest_broken_10"
+                        onclick = "[GetScriptedGui('sakuya_force_b9').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_b9_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"  # 新增右键
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_1"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_16"
+                            using = header_font_fancy
+                            default_format = "#medium"        
+                        }
+                    }
+                }
+                vbox = {  # 按钮11
+                    button_icon_square = {
+                        alpha = 1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds" 
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/69.png"
+                            color = { 0.06 0.36 0.36 1.00 }
+                            scissor = yes
+                        }
+                        name = "sakuya_seven_add_country_loan_interest_broken_11"
+                        onclick = "[GetScriptedGui('sakuya_force_b10').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_b10_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"  # 新增右键
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_1"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_17"
+                            using = header_font_fancy
+                            default_format = "#medium"        
+                        }
+                    }
+                }
+                vbox = {  # 按钮12
+                    button_icon_square = {
+                        alpha = 1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds" 
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/69.png"
+                            color = { 0.06 0.34 0.34 1.00 }
+                            scissor = yes
+                        }
+                        name = "sakuya_seven_add_country_loan_interest_broken_12"
+                        onclick = "[GetScriptedGui('sakuya_force_b11').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_b11_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"  # 新增右键
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_1"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_18"
+                            using = header_font_fancy
+                            default_format = "#medium"        
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+widget = {
+    visible = "[GetVariableSystem.HasValue('sakuya_force_tabs', 'sakuya_force_tabs_1')]"
+    position = { 50 440 }
+    size = { 550 100 }
+    scrollbox = {
+        scrollbarpolicy_horizontal = always_on
+        scrollbar_vertical = always_off
+        scrollbar_horizontal = {
+            using = Scrollbar_Horizontal
+        }
+        name = "characters_scroll_area"
+        layoutpolicy_vertical = expanding
+        layoutpolicy_horizontal = expanding
+        size = { 550 100 }
+        blockoverride "scrollbox_content" {
+            hbox = {
+                #button C1：一级（默认）
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1 
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds" 
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/66.png"
+                            color = { 0.80 0.60 0.50 1 }
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_c1"
+                        onclick = "[GetScriptedGui('sakuya_force_c').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_c_remove').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_91"
+                        using = tooltip_ne
+                        size = { 200 70 }
+                        text_multi = {
+                            position = { 4% 56% } 
+                            size = { 100 70 }
+                            text = "SAKUYA_FORCE_19"
+                            using = header_font_fancy
+                            default_format = "#medium"        
+                        }
+                    }
+                }
+                #button C2：一级+
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1 
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/66.png"
+                            color = { 0.75 0.55 0.45 1 }
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_c2"
+                        onclick = "[GetScriptedGui('sakuya_force_c1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_c1_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_2"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } 
+                            size = { 100 70 }
+                            text = "SAKUYA_FORCE_20"
+                            using = header_font_fancy
+                            default_format = "#medium"        
+                        }
+                    }
+                }
+                #button C3：
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1 
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/66.png"
+                            color = { 0.70 0.50 0.40 1 }
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_c3"
+                        onclick = "[GetScriptedGui('sakuya_force_c2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_c2_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_2"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } 
+                            size = { 100 70 }
+                            text = "SAKUYA_FORCE_21"
+                            using = header_font_fancy
+                            default_format = "#medium"        
+                        }
+                    }
+                }
+                #button C4：
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1 
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/66.png"
+                            color = { 0.65 0.45 0.35 1 }
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_c4"
+                        onclick = "[GetScriptedGui('sakuya_force_c3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_c3_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_2"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } 
+                            size = { 100 70 }
+                            text = "SAKUYA_FORCE_22"
+                            using = header_font_fancy
+                            default_format = "#medium"
+                        }
+                    }
+                }
+                #button C5：
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1 
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/66.png"
+                            color = { 0.60 0.40 0.30 1 }
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_c5"
+                        onclick = "[GetScriptedGui('sakuya_force_c4').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_c4_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_2"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } 
+                            size = { 100 70 }
+                            text = "SAKUYA_FORCE_23"
+                            using = header_font_fancy
+                            default_format = "#medium"
+                        }
+                    }
+                }
+                #button C6：
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1 
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/66.png"
+                            color = { 0.55 0.35 0.25 1 }
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_c6"
+                        onclick = "[GetScriptedGui('sakuya_force_c5').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_c5_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_2"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } 
+                            size = { 100 70 }
+                            text = "SAKUYA_FORCE_24"
+                            using = header_font_fancy
+                            default_format = "#medium"
+                        }
+                    }
+                }
+                #button C7：
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1 
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/66.png"
+                            color = { 0.50 0.30 0.20 1 }
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_c7"
+                        onclick = "[GetScriptedGui('sakuya_force_c6').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_c6_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_2"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } 
+                            size = { 100 70 }
+                            text = "SAKUYA_FORCE_25"
+                            using = header_font_fancy
+                            default_format = "#medium"
+                        }
+                    }
+                }
+                #button C8：
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1 
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/66.png"
+                            color = { 0.45 0.25 0.15 1 }
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_c8"
+                        onclick = "[GetScriptedGui('sakuya_force_c7').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_c7_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_2"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } 
+                            size = { 100 70 }
+                            text = "SAKUYA_FORCE_26"
+                            using = header_font_fancy
+                            default_format = "#medium"
+                        }
+                    }
+                }
+                #button C9：
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1 
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/66.png"
+                            color = { 0.40 0.20 0.10 1 }
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_c9"
+                        onclick = "[GetScriptedGui('sakuya_force_c8').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_c8_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_2"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% }
+                            size = { 100 70 }
+                            text = "SAKUYA_FORCE_27"
+                            using = header_font_fancy
+                            default_format = "#medium"
+                        }
+                    }
+                }
+                #button C10：
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1 
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/66.png"
+                            color = { 0.35 0.15 0.05 1 }
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_c10"
+                        onclick = "[GetScriptedGui('sakuya_force_c9').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_c9_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_2"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% }
+                            size = { 100 70 }
+                            text = "SAKUYA_FORCE_28"
+                            using = header_font_fancy
+                            default_format = "#medium"
+                        }
+                    }
+                }
+                #button C11：
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1 
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/66.png"
+                            color = { 0.30 0.10 0.00 1 }
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_c11"
+                        onclick = "[GetScriptedGui('sakuya_force_c10').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_c10_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_2"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% }
+                            size = { 100 70 }
+                            text = "SAKUYA_FORCE_29"
+                            using = header_font_fancy
+                            default_format = "#medium"
+                        }
+                    }
+                }
+                #button C12：
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1 
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/66.png"
+                            color = { 0.25 0.05 0.00 1 }
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_c12"
+                        onclick = "[GetScriptedGui('sakuya_force_c11').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_c11_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_2"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% }
+                            size = { 100 70 }
+                            text = "SAKUYA_FORCE_30"
+                            using = header_font_fancy
+                            default_format = "#medium"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+widget = {  #第二组按钮（位置 { 50 580 }）
+    position = { 50 620 }
+    visible = "[GetVariableSystem.HasValue('sakuya_force_tabs', 'sakuya_force_tabs_1')]"
+    size = { 550 100 }
+    scrollbox = {
+        scrollbarpolicy_horizontal = always_on
+        scrollbar_vertical = always_off
+        scrollbar_horizontal = {
+            using = Scrollbar_Horizontal
+        }
+        name = "characters_scroll_area"  #滚动条
+        layoutpolicy_vertical = expanding
+        layoutpolicy_horizontal = expanding
+        size = { 550 100 }
+        blockoverride "scrollbox_content" {
+            hbox = {
+                #按钮 1
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1   #独立alpha固定为1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/63.png"
+                            color = { 0.60 0.60 0.10 0.90 }  #原 {0.10 0.60 0.60 0.90} 经 R 与 B 对调
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_d1"
+                        onclick = "[GetScriptedGui('sakuya_force_d').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_d_remove').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_92"
+                        using = tooltip_ne
+                        size = { 200 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_31"
+                            using = header_font_fancy
+                            default_format = "#medium"
+                        }
+                    }
+                }
+                #按钮 2
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1   #独立alpha固定为1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/63.png"
+                            color = { 0.57 0.57 0.10 1.00 }  #原 {0.10 0.57 0.57 1.00} 经 R 与 B 对调
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_d2"
+                        onclick = "[GetScriptedGui('sakuya_force_d1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_d1_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_3"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_32"
+                            using = header_font_fancy
+                            default_format = "#medium"
+                        }
+                    }
+                }
+                #按钮 3
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/63.png"
+                            color = { 0.54 0.54 0.09 1.00 }  #原 {0.09 0.54 0.54 1.00} 经 R 与 B 对调
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_d3"
+                        onclick = "[GetScriptedGui('sakuya_force_d2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_d2_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_3"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_33"
+                            using = header_font_fancy
+                            default_format = "#medium"
+                        }
+                    }
+                }
+                #按钮 4
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/63.png"
+                            color = { 0.51 0.51 0.09 1.00 }  #原 {0.09 0.51 0.51 1.00} 经 R 与 B 对调
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_d4"
+                        onclick = "[GetScriptedGui('sakuya_force_d3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_d3_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_3"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_34"
+                            using = header_font_fancy
+                            default_format = "#medium"
+                        }
+                    }
+                }
+                #按钮 5
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/63.png"
+                            color = { 0.48 0.48 0.09 1.00 }  #原 {0.09 0.48 0.48 1.00} 经 R 与 B 对调
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_d5"
+                        onclick = "[GetScriptedGui('sakuya_force_d4').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_d4_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_3"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_35"
+                            using = header_font_fancy
+                            default_format = "#medium"
+                        }
+                    }
+                }
+                #按钮 6
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/63.png"
+                            color = { 0.46 0.46 0.08 1.00 }  #原 {0.08 0.46 0.46 1.00} 经 R 与 B 对调
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_d6"
+                        onclick = "[GetScriptedGui('sakuya_force_d5').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_d5_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_3"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_36"
+                            using = header_font_fancy
+                            default_format = "#medium"
+                        }
+                    }
+                }
+                #按钮 7
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/63.png"
+                            color = { 0.44 0.44 0.08 1.00 }  #原 {0.08 0.44 0.44 1.00} 经 R 与 B 对调
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_d7"
+                        onclick = "[GetScriptedGui('sakuya_force_d6').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_d6_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_3"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_37"
+                            using = header_font_fancy
+                            default_format = "#medium"
+                        }
+                    }
+                }
+                #按钮 8
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/63.png"
+                            color = { 0.42 0.42 0.07 1.00 }  #原 {0.07 0.42 0.42 1.00} 经 R 与 B 对调
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_d8"
+                        onclick = "[GetScriptedGui('sakuya_force_d7').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_d7_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_3"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_38"
+                            using = header_font_fancy
+                            default_format = "#medium"
+                        }
+                    }
+                }
+                #按钮 9
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/63.png"
+                            color = { 0.40 0.40 0.07 1.00 }  #原 {0.07 0.40 0.40 1.00} 经 R 与 B 对调
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_d9"
+                        onclick = "[GetScriptedGui('sakuya_force_d8').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_d8_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_3"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_39"
+                            using = header_font_fancy
+                            default_format = "#medium"
+                        }
+                    }
+                }
+                #按钮 10
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/63.png"
+                            color = { 0.38 0.38 0.07 1.00 }  #原 {0.07 0.38 0.38 1.00} 经 R 与 B 对调
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_d10"
+                        onclick = "[GetScriptedGui('sakuya_force_d9').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_d9_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_3"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_40"
+                            using = header_font_fancy
+                            default_format = "#medium"
+                        }
+                    }
+                }
+                #按钮 11
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/63.png"
+                            color = { 0.36 0.36 0.06 1.00 }  #原 {0.06 0.36 0.36 1.00} 经 R 与 B 对调
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_d11"
+                        onclick = "[GetScriptedGui('sakuya_force_d10').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_d10_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_3"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_41"
+                            using = header_font_fancy
+                            default_format = "#medium"
+                        }
+                    }
+                }
+                #按钮 12
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1   #独立alpha保持1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/63.png"
+                            color = { 0.34 0.34 0.06 1.00 }  #原 {0.06 0.34 0.34 1.00} 经 R 与 B 对调
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_d12"
+                        onclick = "[GetScriptedGui('sakuya_force_d11').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_d11_minus').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_TOOLTIP_GROUP_3"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_42"
+                            using = header_font_fancy
+                            default_format = "#medium"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+widget = {
+    visible = "[GetVariableSystem.HasValue('sakuya_force_tabs', 'sakuya_force_tabs_1')]"
+    position = { 50 780 }
+    size = { 550 100 }
+            hbox = {
+                
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/treemapchart/treemapchart.dds"
+                            color = { 0.9 0.5 0.7 1}
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_e1"
+                        onclick = "[GetScriptedGui('sakuya_force_e1').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_e1_remove').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_93"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_43"
+                            using = header_font_fancy
+                            default_format = "#medium"
+                        }
+                    }
+                }
+                #按钮 2
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/61.png"
+                            color = { 0.97 0.97 0.97 1.00 }
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_e2"
+                        onclick = "[GetScriptedGui('sakuya_force_e2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_e2_remove').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_94"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_44"
+                            using = header_font_fancy
+                            default_format = "#medium"
+                        }
+                    }
+                }
+                #按钮 3
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/61.png"
+                            color = { 0.94 0.94 0.94 1.00 }
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_e3"
+                        onclick = "[GetScriptedGui('sakuya_force_e3').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_e3_remove').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_95"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_45"
+                            using = header_font_fancy
+                            default_format = "#medium"
+                        }
+                    }
+                }
+                #按钮 4
+                vbox = {
+                    button_icon_square = {
+                        alpha = 1
+                        blockoverride "primary_visible" {}
+                        blockoverride "primary_texture" {
+                            texture = "gfx/interface/buttons/expand_button_bg.dds"
+                        }
+                        blockoverride "icon" {
+                            texture = "gfx/interface/sakuya/seven/61.png"
+                            color = { 0.91 0.91 0.91 1.00 }
+                            scissor = yes
+                        }
+                        name = "sakuya_force_Group1_button_e4"
+                        onclick = "[GetScriptedGui('sakuya_force_e4').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        onrightclick = "[GetScriptedGui('sakuya_force_e4_remove').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                        tooltip = "SAKUYA_FORCE_96"
+                        using = tooltip_ne
+                        size = { 120 70 }
+                        text_multi = {
+                            position = { 4% 56% } size = { 100 70 }
+                            text = "SAKUYA_FORCE_46"
+                            using = header_font_fancy
+                            default_format = "#medium"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+                }
+            }
+        }
+    }
+}
+
+}
+}
+}
+}

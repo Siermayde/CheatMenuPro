@@ -1,0 +1,703 @@
+﻿# This window is just for testing. You can spawn it from the console menu.
+
+window = {
+	name = "advcm_main_window"
+	parentanchor = top|right
+	position = { -300 300 }
+	size = { 650 %100 }
+	layer = windows_layer
+	filter_mouse = all
+	allow_outside = yes
+	alwaystransparent = no
+	
+	using = Window_Background
+	using = Window_Decoration
+	movable = yes
+	visible = "[GetVariableSystem.Exists('advcm_main_visible')]" 
+    
+    datacontext = "[GetVariableSystem]"
+	datacontext = "[GetPlayer]"
+	
+	
+	state = {
+		name = _show
+		using = Animation_FadeIn_Quick
+	}
+	
+	state = {
+		name = _hide
+		using = Animation_FadeOut_Quick
+	}
+	
+	vbox = {
+		restrictparent_min = yes
+		using = Window_Margins
+		
+		header_pattern = {
+			layoutpolicy_horizontal = expanding
+
+
+			blockoverride "header_text"
+			{
+				text = "SAKUYA_TEXT_MENU_TITLE_1"
+				tooltip = "SAKUYA_TEXT_MENU_TOOLTIP_1" 
+			}
+
+			blockoverride "button_close"
+			{
+				onclick = "[GetVariableSystem.Toggle('advcm_main_visible')]"
+			}
+		}
+		
+		
+		widget = {
+			size = { 650 560 }
+			
+			widget = {
+                position = { 0 20 }
+                size = { 640 110 }
+				vbox = {
+					hbox = {
+						button_standard = { #异客闹尼克斯 经济
+							name = "advcm_treasury"
+							onclick = "[GetVariableSystem.Toggle('sakuya_money_visible')]"
+							onclick = "[GetVariableSystem.Set( 'sakuya_money_tabs', 'sakuya_money_tabs_1' )]"
+							button_ignore = none
+							tooltip = "SAKUYA_TEXT_TREASURY_TOOLTIP_1"
+							using = tooltip_ne
+							size = { 130 35 }
+							text = "SAKUYA_TEXT_TREASURY_1"
+						}
+						
+						button_standard = { #行政
+							name = "advcm_bureaucracy"
+							onclick = "[GetScriptedGui('advcm_bureaucracy_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_TEXT_ADMIN_POWER_TOOLTIP_1"
+							button_ignore = none
+							onrightclick = "[GetScriptedGui('advcm_bureaucracy_remove').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							using = tooltip_ne
+							size = { 130 35 }
+							text = "SAKUYA_TEXT_ADMIN_POWER_1"
+						}
+						
+						button_standard = { #权威
+							name = "advcm_authority"
+							onclick = "[GetScriptedGui('advcm_authority_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_TEXT_AUTHORITY_TOOLTIP_1"
+							button_ignore = none
+							onrightclick = "[GetScriptedGui('advcm_authority_remove').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							using = tooltip_ne
+							size = { 130 35 }
+							text = "SAKUYA_TEXT_AUTHORITY_1"
+						}
+						
+						button_standard = { #影响力
+							name = "advcm_influence"
+							onclick = "[GetScriptedGui('advcm_influence_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_TEXT_INFLUENCE_TOOLTIP_1"
+							button_ignore = none
+							onrightclick = "[GetScriptedGui('advcm_influence_remove').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							using = tooltip_ne
+							size = { 130 35 }
+							text = "SAKUYA_TEXT_INFLUENCE_1"
+						}
+						
+						button_standard = { #法律
+							name = "advcm_laws"
+							onclick = "[GetVariableSystem.Toggle('advcm_laws_visible')]"
+							onclick = "[GetVariableSystem.Set( 'advcm_laws_tabs', 'power_structure' )]"
+							tooltip = "SAKUYA_TEXT_LAW_TOOLTIP_1"
+							using = tooltip_ne
+							size = { 130 35 }
+							text = "SAKUYA_TEXT_LAW_1"
+						}
+						
+					
+					}
+					
+					hbox = {
+						button_standard = { #效忠
+							name = "advcm_loyalists"
+							onclick = "[GetScriptedGui('advcm_loyalists_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_TEXT_LOYALIST_TOOLTIP_1"
+							button_ignore = none
+							using = tooltip_ne
+							size = { 130 35 }
+							text = "SAKUYA_TEXT_LOYALIST_1" 
+						}
+						
+						button_standard = {
+							name = "advcm_radicals"
+							onclick = "[GetScriptedGui('advcm_radicals_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_TEXT_RADICAL_TOOLTIP_1" 
+							button_ignore = none
+							using = tooltip_ne
+							size = { 130 35 }
+							text = "SAKUYA_TEXT_RADICAL_1"  # 激进派
+
+						}
+						
+						button_standard = {
+							name = "advcm_tech_spread"
+							onclick = "[GetScriptedGui('advcm_tech_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_TEXT_TECHNOLOGY_TOOLTIP_1"  # 科技 提示
+							onrightclick = "[GetScriptedGui('advcm_tech_remove').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							button_ignore = none
+							using = tooltip_ne
+							size = { 130 35 }
+							text = "SAKUYA_TEXT_TECHNOLOGY_1"  # 科技
+						}
+						
+						button_standard = {
+							name = "advcm_infamy"
+							onclick = "[GetScriptedGui('advcm_infamy_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_TEXT_INFAMY_TOOLTIP_1"  # 恶名 提示
+							onrightclick = "[GetScriptedGui('advcm_infamy_remove').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							button_ignore = none
+							using = tooltip_ne
+							size = { 130 35 }
+							text = "SAKUYA_TEXT_INFAMY_1"  # 恶名
+						}
+						
+						button_standard = {
+							name = "advcm_birth"
+							onclick = "[GetScriptedGui('advcm_birth_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "SAKUYA_TEXT_BIRTHRATE_TOOLTIP_1"  # 出生率 提示
+							onrightclick = "[GetScriptedGui('advcm_birth_remove').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							button_ignore = none
+							using = tooltip_ne
+							size = { 130 35 }
+							text = "SAKUYA_TEXT_BIRTHRATE_1"  # 出生率
+						}
+					
+					}
+					
+					hbox = {
+						button_standard = {
+ 						       name = "advcm_loyalists"
+						        onclick = "[GetVariableSystem.Toggle('advcm_modifiers_visible')]"
+						        tooltip = "SAKUYA_TEXT_BUFF_MENU_TOOLTIP_1"  # BUFF菜单 提示
+						        size = { 130 35 }
+ 						       text = "SAKUYA_TEXT_BUFF_MENU_1"  # 加个buff
+						    }
+						    
+						    button_standard = {
+ 						       name = "advcm_add_sakuya_pol_pot"
+ 						       onclick = "[GetScriptedGui('advcm_add_sakuya_pol_pot').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+ 						       onrightclick = "[GetScriptedGui('advcm_remove_sakuya_pol_pot').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+ 						       tooltip = "SAKUYA_TEXT_OVER_URBANIZATION_TOOLTIP_1"  # 过度城市化 提示
+ 						       button_ignore = none
+ 						       using = tooltip_ne
+ 						       size = { 130 35 }
+						       text = "SAKUYA_TEXT_OVER_URBANIZATION_1"  # 太城市化了
+ 						   }
+ 						   
+ 						   button_standard = {
+ 						       name = "advcm_add_sakuya_country_construction_add"
+ 						       onclick = "[GetScriptedGui('advcm_add_sakuya_country_construction_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+ 						       onrightclick = "[GetScriptedGui('advcm_remove_sakuya_country_construction_add').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+ 						       tooltip = "SAKUYA_TEXT_BUILDING_POWER_TOOLTIP_1"  # 建造力 提示
+ 						       button_ignore = none
+ 						       using = tooltip_ne
+ 						       size = { 130 35 }
+						       text = "SAKUYA_TEXT_BUILDING_POWER_1"  # 建造力
+ 						   }
+ 						   
+ 						   button_standard = {
+ 						       name = "advcm_add_sakuya_interest_group_approval_add"
+ 						       onclick = "[GetVariableSystem.Toggle('sakuya_visible')]"
+ 						       onclick = "[GetVariableSystem.Set( 'sakuya_tabs', 'sakuya_tabs_1' )]"
+ 						       tooltip = "SAKUYA_TEXT_INTEREST_GROUP_MENU_TOOLTIP_1"  # 利益集团菜单 提示
+ 						       button_ignore = none
+ 						       using = tooltip_ne
+ 						       size = { 130 35 }
+						       text = "SAKUYA_TEXT_INTEREST_GROUP_1"  # 利益集团
+ 						   }
+
+
+						    button_standard = {
+ 						       name = "advcm_about"
+ 						       onclick = "[GetVariableSystem.Toggle('sakuya_about_visible')]"
+ 						       onclick = "[GetVariableSystem.Set( 'sakuya_about_tabs', 'sakuya_about_tabs_1' )]"
+ 						       onrightclick = "[GetVariableSystem.Toggle('sakuya_test_visible')]"
+ 						       onrightclick = "[PdxGuiTriggerAllAnimations('ami_test')]"
+ 						       tooltip = "SAKUYA_TEXT_ABOUT_TOOLTIP_1"  # 关于 提示
+ 						       using = tooltip_ne
+ 						       size = { 130 35 }
+						       text = "SAKUYA_TEXT_ABOUT_1"  # 关于
+ 						    }
+						}	
+			        }
+	        	}
+			widget = {
+                position = { 0 138 }
+                size = { 130 35 }
+				vbox = {
+					hbox = {
+						button_standard = { #
+							name = "advcm_treasury"
+							onclick = "[GetVariableSystem.Toggle('sakuya_seven_visible')]"
+							onclick = "[GetVariableSystem.Set( 'seven_tabs', 'seven_tabs_1' )]"
+							button_ignore = none
+							tooltip = "SAKUYA_TEXT_SEVEN_1"
+							using = tooltip_ne
+							size = { 130 35 }
+							text = "SAKUYA_TEXT_SEVEN_2" #国家集团
+						}
+					}
+				}
+			}
+			widget = {
+                position = { 130 138 }
+                size = { 130 35 }
+				vbox = {
+					hbox = {
+						button_standard = { #
+							name = "advcm_treasury"
+							onclick = "[GetVariableSystem.Toggle('sakuya_mil_visible')]"
+							onclick = "[PdxGuiTriggerAllAnimations('ami_test')]"
+							onclick = "[GetVariableSystem.Set( 'mil_tabs', 'mil_tabs_gold_mine' )]"
+							button_ignore = none
+							tooltip = "SAKUYA_TEXT_SEVEN_4"
+							using = tooltip_ne
+							size = { 130 35 }
+							text = "SAKUYA_TEXT_SEVEN_3" #建筑
+						}
+					}
+				}
+			}
+
+widget = {
+                position = { 390 173 }
+                size = { 260 35 }
+				hbox = {
+					vbox = {
+						button_standard = { #
+							name = "advcm_treasury"
+							onclick = "[GetVariableSystem.Toggle('sakuya_seven_visible')]"
+							onclick = "[GetVariableSystem.Set( 'seven_tabs', 'seven_tabs_2' )]"
+							button_ignore = none
+							tooltip = "SAKUYA_TEXT_SEVEN_211"
+							using = tooltip_ne
+							size = { 130 32 }
+							text = "SAKUYA_TEXT_SEVEN_21" #威望
+						}
+					}
+					vbox = {
+						button_standard = { #
+							name = "advcm_treasury"
+							onclick = "[GetVariableSystem.Toggle('sakuya_force_visible')]"
+							down = "[GetVariableSystem.HasValue( 'advcm_laws_tabs', 'power_structure')]"
+							#onclick = "[GetVariableSystem.Set( 'seven_tabs', 'seven_tabs_3' )]"
+							button_ignore = none
+							tooltip = "SAKUYA_TEXT_SEVEN_221"
+							using = tooltip_ne
+							size = { 130 32 }
+							text = "SAKUYA_TEXT_SEVEN_22" #军事
+						}
+					}
+				}
+			}
+
+
+
+
+			widget = {
+				visible = "[CanGetAchievements]"
+                position = { 260 105 }
+                size = { 390 100 }
+				hbox = {
+					button_standard = {
+						vfx = {
+							position = { 0 0 }
+							blockoverride "entity_instance" {
+							entity_instance = vfx_entity_ui_mobilize
+							alpha = 5
+							}
+						}
+						vfx = {
+							position = { 30 0 }
+							blockoverride "entity_instance" {
+							entity_instance = vfx_entity_ui_mobilize
+							alpha = 4
+							}
+						}
+						vfx = {
+    						position = { 60 0 }
+   							blockoverride "entity_instance" {
+       						entity_instance = vfx_entity_ui_mobilize
+        					alpha = 3
+   							 }
+						}
+
+vfx = {
+    position = { 90 0 }
+    blockoverride "entity_instance" {
+        entity_instance = vfx_entity_ui_mobilize
+        alpha = 3
+    }
+}
+
+vfx = {
+    position = { 120 0 }
+    blockoverride "entity_instance" {
+        entity_instance = vfx_entity_ui_mobilize
+        alpha = 2
+    }
+}
+
+vfx = {
+    position = { 150 0 }
+    blockoverride "entity_instance" {
+        entity_instance = vfx_entity_ui_mobilize
+        alpha = 1
+    }
+}
+
+vfx = {
+    position = { 160 0 }
+    blockoverride "entity_instance" {
+        entity_instance = vfx_entity_ui_mobilize
+        alpha = 1
+    }
+}
+vfx = {
+    position = { -30 0 }
+    blockoverride "entity_instance" {
+        entity_instance = vfx_entity_ui_mobilize
+        alpha = 4
+    }
+}
+vfx = {
+    position = { -10 0 }
+    blockoverride "entity_instance" {
+        entity_instance = vfx_entity_ui_mobilize
+        alpha = 4.4
+    }
+}
+
+vfx = {
+    position = { -60 0 }
+    blockoverride "entity_instance" {
+        entity_instance = vfx_entity_ui_mobilize
+        alpha = 3
+    }
+}
+
+vfx = {
+    position = { -90 0 }
+    blockoverride "entity_instance" {
+        entity_instance = vfx_entity_ui_mobilize
+        alpha = 2
+    }
+}
+
+vfx = {
+    position = { -120 0 }
+    blockoverride "entity_instance" {
+        entity_instance = vfx_entity_ui_mobilize
+        alpha = 2
+    }
+}
+
+vfx = {
+    position = { -150 0 }
+    blockoverride "entity_instance" {
+        entity_instance = vfx_entity_ui_mobilize
+        alpha = 1
+    }
+}
+
+vfx = {
+    position = { -160 0 }
+    blockoverride "entity_instance" {
+        entity_instance = vfx_entity_ui_mobilize
+        alpha = 1
+    }
+}
+					vfx = {
+							blockoverride "entity_instance" {
+						entity_instance = vfx_entity_ui_to_arms_background
+						alpha = 8
+							}
+						}
+					vfx = {
+						position = { -100 0 }
+						blockoverride "camera_position" {
+				camera_position = { 0 0 -2 }
+			}
+							blockoverride "entity_instance" {
+						entity_instance = vfx_entity_ui_to_arms_background
+						alpha = 8
+							}
+						}
+					vfx = {
+						position = { 100 0 }
+							blockoverride "entity_instance" {
+						entity_instance = vfx_entity_ui_to_arms_background
+						alpha = 8
+							}
+						}
+						blockoverride "primary_visible" {}
+						blockoverride "primary_texture" {
+							texture = "gfx/interface/buttons/expand_button_bg.dds"
+							color = { 1 0.5 0.3 1 }
+						}
+						layoutpolicy_horizontal = expanding
+						size = { 390 35 }
+						text = "SAKUYA_TEXT_DEBUG_MODE_1"
+						  # 调试模式
+						onclick = "[ExecuteConsoleCommand('debug_mode')]"
+						onrightclick = "[ExecuteConsoleCommand('gui.createwidget gui/advcm_test.gui test_window')]"
+						tooltip = "SAKUYA_TEXT_DEBUG_MODE_TOOLTIP_1"  # 调试模式 提示
+						}
+					}
+				}
+
+
+		widget = {
+			size = { 650 275 }
+			position = { 0 245 }
+			scrollbox = {
+				size = { 650 275 }
+				#position = { 10 245 }
+				name = "characters_scroll_area"
+				layoutpolicy_vertical = expanding
+				layoutpolicy_horizontal = expanding
+				blockoverride "scrollbox_content" {
+                 
+					vbox = {
+					visible = "yes" 
+					hbox = {
+						spacing = 5
+					text_multi = {
+					text = "SAKUYA_TEXT_INTEREST_GROUP_UPDATE_3"  # 利益集团更新 提示
+						size = { 620 75 }
+						default_format = "#medium"  
+							}
+						}
+				
+
+					hbox = {
+						spacing = 5
+					text_multi = {
+					text = "SAKUYA_TEXT_INTEREST_GROUP_UPDATE_1"  # 利益集团更新 提示
+						size = { 620 195 }
+						default_format = "#medium"  
+							}
+						}
+				
+
+					hbox = {
+						spacing = 5
+					text_multi = {
+					text = "SAKUYA_TEXT_INTEREST_GROUP_UPDATE_2"  # 利益集团更新 提示
+						size = { 620 200 }
+						default_format = "#medium"  
+							}
+						}
+					}
+				}
+			}
+		}
+
+#####################################################################################
+
+			widget = {
+				visible = "[Not( CanGetAchievements )]"
+                position = { 260 105 }
+                size = { 390 100 }
+				hbox = {
+					button_standard = {
+						vfx = {
+							position = { 0 0 }
+							blockoverride "entity_instance" {
+							entity_instance = vfx_entity_ui_mobilize
+							alpha = 2
+							}
+						}
+						vfx = {
+							position = { 30 0 }
+							blockoverride "entity_instance" {
+							entity_instance = vfx_entity_ui_mobilize
+							alpha = 1
+							}
+						}
+						vfx = {
+    						position = { 60 0 }
+   							blockoverride "entity_instance" {
+       						entity_instance = vfx_entity_ui_mobilize
+        					alpha = 0.6
+   							 }
+						}
+
+vfx = {
+    position = { 90 0 }
+    blockoverride "entity_instance" {
+        entity_instance = vfx_entity_ui_mobilize
+        alpha = 0.4
+    }
+}
+
+vfx = {
+    position = { 120 0 }
+    blockoverride "entity_instance" {
+        entity_instance = vfx_entity_ui_mobilize
+        alpha = 0.3
+    }
+}
+
+vfx = {
+    position = { 150 0 }
+    blockoverride "entity_instance" {
+        entity_instance = vfx_entity_ui_mobilize
+        alpha = 0.2
+    }
+}
+
+vfx = {
+    position = { 160 0 }
+    blockoverride "entity_instance" {
+        entity_instance = vfx_entity_ui_mobilize
+        alpha = 0.1
+    }
+}
+vfx = {
+    position = { -30 0 }
+    blockoverride "entity_instance" {
+        entity_instance = vfx_entity_ui_mobilize
+        alpha = 0.7
+    }
+}
+vfx = {
+    position = { -10 0 }
+    blockoverride "entity_instance" {
+        entity_instance = vfx_entity_ui_mobilize
+        alpha = 1
+    }
+}
+
+vfx = {
+    position = { -60 0 }
+    blockoverride "entity_instance" {
+        entity_instance = vfx_entity_ui_mobilize
+        alpha = 0.6
+    }
+}
+
+vfx = {
+    position = { -90 0 }
+    blockoverride "entity_instance" {
+        entity_instance = vfx_entity_ui_mobilize
+        alpha = 0.5
+    }
+}
+
+vfx = {
+    position = { -120 0 }
+    blockoverride "entity_instance" {
+        entity_instance = vfx_entity_ui_mobilize
+        alpha = 0.4
+    }
+}
+
+vfx = {
+    position = { -150 0 }
+    blockoverride "entity_instance" {
+        entity_instance = vfx_entity_ui_mobilize
+        alpha = 0.2
+    }
+}
+
+vfx = {
+    position = { -160 0 }
+    blockoverride "entity_instance" {
+        entity_instance = vfx_entity_ui_mobilize
+        alpha = 0.1
+    }
+}
+					vfx = {
+							blockoverride "entity_instance" {
+						entity_instance = vfx_entity_ui_to_arms_background
+						alpha = 111
+							}
+						}
+					vfx = {
+						position = { -100 0 }
+						blockoverride "camera_position" {
+				camera_position = { 0 0 -2 }
+			}
+							blockoverride "entity_instance" {
+						entity_instance = vfx_entity_ui_to_arms_background
+						alpha = 111
+							}
+						}
+					vfx = {
+						position = { 120 10 }
+							blockoverride "entity_instance" {
+						entity_instance = vfx_entity_ui_to_arms_background
+						alpha = 111
+							}
+						}
+						vfx = {
+							blockoverride "entity_instance" {
+						entity_instance = vfx_entity_ui_to_arms_background
+						alpha = 111
+							}
+						}
+					vfx = {
+						position = { -120 10 }
+						blockoverride "camera_position" {
+				camera_position = { 0 0 -2 }
+			}
+							blockoverride "entity_instance" {
+						entity_instance = vfx_entity_ui_to_arms_background
+						alpha = 111
+							}
+						}
+					vfx = {
+						position = { 100 0 }
+							blockoverride "entity_instance" {
+						entity_instance = vfx_entity_ui_to_arms_background
+						alpha = 111
+							}
+						}
+						blockoverride "primary_visible" {}
+						blockoverride "primary_texture" {
+							texture = "gfx/interface/buttons/expand_button_bg.dds"
+							color = { 0.3 0.1 0.1 1 }
+						}
+						layoutpolicy_horizontal = expanding
+						size = { 390 35 }
+						text = "SAKUYA_TEXT_DEBUG_MODE_2"
+						  # 调试模式
+						onclick = "[ExecuteConsoleCommand('debug_mode')]"
+						onrightclick = "[ExecuteConsoleCommand('gui.createwidget gui/advcm_test.gui test_window')]"
+						tooltip = "SAKUYA_TEXT_DEBUG_MODE_TOOLTIP_2"  # 调试模式 提示
+						blockoverride "primary_texture" {
+							texture = "gfx/interface/buttons/expand_button_bg.dds"
+							color = { 0.3 0.1 0.1 1 }
+						}
+						}
+					}
+				}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						}
+					}
+				}
+			}
+	
+}

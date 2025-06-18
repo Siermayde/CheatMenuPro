@@ -1,0 +1,21 @@
+﻿gui/advcm_button.gui = advcm_button
+gui/advcm_laws.gui = advcm_law_window
+gui/advcm_main.gui = advcm_main_window
+gui/advcm_modifiers.gui = advcm_modifiers_window
+
+#他妈的，烦死了
+gui/sakuya_money.gui = sakuya_money_window
+gui/sakuya_seven.gui = sakuya_seven_window
+gui/sakuya_test.gui = advcm_test_window
+gui/gensokyo_kawashiro.gui = ayanews_window
+gui/sakuya.gui = sakuya_window
+gui/sakuya_about.gui = sakuya_about_window
+gui/sakuya_test.gui = sakuya_test_window
+gui/sakuya_force.gui = sakuya_force_window
+
+gui/buildings/sakuya_mil.gui = sakuya_mil_window
+gui/buildings/sakuya_mil_linyu.gui = sakuya_mil_linyu_window
+gui/buildings/sakuya_mil_nongye.gui = sakuya_mil_nongye_window
+gui/buildings/sakuya_mil_gongye.gui = sakuya_mil_gongye_window
+gui/buildings/sakuya_mil_jijian.gui = sakuya_mil_jijian_window
+gui/buildings/sakuya_mil_teshu.gui = sakuya_mil_teshu_window

@@ -1,0 +1,444 @@
+#你不应该来这里。
+################################################################
+window = {
+    name = "sakuya_test_window"
+    parentanchor = top|right
+    position = { -50 100 } #主GUI的大小和位置
+    size = { 640 910 }
+    layer = windows_layer
+    filter_mouse = all
+    allow_outside = yes
+    alwaystransparent = no
+    
+    using = Window_Background
+    using = Window_Decoration
+    movable = yes
+    
+    datacontext = "[GetVariableSystem]"
+    datacontext = "[GetPlayer]"
+    visible = "[GetVariableSystem.Exists('sakuya_test_visible')]"
+    
+    state = {
+        name = _show
+        using = Animation_FadeIn_Quick
+    }
+    
+    state = {
+        name = _hide
+        using = Animation_FadeOut_Quick
+    }
+    
+    vbox = {
+        restrictparent_min = yes
+        using = Window_Margins
+        
+    
+                    }
+                    vbox = {
+        restrictparent_min = yes
+        using = Window_Margins
+        
+        header_pattern = {
+            layoutpolicy_horizontal = expanding
+
+
+            blockoverride "header_text"
+            {
+                text = "测试窗口"
+            }
+
+            blockoverride "button_close"
+            {
+                onclick = "[GetVariableSystem.Clear('sakuya_test_visible')]"
+            }
+        }
+                scrollbox = {
+            name = "characters_scroll_area" #滚动条虽然支持，但一旦设置排版就乱套了
+            layoutpolicy_vertical = expanding
+            layoutpolicy_horizontal = expanding
+            blockoverride "scrollbox_content" {
+                }
+            }
+        }
+    
+########################################################
+widget = {  #
+                position = { 50 80 }
+                size = { 0 0 }
+                hbox = {
+                    visible = "yes"  
+                    vbox = {
+                    spacing = 5
+                    text_multi = {
+                        text = "#n 这是测试窗口#!。#v 如果你不是MOD编辑者，你不应该打开。   请立即退出，否则你成就会出问题的。什么？不在乎？那随你好了。"
+                        size = { 480 105 }
+                        default_format = "#medium"  
+                            }
+                        }
+                    }
+                }
+##########################################################
+    widget = {  #测试
+                position = { 380 155 }
+                size = { 300 330 }
+                vbox = {
+                    hbox = {
+                        button_icon_square = {
+                            blockoverride "primary_visible" {}
+                            blockoverride "primary_texture" {
+                                texture = "gfx/interface/buttons/expand_button_bg.dds"
+                            color = { 1 1 0 1 }
+                        }
+                            name = "sakuya_add_money_country_gold_reserve_limit_mult"
+                            onclick = "[GetScriptedGui('test_b').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                            onrightclick = "[GetScriptedGui('test_1_n').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                            
+                            tooltip = "#v SGUI点击测试！#!"
+                            using = tooltip_ne
+                            size = { 100 40 }
+                            
+                            blockoverride "icon" {
+                                texture = "gfx/interface/buttons/button_icons/minus.dds"
+                            }
+                            
+                            blockoverride "icon_size" {
+                                size = { 70 70 }
+                            }
+                        }
+                    }
+                    hbox = {
+                        button_icon_square = {
+                            blockoverride "primary_visible" {}
+                            blockoverride "primary_texture" {
+                                texture = "gfx/interface/buttons/expand_button_bg.dds"
+                            color = { 1 0 0 1 }
+                        }
+                            name = "sakuya_add_money_country_gold_reserve_limit_mult"
+                            onclick = "[GetScriptedGui('test_2_y').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                            onrightclick = "[GetScriptedGui('test_2_n').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                            
+                            tooltip = "#v 点击测试！#!"
+                            using = tooltip_ne
+                            size = { 100 40 }
+                            
+                            blockoverride "icon" {
+                                texture = "gfx/interface/buttons/button_icons/minus.dds"
+                            }
+                            
+                            blockoverride "icon_size" {
+                                size = { 70 70 }
+                            }
+                        }
+                    }
+                    hbox = {
+                        button_icon_square = {
+                            blockoverride "primary_visible" {}
+                            blockoverride "primary_texture" {
+                                texture = "gfx/interface/buttons/expand_button_bg.dds"
+                            color = { 1 0 0 1 }
+                        }
+                            name = "sakuya_add_money_country_gold_reserve_limit_mult"
+                            onclick = "[GetScriptedGui('test_3_y').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                            onrightclick = "[GetScriptedGui('test_3_n').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                            
+                            tooltip = "#v 点击测试！#!"
+                            using = tooltip_ne
+                            size = { 100 40 }
+                            
+                            blockoverride "icon" {
+                                texture = "gfx/interface/buttons/button_icons/minus.dds"
+                            }
+                            
+                            blockoverride "icon_size" {
+                                size = { 70 70 }
+                            }
+                        }
+                    }
+                    hbox = {
+                        button_icon_square = {
+                            blockoverride "primary_visible" {}
+                            blockoverride "primary_texture" {
+                                texture = "gfx/interface/buttons/expand_button_bg.dds"
+                            color = { 1 0 0 1 }
+                        }
+                            name = "sakuya_add_money_country_gold_reserve_limit_mult"
+                            onclick = "[GetScriptedGui('test_4_y').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                            onrightclick = "[GetScriptedGui('test_4_n').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                            
+                            tooltip = "#v 点击测试！#!"
+                            using = tooltip_ne
+                            size = { 100 40 }
+                            
+                            blockoverride "icon" {
+                                texture = "gfx/interface/buttons/button_icons/minus.dds"
+                            }
+                            
+                            blockoverride "icon_size" {
+                                size = { 70 70 }
+                            }
+                        }
+                    }
+                    hbox = {
+                        button_icon_square = {
+                            blockoverride "primary_visible" {}
+                            blockoverride "primary_texture" {
+                                texture = "gfx/interface/buttons/expand_button_bg.dds"
+                            color = { 1 0 0 1 }
+                        }
+                            name = "sakuya_add_money_country_gold_reserve_limit_mult"
+                            onclick = "[GetScriptedGui('test_5_y').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                            onrightclick = "[GetScriptedGui('test_5_n').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                            
+                            tooltip = "#v 点击测试！#!"
+                            using = tooltip_ne
+                            size = { 100 40 }
+                            
+                            blockoverride "icon" {
+                                texture = "gfx/interface/buttons/button_icons/minus.dds"
+                            }
+                            
+                            blockoverride "icon_size" {
+                                size = { 70 70 }
+                            }
+                        }
+                    }
+                    hbox = {
+                        button_icon_square = {
+                            blockoverride "primary_visible" {}
+                            blockoverride "primary_texture" {
+                                texture = "gfx/interface/buttons/expand_button_bg.dds"
+                            color = { 1 1 0 1 }
+                        }
+                            name = "sakuya_add_money_country_gold_reserve_limit_mult"
+                            onclick = "[SetRandomPlayableObserverCharacter]"
+                            onrightclick = "[LobbyView.ToggleObserve]"
+                        using = select_button_sound
+                            #onrightclick = "[GetScriptedGui('test_6_n').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                            
+                            tooltip = "#v 观察者！#!"
+                            using = tooltip_ne
+                            size = { 100 40 }
+                            
+                            blockoverride "icon" {
+                                texture = "gfx/interface/buttons/button_icons/minus.dds"
+                            }
+                            
+                            blockoverride "icon_size" {
+                                size = { 70 70 }
+                            }
+                        }
+                    }
+                    hbox = {
+                        button_icon_square = {
+                            blockoverride "primary_visible" {}
+                            blockoverride "primary_texture" {
+                                texture = "gfx/interface/buttons/expand_button_bg.dds"
+                            color = { 1 0 0 1 }
+                        }
+                            name = "sakuya_add_money_country_gold_reserve_limit_mult"
+                            onclick = "[GetVariableSystem.Set( 'CanGetAchievements' )]
+                            onrightclick = "[GetScriptedGui('test_7_n').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                            
+                            tooltip = "#v 点击测试！#!"
+                            using = tooltip_ne
+                            size = { 100 40 }
+                            
+                            blockoverride "icon" {
+                                texture = "gfx/interface/buttons/button_icons/minus.dds"
+                            }
+                            
+                            blockoverride "icon_size" {
+                                size = { 70 70 }
+                            }
+                        }
+                    }
+                    hbox = {
+                        button_icon_square = {
+                            blockoverride "primary_visible" {}
+                            blockoverride "primary_texture" {
+                                texture = "gfx/interface/buttons/expand_button_bg.dds"
+                            color = { 1 1 1 1 }
+                        }
+                            name = "sakuya_add_money_country_gold_reserve_limit_mult"
+                            onclick = "[PdxGuiTriggerAllAnimations('ami_test')]"
+                            onrightclick = "[Execute(Country.DeclareBankruptcy)]"
+
+                            
+                            tooltip = "动画测试"
+                            using = tooltip_ne
+                            size = { 100 40 }
+                            
+                            blockoverride "icon" {
+                                texture = "gfx/interface/buttons/button_icons/plus.dds"
+                            }
+                            
+                            blockoverride "icon_size" {
+                                size = { 70 70 }
+                            }
+                        }
+                    }
+                }#
+            }
+##################################################################
+
+widget = {  #本质上就是一个大按钮，只是按钮实际操控尺寸为0，皮肤为空白而已。
+    position = { 00 410 }
+    size = { 0 0 }
+    vbox = {
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_interest_group_approval_add"
+                using = tooltip_ne
+                size = { 600 600 }
+                scissor = yes 
+                texture = none
+                alpha = 0.001
+                text_multi = {
+                                position = { 270 225 }
+                                size = { 210 220 }
+                            text = "#V 此菜单可以检测修饰符是否有效，以及测试新的排版。 按钮的材质等dds文件可以去看一看我写的libary文件。" 
+                            default_format = "#xxl"     
+                            alpha = 1000    
+                            }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/Th075Sakuya.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 700
+                    position = { -100 26 }
+                }
+                blockoverride "icon_size" {
+                    size = { 249 282 }                  
+                }
+            }
+        }
+    }
+}
+
+widget = {
+    position = { 1 340 }
+    size = { 190 30 }
+    vbox = {
+        hbox = {
+            button_icon_square = {
+                alpha = 0.7
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg_dropdown.dds"
+                    color = { 0 0 1 1 }  # Blue background for the button
+                }
+                name = "open_potential_companies_list"
+                onclick = "[GetScriptedGui('show_potential_companies_list').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "点击查看可成立的公司列表。 #lore 很明显没指定公司列表的域。而且没那么简单... 烦。不过之前我似乎注意到有一些公司存在固定的公司代码，我找dds图片无意中注意到了。但反正没什么用，开修改器的有几个愿意用我提供的微加成游玩的？要么9999%，要么干脆直接无脑吞并。 #v #n 绝大多数人甚至不会用负面效果的buff，尽管我都提供了！ #!#! 但无论怎么说，那是他们的自由，他们爱怎么用怎么用。我没意见，我也不会有意见。 毕竟能订阅我的修改器的，也都是有缘人吧。 一个修改器，根本没必要花90%的精力在GUI上，只要做好功能就行，比如刀鱼哥的。我和刀鱼哥简单交流过，他的言语无一不透露他对自己修改器的自豪。 想必这就是我们这些MOD制作者最开心的事情吧。 但我和他不同的是，他是一个实用主义者，他的风格简单又精准，就像宜家。 我呢...全P社游戏，包括欧陆，CK，V，HOI，群星，花里胡哨的修改器我是独一份。 我知道，修改器是工具，没必要把精力放在刀背。但只是我喜欢，所以我这么做了。"
+                using = tooltip_ne
+                size = { 190 30 }
+                blockoverride "icon" {
+                    texture = "gfx/interface/buttons/button_icons/plus.dds"  # Plus icon for the button
+                }
+                blockoverride "icon_size" {
+                    size = { 35 35 }
+                }
+            }
+        }
+    }
+}
+
+
+widget = {
+    position = { 1 340 }
+    size = { 790 430 }
+vbox = {
+                            visible = "[GetVariableSystem.Exists('NO')]" #禁用这个就可以显示我做的隐藏动画测试
+                            layoutpolicy_horizontal = expanding
+
+                            ui_guide_component_area = {
+                                blockoverride "component_name" {
+                                    raw_text = "动画"
+                                }
+                                blockoverride "component_name_type" {
+                                    raw_text = "(动)"
+                                }
+                                
+                                blockoverride "extra_stuff" {
+                                    button = {
+                                        size = { 180 30 }
+                                        raw_text = "点击测试！！"
+                                        using = default_button
+                                        onclick = "[PdxGuiTriggerAllAnimations('ui_guide_Animation_Curve_Default_test')]"
+                                    }
+                                }
+                            }
+                        }
+                    }
+####定义移动的按钮。
+                                blockoverride "component_area" {
+                                    widget = {
+                                        size = { 500 40 }
+                                        
+                                        flag_icon = {
+                                            size = { 40 40 }
+                                            datacontext = "[GetPlayer]"
+                                            
+                                            position = { 0 0 }
+                                            
+                                            state = {
+                                                name = ui_guide_Animation_Curve_Default_test
+                                                using = Animation_Curve_Default
+                                                duration = 1.5
+                                                
+                                                position_x = -1300
+                                                position_y = -600
+                                                size = { 1920 1080 }
+                                                next = reset
+                                            }
+                                            state = {
+                                                name = reset
+                                                duration = 0.7
+                                                position_x = 0
+                                                position_y = 0
+                                                size = { 40 40 }
+                                            }
+                                        }
+                                    }
+                                } #success
+
+#############
+
+
+
+widget = {
+    using = shimmer_fade_in_alpha_1000
+    position = { 11 155 }
+    size = { 0 0 }
+    vbox = {
+        hbox = {
+            button_icon_square = {
+                size = { 600 230 }
+                alpha = 0.001
+            blockoverride "primary_visible" {}
+            blockoverride "primary_texture" {
+                alpha = 1000
+                texture = "gfx/interface/sakuya/about/1.jpg"
+            modify_texture = {
+                texture = "gfx/interface/sakuya/seven/zhezhao.dds"
+                using = shimmer_fade_in_long
+                spriteType = Stretched
+                spriteborder = { 1 2 }
+                blend_mode = alphamultiply
+                alpha = 1000
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+################################
+}
+}
+}
+}
+}
+}
+}
+}

@@ -1,0 +1,178 @@
+window = {
+	name = "ayanews_window"
+	parentanchor = center
+	position = { 0 0 } #主GUI的大小和位置
+	size = { 1280 1000 }
+	layer = windows_layer
+	filter_mouse = all
+	allow_outside = yes
+	alwaystransparent = no
+	
+	using = Window_Background
+	using = Window_Decoration
+	movable = yes
+    
+    datacontext = "[GetVariableSystem]"
+	datacontext = "[GetPlayer]"
+	visible = "[GetVariableSystem.Exists('gensokyo_kawashiro_visible')]"
+	
+	state = {
+		name = _show
+		using = Animation_FadeIn_Quick
+	}
+	
+	state = {
+		name = _hide
+		using = Animation_FadeOut_Quick
+	}
+	
+	vbox = {
+		restrictparent_min = yes
+		using = Window_Margins
+					}
+
+########################################
+					widget = {  #加钱上限_等级3_降低
+                position = { 1190 40  }
+                size = { 40 40 }
+				vbox = {
+					hbox = {
+						button_icon_square = {
+							blockoverride "primary_visible" {}
+							blockoverride "primary_texture" {
+								texture = "gfx/interface/buttons/expand_button_bg_dropdown.dds"
+							color = { 1 0.0 0.0 1 }
+						}
+							name = "sakuya_money_remove_country_gold_reserve_limit_mult_3"
+							onclick = "[GetVariableSystem.Toggle('gensokyo_kawashiro_visible')]"
+							
+							tooltip = "#v #n 关闭#!#!窗口。#!"
+							using = tooltip_ne
+							size = { 40 40 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/buttons/button_icons/close.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 40 40 }
+							}
+						}
+					}
+				}
+			}
+			widget = {  #本质上就是一个大按钮，只是按钮实际操控尺寸为0，皮肤为空白而已。
+    position = { 60 45 }
+    size = { 0 0 } 
+    vbox = {
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_interest_group_approval_add"
+                using = tooltip_ne
+                size = { 633 900 } 
+                scissor = yes 
+                texture = none
+                alpha = 0.001
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/AyaNewsKawashiro.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 700
+                    position = { 0 0 }
+                }
+                blockoverride "icon_size" {
+                    size = { 633 900 }                  
+                }
+            }
+        }
+    }
+}
+		widget = {
+                position = { 730 40 }
+                size = { 0 0 }
+					hbox = {
+					visible = "yes" 
+					vbox = {
+						spacing = 5
+					text_multi = {
+						autoresize = yes
+					    align = nobaseline
+					    maximumsize = { 400 -1 }
+						multiline = yes
+						using = header_font_fancy
+					raw_text = "一份报纸？"
+						size = { 520 125 }
+						using = header_font_fancy
+										using = header_font_fancy_size
+						default_format = "#medium"  
+							}
+						}
+					}
+				}
+			widget = { #2
+                position = { 730 115 }
+                size = { 0 0 }
+					hbox = {
+					visible = "yes" 
+					vbox = {
+						spacing = 5
+					text_multi = {
+						maximumsize = { 500 -1 }
+						text = "这报纸似乎是山城高岭小姐递交每周报告时无意夹在报告上的。 她们究竟从何而来，以及火星银行为什么总能瞬间存取巨额黄金，对于外界来说一直都是谜。只是他们的客户，各国政治家们却对此总是避而不谈。 这份装帧风格复古的报纸，却出人意料地品质良好。报纸上的哪名女士...嗯？这不是人称“芥川龙之介的金融怪弹头”的荷城河取女士吗？看她这样子，似乎这个报纸发行的时候她刚来伦敦呢。 "
+						autoresize = yes
+						multiline = yes
+						default_format = "#medium"  
+							}
+						}
+					}
+				}
+
+widget = {  #利益集团吸引力 文字
+    position = { 700 300 }
+    size = { 0 0 }
+    vbox = {
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_interest_group_approval_add_notes"
+                onclick = none
+                using = tooltip_ne
+                size = { 547 60 }
+                scissor = yes
+                texture = "gfx/interface/buttons/default_button_texture.dds"
+                color = { 0.2 0.23 0.7 1 }
+                alpha = 0.6
+                text_multi = {
+								position = { 30 5 }
+								size = { 350 80 }
+							text = "#V 荷城河取再下一城！#! #lroe ——河童科技穿越维多利亚时代？#!" 
+							default_format = "#medium" 	
+							alpha = 2	
+							}
+                }
+            }
+        }
+    }
+    widget = { #2
+                position = { 730 370 }
+                size = { 0 0 }
+					hbox = {
+					visible = "yes" 
+					vbox = {
+						spacing = 5
+					text_multi = {
+						maximumsize = { 500 -1 }
+						text = "幻想乡的妖怪之山从来不缺新闻。这个时节樱花刚刚凋零，山顶也逐渐被葱绿色浸染，很多村民和妖怪也已经结束了赏花祭的春游活动。似乎一切都逐渐恢复平静，但玄武涧的河童们最近却动作不断。 荷城河取在太阳花田附近的水塘正式向公众亮相了最新一代的时空穿梭机。 这名搞怪发明家兼铁公鸡理财专家声称，穿梭机可以在一八三六年到一九三六年之间随意穿梭。 不过，掌握时间的红魔馆的骇人女仆长却私下评论道，“河童的穿梭机实际上穿梭的不是时间，而是一个平行世界。那个世界不知为何保留了外界维多利亚时期的那一百年，但每到最后一年，那个平行宇宙就会莫名重置。即使强行待下去，那个世界的科技也不会随着时代进步。” 本记者认为，即使女仆长所言既实，那也是意料之内的事呢。幻想乡从有人定居到现在，文化也就相当于八云紫所说的人类古代水平呢。从我记事开始，幻想乡无非就是比一千年前更有活力吧。 晚些时候，荷城河取小姐向本新闻记者射命丸小姐，也就是我借相机一用，称她会用相机拍摄维多利亚街头的建筑。她上一次研究相机导弹时就已经损毁了3台从外界带来的相机。 犹豫再三，本人出于对新闻的渴求可职业态度，将我仅有的相机借给了河童小姐。 图甲是荷城河取小姐仅存的摄影。她声称她当时太激动了，按快门的时候手控制不住颤抖，将相机镜片摔碎了。各位读者不用担心，香霖堂的霖之助店长有不少备用的相机，明天我会向他再“借”一个的。    ■射命丸 文 "
+						autoresize = yes
+						multiline = yes
+						default_format = "#medium"  
+							}
+						}
+					}
+				}
+
+
+
+
+
+
+
+	}

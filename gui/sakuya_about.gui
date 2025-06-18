@@ -1,0 +1,310 @@
+window = {
+	name = "sakuya_about_window"
+	parentanchor = center
+	position = { 0 -3 } #主GUI的大小和位置
+	size = { 1980 1120 }
+	layer = windows_layer
+	filter_mouse = all
+	allow_outside = yes
+	alwaystransparent = no
+	
+	using = Window_Background
+	using = Window_Decoration
+	movable = no
+    
+    datacontext = "[GetVariableSystem]"
+	datacontext = "[GetPlayer]"
+	visible = "[GetVariableSystem.Exists('sakuya_about_visible')]"
+	
+	state = {
+		name = _show
+		using = Animation_FadeIn_Quick
+	}
+	
+	state = {
+		name = _hide
+		using = Animation_FadeOut_Quick
+	}
+	
+	vbox = {
+		restrictparent_min = yes
+		using = Window_Margins
+							background = {
+						texture = "gfx/interface/sakuya/about/1.jpg"
+						alpha = 1
+						fittype = centercrop
+						#color = { 0.5 0.2 0.2 1.0 }
+						scissor = no
+						
+					}
+					}
+
+########################################
+					widget = {  #加钱上限_等级3_降低
+                position = { -60 40  }
+                parentanchor = top|right
+                size = { 60 60 }
+				vbox = {
+					hbox = {
+						button_icon_square = {
+							blockoverride "primary_visible" {}
+							blockoverride "primary_texture" {
+								texture = "gfx/interface/buttons/expand_button_bg_dropdown.dds"
+							color = { 1 0.5 0.5 1 }
+						}
+							name = "sakuya_money_remove_country_gold_reserve_limit_mult_3"
+							onclick = "[GetVariableSystem.Toggle('sakuya_about_visible')]"
+							
+							tooltip = "SAKUYA_ABOUT_1"
+							using = tooltip_ne
+							size = { 70 70 }
+							
+							blockoverride "icon" {
+								texture = "gfx/interface/buttons/button_icons/close.dds"
+							}
+							
+							blockoverride "icon_size" {
+								size = { 70 70 }
+							}
+						}
+					}
+				}
+			}
+			widget = {  #本质上就是一个大按钮，只是按钮实际操控尺寸为0，皮肤为空白而已。
+				visible = "[GetVariableSystem.Exists('sakuya_visible')]"
+    position = { 40 105 }
+    size = { 0 0 } 
+    vbox = {
+        hbox = {
+            button_icon_square = {
+                name = "advcm_add_sakuya_interest_group_approval_add"
+                using = tooltip_ne
+                size = { 1920 900 } 
+                scissor = yes 
+                texture = none
+                alpha = 0.001
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/Kawashiro_bk_o.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 700
+                    position = { 0 0 }
+                }
+                blockoverride "icon_size" {
+                    size = { 1920 760 }                  
+                }
+            }
+        }
+    }
+}
+		widget = {  #金钱 背景
+    position = { 20 125 }
+                 size = { 0 0 } 
+				vbox = {
+					hbox = {
+						layoutpolicy_horizontal = expanding
+						button_icon_square = {
+
+							texture = "gfx/interface/buttons/default_button_bevel_map_interaction.dds"
+							alpha = 0.01
+							blockoverride "primary_visible" {
+								alpha = 0.1
+								 texture = "gfx/interface/buttons/expand_button_bg.dds"
+								 color = { 0.1 0.1 0.1 0.8 }
+							}
+							blockoverride "primary_texture" {
+                    #texture = "gfx/interface/sakuya/emmm.png" #信仰是为了虚幻之人
+
+								alpha = 60
+								
+								
+							}
+							layoutpolicy_horizontal = expanding
+							name = "sakuya_money_1_b"
+							using = tooltip_ne
+							size = { 1940 40 }	
+						}
+					}
+				}
+			}
+
+##########################################################################
+			widget = {
+                position = { 50 30 }
+                size = { 0 0 }
+					hbox = {
+					#visible = "[GetVariableSystem.HasValue( 'sakuya_about_tabs', 'sakuya_about_tabs_1' ) )]"
+					#visible = "yes" 
+					vbox = {
+						spacing = 5
+					text_multi = {
+						autoresize = yes
+					    align = nobaseline
+					    maximumsize = { -1 -1 }
+						multiline = yes
+						using = header_font_fancy
+					raw_text = "SAKUYA_ABOUT_2"
+						size = { 520 125 }
+						using = header_font_fancy
+						fontsize = 60
+						#default_format = "#medium"  
+							}
+							text_multi = {
+								autoresize = yes
+					   			 align = nobaseline
+					   			 maximumsize = { -1 -1 }
+								multiline = yes
+								using = regular_font
+								raw_text = "SAKUYA_ABOUT_3"
+								alpha = 0.2
+								size = { 520 125 }
+								fontsize = 28
+									#default_format = "#medium"  
+							}
+						}
+					}
+				}
+
+			widget = {  #加钱上限_等级2_降低
+				visible = "[GetVariableSystem.HasValue( 'sakuya_about_tabs', 'sakuya_about_tabs_1' ) )]"
+                position = { 1570 460 }
+                size = { 100 310 }
+				vbox = {
+					hbox = {
+						button_icon_square = {
+							alpha = 0.001
+							blockoverride "primary_visible" {}
+							blockoverride "primary_texture" {
+								texture = "gfx/interface/buttons/expand_button_bg_dropdown.dds"
+							color = { 1 0.3 0.3 1 }
+						}
+							name = "sakuya_money_remove_country_gold_reserve_limit_mult_2"
+							onclick = "[GetScriptedGui('sakuya_money_remove_country_gold_reserve_limit_mult_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "我是可爱的蜡烛！^_~"
+							using = tooltip_ne
+							size = { 100 310 }
+							
+							blockoverride "icon" {
+								alpha = 10000
+								texture = "gfx/interface/sakuya/about/lazhu.png"
+							}
+							blockoverride "icon_size" {
+								size = { 100 310 }
+							}
+						}
+					}
+				}
+			}
+
+			widget = {  #加钱上限_等级2_降低
+				visible = "[GetVariableSystem.HasValue( 'sakuya_about_tabs', 'sakuya_about_tabs_1' ) )]"
+                position = { 1625 464 }
+                size = { 0 0 }
+				vbox = {
+					hbox = {
+						button_icon_square = {
+							alpha = 0.001
+							blockoverride "primary_visible" {}
+							blockoverride "primary_texture" {
+								texture = "gfx/interface/buttons/expand_button_bg_dropdown.dds"
+							color = { 1 0.3 0.3 1 }
+						}
+							name = "sakuya_money_remove_country_gold_reserve_limit_mult_2"
+							onclick = "[GetScriptedGui('sakuya_money_remove_country_gold_reserve_limit_mult_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "我是可爱的光效！^_~"
+							using = tooltip_ne
+							size = { 0 0 } #光效需要碰撞箱？你开玩笑呢
+							
+							blockoverride "icon" {
+								alpha = 3000
+								texture = "gfx/interface/sakuya/about/nothing.png"
+								using = selected_sidepanel_sakuya_fire_gui
+							}
+							blockoverride "icon_size" {
+								size = { 50 50 }
+							}
+						}
+					}
+				}
+			}	
+			widget = {  #加钱上限_等级2_降低
+				visible = "[GetVariableSystem.HasValue( 'sakuya_about_tabs', 'sakuya_about_tabs_1','sakuya_about_tabs_2' ) )]"
+                position = { 690 660 }
+                size = { 624 150 }
+				vbox = {
+					hbox = {
+						button_icon_square = {
+							alpha = 0.001
+							blockoverride "primary_visible" {}
+							blockoverride "primary_texture" {
+								texture = "gfx/interface/buttons/expand_button_bg_dropdown.dds"
+							color = { 1 0.3 0.3 1 }
+						}
+							name = "sakuya_money_remove_country_gold_reserve_limit_mult_2"
+							onclick = "[GetVariableSystem.Set( 'sakuya_about_tabs', 'sakuya_about_tabs_2' )]" down = "[GetVariableSystem.HasValue( 'sakuya_about_tabs', 'sakuya_about_tabs_2' ) )]"
+							onrightclick = "[GetVariableSystem.Set( 'sakuya_about_tabs', 'sakuya_about_tabs_1' )]" down = "[GetVariableSystem.HasValue( 'sakuya_about_tabs', 'sakuya_about_tabs_1' ) )]"
+							tooltip = "我是可爱的卷轴！^_~"
+							using = tooltip_ne
+							size = { 624 150 }
+							blockoverride "icon" {
+								color = { 0.82 0.81 0.8 1 }
+								alpha = 10000
+								texture = "gfx/interface/sakuya/about/juanzhou.png"
+							}
+							blockoverride "icon_size" {
+								size = { 624 150 }
+							}
+						}
+					}
+				}
+			}
+			widget = {  #加钱上限_等级2_降低
+				visible = "[GetVariableSystem.HasValue( 'sakuya_about_tabs', 'sakuya_about_tabs_1' ) )]"
+                position = { 210 310 }
+                size = { 450 500 }
+				vbox = {
+					hbox = {
+						button_icon_square = {
+							alpha = 0.001
+							blockoverride "primary_visible" {}
+							blockoverride "primary_texture" {
+								texture = "gfx/interface/buttons/expand_button_bg_dropdown.dds"
+							color = { 1 0.3 0.3 1 }
+						}
+							name = "sakuya_money_remove_country_gold_reserve_limit_mult_2"
+							onclick = "[GetScriptedGui('sakuya_money_remove_country_gold_reserve_limit_mult_2').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+							tooltip = "我是可爱的crino！^_~"
+							using = tooltip_ne
+							size = { 450 500 }
+							blockoverride "icon" {
+								color = { 0.82 0.81 0.8 1 }
+								alpha = 10000
+								texture = "gfx/interface/sakuya/about/crino.png"
+							}
+							blockoverride "icon_size" {
+								size = { 450 500 }
+							}
+						}
+					}
+				}
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	}
