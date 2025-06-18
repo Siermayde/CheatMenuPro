@@ -1,0 +1,1264 @@
+﻿l_english:
+SAKUYA_TEXT_MENU_BUTTON_1: "#v Click to open the modifier.#!\n\N #BOLD Current FPS:[GetCurrentFps|0]#!\N\N\N It is recommended to use this modifier at 1080P resolution or higher, \N please ensure the aspect ratio is 16:10 or longer. Do not use GUI scaling."
+SAKUYA_TEXT_MENU_TITLE_1: "#h1    Super Built-in Modifier English Menu   #"
+SAKUYA_TEXT_MENU_TOOLTIP_1: "Gloriously presented in the name of #tooltippable Sakuya#!"
+SAKUYA_TEXT_TREASURY_1: "Economy"
+SAKUYA_TEXT_TREASURY_TOOLTIP_1: "#v #p Left-click#! to open a new #gold economy#! modification menu!#! Content is continuously updated, feel free to suggest feedback and experience the test version in the QQ group!"
+SAKUYA_TEXT_ADMIN_POWER_1: "Administrative"
+SAKUYA_TEXT_ADMIN_POWER_TOOLTIP_1: "Left-click to increase administrative power (accumulated). Right-click to remove (clear all)."
+SAKUYA_TEXT_AUTHORITY_1: "Authority"
+SAKUYA_TEXT_AUTHORITY_TOOLTIP_1: "Left-click to increase authority. Right-click to remove."
+SAKUYA_TEXT_INFLUENCE_1: "Influence"
+SAKUYA_TEXT_INFLUENCE_TOOLTIP_1: "Left-click to increase influence. Right-click to remove."
+SAKUYA_TEXT_LAW_1: "Law"
+SAKUYA_TEXT_LAW_TOOLTIP_1: "Open the law modification window. Existing laws can be directly changed."
+SAKUYA_TEXT_LOYALIST_TOOLTIP_1: "#v Click to turn the entire population into your #blue loyalists#!#!. \n #lore “Sakuya maid, take me away!” your minister cried.#! \n If only part changes into loyalists, click again. Sometimes Sakuya's space magic isn't stable."
+SAKUYA_TEXT_LOYALIST_1: "Loyalists"
+SAKUYA_TEXT_RADICAL_TOOLTIP_1: "#lore “I have never heard such a strange request... I want to confirm, do you really want to do this?” \n “... Since you insist, I will fulfill it.” \n#!“Now, #v click this button, and you will be met with #n scorn and curses from the entire nation#!, if one click doesn't work, click twice.#!” \n“Now you are the target of everyone, are you happy? You're quite strange.”"
+SAKUYA_TEXT_RADICAL_1: "Radicals"
+SAKUYA_TEXT_TECHNOLOGY_TOOLTIP_1: "Left-click to increase technology spread and innovation. Note, wait until next week to complete. Right-click to end rapid technology development."
+SAKUYA_TEXT_TECHNOLOGY_1: "Technology"
+SAKUYA_TEXT_INFAMY_TOOLTIP_1: "Left-click to increase infamy. Right-click to decrease infamy. #tooltippable_name 60AE, I am timid; 1000AE, I strike hard!#!"
+SAKUYA_TEXT_INFAMY_1: "Infamy"
+SAKUYA_TEXT_BIRTHRATE_TOOLTIP_1: "Left-click to add birth rate to each owned province. Right-click to remove."
+SAKUYA_TEXT_BIRTHRATE_1: "Birth Rate"
+SAKUYA_TEXT_BUFF_MENU_TOOLTIP_1: "Open the BUFF menu."
+SAKUYA_TEXT_BUFF_MENU_1: "Add a buff"
+SAKUYA_TEXT_LICKDOG_TOOLTIP_1: "Left-click to increase lickspittles. Right-click to decrease lickspittles."
+SAKUYA_TEXT_LOYALIST_1: "Loyalists"
+SAKUYA_TEXT_RADICAL_TOOLTIP_1: "Left-click to increase radicals. Right-click to transform into #P Great Western King#! Kill kill kill."
+SAKUYA_TEXT_RADICAL_1: "Radicals"
+SAKUYA_TEXT_TECHNOLOGY_TOOLTIP_1: "Left-click to increase technology spread and innovation. Note, wait until next week to complete. Right-click to end rapid technology development."
+SAKUYA_TEXT_TECHNOLOGY_1: "Technology"
+SAKUYA_TEXT_INFAMY_TOOLTIP_1: "Left-click to increase infamy. Right-click to decrease infamy. #tooltippable_name 60AE, I am timid; 1000AE, I strike hard!#!"
+SAKUYA_TEXT_INFAMY_1: "Infamy"
+SAKUYA_TEXT_BIRTH_RATE_TOOLTIP_1: "Left-click to add birth rate to each owned province. Right-click to remove."
+SAKUYA_TEXT_BIRTH_RATE_1: "Birth Rate"
+SAKUYA_TEXT_ADD_BUFF_TOOLTIP_1: "Open the BUFF menu."
+SAKUYA_TEXT_ADD_BUFF_1: "Add a buff"
+SAKUYA_TEXT_INTEREST_GROUP_MENU_TOOLTIP_1: "#n Click#! to open a new modification interface: #V #blue Interest Group Menu!#!#! Please click on support, power, and BUFF to choose what you want to modify."
+SAKUYA_TEXT_INTEREST_GROUP_1: "Interest Group"
+SAKUYA_TEXT_ABOUT_TOOLTIP_1: "    It is a pleasure to meet you.\n    Thank you for using this modifier. This modifier is based on the Advanced Cheat Menu MOD framework, with special thanks to the Turkish Mrtats. This modifier MOD is completely free; if you paid for it on platforms like Taobao, please #v file a complaint#!. If you would like to show support, you can give this MOD a thumbs up on Steam~ If you can send some points, that would be even better. Of course, if you're a Touhou fan, please vote for Sakuya in the next popularity poll~If you encounter strange issues or bugs, or have better suggestions, please join QQ Group 565375259, and I will check your messages anytime.\n    If you want to see more content, click the button below to view. No button appearing? It seems I messed up.\n\n\n    Enjoy your game!"
+SAKUYA_TEXT_ABOUT_1: "About"
+SAKUYA_TEXT_DEBUG_MODE_1: "#bold #gold Debug Mode#!"
+SAKUYA_TEXT_DEBUG_MODE_TOOLTIP_1: "#bold #red Click to open Debug Mode. #!#! \n #lore “Wait,” Sakuya stopped you. \n “Once you click this button, there will be no turning back...”\n “What?” you ask in surprise.\n “If you click this button, your save will #broken no longer unlock achievements#!...” \n “Even exiting debug mode won't work. Your vow with them cannot be undone, think carefully.”\n   The console's crimson light illuminated you. \n   That red button deeply perceives you. \n \n                                Sakuya silently stands behind you, quietly watching you."
+SAKUYA_TEXT_INTEREST_GROUP_UPDATE_3: "#v What to do about #p various tricky problems?#!#! \n#bold Which place is best for fixing bugs? Find Sakuya in the Scarlet Devil Mansion in Gensokyo!#!#n QQ Group#!：565375259#!, come play!#!"
+SAKUYA_TEXT_INTEREST_GROUP_UPDATE_2: "#v #p The National Group Menu is now available!#!#! \n#tooltippable Reimu Hakurei#! blackmailed Sakuya for mysterious reasons to open a portal to Victoria 3! As a politician and enthusiast (crossed out), she soon arrived at your residence. \nYou exchanged brief words with her; the lady before you spoke elegantly yet concealed daggers in her words, acting modestly but without restraint. It seems she really is the Queen of the Stable. “What? After becoming a god, how did even your gender change?” you teased. “Same to you, you’ve changed your nationality and ethnicity, you’re more altered than me.” \nShe listens to ten sounds; the rumors are true. But unexpectedly, she could even hear you behind the screen."
+SAKUYA_TEXT_INTEREST_GROUP_UPDATE_1: "#v I lost a #p Paris Olympic football ticket...#!#! \nCouldn’t go. The visa has been queued... Jesus. No one wanted the ticket, and it ended up in my hands. Fortunately, my opening ceremony ticket and other tickets were sold. Of course, not seeing the Paris Olympic opening ceremony’s chaotic dance could be considered good. \nBy the way, did you join the group? At that time, I tried to give the ticket to group friends, but no one went to Paris (who has time to go to Paris?). The group number is below. Oh, by the way: #v The G key can quickly bring up the menu.#!"
+SAKUYA_TEXT_OVER_URBANIZATION_1: "Pŏl Pôt mode"
+SAKUYA_TEXT_OVER_URBANIZATION_TOOLTIP_1: "#lore This entry will be updated soon, and the Bubble Mode will expand. #! \n One-click to #P mess up the entire country#!, one-click to turn Britain into a noisy place, America into a mess, and Cixi into a little devil! This BUFF can stack. Don’t play too big, be careful of game crashes! Right-click to remove this buff."
+SAKUYA_TEXT_BUILDING_POWER_1: "Building Power"
+SAKUYA_TEXT_BUILDING_POWER_TOOLTIP_1: "Left-click to increase building power by 500 at a time. Right-click to delete previously added building power."
+SAKUYA_TEXT_DEBUG_MODE_2: "#bold #broken Debug Mode#!"
+SAKUYA_TEXT_DEBUG_MODE_TOOLTIP_2: " #broken “Sakuya...you’re still here.” \n “Uh...why are you still looking at me, Sakuya?” #!\n #lore #black “Is this for ■■■■■■■■■■?” \n “Sak■......?!” "
+SAKUYA_TEXT_SEVEN_1: "#v #yellow After negotiating with Lady Sakuya and Yoru, a new service has been voluntarily opened for you. \n #!#!#!#lore This is the first time you've seen Sakuya at a loss. \n How could she lose to Yoru? How is that possible? \n I need to ask her properly.#!"
+SAKUYA_TEXT_SEVEN_2: "National Groups#!"
+SAKUYA_TEXT_SEVEN_3: "#bold Buildings#!"
+SAKUYA_TEXT_SEVEN_4: "#bold #gold As I see it, buildings rise up instantly. \n#!#! Right-click to mark the provinces you want to add, then you can increase or decrease buildings for the marked provinces. \nSome buildings need to meet specific conditions to unlock, or they will not take effect.#!"
+
+SAKUYA_ABOUT_1: "#v #n Close#!#! window.#!"
+SAKUYA_ABOUT_2: "Thank you for using this MOD!"
+SAKUYA_ABOUT_3: "#COLOR:{0.23,0.23,0.24} Modifier version number: 1.4#!"
+SAKUYA_ABOUT_4: "Dear [GetPlayer.GetRuler.GetPrimaryRoleTitle] Your Majesty, Lady Sakuya entrusted me to deliver this letter to you yesterday."
+SAKUYA_ABOUT_5: "    It is a pleasure to meet you.\n    Thank you for using this modifier. This modifier is based on the Advanced Cheat Menu MOD framework, with special thanks to the Turkish Mrtats. This modifier MOD is completely free; if you paid for it on platforms like Taobao, please #v file a complaint#!. If you would like to show support, you can give this MOD a thumbs up on Steam. And if possible, send some points too. Of course, if you're a Touhou fan, please vote for Sakuya in the next popularity poll. If you encounter any strange problems or bugs, or have better suggestions, please join QQ Group 565375259, and I will check your messages anytime.\n    If you want to see more content, click the button below to view. No button appearing? It seems I messed up.\n\n\n    Enjoy your game!"
+SAKUYA_ABOUT_6: " La "
+decree_my_dear_sakuya: "Garrison Province"
+decree_my_dear_sakuya_desc: "Sakuya will dispatch fairy maids as spies in this province. \n#lore After garrisoning this province, Sakuya will use mysterious powers to complete tasks according to your requests as much as possible.#!"
+
+advcm_add_birth_rate: "Birth Rate"
+SAKUYA_TEXT_SEVEN_21: "Prestige/Miscellaneous"
+SAKUYA_TEXT_SEVEN_22: "Military"
+SAKUYA_TEXT_SEVEN_211: "This menu is only temporarily designed and will not last long. A dedicated menu for diplomacy will be made in the future."
+SAKUYA_TEXT_SEVEN_221: "A dedicated military menu will be made later. This one is just a stopgap."
+
+
+
+#######################################################################################
+#        /######  /###### /##   /##/##   /##/##     /##/######                        #
+#       /##__  ##/##__  #| ##  /##| ##  | #|  ##   /##/##__  ##   #######  #######    #
+#      | ##  \__| ##  \ #| ## /##/| ##  | ##\  ## /##| ##  \ ##   #######  #######    #
+#      |  ######| #######| #####/ | ##  | ## \  ####/| ########    #####    #####     #
+#       \____  #| ##__  #| ##  ## | ##  | ##  \  ##/ | ##__  ##                       #
+#       /##  \ #| ##  | #| ##\  ##| ##  | ##   | ##  | ##  | ##        #    #         #
+#      |  ######| ##  | #| ## \  #|  ######/   | ##  | ##  | ##         ####          #
+#       \______/|__/  |__|__/  \__/\______/    |__/  |__/  |__/                       #
+#######################################################################################
+
+
+
+SAKUYA_IG_1: "Interest Groups"
+SAKUYA_IG_2: "Power"
+SAKUYA_IG_3: "Support"
+SAKUYA_IG_4: "Modify BUFF"
+SAKUYA_IG_5: "#v Left Click#! Enables #P chaos#! under protection.      #v Right Click#! Reverses."
+SAKUYA_IG_6: "#v Left Click#! supports unions, #v Right Click#! sanctions them."
+SAKUYA_IG_7: "#v Left Click#! supports urbanization, #v Right Click#! to politically eliminate them."
+SAKUYA_IG_8: "#v Left Click#! supports great people's democracy, #v Right Click#! to kick out the bourgeoisie."
+SAKUYA_IG_9: "#v Left Click#! supports landowners, #v Right Click#! suppresses them."
+SAKUYA_IG_10: "#v Left Click#! supports intellectuals, #v Right Click#! suppresses them."
+SAKUYA_IG_11: "#v Left Click#! supports 996 work hours, #v Right Click#! lets capitalists experience it."
+SAKUYA_IG_12: "#v Left Click#! supports clerics, #v Right Click#! suppresses them."
+SAKUYA_IG_13: "#v Left Click#! supports armed forces, #v Right Click#! suppresses them."
+SAKUYA_IG_14: "#v Left Click#! misinforms masses, #v Right Click#! awakens them."
+SAKUYA_IG_15: "Unions: Proletariat, Civilians, Socialism, Abolition, Equality"
+SAKUYA_IG_16: "Rural Folk: Agrarian, Isolationist"
+SAKUYA_IG_17: "Petty Bourgeois: Reactionary, Elite, Patriotic"
+SAKUYA_IG_18: "Landlords: Traditional, Patriarchal"
+SAKUYA_IG_19: "Intellectuals: Anti-religious, Republican, Abolitionist, Free"
+SAKUYA_IG_20: "Industrialists: Tycoons, Individualistic"
+SAKUYA_IG_21: "Church: Moral, Patriarchal, Guild-like"
+SAKUYA_IG_22: "Military: Chauvinistic, Loyalist"
+SAKUYA_IG_23: "Neutrals: Masses, Nonpartisan, Moderate"
+SAKUYA_IG_24: "#p Left Click#! clears all #v power#! gains and losses from the modifier."
+SAKUYA_IG_25: "#p Left Click#! clears all #v power#! gains and losses from the modifier."
+SAKUYA_IG_26: "#p Left Click#! clears all #v power#! gains and losses from the modifier."
+SAKUYA_IG_27: "#p Left Click#! clears all #v power#! gains and losses from the modifier."
+SAKUYA_IG_28: "#p Left Click#! clears all #v power#! gains and losses from the modifier."
+SAKUYA_IG_29: "#p Left Click#! clears all #v power#! gains and losses from the modifier."
+SAKUYA_IG_30: "#p Left Click#! clears all #v power#! gains and losses from the modifier."
+SAKUYA_IG_31: "#p Left Click#! clears all #v power#! gains and losses from the modifier."
+SAKUYA_IG_32: "#p Left Click#! greatly strengthens all interest groups, #n Right Click#! significantly weakens each group. #lore This button feels useless...! Note! If you cut too much, power disparities may equalize, as the last cannot be reduced."
+SAKUYA_IG_33: "#p Left Click#! click to #broken reset all#! buffs and debuffs given by the modifier! The small red bar above looks nice, right? It took 1 hour of failed attempts... it's useless, just for show! You can #v Right Click#! to clear all gains or losses of the larger button."
+SAKUYA_IG_34: "#p Left Click#! can support the corresponding interest group to #v use power#!. #n Right Click#! lets them feel your gentle #v iron fist#!."
+SAKUYA_IG_35: "#p Left Click#! super doubles support by #v 50#! points, #n Right Click#! super cuts."
+SAKUYA_IG_36: "#p Left Click#! enchants unions to #v adore#! you, #n Right Click#! lets them #v despise#! you.#! Increment/decrement #p 5#! support points each time."
+SAKUYA_IG_37: "#p Left Click#! super doubles support by #v 50#! points, #n Right Click#! super cuts."
+SAKUYA_IG_38: "#p Left Click#! enchants rural folk to #v adore#! you, #n Right Click#! lets them #v despise#! you.#! Increment/decrement #p 5#! support points each time."
+SAKUYA_IG_39: "#p Left Click#! super doubles support by #v 50#! points, #n Right Click#! super cuts."
+SAKUYA_IG_40: "#p Left Click#! enchants petty bourgeois to #v adore#! you, #n Right Click#! lets them #v despise#! you.#! Increment/decrement #p 5#! support points each time."
+SAKUYA_IG_41: "#p Left Click#! super doubles support by #v 50#! points, #n Right Click#! super cuts."
+SAKUYA_IG_42: "#p Left Click#! enchants landlords to #v adore#! you, #n Right Click#! lets them #v despise#! you.#! Increment/decrement #p 5#! support points each time."
+SAKUYA_IG_43: "#p Left Click#! super doubles support by #v 50#! points, #n Right Click#! super cuts."
+SAKUYA_IG_44: "#p Left Click#! enchants intellectuals to #v adore#! you, #n Right Click#! lets them #v despise#! you.#! Increment/decrement #p 5#! support points each time."
+SAKUYA_IG_45: "#p Left Click#! super doubles support by #v 50#! points, #n Right Click#! super cuts."
+SAKUYA_IG_46: "#p Left Click#! enchants industrialists to #v adore#! you, #n Right Click#! lets them #v despise#! you.#! Increment/decrement #p 5#! support points each time."
+SAKUYA_IG_47: "#p Left Click#! super doubles support by #v 50#! points, #n Right Click#! super cuts."
+SAKUYA_IG_48: "#p Left Click#! enchants believers to #v adore#! you, #n Right Click#! lets them #v despise#! you.#! Increment/decrement #p 5#! support points each time."
+SAKUYA_IG_49: "#p Left Click#! super doubles support by #v 50#! points, #n Right Click#! super cuts."
+SAKUYA_IG_50: "#p Left Click#! enchants armed forces to #v adore#! you, #n Right Click#! lets them #v despise#! you.#! Increment/decrement #p 5#! support points each time."
+SAKUYA_IG_51: "#p Left Click#! increases by 1 point each time, #n Right Click#! decreases by 1 point each time."
+SAKUYA_IG_52: "#p Left Click#! increases by 1 point each time, #n Right Click#! decreases by 1 point each time."
+SAKUYA_IG_53: "#p Left Click#! increases by 1 point each time, #n Right Click#! decreases by 1 point each time."
+SAKUYA_IG_54: "#p Left Click#! increases by 1 point each time, #n Right Click#! decreases by 1 point each time."
+SAKUYA_IG_55: "#p Left Click#! increases by 1 point each time, #n Right Click#! decreases by 1 point each time."
+SAKUYA_IG_56: "#p Left Click#! increases by 1 point each time, #n Right Click#! decreases by 1 point each time."
+SAKUYA_IG_57: "#p Left Click#! increases by 1 point each time, #n Right Click#! decreases by 1 point each time."
+SAKUYA_IG_58: "#p Left Click#! increases by 1 point each time, #n Right Click#! decreases by 1 point each time."
+SAKUYA_IG_59: "#p Left Click#! restores all modifications. #grey Union party members act as if nothing happened#!..."
+SAKUYA_IG_60: "#p Left Click#! restores all modifications. #grey Rural party members act as if nothing happened#!..."
+SAKUYA_IG_61: "#p Left Click#! restores all modifications. #grey Cynical bourgeois members act as if nothing happened#!..."
+SAKUYA_IG_62: "#p Left Click#! restores all modifications. #grey Landlord party members act as if nothing happened#!..."
+SAKUYA_IG_63: "#p Left Click#! restores all modifications. #grey Intellectual party members act as if nothing happened#!..."
+SAKUYA_IG_64: "#p Left Click#! restores all modifications. #grey Industrial party members act as if nothing happened#!..."
+SAKUYA_IG_65: "#p Left Click#! restores all modifications. #grey Believer party members act as if nothing happened#!..."
+SAKUYA_IG_66: "#p Left Click#! restores all modifications. #grey Armed forces party members act as if nothing happened#!..."
+SAKUYA_IG_67: "#p Left Click#! makes the union the #v only#! ruling party of your nation, loyal and supportive. #n Right Click#! uses your iron fist to smash the union back to its original state. #!can't be self-sufficient."
+SAKUYA_IG_68: "#p Left Click#! makes rural folk the #v only#! ruling party of your nation, loyal and supportive. #n Right Click#! uses your iron fist to smash them back to their original state. #!can't be self-sufficient."
+SAKUYA_IG_69: "#p Left Click#! makes the petty bourgeois the #v only#! ruling party of your nation, loyal and supportive. #n Right Click#! uses your iron fist to smash them back to their original state. #!can't be self-sufficient."
+SAKUYA_IG_70: "#p Left Click#! makes landlords the #v only#! ruling party of your nation, loyal and supportive. #n Right Click#! uses your iron fist to smash them back to their original state. #!can't be self-sufficient."
+SAKUYA_IG_71: "#p Left Click#! makes intellectuals the #v only#! ruling party of your nation, loyal and supportive. #n Right Click#! uses your iron fist to smash them back to their original state. #!can't be self-sufficient."
+SAKUYA_IG_72: "#p Left Click#! makes industrialists the #v only#! ruling party of your nation, loyal and supportive. #n Right Click#! uses your iron fist to smash them back to their original state. #!can't be self-sufficient."
+SAKUYA_IG_73: "#p Left Click#! makes believers the #v only#! ruling party of your nation, loyal and supportive. #n Right Click#! uses your iron fist to smash them back to their original state. #!can't be self-sufficient."
+SAKUYA_IG_74: "#p Left Click#! makes armed forces the #v only#! ruling party of your nation, loyal and supportive. #n Right Click#! uses your iron fist to smash them back to their original state. #!can't be self-sufficient."
+SAKUYA_IG_75: "#o @information! Below are button descriptions#!."
+SAKUYA_IG_76: "Four #green green#! buttons on the left, one #gold golden#! button on the right."
+SAKUYA_IG_77: "#p Left Click adds#!, #n Right Click reduces#! #v 50#! points. Larger icon: #p 5#! points, smaller: #p 1#! point. #v Golden button#! for #broken ruling mode#!. @warning!#v Click the #gold golden button#! only when needed.#p Delete#! #V positive bonuses#!.  "
+SAKUYA_IG_78: "@red_cross! #V Remove positive bonuses#!"
+SAKUYA_IG_79: "#p Click#! #V delete#! all interest group support related #V negative bonuses#!."
+SAKUYA_IG_80: "@red_cross! #V Remove negative bonuses#!"
+SAKUYA_IG_81: "#p Click#! #V delete#! all one-party ruling #V modes#!! #lore Read button instructions carefully. I prepared this restore for you!"
+SAKUYA_IG_82: "@red_cross! #V Remove only ruling#!"
+SAKUYA_IG_83: "#p Left Click#! lets you #V be adored#!, #n Right Click#! lets you #V be rejected#!. #lore This button should be in the main menu for practical use! It originally was... In simple terms: Left
+Click increases all interest group support. Right Click decreases it. For just clearing this button's modifications, #V #n right click#!#! #v Right# the #V #blue reset#! button."
+SAKUYA_IG_84: "#p Left Click#! resets all buffs and debuffs from the modifier! That small red bar above? Looks nice, right? It took 1 hour to figure it out... it's useless, just for style! You can #v Right Click#! to clear all buff/debuffs from the larger button."
+SAKUYA_IG_85: "#v @information! The large button will #p appease#! or #n anger#! all interest groups! If uncontrollable, please press the #blue reset#! button."
+SAKUYA_IG_86: "#v BUFFs for #blue interest groups#!; value varies, some may be useless."
+SAKUYA_IG_87: "#p Left Click#! increases #V all#! interest groups' appeal towards related populations. #n Right Click#! cancels it. \n#lore Did not bother with reductions since they are almost useless..?#!"
+SAKUYA_IG_88: "#p Left Click#! increases #V supported#! interest groups' appeal towards related populations. #n Right Click#! cancels it. #!"
+SAKUYA_IG_89: "#p Left Click#! increases #V suppressed#! interest groups' appeal towards related populations. #n Right Click#! cancels it. #!"
+SAKUYA_IG_90: "#p Left Click#! increases #V unions#!' appeal towards related populations. #n Right Click#! cancels it. #!"
+SAKUYA_IG_91: "#p Left Click#! increases #V rural folk#!' appeal towards related populations. #n Right Click#! cancels it. #!"
+SAKUYA_IG_92: "#p Left Click#! increases #V petty bourgeois#!' appeal towards related populations. #n Right Click#! cancels it. #!"
+SAKUYA_IG_93: "#p Left Click#! increases #V landlords#!' appeal towards related populations. #n Right Click#! cancels it. #!"
+SAKUYA_IG_94: "#p Left Click#! increases #V intellectuals#!' appeal towards related populations. #n Right Click#! cancels it. #!"
+SAKUYA_IG_95: "#p Left Click#! increases #V industrialists#!' appeal towards related populations. #n Right Click#! cancels it. #!"
+SAKUYA_IG_96: "#p Left Click#! increases #V believers#!' appeal towards related populations. #n Right Click#! cancels it. #!"
+SAKUYA_IG_97: "#p Left Click#! increases #V armed forces#!' appeal towards related populations. #n Right Click#! cancels it. #!"
+SAKUYA_IG_98: "#p Left Click#! #V restore#! default settings."
+SAKUYA_IG_99: "@information! #V This series affects interest groups' appeal towards related populations.#! #lore Seems pretty useless, right?#!"
+SAKUYA_IG_100: "#p Left Click#! decreases interest group support costs, right click to cancel. #!"
+SAKUYA_IG_102: "@green_checkmark! #V    Support\n         costs#!"
+SAKUYA_IG_101: "#p Left Click#! decreases interest group suppression costs, right click to cancel. #lore Did not bother with reductions since they are almost useless.#!"
+SAKUYA_IG_104: "@red_cross! #V Suppression\n         costs#!"
+SAKUYA_IG_103: "#p Left Click#! increases #V all#! interest groups' appeal towards related populations. #n Right Click#! cancels it. #lore Did not bother with reductions since they are almost useless?#!"
+SAKUYA_IG_105: "#V That's all for the current version regarding interest group modifications. Future updates may add new commands or content, which I will update first."
+SAKUYA_IG_106: "#V This is all for the current version of interest group modifications. Future updates may introduce new commands or content, which I will update promptly."
+
+
+#######################################################################################
+#        /######  /###### /##   /##/##   /##/##     /##/######                        #
+#       /##__  ##/##__  #| ##  /##| ##  | #|  ##   /##/##__  ##   #######  #######    #
+#      | ##  \__| ##  \ #| ## /##/| ##  | ##\  ## /##| ##  \ ##   #######  #######    #
+#      |  ######| #######| #####/ | ##  | ## \  ####/| ########    #####    #####     #
+#       \____  #| ##__  #| ##  ## | ##  | ##  \  ##/ | ##__  ##                       #
+#       /##  \ #| ##  | #| ##\  ##| ##  | ##   | ##  | ##  | ##        #    #         #
+#      |  ######| ##  | #| ## \  #|  ######/   | ##  | ##  | ##         ####          #
+#       \______/|__/  |__|__/  \__/\______/    |__/  |__/  |__/                       #
+SAKUYA_MIL_TEXT: "#v #bold Temporarily set updates. #!#!\nDue to serious technical issues related to building functions, I have preemptively updated these additional features. The military button and prestige button will not be maintained in future versions.\n\nMilitary and prestige-related functions will be provided in a more complete form in the future diplomatic and military sections. Stay tuned!   \n\nUpdate: Technical issues resolved."
+
+SAKUYA_LAW_LAW: "Law"
+SAKUYA_LAW_POWER_STRUCTURE: "Power Structure"
+SAKUYA_LAW_ECONOMY: "Economy"
+SAKUYA_LAW_HUMAN_RIGHTS: "Human Rights"
+SAKUYA_LAW_STATE: "Nation"
+SAKUYA_LAW_MONARCHY_TOOLTIP: "Click to implement a monarchy."
+SAKUYA_LAW_PRESIDENCY_TOOLTIP: "Click to become President."
+SAKUYA_LAW_PARLIAMENTARY_REPUBLIC_TOOLTIP: "Click to implement parliamentary republic."
+SAKUYA_LAW_THEOCRACY_TOOLTIP: "Click to implement a theocracy."
+SAKUYA_LAW_SOVIET_REPUBLIC_TOOLTIP: "Click to implement a Soviet republic."
+SAKUYA_LAW_NON_RULER_TOOLTIP: "Click to become a non-ruler."
+SAKUYA_LAW_RELIGION: "Religion"
+SAKUYA_LAW_NATIONAL_CHURCH_TOOLTIP: "Click to establish a state religion."
+SAKUYA_LAW_FREEDOM_OF_FAITH_TOOLTIP: "Click to implement freedom of belief."
+SAKUYA_LAW_SEPARATION_OF_CHURCH_AND_STATE_TOOLTIP: "Click to enact separation of church and state."
+SAKUYA_LAW_STATE_ATHEISM_TOOLTIP: "Click to implement state atheism. #v Note: It's best to enact atheism laws yourself, as unique events may occur during their implementation; simply changing laws will not trigger them.#!\nThere are no saviors or divine emperors in this world!"
+SAKUYA_LAW_STABILITY: "Stability"
+SAKUYA_LAW_IGNORE_POLICY_TOOLTIP: "Click to adopt a hands-off approach."
+SAKUYA_LAW_NATIONAL_GUARD_POLICY_TOOLTIP: "Click to implement a national guard policy."
+SAKUYA_LAW_SECRET_POLICE_TOOLTIP: "Click to implement secret police. Open up, Gestapo!"
+SAKUYA_LAW_RIGHTS_PROTECTION_POLICY_TOOLTIP: "Click to implement rights protection policy."
+SAKUYA_LAW_POWER: "Power"
+SAKUYA_LAW_DICTATORSHIP_TOOLTIP: "Click to implement dictatorship. Others might pretend; I won't! I am the law! I am authority! I am the nation!"
+SAKUYA_LAW_TECHNOCRACY_TOOLTIP: "Click to implement technocracy. Only professionals should do professional work, kids should go away!"
+SAKUYA_LAW_OLIGARCHY_TOOLTIP: "Click to implement an oligarchy."
+SAKUYA_LAW_LANDBASED_SUFFRAGE_TOOLTIP: "Click to implement land-based suffrage."
+SAKUYA_LAW_WEALTHBASED_SUFFRAGE_TOOLTIP: "Click to implement wealth-based suffrage. Money is king."
+SAKUYA_LAW_CENSUS_SUFFRAGE_TOOLTIP: "Click to implement census suffrage."
+SAKUYA_LAW_UNIVERSAL_SUFFRAGE_TOOLTIP: "Click to implement universal suffrage."
+SAKUYA_LAW_ANARCHY_TOOLTIP: "Click to implement anarchy. You're right, but it doesn't feel like... anarchy... the name."
+SAKUYA_LAW_SINGLE_PARTY_TOOLTIP: "Click to implement a single-party system; it’s better with an election committee."
+SAKUYA_LAW_ELDER_COUNCIL_TOOLTIP: "Click to convene a non-ruler council. Requires non-ruler government, or unexpected bugs may occur."
+SAKUYA_LAW_BUREAUCRACY: "Bureaucracy"
+SAKUYA_LAW_HEREDITARY_BUREAUCRACY_TOOLTIP: "Click to implement hereditary bureaucracy. A young general, though 10 years old, is so loving!"
+SAKUYA_LAW_APPOINTED_BUREAUCRACY_TOOLTIP: "Click to implement appointed bureaucracy."
+SAKUYA_LAW_ELECTED_BUREAUCRACY_TOOLTIP: "Click to implement elected bureaucracy."
+SAKUYA_LAW_CITIZEN: "Citizen"
+SAKUYA_LAW_SINGLE_NATION_POLICY_TOOLTIP: "Click to implement a single-nation policy."
+SAKUYA_LAW_NATIONAL_SUPREMACY_TOOLTIP: "Click to implement nationalism."
+SAKUYA_LAW_RACIAL_SEGREGATION_TOOLTIP: "Click to implement racial segregation."
+SAKUYA_LAW_CULTURAL_EXCLUSION_TOOLTIP: "Click to implement cultural exclusion."
+SAKUYA_LAW_MULTICULTURALISM_TOOLTIP: "Click to implement multiculturalism."
+SAKUYA_LAW_MILITARY: "Military"
+SAKUYA_LAW_PEASANT_CONSCRIPTION_TOOLTIP: "Click to implement peasant conscription."
+SAKUYA_LAW_PROFESSIONAL_ARMY_TOOLTIP: "Click to implement a professional army."
+SAKUYA_LAW_NATIONAL_MILITIA_TOOLTIP: "Click to implement a national militia."
+SAKUYA_LAW_MASS_CONSCRIPTION_TOOLTIP: "Click to implement mass conscription."
+SAKUYA_LAW_ECONOMIC_SYSTEM: "Economic System"
+SAKUYA_LAW_TRADITIONALISM_TOOLTIP: "Click to implement traditionalism."
+SAKUYA_LAW_INTERVENTIONISM_TOOLTIP: "Click to implement interventionism."
+SAKUYA_LAW_AGRARIANISM_TOOLTIP: "Click to implement agrarianism."
+SAKUYA_LAW_LAISSZ_FAIRE_TOOLTIP: "Click to implement laissez-faire."
+SAKUYA_LAW_COOPERATIVE_OWNERSHIP_TOOLTIP: "Click to implement cooperative ownership."
+SAKUYA_LAW_PLANNED_ECONOMY_TOOLTIP: "Click to implement a planned economy."
+SAKUYA_LAW_BAN_MACHINES_TOOLTIP: "Click to ban any industrial machines."
+SAKUYA_LAW_COLONIAL_AFFAIRS: "Colonial"
+SAKUYA_LAW_NO_COLONIAL_AFFAIRS_TOOLTIP: "Click to implement no colonial affairs."
+SAKUYA_LAW_ENCOURAGE_SETTLEMENT_TOOLTIP: "Click to encourage immigration to establish new homes."
+SAKUYA_LAW_COLONIAL_EXPLOITATION_TOOLTIP: "Click to implement colonial exploitation."
+SAKUYA_LAW_BORDER_COLONIZATION_TOOLTIP: "Click to implement border colonization."
+SAKUYA_LAW_HEALTH: "Health"
+SAKUYA_LAW_IGNORE_WELLBEING_TOOLTIP: "Click to disregard people's welfare."
+SAKUYA_LAW_CHARITY_HOSPITALS_TOOLTIP: "Click to implement charity hospitals."
+SAKUYA_LAW_PRIVATE_HEALTH_INSURANCE_TOOLTIP: "Click to implement private health insurance."
+SAKUYA_LAW_PUBLIC_HEALTH_INSURANCE_TOOLTIP: "Click to implement public health insurance."
+SAKUYA_LAW_COMMERCE: "Commerce"
+SAKUYA_LAW_MERCANTILISM_TOOLTIP: "Click to implement mercantilism."
+SAKUYA_LAW_PROTECTIONISM_TOOLTIP: "Click to implement trade protectionism."
+SAKUYA_LAW_FREE_TRADE_TOOLTIP: "Click to implement free trade."
+SAKUYA_LAW_ISOLATIONISM_TOOLTIP: "Click to implement isolationism."
+SAKUYA_LAW_POLICE: "Police"
+SAKUYA_LAW_NO_POLICE_TOOLTIP: "Click to implement no police."
+SAKUYA_LAW_LOCAL_POLICE_TOOLTIP: "Click to enable local police forces."
+SAKUYA_LAW_SPECIALIZED_POLICE_TOOLTIP: "Click to implement specialized police forces."
+SAKUYA_LAW_MILITARIZED_POLICE_TOOLTIP: "Click to implement militarized police."
+SAKUYA_LAW_LAND_REFORM: "Land Reform"
+SAKUYA_LAW_SERFDOM_TOOLTIP: "Click to implement serfdom."
+SAKUYA_LAW_YANG_BAILAO_TOOLTIP: "Click to become Yang Bailao. Your landlord grandpa is back!"
+SAKUYA_LAW_COMMERCIAL_AGRICULTURE_TOOLTIP: "Click to commercialize agriculture."
+SAKUYA_LAW_HOMESTEAD_ACT_TOOLTIP: "Click to implement homestead act."
+SAKUYA_LAW_COLLECTIVE_FARM_TOOLTIP: "Click to establish collective farms. Eat from one pot, watch model plays, and enjoy communal life."
+SAKUYA_LAW_TAXATION: "Taxation"
+SAKUYA_LAW_CONSUMPTION_BASED_TAX_TOOLTIP: "Click to implement consumption-based taxation."
+SAKUYA_LAW_LAND_BASED_TAX_TOOLTIP: "Click to implement land-based taxation."
+SAKUYA_LAW_PER_CAPITA_TAX_TOOLTIP: "Click to implement per capita taxation."
+SAKUYA_LAW_PROPORTIONAL_TAX_TOOLTIP: "Click to implement proportional taxation."
+SAKUYA_LAW_GRADUATED_TAX_TOOLTIP: "Click to implement graduated taxation."
+SAKUYA_LAW_EDUCATION: "Education"
+SAKUYA_LAW_NO_SCHOOL_POLICY_TOOLTIP: "Click to implement no school policy."
+SAKUYA_LAW_RELIGIOUS_SCHOOL_TOOLTIP: "Click to implement religious school policy."
+SAKUYA_LAW_PRIVATE_SCHOOL_TOOLTIP: "Click to implement private school policy."
+SAKUYA_LAW_PUBLIC_SCHOOL_TOOLTIP: "Click to implement public school policy."
+SAKUYA_LAW_FREEDOM: "Freedom"
+SAKUYA_LAW_SUPPRESS_DISSIDENTS_TOOLTIP: "Click to implement suppression of dissidents."
+SAKUYA_LAW_CENSORSHIP_TOOLTIP: "Click to implement censorship system."
+SAKUYA_LAW_ASSEMBLY_RIGHT_TOOLTIP: "Click to implement right to assembly."
+SAKUYA_LAW_FREE_SPEECH_TOOLTIP: "Click to implement free speech protection."
+SAKUYA_LAW_WOMENS_RIGHTS: "Women's Rights"
+SAKUYA_LAW_GUARDIANSHIP_TOOLTIP: "Click to implement statutory guardianship."
+SAKUYA_LAW_PROPERTY_WOMEN_TOOLTIP: "Click to implement property rights for women."
+SAKUYA_LAW_HALF_SKY_WOMEN_TOOLTIP: "Click to allow women to hold up half the sky."
+SAKUYA_LAW_WOMENS_SUFFRAGE_TOOLTIP: "Click to implement women's suffrage policy."
+SAKUYA_LAW_SERVITUDE: "Servitude"
+SAKUYA_LAW_SUMMON_LINCOLN_TOOLTIP: "Click to summon Lincoln."
+SAKUYA_LAW_DEBT_SLAVERY_TOOLTIP: "Click to implement debt slavery policy."
+SAKUYA_LAW_SCALPING_TOOLTIP: "Click to scalp for boots."
+SAKUYA_LAW_TRADITIONAL_SLAVERY_TOOLTIP: "Click to implement traditional slavery."
+SAKUYA_LAW_LABOR_RIGHTS: "Labor Rights"
+SAKUYA_LAW_REPEAL_LABOR_RIGHTS_TOOLTIP: "Abolish all labor rights."
+SAKUYA_LAW_REGULATORY_AGENCIES_TOOLTIP: "Click to implement regulatory agency policies."
+SAKUYA_LAW_LABOR_PROTECTION_TOOLTIP: "Click to implement labor protection policies."
+SAKUYA_LAW_SOCIAL_SECURITY: "Social Security"
+SAKUYA_LAW_NO_SOCIAL_SECURITY_TOOLTIP: "Click to implement no social security policy."
+SAKUYA_LAW_POOR_LAWS_TOOLTIP: "Click to implement poor laws policy."
+SAKUYA_LAW_WAGE_SUBSIDIES_TOOLTIP: "Click to implement wage subsidy policy."
+SAKUYA_LAW_PENSION_TOOLTIP: "Click to implement pension policy."
+SAKUYA_LAW_CHILDREN: "Children"
+SAKUYA_LAW_ALLOW_CHILD_LABOR_TOOLTIP: "Click to implement child labor policy."
+SAKUYA_LAW_RESTRICT_CHILD_LABOR_TOOLTIP: "Click to implement restrictions on child labor."
+SAKUYA_LAW_MANDATORY_EDUCATION_TOOLTIP: "Click to implement mandatory education policy."
+SAKUYA_LAW_IMMIGRATION: "Immigration"
+SAKUYA_LAW_NO_IMMIGRATION_CONTROL_TOOLTIP: "Click to implement no immigration control policy."
+SAKUYA_LAW_IMMIGRATION_CONTROL_TOOLTIP: "Click to implement immigration control policy."
+SAKUYA_LAW_ISOLATIONISM_TOOLTIP: "Click to close the country (physically)."
+SAKUYA_MONEY_TEXT_3: "Economy, #gold the invisible hand#!"
+SAKUYA_MONEY_TEXT_4: "#v #gold Money#! makes the world go round."
+SAKUYA_MONEY_TEXT_5: "#v Money#!"
+SAKUYA_MONEY_TEXT_6: "#v Money#!"
+SAKUYA_MONEY_TEXT_7: "#v Income and Expenditure#!"
+SAKUYA_MONEY_TEXT_8: "#v Income and Expenditure#!"
+
+#######################################################################################
+#        /######  /###### /##   /##/##   /##/##     /##/######                        #
+#       /##__  ##/##__  #| ##  /##| ##  | #|  ##   /##/##__  ##   #######  #######    #
+#      | ##  \__| ##  \ #| ## /##/| ##  | ##\  ## /##| ##  \ ##   #######  #######    #
+#      |  ######| #######| #####/ | ##  | ## \  ####/| ########    #####    #####     #
+#       \____  #| ##__  #| ##  ## | ##  | ##  \  ##/ | ##__  ##                       #
+#       /##  \ #| ##  | #| ##\  ##| ##  | ##   | ##  | ##  | ##        #    #         #
+#      |  ######| ##  | #| ## \  #|  ######/   | ##  | ##  | ##         ####          #
+#       \______/|__/  |__|__/  \__/\______/    |__/  |__/  |__/                       #
+#######################################################################################
+MT0: "Building: Minerals"
+MT0_linyu: "Building: Forestry and Fishing"
+MT0_nongye: "Building: Agriculture"
+MT0_gongye: "Building: Industry"
+MT0_jijian: "Building: Infrastructure"
+MT1: "              Buildings" 
+MT2: "                                                                                                                                                                                  · Miko Group · "
+MB1T: "Click to select the current building."
+MB1T_coffee: "For some reason, if the country does not have a coffee plantation or corresponding event, the coffee plantation cannot be set. \nThe reason is unknown, so I cannot provide effective help."
+MB1T_error: "These buildings cannot take effect. The game likely hasn't implemented these buildings. \nHowever, since corresponding code exists, I've included them."
+MB1T_oil_rig: "Click to select the current building. \nThe oil rig is special; the country must be capable of discovering oil first. \nSince most kings, emperors, presidents, etc., have not developed the corresponding technology, you only need to right-click to acquire the 'Pump Technology.'"
+MB1T_trade_center: "Modifying won't help. Buildings like trade centers and financial districts are not traditional buildings, and even if modified, their state will revert instantly. However, since it can be modified... I've added it. \n\nOnce the status is updated, the buildings will revert to their original levels."
+MB1TT: "#bold #V Minerals"
+MB1TTT: "Some countries are doomed to rely on nature."
+MB2TT: "#bold #V Free&Fish"
+MB2TTT: "While some countries depend on the land."
+MB3TT: "#bold #V Agriculture"
+MB3TTT: "But the people rely on their hands."
+MB4TT: "#bold #V Industry"
+MB4TTT: "Capitalists rely on exploitation."
+MB5TT: "#bold #V Infrastructure"
+MB5TTT: "If the workers unite, the proletariat can feed themselves."
+MB_gold_mine: "#v Gold Mine"
+MB_coal_mine: "#v Coal Mine"
+MB_iron_mine: "#v Iron Mine"
+MB_lead_mine: "#v Lead Mine"
+MB_sulfur_mine: "#v Sulfur Mine"
+MB_oil_rig: "#v Oil Rig"
+MB2: "COAL MINE"
+MBC: "Clear"
+MBCT: "As the name implies, clear the currently selected building. \n #lore;COLOR:{0.48,0.4,0.4} Note: Clearing buildings may pose potential risks, such as an angry contractor waiting at your doorstep... #!"
+MB_oil_rig_1y: "Increase Output"
+MB_oil_rig_1yt: "Increase output. Left-click to set the bonus in a specific province, \n\n #l Right-click to transfer the bonus to the entire nation instead of a specific province.#!"
+MB_oil_rig_2y: "Reduce Input"
+MB_oil_rig_2yt: "Reduce input. Left-click to set the bonus in a specific province; right-click to transfer the bonus to the entire nation."
+MB_oil_rig_3y: "Remove Bonus"
+MB_oil_rig_3yt: "Remove all bonuses. Left-click to remove bonuses set in specific provinces; right-click removes nationwide bonuses."
+MB_gold_mine_1y: "Increase Yield"
+MB_gold_mine_1yt: "Increase gold yield. Left-click to set the bonus at a specific mine. \n\n #l Right-click to transfer the bonus to the entire nation instead of a specific province.#!"
+MB_gold_mine_2y: "Add Coin Mint Tax"
+MB_gold_mine_2yt: "It feels... better to have coin minting tax... it brings money quickly. \n\n #l Right-click to transfer the bonus to the entire nation instead of a specific province.#!"
+MB_gold_mine_3y: "Remove Bonus"
+MB_gold_mine_3yt: "Remove all gold bonuses. \n\n #l Right-click to transfer the bonus to the entire nation instead of a specific province.#!"
+MB_coal_mine_1y: "Increase Yield"
+MB_coal_mine_1yt: "Shanxi Province expresses objections. \n\n #l Right-click to transfer the bonus to the entire nation instead of a specific province.#!"
+MB_coal_mine_2y: "Reduce Cost"
+MB_coal_mine_2yt: "Reduce coal mining costs? Is the saved money enough to buy a few mining trucks? \n\n #l Right-click to transfer the bonus to the entire nation instead of a specific province.#!"
+MB_coal_mine_3y: "Remove Bonus"
+MB_coal_mine_3yt: "Remove coal bonuses? Now your factory will halt production. \n\n #l Right-click to transfer the bonus to the entire nation instead of a specific province.#!"
+MB_iron_mine_1y: "Increase Yield"
+MB_iron_mine_1yt: "Are you planning to build an invincible fleet? \n\n #l Right-click to transfer the bonus to the entire nation instead of a specific province.#!"
+MB_iron_mine_2y: "Reduce Cost"
+MB_iron_mine_2yt: "Reduce iron ore mining costs. \n\n #l Right-click to transfer the bonus to the entire nation instead of a specific province.#!"
+MB_iron_mine_3y: "Remove Bonus"
+MB_iron_mine_3yt: "Looks like your armory is going to start layoffs. \n\n #l Right-click to transfer the bonus to the entire nation instead of a specific province.#!"
+MB_lead_mine_1y: "Increase Yield"
+MB_lead_mine_1yt: "Increase lead ore yield. Looks like you're planning to add some weight to the world. \n\n #l Right-click to transfer the bonus to the entire nation instead of a specific province.#!"
+MB_lead_mine_2y: "Reduce Cost"
+MB_lead_mine_2yt: "Reduce lead ore mining costs. The money saved may buy a souvenir... how about lead candy? \n\n #l Right-click to transfer the bonus to the entire nation instead of a specific province.#!"
+MB_lead_mine_3y: "Remove Bonus"
+MB_lead_mine_3yt: "Remove lead ore bonuses. \n\n #l Right-click to transfer the bonus to the entire nation instead of a specific province.#!"
+MB_sulfur_mine_1y: "Increase Yield"
+MB_sulfur_mine_1yt: "Increase sulfur yield. Looks like you're very interested in fireworks. \n\n #l Right-click to transfer the bonus to the entire nation instead of a specific province.#!"
+MB_sulfur_mine_2y: "Reduce Cost"
+MB_sulfur_mine_2yt: "Have you heard of sulfur soap? \n\n #l Right-click to transfer the bonus to the entire nation instead of a specific province.#!"
+MB_sulfur_mine_3y: "Remove Bonus"
+MB_sulfur_mine_3yt: "Remove sulfur bonuses. Your ammunition depot might be a bit empty. \n\n #l Right-click to transfer the bonus to the entire nation instead of a specific province.#!"
+MB_logging_camp: "#v Logging Camp"
+MB_rubber_plantation: "#v Rubber Plantation"
+MB_whaling_station: "#v Whaling Station"
+MB_fishing_wharf: "#v Fishing Wharf"
+MB_logging_camp_1y: "Increase Yield"
+MB_logging_camp_1yt: "Increase the yield of the logging camp."
+MB_logging_camp_2y: "Reduce Cost"
+MB_logging_camp_2yt: "Reduce the operating costs of the logging camp."
+MB_logging_camp_3y: "Remove Bonus"
+MB_logging_camp_3yt: "Remove all bonuses from the logging camp."
+MB_rubber_plantation_1y: "Increase Yield"
+MB_rubber_plantation_1yt: "Increase the yield of the rubber plantation."
+MB_rubber_plantation_2y: "Reduce Cost"
+MB_rubber_plantation_2yt: "Reduce the operating costs of the rubber plantation."
+MB_rubber_plantation_3y: "Remove Bonus"
+MB_rubber_plantation_3yt: "Remove all bonuses from the rubber plantation."
+MB_whaling_station_1y: "Increase Yield"
+MB_whaling_station_1yt: "Increase the yield of the whaling station."
+MB_whaling_station_2y: "Reduce Cost"
+MB_whaling_station_2yt: "Reduce the operating costs of the whaling station."
+MB_whaling_station_3y: "Remove Bonus"
+MB_whaling_station_3yt: "Remove all bonuses from the whaling station."
+MB_fishing_wharf_1y: "Increase Yield"
+MB_fishing_wharf_1yt: "Increase the yield of the fishing wharf."
+MB_fishing_wharf_2y: "Reduce Cost"
+MB_fishing_wharf_2yt: "Reduce the operating costs of the fishing wharf."
+MB_fishing_wharf_3y: "Remove Bonus"
+MB_fishing_wharf_3yt: "Remove all bonuses from the fishing wharf."
+
+MB_rye_farm: "#v Rye Farm"
+MB_wheat_farm: "#v Wheat Farm"
+MB_rice_farm: "#v Rice Farm"
+MB_maize_farm: "#v Maize Farm"
+MB_millet_farm: "#v Millet Farm"
+MB_coffee_plantation: "#v Coffee Plantation"
+MB_vineyard_plantation: "#v Vineyard"
+MB_cotton_plantation: "#v Cotton Plantation"
+MB_silk_plantation: "#v Silk Plantation"
+MB_dye_plantation: "#v Dye Plantation"
+MB_opium_plantation: "#v Opium Plantation"
+MB_tea_plantation: "#v Tea Plantation"
+MB_tobacco_plantation: "#v Tobacco Plantation"
+MB_sugar_plantation: "#v Sugar Plantation"
+MB_banana_plantation: "#v Banana Plantation"
+MB_silkworm_plantation: "#v Silkworm Plantation"
+MB_orchard: "#v Orchard"
+MB_food_industry: "#v Food Industry"
+MB_textile_mills: "#v Textile Mill"
+MB_tooling_workshops: "#v Tooling Workshop"
+MB_paper_mills: "#v Paper Mill"
+MB_shipyards: "#v Shipyard"
+MB_military_shipyards: "#v Military Shipyard"
+MB_chemical_plants: "#v Chemical Plant"
+MB_explosives_factory: "#v Explosives Factory"
+MB_furniture_manufacturies: "#v Furniture Factory"
+MB_electrics_industry: "#v Electronics Factory"
+MB_arms_industry: "#v Arms Industry"
+MB_artillery_foundries: "#v Artillery Foundry"
+MB_war_machine_industry: "#v War Machine Factory"
+MB_motor_industry: "#v Motor Industry"
+MB_munition_plants: "#v Ammunition Factory"
+MB_synthetics_plants: "#v Synthesis Plant"
+MB_steel_mills: "#v Steel Mill"
+MB_glassworks: "#v Glassworks"
+MB_port: "#v Port"
+MB_railway: "#v Railway"
+MB_trade_center: "#v Trade Center"
+MB_university: "#v University"
+MB_arts_academy: "#v Arts Academy"
+MB_colony_military: "#v Military Colony"
+MB_colony_missionary: "#v Missionary Colony"
+MB_colony_trade: "#v Trade Colony"
+MB_barracks: "#v Barracks"
+MB_naval_base: "#v Naval Base"
+MB_conscription_center: "#v Conscription Center"
+MB_government_administration: "#v Government Administration"
+MB_power_plant: "#v Power Plant"
+MB_urban_center: "#v Urban Center"
+MB_construction_sector: "#v Construction Sector"
+MB_manor_house: "#v Manor House"
+MB_financial_district: "#v Financial District"
+MR_1: "Extract Mineral Buildings"
+MR_1T: "Right-click the province you want to mark, then select the building you want to lay down here."
+MR_1TT: "First, just to explain, you can only mark domestic provinces. There are two methods: \n\nThe first: Right-click your province, select Decree ———— Garrison Province to proceed. \nThe second: Political View (shortcut: ALT2) ———— Decree ———— Garrison Province to proceed. \n\n\nWhat? Can’t find it? Come on, put in some effort. Can’t use the decree? That’s because your authority isn't enough. Want to tweak some in my modifier? Right on the main page."
+MR_2: "Natural Resource Buildings"
+MR_2T: "As you can see, I have classified these separately from minerals."
+MR_3: "Countryside"
+MR_3T: "If possible, I want a field of blooming suns, then settle under the sun."
+MR_4: "Manufacturing and Factories"
+MR_4T: "I don't have the energy to adjust the button colors... If possible, please help improve it!"
+MR_5: "Infrastructure"
+MR_5T: "There are no buses in Gensokyo, but there are cable cars on Youkai Mountain. I haven't even ridden a cable car..."
+
+
+sakuya_mil_01: "Conscription" #（增加征兵率）
+sakuya_mil_02: "Conscription×" #（多倍征兵率）
+sakuya_mil_03: "Anmy Offense" #（增加进攻）
+sakuya_mil_04: "Anmy Defense" #（增加防御）
+sakuya_mil_05: "Anmy Exp" #（增加经验）
+sakuya_mil_11: "Navy Offense" #（海军进攻增加）
+sakuya_mil_12: "Navy Defense" #（海军防御增加）
+sakuya_mil_13: "Navy Exp" #（海军经验增加）
+sakuya_mil_14: "Interests" #（增加利益）
+sakuya_mil_15: "Prestige" #（减少声望）
+sakuya_weiwang_01: "Agitators" #（增加煽动者数量）
+sakuya_weiwang_02: "War Exhaustion" #（减少战争疲劳）
+sakuya_weiwang_03: "Influence" #（增加影响力）
+sakuya_weiwang_04: "Discovery" #（增加资源发现几率）
+sakuya_weiwang_05: "Pol. Strength" #（增加政治力量）
+sakuya_weiwang_06: "Migration" #（增加移民配额）
+sakuya_weiwang_07: "Decree Cost" #（减少法令成本）
+sakuya_weiwang_08: "Migration Push" #（减少移民推力）
+sakuya_weiwang_09: "Migration Pull" #（增加移民吸引力）
+sakuya_weiwang_11: "Education" #（增加教育获取）
+sakuya_weiwang_12: "Pollution" #（减少污染）
+sakuya_weiwang_13: "Mortality" #（多倍死亡率）
+sakuya_weiwang_14: "War.DipPoint" #（增加外交策略）
+sakuya_weiwang_15: "War Cost" #（减少战争成本）
+sakuya_weiwang_16: "Legitimacy" #（增加合法性）
+sakuya_weiwang_17: "Work Ratio" #（增加工作成人比例）
+sakuya_weiwang_18: "Voting Power" #（增加投票权）
+sakuya_weiwang_19: "Infrastructure" #（增加基础设施）
+sakuya_weiwang_21: "Prestige #v #p + " #（极大增加声望）
+
+
+sakuya_weiwang_21_t: "Prestige 999999999999, goodbye"
+sakuya_weiwang_31_t: ";D"
+sakuya_weiwang_31: "Reduce #v #n - "
+sakuya_weiwang_22: "1"
+sakuya_weiwang_22_t: "Increase prestige by one."
+sakuya_weiwang_22: "1"
+sakuya_weiwang_22_t: "Increase prestige by one. Last night, I chatted with my plants, and they are thriving."
+sakuya_weiwang_23: "10"
+sakuya_weiwang_23_t: "Increase prestige by ten. I found a calendar that will never disappoint you: yesterday's."
+sakuya_weiwang_24: "100"
+sakuya_weiwang_24_t: "Increase prestige by one hundred. I wonder if Wednesday would get lost without Tuesday."
+sakuya_weiwang_25: "1000"
+sakuya_weiwang_25_t: "Increase prestige by one thousand. Why is it called fast food? Because it doesn't have time to explain."
+sakuya_weiwang_26: "10000"
+sakuya_weiwang_26_t: "Increase prestige by ten thousand. Do you know why bookstores are always quiet? Because they are near libraries."
+sakuya_weiwang_27: "100000"
+sakuya_weiwang_27_t: "Increase prestige by one hundred thousand. My computer is always cool because it has a lot of fans."
+sakuya_weiwang_28: "1000000"
+sakuya_weiwang_28_t: "Increase prestige by one million. Yesterday, I saw a banker counting money under a tree."
+sakuya_weiwang_29: "Clear Bonus"
+sakuya_weiwang_29_t: "Prestige remains unchanged. I tried using salt to clean the mirror, but the mirror didn't change, though the salt is fine."
+sakuya_weiwang_TEXT: "I must write something, right? It's a waste to leave this blank. As you can see, there's a row of various strange buttons below. Feel free to try them out. These modifiers are carefully selected and worth your time. But if you encounter problems or various strange bugs while playing with these modifiers, please don’t report them. After all, this section and the next military section won't be maintained in the future."
+sakuya_weiwang_32: "-1"
+sakuya_weiwang_32_t: "Reduce prestige by one. I tried to catch some fog, but I missed."
+sakuya_weiwang_33: "-10"
+sakuya_weiwang_33_t: "Reduce prestige by ten. I told my friend Total Evil, and she replied, it should be Eleven Evil."
+sakuya_weiwang_34: "-100"
+sakuya_weiwang_34_t: "Reduce prestige by one hundred. Why is it called a piece? Because you can play a tune."
+sakuya_weiwang_35: "-1000"
+sakuya_weiwang_35_t: "Reduce prestige by one thousand. I heard jokes are now charged, ten bucks each."
+sakuya_weiwang_36: "-10000"
+sakuya_weiwang_36_t: "Reduce prestige by ten thousand. My shoes broke, so I told them it’s shoe time."
+sakuya_weiwang_37: "-100000"
+sakuya_weiwang_37_t: "Reduce prestige by one hundred thousand. I have a cold joke, but it froze."
+sakuya_weiwang_38: "-1000000"
+sakuya_weiwang_38_t: "Reduce prestige by one million. There was once a cold joke, and it turned into an iceberg."
+sakuya_weiwang_39: "Clear Bonus"
+sakuya_weiwang_39_t: "Prestige remains unchanged. I tried to make this joke more interesting, but I failed."
+sakuya_weiwang_TEXT2: "This is the prestige modification many have been looking forward to. As you can see, almost all the buttons increase prestige not by percentage but by simple numerical increments. This is mainly because large percentage increases can easily cause numerical overflow and even crash the game."
+sakuya_weiwang_01: "Potential Incitement"
+sakuya_weiwang_01_t: "Do you know the benefits of potential incitement? It’s like singing in the shower—no one can hear you."
+sakuya_weiwang_s: "Recognized"
+sakuya_weiwang_st: "You can freely adjust whether the current country is recognized. Left-click for yes, right-click for no."
+sakuya_weiwang_02: "Reduce War Fatigue"
+sakuya_weiwang_02_t: "The effect of reducing war fatigue is like trying to stay dry in the rain."
+
+sakuya_weiwang_03: "Support Impact"  
+sakuya_weiwang_03_t: "Feels like trying to blow out a candle in the wind."
+
+sakuya_weiwang_04: "Resource Discovery"  
+sakuya_weiwang_04_t: "Like finding an oasis in the desert."
+
+sakuya_weiwang_05: "Everyone in Politics"  
+sakuya_weiwang_05_t: "Arguing online about whether cats or dogs are better."
+
+sakuya_weiwang_06: "Open Doors"  
+sakuya_weiwang_06_t: "Like inviting the whole village to your birthday party."
+
+sakuya_weiwang_07: "Free Decrees"  
+sakuya_weiwang_07_t: "Feels like getting an unlimited coupon at the store."
+
+sakuya_weiwang_08: "Increase in Benefactors"  
+sakuya_weiwang_08_t: "Like sudden rain in a desert."
+
+sakuya_weiwang_09: "Immigrant Attraction"  
+sakuya_weiwang_09_t: "As natural as bees to flowers."
+
+sakuya_weiwang_11: "Wholesale Doctorates"  
+sakuya_weiwang_11_t: "Sounds like buying a PhD at a supermarket."
+
+sakuya_weiwang_12: "Pollution Cleanup"  
+sakuya_weiwang_12_t: "Like vacuuming the ocean."
+
+sakuya_weiwang_13: "Killing, Killing, Killing"  
+sakuya_weiwang_13_t: "All things exist to support humans, but humans give nothing back."
+
+sakuya_weiwang_14: "Game Dynamics"  
+sakuya_weiwang_14_t: "Like moving pieces on a chessboard."
+
+sakuya_weiwang_15: "Preemptive Strike"  
+sakuya_weiwang_15_t: "Like running to the finish line before the race starts."
+
+sakuya_weiwang_16: "Odd Legitimacy"  
+sakuya_weiwang_16_t: "Sounds like a legal rollercoaster."
+
+sakuya_weiwang_17: "Clearing the Lazy"  
+sakuya_weiwang_17_t: "Feels like making cats and dogs coexist."
+
+sakuya_weiwang_18: "Power of the Ballot"  
+sakuya_weiwang_18_t: "Like waving a flag in the wind."
+
+sakuya_weiwang_19: "Infrastructure"  
+sakuya_weiwang_19_t: "Like laying new roads in a city."
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Loan Interest Rates
+sakuya_money_remove_country_loan_interest_rate_mult_3: "Loan Rate #n 10000%#!"
+sakuya_money_remove_country_loan_interest_rate_mult_2: "Loan Rate #n 80%#!"
+sakuya_money_remove_country_loan_interest_rate_mult_1: "Loan Rate #n 20%#!"
+sakuya_money_add_country_loan_interest_rate_mult_1: "Loan Rate #p -50%#!"
+sakuya_money_add_country_loan_interest_rate_mult_2: "Loan Rate #p -100%#!"
+sakuya_money_add_country_loan_interest_rate_mult_3: "Loan Rate #p -10000%#!"
+
+# Gold Reserve Limit
+sakuya_money_remove_country_gold_reserve_limit_mult_3: "Gold Limit #n -10000%#!"
+sakuya_money_remove_country_gold_reserve_limit_mult_2: "Gold Limit #n -50%#!"
+sakuya_money_remove_country_gold_reserve_limit_mult_1: "Gold Limit #n -20%#!"
+sakuya_money_add_country_gold_reserve_limit_mult_1: "Gold Limit #p 50%#!"
+sakuya_money_add_country_gold_reserve_limit_mult_2: "Gold Limit #p 100%#!"
+sakuya_money_add_country_gold_reserve_limit_mult_3: "Gold Limit #p 10000%#!"
+
+# Minting
+sakuya_money_remove_country_minting_mult_3: "Minting #n -1000%#!"
+sakuya_money_remove_country_minting_mult_2: "Minting #n -90%#!"
+sakuya_money_remove_country_minting_mult_1: "Minting #n -50%#!"
+sakuya_money_add_country_minting_mult_1: "Minting #p 50%#!"
+sakuya_money_add_country_minting_mult_2: "Minting #p 100%#!"
+sakuya_money_add_country_minting_mult_3: "Minting #p 1000%#!"
+
+# Government Wages
+sakuya_money_remove_country_government_wages_mult_3: "Gov Wages #n 10000%#!"
+sakuya_money_remove_country_government_wages_mult_2: "Gov Wages #n 100%#!"
+sakuya_money_remove_country_government_wages_mult_1: "Gov Wages #n 50%#!"
+sakuya_money_add_country_government_wages_mult_1: "Gov Wages #p 20%#!"
+sakuya_money_add_country_government_wages_mult_2: "Gov Wages #p 80%#!"
+sakuya_money_add_country_government_wages_mult_3: "Gov Wages #p 10000%#!"
+
+# Military Wages
+sakuya_money_remove_country_military_wages_mult_3: "Military Wages #n 100%#!"
+sakuya_money_remove_country_military_wages_mult_2: "Military Wages #n 100%#!"
+sakuya_money_remove_country_military_wages_mult_1: "Military Wages #n 50%#!"
+sakuya_money_add_country_military_wages_mult_1: "Military Wages #p 20%#!"
+sakuya_money_add_country_military_wages_mult_2: "Military Wages #p 80%#!"
+sakuya_money_add_country_military_wages_mult_3: "Military Wages #p 10000%#!"
+
+# Investment Pool
+sakuya_money_add_country_disable_investment_pool: "Enable Investment Pool (Disabled)"
+sakuya_money_remove_country_disable_investment_pool: "Disable Investment Pool"
+
+# Tax Revenue
+sakuya_money_add_country_tax_income_add_1: "Tax Revenue #p 1000#!"
+sakuya_money_add_country_tax_income_add_2: "Tax Revenue #p 10000#!"
+sakuya_money_add_country_tax_income_add_3: "Tax Revenue #p 100000#!"
+sakuya_money_add_country_tax_income_add_4: "Tax Revenue #p 1000000#!"
+sakuya_money_add_country_tax_income_add_5: "Tax Revenue #p 10000000#!"
+sakuya_money_add_country_tax_income_add_6: "Tax Revenue #p 100000000#!"
+sakuya_money_add_country_tax_income_add_7: "Tax Revenue #p 1000000000#!"
+sakuya_money_add_country_tax_income_remove_1: "Tax Revenue #n -1000#!"
+sakuya_money_add_country_tax_income_remove_2: "Tax Revenue #n -10000#!"
+sakuya_money_add_country_tax_income_remove_3: "Tax Revenue #n -100000#!"
+sakuya_money_add_country_tax_income_remove_4: "Tax Revenue #n -1000000#!"
+sakuya_money_add_country_tax_income_remove_5: "Tax Revenue #n -10000000#!"
+sakuya_money_add_country_tax_income_remove_6: "Tax Revenue #n -100000000#!"
+sakuya_money_add_country_tax_income_remove_7: "Tax Revenue #n -1000000000#!"
+
+# Tariffs
+sakuya_money_add_tariff_import_add: "Import Tariff #p 100%#!"
+sakuya_money_add_tariff_export_add: "Export Tariff #p 100%#!"
+sakuya_money_add_tax_income_add: "Tax Income #p 100%#!"
+sakuya_money_add_tax_consumption_add: "Consumption Tax #p 100%#!"
+sakuya_money_add_tax_dividends_add: "Dividends Tax #p 100%#!"
+sakuya_money_add_tax_per_capita_add: "Head Tax #p 100%#!"
+sakuya_money_add_tax_land_add: "Land Tax #p 100%#!"
+sakuya_money_add_tax_heathen_add: "Heathen Tax #p 100%#!"
+sakuya_money_remove_tariff_import_add: "Import Tariff #n -100%#!"
+sakuya_money_remove_tariff_export_add: "Export Tariff #n -100%#!"
+sakuya_money_remove_tax_income_add: "Tax Income #n -100%#!"
+sakuya_money_remove_tax_consumption_add: "Consumption Tax #n -100%#!"
+sakuya_money_remove_tax_dividends_add: "Dividends Tax #n -100%#!"
+sakuya_money_remove_tax_per_capita_add: "Head Tax #n -100%#!"
+sakuya_money_remove_tax_land_add: "Land Tax #n -100%#!"
+sakuya_money_remove_tax_heathen_add: "Heathen Tax #n -100%#!"
+
+
+# Company Construction Efficiency
+sakuya_money_add_country_company_construction_efficiency_bonus_add_1: "Construction Efficiency #p 10%#!"
+sakuya_money_remove_country_company_construction_efficiency_bonus_add_1: "Construction Efficiency #n -10%#!"
+sakuya_money_add_country_company_construction_efficiency_bonus_add_2: "Construction Efficiency #p 100%#!"
+sakuya_money_remove_country_company_construction_efficiency_bonus_add_2: "Construction Efficiency #n -100%#!"
+
+# Trade Route Competitiveness
+sakuya_money_add_country_trade_route_competitiveness_mult_1: "Route Competitiveness #p 10%#!"
+sakuya_money_remove_country_trade_route_competitiveness_mult_1: "Route Competitiveness #n -10%#!"
+sakuya_money_add_country_trade_route_competitiveness_mult_2: "Route Competitiveness #p 50%#!"
+sakuya_money_remove_country_trade_route_competitiveness_mult_2: "Route Competitiveness #n -50%#!"
+sakuya_money_add_country_trade_route_competitiveness_mult_3: "Route Competitiveness #p 100%#!"
+sakuya_money_remove_country_trade_route_competitiveness_mult_3: "Route Competitiveness #n -100%#!"
+sakuya_money_add_country_trade_route_competitiveness_mult_4: "Route Competitiveness #p 1000%#!"
+sakuya_money_remove_country_trade_route_competitiveness_mult_4: "Route Competitiveness #n -1000%#!"
+sakuya_money_add_country_trade_route_competitiveness_mult_5: "Route Competitiveness #p 100000%#!"
+sakuya_money_remove_country_trade_route_competitiveness_mult_5: "Route Competitiveness #n -100000%#!"
+
+# Trade Route Costs
+sakuya_money_add_country_trade_route_cost_mult_1: "Route Cost #p -10%#!"
+sakuya_money_remove_country_trade_route_cost_mult_1: "Route Cost #n 10%#!"
+sakuya_money_add_country_trade_route_cost_mult_2: "Route Cost #p -50%#!"
+sakuya_money_remove_country_trade_route_cost_mult_2: "Route Cost #n 50%#!"
+sakuya_money_add_country_trade_route_cost_mult_3: "Route Cost #p -100%#!"
+sakuya_money_remove_country_trade_route_cost_mult_3: "Route Cost #n 100%#!"
+sakuya_money_add_country_trade_route_cost_mult_4: "Route Cost #p -1000%#!"
+sakuya_money_remove_country_trade_route_cost_mult_4: "Route Cost #n 1000%#!"
+sakuya_money_add_country_trade_route_cost_mult_5: "Route Cost #p -100000%#!"
+sakuya_money_remove_country_trade_route_cost_mult_5: "Route Cost #n 100000%#!"
+
+# Number of Trade Routes
+sakuya_money_add_country_trade_route_quantity_mult_1: "Route Quantity #p 10%#!"
+sakuya_money_remove_country_trade_route_quantity_mult_1: "Route Quantity #n -10%#!"
+sakuya_money_add_country_trade_route_quantity_mult_2: "Route Quantity #p 50%#!"
+sakuya_money_remove_country_trade_route_quantity_mult_2: "Route Quantity #n -50%#!"
+sakuya_money_add_country_trade_route_quantity_mult_3: "Route Quantity #p 100%#!"
+sakuya_money_remove_country_trade_route_quantity_mult_3: "Route Quantity #n -100%#!"
+sakuya_money_add_country_trade_route_quantity_mult_4: "Route Quantity #p 1000%#!"
+sakuya_money_remove_country_trade_route_quantity_mult_4: "Route Quantity #n -1000%#!"
+sakuya_money_add_country_trade_route_quantity_mult_5: "Route Quantity #p 100000%#!"
+sakuya_money_remove_country_trade_route_quantity_mult_5: "Route Quantity #n -100000%#!"
+
+# Maximum Companies
+sakuya_money_add_country_max_companies_add_1: "Max Companies #p 1#!"
+sakuya_money_remove_country_max_companies_add_1: "Max Companies #n -1#!"
+sakuya_money_add_country_max_companies_add_2: "Max Companies #p 5#!"
+sakuya_money_remove_country_max_companies_add_2: "Max Companies #n -5#!"
+sakuya_money_add_country_max_companies_add_3: "Max Companies #p 10#!"
+sakuya_money_remove_country_max_companies_add_3: "Max Companies #n -10#!"
+sakuya_money_add_country_max_companies_add_4: "Max Companies #p 9999#!"
+sakuya_money_remove_country_max_companies_add_4: "Max Companies #n -9999#!"
+
+# Company Output
+sakuya_money_add_country_company_throughput_bonus_add_2: "Company Output #p 100%#!"
+sakuya_money_remove_country_company_throughput_bonus_add_2: "Company Output #n -100%#!"
+sakuya_money_add_country_company_throughput_bonus_add_1: "Company Output #p 10%#!"
+sakuya_money_remove_country_company_throughput_bonus_add_1: "Company Output #n -10%#!"
+
+# Free Trade Routes
+sakuya_money_add_country_free_trade_routes_add_1: "Free Trade Routes #p 1#!"
+sakuya_money_remove_country_free_trade_routes_add_1: "Free Trade Routes #n -1#!"
+sakuya_money_add_country_free_trade_routes_add_2: "Free Trade Routes #p 10#!"
+sakuya_money_remove_country_free_trade_routes_add_2: "Free Trade Routes #n -10#!"
+sakuya_money_add_country_free_trade_routes_add_3: "Free Trade Routes #p 9999#!"
+sakuya_money_remove_country_free_trade_routes_add_3: "Free Trade Routes #n -9999#!"
+
+# Market Max Imports
+sakuya_money_add_market_max_imports_add_mult_1: "Max Imports #p 1%#!"
+sakuya_money_remove_market_max_imports_add_mult_1: "Max Imports #n -1%#!"
+sakuya_money_add_market_max_imports_add_mult_2: "Max Imports #p 5%#!"
+sakuya_money_remove_market_max_imports_add_mult_2: "Max Imports #n -5%#!"
+sakuya_money_add_market_max_imports_add_mult_3: "Max Imports #p 50%#!"
+sakuya_money_remove_market_max_imports_add_mult_3: "Max Imports #n -50%#!"
+sakuya_money_add_market_max_imports_add_mult_4: "Max Imports #p 100%#!"
+sakuya_money_remove_market_max_imports_add_mult_4: "Max Imports #n -100%#!"
+sakuya_money_add_market_max_imports_add_mult_5: "Max Imports #p 9999%#!"
+sakuya_money_remove_market_max_imports_add_mult_5: "Max Imports #n -9999%#!"
+
+# Market Max Exports
+sakuya_money_add_market_max_exports_add_mult_1: "Max Exports #p 1%#!"
+sakuya_money_remove_market_max_exports_add_mult_1: "Max Exports #n -1%#!"
+sakuya_money_add_market_max_exports_add_mult_2: "Max Exports #p 5%#!"
+sakuya_money_remove_market_max_exports_add_mult_2: "Max Exports #n -5%#!"
+sakuya_money_add_market_max_exports_add_mult_3: "Max Exports #p 50%#!"
+sakuya_money_remove_market_max_exports_add_mult_3: "Max Exports #n -50%#!"
+sakuya_money_add_market_max_exports_add_mult_4: "Max Exports #p 100%#!"
+sakuya_money_remove_market_max_exports_add_mult_4: "Max Exports #n -100%#!"
+sakuya_money_add_market_max_exports_add_mult_5: "Max Exports #p 9999%#!"
+sakuya_money_remove_market_max_exports_add_mult_5: "Max Exports #n -9999%#!"
+
+# Enable/Disable Market Trade Routes
+sakuya_money_add_market_disallow_trade_routes: "Disable Market Trade Routes"
+sakuya_money_remove_market_disallow_trade_routes: "Enable Market Trade Routes"
+
+# Market Land Trade Capacity
+sakuya_money_add_market_land_trade_capacity_add_1: "Land Trade Capacity #p 1#!"
+sakuya_money_remove_market_land_trade_capacity_add_1: "Land Trade Capacity #n -1#!"
+sakuya_money_add_market_land_trade_capacity_add_2: "Land Trade Capacity #p 100#!"
+sakuya_money_remove_market_land_trade_capacity_add_2: "Land Trade Capacity #n -100#!"
+sakuya_money_add_market_land_trade_capacity_add_3: "Land Trade Capacity #p 10000#!"
+sakuya_money_remove_market_land_trade_capacity_add_3: "Land Trade Capacity #n -10000#!"
+
+# National Convoy Capacity
+sakuya_money_add_country_convoys_capacity_add_1: "Convoy Capacity #p 10#!"
+sakuya_money_remove_country_convoys_capacity_add_1: "Convoy Capacity #n -10#!"
+sakuya_money_add_country_convoys_capacity_add_2: "Convoy Capacity #p 100#!"
+sakuya_money_remove_country_convoys_capacity_add_2: "Convoy Capacity #n -100#!"
+sakuya_money_add_country_convoys_capacity_add_3: "Convoy Capacity #p 1000#!"
+sakuya_money_remove_country_convoys_capacity_add_3: "Convoy Capacity #n -1000#!"
+sakuya_money_add_country_convoys_capacity_add_4: "Convoy Capacity #p 10000#!"
+sakuya_money_remove_country_convoys_capacity_add_4: "Convoy Capacity #n -10000#!"
+sakuya_money_add_country_convoys_capacity_add_5: "Convoy Capacity #p 100000#!"
+sakuya_money_remove_country_convoys_capacity_add_5: "Convoy Capacity #n -100000#!"
+sakuya_money_add_country_convoys_capacity_add_6: "Convoy Capacity #p 1000000#!"
+sakuya_money_remove_country_convoys_capacity_add_6: "Convoy Capacity #n -1000000#!"
+
+# Convoy Defense
+sakuya_money_add_unit_convoy_defense_mult_1: "Convoy Defense #p 100%#!"
+sakuya_money_remove_unit_convoy_defense_mult_1: "Convoy Defense #n -100%#!"
+
+# Convoy Raiding
+sakuya_money_add_unit_convoy_raiding_mult_1: "Convoy Raiding #p 100%#!"
+sakuya_money_remove_unit_convoy_raiding_mult_1: "Convoy Raiding #n -100%#!"
+
+# Convoy Requirements
+sakuya_money_add_unit_convoy_requirements_mult_1: "Convoy Requirements #n 100%#!"
+sakuya_money_remove_unit_convoy_requirements_mult_1: "Convoy Requirements #p -100%#!"
+
+# Pol Pot Reborn
+advcm_add_sakuya_pol_pot: "Pol Pot Reborn"
+
+# Construction
+advcm_add_sakuya_country_construction_add: "Construction Capacity #p 500#!"
+
+# Interest Groups
+advcm_add_sakuya_interest_group_approval_add: "Interest Group Approval #p 10#!"
+
+# Building Output
+advcm_add_building_throughput: "Building Output #p 10%#!"
+
+# Building Input
+advcm_add_building_input_reduction: "Building Input #p -10%#!"
+
+# Offense
+advcm_add_offense: "Offense Power #p 10%#!"
+
+# Defense
+advcm_add_defense: "Defense Power #p 10%#!"
+
+# Kill Rate
+advcm_add_kill_rate: "Kill Rate #p 100%#!"
+
+# Recovery Rate
+advcm_add_recovery_rate: "Recovery Rate #p 100%#!"
+
+# Cultural Assimilation
+advcm_add_assimilation: "Cultural Assimilation #p 100%#!"
+
+# Education
+advcm_add_education: "Education Gain #p 100%#!"
+
+# Tax Revenue
+advcm_add_income: "Tax Revenue #p 1000000#currency#!"
+
+# Construction Capacity
+advcm_add_sakuya_country_construction: "Construction Capacity #p 500#!"
+advcm_add_construction: "Construction Capacity #p 5000#!"
+
+# Interest Group Approval
+advcm_add_sakuya_interest_group_approval: "Interest Group Approval #p 5#!"
+
+# Bureaucracy
+advcm_add_bureaucracy: "Bureaucracy #p 5000#!"
+
+# Authority
+advcm_add_authority: "Authority #p 5000#!"
+
+# Influence
+advcm_add_influence: "Influence #p 5000#!"
+
+# Tech Spread
+advcm_add_tech_spread: "Tech Spread #p 500000#!"
+
+# Weekly Innovation
+advcm_add_innovation: "Weekly Innovation #p 500000#!"
+advcm_add_innovation_max: "Max Weekly Innovation #p 500000#!"
+
+# Birth Rate
+advcm_add_birth_rate: "Birth Rate #p 10%#!"
+
+
+
+
+
+
+# Trade Union Influence
+advcm_add_sakuya_trade_unions_unit1: "Trade Union Influence #p 20%#!"
+advcm_add_sakuya_remove_trade_unions_unit1: "Trade Union Influence #n -20%#!"
+
+# Rural Folk Influence
+advcm_add_sakuya_rural_folk_unit1: "Rural Folk Influence #p 20%#!"
+advcm_add_sakuya_remove_rural_folk_unit1: "Rural Folk Influence #n -20%#!"
+
+# Petty Bourgeoisie Influence
+advcm_add_sakuya_petty_bourgeoisie_unit1: "Petty Bourgeoisie Influence #p 20%#!"
+advcm_add_sakuya_remove_petty_bourgeoisie_unit1: "Petty Bourgeoisie Influence #n -20%#!"
+
+# Landowners Influence
+advcm_add_sakuya_landowners_unit1: "Landowners Influence #p 20%#!"
+advcm_add_sakuya_remove_landowners_unit1: "Landowners Influence #n -20%#!"
+
+# Intelligentsia Influence
+advcm_add_sakuya_intelligensia_unit1: "Intelligentsia Influence #p 20%#!"
+advcm_add_sakuya_remove_intelligensia_unit1: "Intelligentsia Influence #n -20%#!"
+
+# Industrialists Influence
+advcm_add_sakuya_industrialists_unit1: "Industrialists Influence #p 20%#!"
+advcm_add_sakuya_remove_industrialists_unit1: "Industrialists Influence #n -20%#!"
+
+# Devout Influence
+advcm_add_sakuya_devout_unit1: "Devout Influence #p 20%#!"
+advcm_add_sakuya_remove_devout_unit1: "Devout Influence #n -20%#!"
+
+# Armed Forces Influence
+advcm_add_sakuya_armed_forces_unit1: "Armed Forces Influence #p 20%#!"
+advcm_add_sakuya_remove_armed_forces_unit1: "Armed Forces Influence #n -20%#!"
+
+# Politically Unaligned Influence
+advcm_add_sakuya_politically_unaligned_unit1: "Politically Unaligned Influence #p -3%#! Against all groups"
+advcm_add_sakuya_remove_politically_unaligned_unit1: "Politically Unaligned Influence #n 3%#! Against all groups"
+
+# Overall Influence
+advcm_add_sakuya_all_unit1: "All Interest Groups Influence #p 30%#!"
+advcm_add_sakuya_remove_all_unit1: "All Interest Groups Influence #n -50%#!"
+
+# Trade Union Group Support
+advcm_add_sakuya_trade_unions_unit2: "Trade Union Group Support #p 5#!"
+advcm_add_sakuya_remove_trade_unions_unit2: "Trade Union Group Support #n -5#!"
+advcm_add_sakuya_trade_unions_unit2_plus: "Trade Union Group Support #p 50#!"
+advcm_add_sakuya_remove_trade_unions_unit2_plus: "Trade Union Group Support #n -50#!"
+advcm_add_sakuya_trade_unions_unit2_min: "Trade Union Group Support #p 1#!"
+advcm_add_sakuya_remove_trade_unions_unit2_min: "Trade Union Group Support #n -1#!"
+
+# Rural Folk Group Support
+advcm_add_sakuya_rural_folk_unit2: "Rural Folk Group Support #p 5#!"
+advcm_add_sakuya_remove_rural_folk_unit2: "Rural Folk Group Support #n -5#!"
+advcm_add_sakuya_rural_folk_unit2_plus: "Rural Folk Group Approval Rate #p 50#!"
+advcm_add_sakuya_remove_rural_folk_unit2_plus: "Rural Folk Group Support #n -50#!"
+advcm_add_sakuya_rural_folk_unit2_min: "Rural Folk Group Support #p 1#!"
+advcm_add_sakuya_remove_rural_folk_unit2_min: "Rural Folk Group Support #n -1#!"
+
+# Petty Bourgeoisie Group Support
+advcm_add_sakuya_petty_bourgeoisie_unit2: "Petty Bourgeoisie Group Support #p 5#!"
+advcm_add_sakuya_remove_petty_bourgeoisie_unit2: "Petty Bourgeoisie Group Support #n -5#!"
+advcm_add_sakuya_petty_bourgeoisie_unit2_plus: "Petty Bourgeoisie Group Support #p 50#!"
+advcm_add_sakuya_remove_petty_bourgeoisie_unit2_plus: "Petty Bourgeoisie Group Support #n -50#!"
+advcm_add_sakuya_petty_bourgeoisie_unit2_min: "Petty Bourgeoisie Group Support #p 1#!"
+advcm_add_sakuya_remove_petty_bourgeoisie_unit2_min: "Petty Bourgeoisie Group Support #n -1#!"
+
+# Landowners Group Support
+advcm_add_sakuya_landowners_unit2: "Landowners Group Support #p 5#!"
+advcm_add_sakuya_remove_landowners_unit2: "Landowners Group Support #n -5#!"
+advcm_add_sakuya_landowners_unit2_plus: "Landowners Group Support #p 50#!"
+advcm_add_sakuya_remove_landowners_unit2_plus: "Landowners Group Support #n -50#!"
+advcm_add_sakuya_landowners_unit2_min: "Landowners Group Support #p 1#!"
+advcm_add_sakuya_remove_landowners_unit2_min: "Landowners Group Support #n -1#!"
+
+# Intelligentsia Group Support
+advcm_add_sakuya_intelligensia_unit2: "Intelligentsia Group Support #p 5#!"
+advcm_add_sakuya_remove_intelligensia_unit2: "Intelligentsia Group Support #n -5#!"
+advcm_add_sakuya_intelligensia_unit2_plus: "Intelligentsia Group Support #p 50#!"
+advcm_add_sakuya_remove_intelligensia_unit2_plus: "Intelligentsia Group Support #n -50#!"
+advcm_add_sakuya_intelligensia_unit2_min: "Intelligentsia Group Support #p 1#!"
+advcm_add_sakuya_remove_intelligensia_unit2_min: "Intelligentsia Group Support #n -1#!"
+
+# Industrialists Group Support
+advcm_add_sakuya_industrialists_unit2: "Industrialists Group Support #p 5#!"
+advcm_add_sakuya_remove_industrialists_unit2: "Industrialists Group Support #n -5#!"
+advcm_add_sakuya_industrialists_unit2_plus: "Industrialists Group Support #p 50#!"
+advcm_add_sakuya_remove_industrialists_unit2_plus: "Industrialists Group Support #n -50#!"
+advcm_add_sakuya_industrialists_unit2_min: "Industrialists Group Support #p 1#!"
+advcm_add_sakuya_remove_industrialists_unit2_min: "Industrialists Group Support #n -1#!"
+
+# Devout Group Support
+advcm_add_sakuya_devout_unit2: "Devout Group Support #p 5#!"
+advcm_add_sakuya_remove_devout_unit2: "Devout Group Support #n -5#!"
+advcm_add_sakuya_devout_unit2_plus: "Devout Group Support #p 50#!"
+advcm_add_sakuya_remove_devout_unit2_plus: "Devout Group Support #n -50#!"
+advcm_add_sakuya_devout_unit2_min: "Devout Group Support #p 1#!"
+advcm_add_sakuya_remove_devout_unit2_min: "Devout Group Support #n -1#!"
+
+# Armed Forces Group Support
+advcm_add_sakuya_armed_forces_unit2: "Armed Forces Group Support #p 5#!"
+advcm_add_sakuya_remove_armed_forces_unit2: "Armed Forces Group Support #n -5#!"
+advcm_add_sakuya_armed_forces_unit2_plus: "Armed Forces Group Support #p 50#!"
+advcm_add_sakuya_remove_armed_forces_unit2_plus: "Armed Forces Group Support #n -50#!"
+advcm_add_sakuya_armed_forces_unit2_min: "Armed Forces Group Support #p 1#!"
+advcm_add_sakuya_remove_armed_forces_unit2_min: "Armed Forces Group Support #n -1#!"
+
+# Exclusive to Trade Unions
+advcm_add_sakuya_trade_unions_unit2_only: "Trade Union Approval Boost"
+
+# Exclusive to Rural Folk
+advcm_add_sakuya_rural_folk_unit2_only: "Rural Folk Approval Boost"
+
+# Exclusive to Petty Bourgeoisie
+advcm_add_sakuya_petty_bourgeoisie_unit2_only: "Petty Bourgeoisie Approval Boost"
+
+# Exclusive to Landowners
+advcm_add_sakuya_landowners_unit2_only: "Landowners Approval Boost"
+
+# Exclusive to Intelligentsia
+advcm_add_sakuya_intelligensia_unit2_only: "Intelligentsia Approval Boost"
+
+# Exclusive to Industrialists
+advcm_add_sakuya_industrialists_unit2_only: "Industrialists Approval Boost"
+
+# Exclusive to Devout
+advcm_add_sakuya_devout_unit2_only: "Devout Approval Boost"
+
+# Exclusive to Armed Forces
+advcm_add_sakuya_armed_forces_unit2_only: "Armed Forces Approval Boost"
+
+# Increase All Support
+advcm_add_sakuya_all_unit2: "All Interest Groups Support #p 50#!"
+advcm_add_sakuya_remove_all_unit2: "All Interest Groups Support #n -50#!"
+
+# Total Attraction
+advcm_add_sakuya_interest_group_approval_add_all: "All Interest Groups Attraction #p 130%#!"
+
+# Promote Attraction
+advcm_add_sakuya_interest_group_in_government_approval_add_all: "Supported Interest Groups Attraction Determination #p 130%#!"
+
+# Suppress Attraction
+advcm_add_sakuya_interest_group_in_opposition_approval_add_all: "Repressed Interest Groups Attraction Determination #p 130%#!"
+
+# Trade Union Attraction
+advcm_add_sakuya_interest_group_trade_unions_approval_add_all: "Trade Unions Attraction #p 130%#!"
+
+# Rural Folk Attraction
+advcm_add_sakuya_interest_group_rural_folk_approval_add_all: "Rural Folk Attraction #p 130%#!"
+
+# Petty Bourgeoisie Attraction
+advcm_add_sakuya_interest_group_petty_bourgeoisie_approval_add_all: "Petty Bourgeoisie Attraction #p 130%#!"
+
+# Landowners Attraction
+advcm_add_sakuya_interest_group_landowners_approval_add_all: "Landowners Attraction #p 130%#!"
+
+# Intelligentsia Attraction
+advcm_add_sakuya_interest_group_intelligentsia_approval_add_all: "Intelligentsia Attraction #p 130%#!"
+
+# Industrialists Attraction
+advcm_add_sakuya_interest_group_industrialists_approval_add_all: "Industrialists Attraction #p 130%#!"
+
+# Devout Attraction
+advcm_add_sakuya_interest_group_devout_approval_add_all: "Devout Attraction #p 130%#!"
+
+# Armed Forces Attraction
+advcm_add_sakuya_interest_group_armed_forces_approval_add_all: "Armed Forces Attraction #p 130%#!"
+
+
+
+
+
+
+
+
+#######################################################################################
+#        /######  /###### /##   /##/##   /##/##     /##/######                        #
+#       /##__  ##/##__  #| ##  /##| ##  | #|  ##   /##/##__  ##   #######  #######    #
+#      | ##  \__| ##  \ #| ## /##/| ##  | ##\  ## /##| ##  \ ##   #######  #######    #
+#      |  ######| #######| #####/ | ##  | ## \  ####/| ########    #####    #####     #
+#       \____  #| ##__  #| ##  ## | ##  | ##  \  ##/ | ##__  ##                       #
+#       /##  \ #| ##  | #| ##\  ##| ##  | ##   | ##  | ##  | ##        #    #         #
+#      |  ######| ##  | #| ## \  #|  ######/   | ##  | ##  | ##         ####          #
+#       \______/|__/  |__|__/  \__/\______/    |__/  |__/  |__/                       #
+#######################################################################################
+
+SAKUYA_POWER_BLOC_1: "[GetVariableSystem]"
+SAKUYA_POWER_BLOC_2: "[GetPlayer]"
+SAKUYA_POWER_BLOC_3: "Writing is mightier than the sword."
+SAKUYA_POWER_BLOC_4: "#v National Group"
+SAKUYA_POWER_BLOC_5: "#v Prestige #lore Temporarily placed here. Future diplomatic info will be here. #!"
+SAKUYA_POWER_BLOC_6: "#v Military #lore Temporarily placed here. Military will get its own menu. #!"
+SAKUYA_POWER_BLOC_7: "SAKUYA_MONEY_TEXT_4"
+SAKUYA_POWER_BLOC_8: "National Group"
+SAKUYA_POWER_BLOC_9: "Prestige/Misc"
+SAKUYA_POWER_BLOC_10: "Military"
+SAKUYA_POWER_BLOC_11: "[Country.GetPowerBloc]"
+SAKUYA_POWER_BLOC_12: "[concept_power_bloc]"
+SAKUYA_POWER_BLOC_13: "[PowerBloc.GetNameNoIcon]"
+SAKUYA_POWER_BLOC_14: "POWER_BLOC_RANK_FORMATTED"
+SAKUYA_POWER_BLOC_15: "[Country.GetRankTooltip]"
+SAKUYA_POWER_BLOC_16: "#BOLD [Country.GetCountryScorePositionDesc]"
+SAKUYA_POWER_BLOC_17: "#BOLD [Country.GetCountryScorePositionDesc]"
+SAKUYA_POWER_BLOC_18: "[concept_rank]"
+SAKUYA_POWER_BLOC_19: "#v [Country.GetRank]#!"
+SAKUYA_POWER_BLOC_20: "[Country.GetPowerBloc]"
+SAKUYA_POWER_BLOC_21: " "
+SAKUYA_POWER_BLOC_22: " "
+SAKUYA_POWER_BLOC_23: "                                                                        · #lore Toyosatomimi™ Policy and Legal Consulting Company ·  "
+SAKUYA_POWER_BLOC_24: "                                                                 · #lore Toyosatomimi® Cabinet and State Affairs Consulting Co., Ltd. ·  "
+SAKUYA_POWER_BLOC_25: "I never thought someone would actually entrust state diplomacy to a third-party private company...  ——Toyosatomimi"
+SAKUYA_POWER_BLOC_26: "                                                                                   · #lore Toyosato·Mononobe® Industrial Group ·  "
+SAKUYA_POWER_BLOC_27: "A super military-industrial complex...  ——Sakuya"
+
+SAKUYA_POWER_BLOC_28: " "
+SAKUYA_POWER_BLOC_29: "Prevent bad reputation"
+SAKUYA_POWER_BLOC_30: " "
+SAKUYA_POWER_BLOC_31: "Improve relations"
+SAKUYA_POWER_BLOC_32: " "
+SAKUYA_POWER_BLOC_33: "Become a great power"
+SAKUYA_POWER_BLOC_34: "#lore Aaaaaaa! #!#v Sakuya, although a princess, remains dedicated to clients.#! Click to enhance your nation's buffs within a day, but beware of going overboard. Sakuya knows politics but not economics—consult #green Riko Hakugei#! for that."
+SAKUYA_POWER_BLOC_35: "Help, prince!"
+SAKUYA_POWER_BLOC_36: "#v #gold @information! Button guide on group cohesion#!#! This button has two modes: #p Left Click#! and #n Right Click#! mode. #p Left Click#! sets cohesion to #V #bold 100, 60, 20, 0. The fifth button adds 5 points. #! #! Example: Clicking the third button sets cohesion to 20, adding 5 three times gives 35. #!#! #v #n Right Click adjusts buffs based on cohesion. Right clicking the fifth button clears buffs.#! @innovation! This button sets max cohesion with Left Click, Right Click adds maximum buffs."
+SAKUYA_POWER_BLOC_37: "Group Cohesion"
+SAKUYA_POWER_BLOC_38: "@innovation! Sets cohesion to 60. Right Click adds significant buff."
+SAKUYA_POWER_BLOC_39: "60x"
+SAKUYA_POWER_BLOC_40: "@innovation! Sets cohesion to 20. Right Click adds moderate buff."
+SAKUYA_POWER_BLOC_41: "20x"
+SAKUYA_POWER_BLOC_42: "@innovation! Clears cohesion. Right Click adjusts minor buffs."
+SAKUYA_POWER_BLOC_43: "0x"
+SAKUYA_POWER_BLOC_44: "@innovation! Click to add a stackable 5-point buff. Right Click clears all buffs."
+SAKUYA_POWER_BLOC_45: "Reset"
+SAKUYA_POWER_BLOC_46: "Domestic Influence: Controls subordinates."
+SAKUYA_POWER_BLOC_47: "Domestic Influence"
+SAKUYA_POWER_BLOC_48: "+100%, as is."
+SAKUYA_POWER_BLOC_49: "100x"
+SAKUYA_POWER_BLOC_50: "+10%, as is."
+SAKUYA_POWER_BLOC_51: "10x"
+SAKUYA_POWER_BLOC_52: "+1%, as is."
+SAKUYA_POWER_BLOC_53: "1x"
+SAKUYA_POWER_BLOC_54: " "
+SAKUYA_POWER_BLOC_55: "Reset"
+SAKUYA_POWER_BLOC_56: "#v Miss Sakuya uses charm to sway leaders.#! She even threatens to promote your group's influence with performances. “I'm exhausted after a show! Doesn’t Sakuya feel tired?” “You want me to use the 'master spark'? Is that safe for the audience...?”"
+SAKUYA_POWER_BLOC_57: "Foreign Influence"
+SAKUYA_POWER_BLOC_58: " "
+SAKUYA_POWER_BLOC_59: "100x"
+SAKUYA_POWER_BLOC_60: " "
+SAKUYA_POWER_BLOC_61: "10x"
+SAKUYA_POWER_BLOC_62: " "
+SAKUYA_POWER_BLOC_63: "1x"
+SAKUYA_POWER_BLOC_64: " "
+SAKUYA_POWER_BLOC_65: "Reset"
+SAKUYA_POWER_BLOC_66: "Clicking this gives you three authorizations weekly until exhausted."
+SAKUYA_POWER_BLOC_67: "Weekly Authorizations"
+SAKUYA_POWER_BLOC_68: "After clicking, focus on bonuses only, but #v Sakuya#! needs to consider more."
+SAKUYA_POWER_BLOC_69: "100x"
+SAKUYA_POWER_BLOC_70: "Modern Genshin, activate! #lore Wait, are there chairs in Victoria 3?"
+SAKUYA_POWER_BLOC_71: "10x"
+SAKUYA_POWER_BLOC_72: "No more bad jokes. No one clicks these bottom buttons anyway."
+SAKUYA_POWER_BLOC_73: "1x"
+SAKUYA_POWER_BLOC_74: "Fun Fact: Left and Right clicks clear buffs but trigger different events. Doubt it? Open sakuya_seven.gui and corresponding sgui script to see. #v Also, I'm #n hard to control#! with this line: #! #green Right click to open quick menu.#! It can be modified by defining tooltip, but I can't and it's complex."
+SAKUYA_POWER_BLOC_75: "Reset"
+SAKUYA_POWER_BLOC_76: "[Country.GetPowerBloc]"
+SAKUYA_POWER_BLOC_79: " "
+SAKUYA_POWER_BLOC_80: "100x"
+SAKUYA_POWER_BLOC_81: " "
+SAKUYA_POWER_BLOC_82: "10x"
+SAKUYA_POWER_BLOC_83: " "
+SAKUYA_POWER_BLOC_84: "1x"
+SAKUYA_POWER_BLOC_85: " "
+SAKUYA_POWER_BLOC_86: "Reset"
+SAKUYA_POWER_BLOC_87: "“#lore Sakuya, who is this...”"
+SAKUYA_POWER_BLOC_88: "[Country.GetPowerBloc]"
+SAKUYA_POWER_BLOC_89: "Dear [GetPlayer.GetRuler.GetPrimaryRoleTitle], Miss Sakuya left you a letter."
+SAKUYA_POWER_BLOC_90: "[GetPlayer.GetNameNoFlag] is really beautiful. \nI visited the city where the headquarters of [PowerBloc.GetNameNoIcon] is located, [Country.GetCapital.GetName]. \nI briefly inquired about the current situation of [PowerBloc.GetNameNoIcon] with your envoy. Under the leadership of [PowerBloc.GetLeader.GetName], [PowerBloc.GetNameNoIcon], this [PowerBloc.GetIdentity.GetName], is the world's [PowerBloc.GetRankRaw]-ranked power bloc. Our bloc has [PowerBloc.GetCohesionLevel.GetNameNoFormatting] cohesion, quantified as [SelectLocalization(EqualTo_CFixedPoint(PowerBloc.GetCohesion, PowerBloc.GetCohesionTarget), 'COHESION_CURRENT_VALUE_WITHOUT_TARGET', 'COHESION_CURRENT_VALUE_WITH_TARGET')] points. We have [PowerBloc.GetNumMembers] member states in our bloc, with a total GDP of [PowerBloc.GetGdp|D] pounds. Militarily, we have [PowerBloc.GetRegularBattalions] regular battalions and [PowerBloc.GetConscriptableBattalions] reserve battalions. As I gaze upon the vast sea, there are [PowerBloc.GetFlotillas|v] warships awaiting the command of our noble [GetPlayer.GetRuler.GetPrimaryRoleTitle], [GetPlayer.GetRuler.GetFullName]."
+SAKUYA_POWER_BLOC_91: "[Country.GetPowerBloc]"
+SAKUYA_POWER_BLOC_92: "Dear [GetPlayer.GetRuler.GetPrimaryRoleTitle], Miss Sakuya left you a letter."
+SAKUYA_POWER_BLOC_93: "[GetPlayer.GetNameNoFlag] is truly beautiful. \nThank you for your hospitality in [Country.GetCapital.GetName]. I write this letter to clarify some things that I couldn't discuss in person. In court or official settings, some matters mustn't be detailed. Frankly, dear [GetPlayer.GetRuler.GetPrimaryRoleTitle], [GetPlayer.GetRuler.GetFullName], I fear I cannot serve you. #broken You haven't founded or joined a power bloc#!. Perhaps due to insufficient strength or hesitation, but I urge unity with allied nations rather than isolation. This principle applies in any era or realm, whether in the Age of Flying Birds, Gensokyo, or this steampunk Victorian age."
+SAKUYA_POWER_BLOC_95: "Trade Alliance"
+SAKUYA_POWER_BLOC_97: "Super Empire"
+SAKUYA_POWER_BLOC_98: "@innovation! Can smack any defiant nation's agent into a wall, and they'll be stuck!"
+SAKUYA_POWER_BLOC_99: "Pol Alliance"
+SAKUYA_POWER_BLOC_100: "@innovation! Hit whoever you want, for free!"
+SAKUYA_POWER_BLOC_101: "Mil Alliance"
+SAKUYA_POWER_BLOC_102: "@innovation! One deity, one faith! Only Taoism reigns! #lore “Miss Sakuya, don’t say that near the shrine maidens...”"
+SAKUYA_POWER_BLOC_103: "Div Conference"
+SAKUYA_POWER_BLOC_104: "Potentially causes overpopulation."
+SAKUYA_POWER_BLOC_106: "Potentially causes overpopulation. #v Miss Sakuya#! has a lot to consider."
+SAKUYA_POWER_BLOC_108: "Army."
+SAKUYA_POWER_BLOC_110: "No more bad jokes. No one clicks these bottom buttons anyway."
+SAKUYA_POWER_BLOC_112: "Not useful."
+SAKUYA_POWER_BLOC_116: "After clicking, only bonuses matter, but #v Sakuya#! needs to think more."
+SAKUYA_POWER_BLOC_118: "Navy Genshin, activate! #lore Wait, are there really chairs in Victoria 3?"
+SAKUYA_POWER_BLOC_120: "No more bad jokes. Nobody clicks these bottom buttons anyway."
+SAKUYA_POWER_BLOC_122: "Fun fact: Left and Right clicks clear buffs but trigger different events. Don't believe it? Open sakuya_seven.gui and the sgui script to see. #v Also, I'm #n hard to control#! with this line: #! #green Right click for quick menu.#! It can be modified by defining tooltip, but I can't and it's complex."
+
+
+
+
+
+
+
+
+
+
+
+#######################################################################################
+#        /######  /###### /##   /##/##   /##/##     /##/######                        #
+#       /##__  ##/##__  #| ##  /##| ##  | #|  ##   /##/##__  ##   #######  #######    #
+#      | ##  \__| ##  \ #| ## /##/| ##  | ##\  ## /##| ##  \ ##   #######  #######    #
+#      |  ######| #######| #####/ | ##  | ## \  ####/| ########    #####    #####     #
+#       \____  #| ##__  #| ##  ## | ##  | ##  \  ##/ | ##__  ##                       #
+#       /##  \ #| ##  | #| ##\  ##| ##  | ##   | ##  | ##  | ##        #    #         #
+#      |  ######| ##  | #| ## \  #|  ######/   | ##  | ##  | ##         ####          #
+#       \______/|__/  |__|__/  \__/\______/    |__/  |__/  |__/                       #
+#######################################################################################
+
+
+
+SAKUYA_modifier_gui_1: "BUFF buffet, take less."
+SAKUYA_modifier_gui_2: "Click to add #P +10.0%#! [concept_throughput]. Thanks to  &十二个星璿□ for finding and fixing this error."
+SAKUYA_modifier_gui_3: "Click to add #P -10.0%#! [concept_input_mult]. Thanks to  &十二个星璿□ for finding and fixing this error."
+SAKUYA_modifier_gui_4: "Click to add #P +10%#! [concept_offense]"
+SAKUYA_modifier_gui_5: "Click to add #P +10%#! [concept_defense]"
+SAKUYA_modifier_gui_6: "Click to add #P +10%#! [concept_kill_rate]"
+SAKUYA_modifier_gui_7: "Click to add #P +10%#! [concept_recovery_rate]"
+SAKUYA_modifier_gui_8: "Click to add #P +10%#! [concept_assimilation]"
+SAKUYA_modifier_gui_9: "Click to add #P +10%#! [concept_education_access]"
+SAKUYA_modifier_gui_10: "Click to add #P +1000000.0#! #tooltippable_name Taxation#!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TEST_TEXTBOX_1: "#bold #v #red Warning \NThis test version interface is too complex and will be indefinitely discarded. I simply cannot maintain and update this extremely complicated GUI, so I can only abandon it even if it's nearly complete... If you have the ability to help me rebuild this GUI, I will give you a treasured figurine as a gift."

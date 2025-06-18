@@ -1,0 +1,1201 @@
+﻿l_japanese:
+SAKUYA_TEXT_MENU_BUTTON_1: "#v クリックして改造器を開く。#!\n\N #BOLD 現在のFPS:[GetCurrentFps|0]#!\N\N\N本改造器は1080P解像度以上での使用を推奨します。\Nアスペクト比は16：10またはそれ以上であることをご確認ください。GUIスケーリングは使用しないでください。"
+SAKUYA_TEXT_MENU_TITLE_1: "#h1    超級内蔵改造器日文メニュー   #"
+SAKUYA_TEXT_MENU_TOOLTIP_1: "光栄に#tooltippable 咲夜#!の名を以て皆様に捧げます"
+SAKUYA_TEXT_TREASURY_1: "経済"
+SAKUYA_TEXT_TREASURY_TOOLTIP_1: "#v #p 左クリック#!で新しい#gold 経済#!改造メニューを開きます！#! 内容は継続的に更新されており、QQ群でのご提案や体験版のフィードバックをお待ちしております！"
+SAKUYA_TEXT_ADMIN_POWER_1: "行政力"
+SAKUYA_TEXT_ADMIN_POWER_TOOLTIP_1: "左クリックで行政力を増加（累積可能）します。右クリックで削除（すべてクリア）します。"
+SAKUYA_TEXT_AUTHORITY_1: "権威力"
+SAKUYA_TEXT_AUTHORITY_TOOLTIP_1: "左クリックで権威力を増加。右クリックで削除。"
+SAKUYA_TEXT_INFLUENCE_1: "影響力"
+SAKUYA_TEXT_INFLUENCE_TOOLTIP_1: "左クリックで影響力を増加。右クリックで削除。"
+SAKUYA_TEXT_LAW_1: "法律"
+SAKUYA_TEXT_LAW_TOOLTIP_1: "法律改造ウィンドウを開きます。既存の法律を直接変更できます。"
+SAKUYA_TEXT_LOYALIST_TOOLTIP_1: "#v クリックすることで全国の市民をあなたの#blue 忠誠派#!に変えることができます。#! \n #lore “咲夜女中、私を連れて行って！”あなたの大宰相は泣きました。#! \n一度クリックしただけでは一部の人々が忠誠派になるだけなので、もう一度クリックしてください。時々咲夜の空間魔法は安定しないことがあります。"
+SAKUYA_TEXT_LOYALIST_1: "忠誠派"
+SAKUYA_TEXT_RADICAL_TOOLTIP_1: "#lore “こんな奇妙な要求を聞いたことはない...何度も確認したいのですが、本当にそれを行いますか？” \n “...あなたが再三言うのであれば、満たしてあげましょう。” \n#!“さあ、#v このボタンをクリックすると、全国民からの#n 嫌悪と罵声#!を受けることになります！一度では足りなければ二度クリックしてください。#!” \n“あなたは今や世間の矢面に立っています、嬉しいですか？あなたは本当に変わっていますね。”"
+SAKUYA_TEXT_RADICAL_1: "過激派"
+SAKUYA_TEXT_TECHNOLOGY_TOOLTIP_1: "左クリックで技術の普及と革新を増加。注意、次の週まで待つ必要があります。右クリックで技術の迅速な研究開発を終了します。"
+SAKUYA_TEXT_TECHNOLOGY_1: "科技"
+SAKUYA_TEXT_INFAMY_TOOLTIP_1: "左クリックで悪名を増加。右クリックで悪名を減少。#tooltippable_name 60AE,私は恐れおののく；1000AE,私は重拳を振るう!#!"
+SAKUYA_TEXT_INFAMY_1: "悪名"
+SAKUYA_TEXT_BIRTHRATE_TOOLTIP_1: "左クリックで所有する各省に出生率を追加。右クリックで削除。"
+SAKUYA_TEXT_BIRTHRATE_1: "出生率"
+SAKUYA_TEXT_BUFF_MENU_TOOLTIP_1: "BUFFメニューを開きます。"
+SAKUYA_TEXT_BUFF_MENU_1: "バフを追加"
+SAKUYA_TEXT_LICKDOG_TOOLTIP_1: "左クリックで舔狗を増加。右クリックで減少。"
+SAKUYA_TEXT_LOYALIST_1: "忠誠派"
+SAKUYA_TEXT_RADICAL_TOOLTIP_1: "左クリックで過激派を増加。右クリックで#P 大西王#!に変身します。"
+SAKUYA_TEXT_RADICAL_1: "過激派"
+SAKUYA_TEXT_TECHNOLOGY_TOOLTIP_1: "左クリックで技術の普及と革新を増加。注意、次の週まで待つ必要があります。右クリックで技術の迅速な研究開発を終了します。"
+SAKUYA_TEXT_TECHNOLOGY_1: "科技"
+SAKUYA_TEXT_INFAMY_TOOLTIP_1: "左クリックで悪名を増加。右クリックで悪名を減少。#tooltippable_name 60AE,私は恐れおののく；1000AE,私は重拳を振るう!#!"
+SAKUYA_TEXT_INFAMY_1: "悪名"
+SAKUYA_TEXT_BIRTH_RATE_TOOLTIP_1: "左クリックで所有する各省に出生率を追加。右クリックで削除。"
+SAKUYA_TEXT_BIRTH_RATE_1: "出生率"
+SAKUYA_TEXT_ADD_BUFF_TOOLTIP_1: "BUFFメニューを開きます。"
+SAKUYA_TEXT_ADD_BUFF_1: "バフを追加"
+SAKUYA_TEXT_INTEREST_GROUP_MENU_TOOLTIP_1: "#n クリック#!して新しい改造インターフェイスを開きます：#V #blue 利益団体メニュー！#!#! ご支援の度合い、勢力、BUFFをクリックして、変更したい内容をお選びください。"
+SAKUYA_TEXT_INTEREST_GROUP_1: "利益団体"
+SAKUYA_TEXT_ABOUT_TOOLTIP_1: "    あなたに出会えたのは幸運なことですね。\n    本改造器をご利用いただき、ありがとうございます。本改造器はAdvanced Cheat MenuというMODを基に制作されたもので、特にトルコのMrtats氏に感謝いたします。本改造器MODは完全に無料ですので、もし淘宝などのプラットフォームでこの改造器をお金で購入された場合は、#v すぐに通報してください#!。もしサポートしたいと考えている場合は、SteamでこのMODにいいねを押してください~少しでもポイントを送っていただければ、それがさらに良いです。もちろん、東方のファンでしたら次回の投票で咲夜に一票を入れてください~奇妙な問題やバグ、あるいは良い提案がございましたら、QQ群 565375259にお越しください。常にあなたのメッセージを確認します。\n    さらに他の内容をご覧になりたい場合は、下のボタンをクリックしてご覧ください。ボタンをクリックしても反応がない？どうやら私はサボったようです。\n\n\n    楽しんでください！"
+SAKUYA_TEXT_ABOUT_1: "について"
+SAKUYA_TEXT_DEBUG_MODE_1: "#bold #gold デバッグモード#!"
+SAKUYA_TEXT_DEBUG_MODE_TOOLTIP_1: "#bold #red デバッグモードを開くためにクリック。#!#! \n #lore “待って，”咲夜があなたを止めました。\n “このボタンを押すと、もう引き返せない...”\n “何？”あなたは驚きました。\n “このボタンを押すと、あなたのセーブデータは#broken 成就を解除できなくなります#!...” \n “デバッグモードを終了しても無駄です。あなたと彼との誓約は消せませんので、よく考えてください。”\n   コントロールパネルが紅く照らしつけます。 \n   その赤いボタンはあなたを深く見透かしています。 \n \n                                咲夜は黙ってあなたの背後に立ち、静かにあなたを見守っています。"
+SAKUYA_TEXT_INTEREST_GROUP_UPDATE_3: "#v さまざまな症状がある場合はどうすれば？！#!#! \n#bold バグ修正技術はどこが優れている？幻想郷紅魔館は咲夜を探せ！#!#n QQ群#!：565375259#!、ぜひ遊びに来てください！#!"
+SAKUYA_TEXT_INTEREST_GROUP_UPDATE_2: "#v #p 国家グループメニューがご利用可能になりました！#!#! \n#tooltippable 豊聡耳神子#!は神秘的な理由で咲夜に圧力をかけ、維多利亚3にポータルを開かせました！彼女は政治家として、またモデリング愛好者（取り消し線）として、すぐにあなたの屋敷にやってきました。\nあなたと彼女は短い会話を交わしましたが、目の前にいるこの女性は言葉遣いが優雅でありながらも、心の内に刃を潜ませ、礼儀正しさを持ちながらも一切の拘束を受けません。どうやら彼女は確かに厩戸王ですね。「どうした？神様になったら性別まで変わったのか？」あなたはからかいました。「お互い様、あなたは国籍や人種まで変わって、私以上に変わったね。」\n彼女は十音を耳にし、噂は真実です。しかし予想外なのは、彼女があなたの背後のスクリーンの音も聞いていることです。"
+SAKUYA_TEXT_INTEREST_GROUP_UPDATE_1: "#v 私は#p パリオリンピックのサッカー券を失いました...#!#! \n行けなかった。ビザはずっと待たされていました...呆れます。このチケットを人にあげても誰も欲しがらず、最終的に私の手元に残ってしまいました。不幸中の幸い、開幕式のチケットや他のチケットは転売できました。もちろん、パリオリンピックの開幕式を見損なったのも、まあそれはそれで良しとしましょう。\n余談ですが、あなたはグループに参加しましたか？当時、私はチケットをグループメンバーにあげようとしましたが、誰もパリに行きたがりませんでした（誰が暇でパリに行くのでしょう？）。グループ番号は下にあります。それから、#v Gキーでメニューを素早く表示できます。#!"
+SAKUYA_TEXT_OVER_URBANIZATION_1: "過度な都市化"
+SAKUYA_TEXT_OVER_URBANIZATION_TOOLTIP_1: "#lore 本項目は間もなく更新されます。波波モードが拡張されます。#! \n ワンクリックで#P 国家全体を解放#!、ワンクリックで大英を変え、アメリカを変え、慈禧を慈小鬼に変えます！このBUFFは累積可能です。やりすぎないでください、ゲームが崩壊する恐れがあります！右クリックでこのバフを解除できます。"
+SAKUYA_TEXT_BUILDING_POWER_1: "建設力"
+SAKUYA_TEXT_BUILDING_POWER_TOOLTIP_1: "左クリックで建設力を増加、一回500追加します。右クリックで以前に追加した建設力を削除します。"
+SAKUYA_TEXT_DEBUG_MODE_2: "#bold #broken デバッグモード#!"
+SAKUYA_TEXT_DEBUG_MODE_TOOLTIP_2: " #broken “咲夜...あなたはまだここにいる。” \n “ええと...なぜあなたはまだ私を見ているのですか、咲夜？” #!\n #lore #black “これは■■■■■■■■■■に捧げられるものですか？” \n “咲■......?!” "
+SAKUYA_TEXT_SEVEN_1: "#v #yellow 咲夜嬢は神子と相談の後、自発的に新しい業務を開きました。 \n #!#!#!#lore あなたは咲夜が苦しむのを見るのは初めてです。\n 彼女が神子に勝てないなんて、どうして？どうして？ \n 私は彼女にしっかり聞きたい。#!"
+SAKUYA_TEXT_SEVEN_2: "国家団体#!"
+SAKUYA_TEXT_SEVEN_3: "#bold 建築#!"
+SAKUYA_TEXT_SEVEN_4: "#bold #gold 私の見るところでは、建物は瞬時に立ち上がります。\n#!#!右クリックで追加したい省をマークすることで、すでにマークされた省に対して建築を増減できます。\n一部の建物は特定の条件を満たさない限り解放されず、効果を発揮しません。#!"
+
+SAKUYA_ABOUT_1: "#v #n 閉じる#!#!ウィンドウ。#!"
+SAKUYA_ABOUT_2: "本MODをご利用いただき、ありがとうございます！"
+SAKUYA_ABOUT_3: "#COLOR:{0.23,0.23,0.24} 改造器バージョン：1.4#!"
+SAKUYA_ABOUT_4: "親愛なる[GetPlayer.GetRuler.GetPrimaryRoleTitle]陛下、咲夜嬢からこの手紙をお届けするよう依頼されました。"
+SAKUYA_ABOUT_5: "    あなたに出会えたのは幸運なことですね。\n    本改造器をご利用いただき、ありがとうございます。本改造器はAdvanced Cheat MenuというMODを基に制作されたもので、特にトルコのMrtats氏に感謝いたします。本改造器MODは完全に無料ですので、もし淘宝などのプラットフォームでこの改造器をお金で購入された場合は、#v すぐに通報してください#!。もしサポートしたいと考えている場合は、SteamでこのMODにいいねを押してください~少しでもポイントを送っていただければ、それがさらに良いです。もちろん、東方のファンでしたら次回の投票で咲夜に一票を入れてください~奇妙な問題やバグ、あるいは良い提案がございましたら、QQ群 565375259にお越しください。常にあなたのメッセージを確認します。\n    さらに他の内容をご覧になりたい場合は、下のボタンをクリックしてご覧ください。ボタンをクリックしても反応がない？どうやら私はサボったようです。\n\n\n    楽しんでください！"
+SAKUYA_ABOUT_6: " 啦 "
+decree_my_dear_sakuya: "駐在省"
+decree_my_dear_sakuya_desc: "咲夜はこの省に妖精女中を派遣し、目線を監視します。\n#lore この省に駐在すると、咲夜はあなたの要望に応じて、神秘的な力を使って可能な限り任務を遂行します。#!"
+
+advcm_add_birth_rate: "出生率"
+SAKUYA_TEXT_SEVEN_21: "威望/雑項"
+SAKUYA_TEXT_SEVEN_22: "軍事"
+SAKUYA_TEXT_SEVEN_211: "このメニューは臨時設計されたもので、長続きしません。将来、外交専用のメニューを作成する予定です。"
+SAKUYA_TEXT_SEVEN_221: "軍事メニューは将来的に独立したメニューを制作します。今のところこれはあくまで臨時の対策です。"
+
+SAKUYA_modifier_gui_1: "BUFFビュッフェ、自分のペースで"
+SAKUYA_modifier_gui_2: "クリックして#P +10.0%#! [concept_throughput]を追加します。元の作者が残した誤りを発見して修正した十二個の星璿□に感謝します。"
+SAKUYA_modifier_gui_3: "クリックして#P -10.0%#! [concept_input_mult]を追加します。元の作者が残した誤りを発見して修正した十二個の星璿□に感謝します。"
+SAKUYA_modifier_gui_4: "クリックして#P +10%#! [concept_offense]"
+SAKUYA_modifier_gui_5: "クリックして#P +10%#! [concept_defense]"
+SAKUYA_modifier_gui_6: "クリックして#P +10%#! [concept_kill_rate]"
+SAKUYA_modifier_gui_7: "クリックして#P +10%#! [concept_recovery_rate]"
+SAKUYA_modifier_gui_8: "クリックして#P +10%#! [concept_assimilation]"
+SAKUYA_modifier_gui_9: "クリックして#P +10%#! [concept_education_access]"
+SAKUYA_modifier_gui_10: "クリックして#P +1000000.0#! #tooltippable_name 税収#!"
+#######################################################################################
+#        /######  /###### /##   /##/##   /##/##     /##/######                        #
+#       /##__  ##/##__  #| ##  /##| ##  | #|  ##   /##/##__  ##   #######  #######    #
+#      | ##  \__| ##  \ #| ## /##/| ##  | ##\  ## /##| ##  \ ##   #######  #######    #
+#      |  ######| #######| #####/ | ##  | ## \  ####/| ########    #####    #####     #
+#       \____  #| ##__  #| ##  ## | ##  | ##  \  ##/ | ##__  ##                       #
+#       /##  \ #| ##  | #| ##\  ##| ##  | ##   | ##  | ##  | ##        #    #         #
+#      |  ######| ##  | #| ## \  #|  ######/   | ##  | ##  | ##         ####          #
+#       \______/|__/  |__|__/  \__/\______/    |__/  |__/  |__/                       #
+#                                                                                     #
+#         我多么希望看到中日韩三国团结在一起啊。可惜这是我只能梦想但永远无法实现的幻想吧。    #
+#                                                                                     #
+#######################################################################################
+
+
+SAKUYA_IG_1: "利益団体"
+SAKUYA_IG_2: "勢力"
+SAKUYA_IG_3: "支持度"
+SAKUYA_IG_4: "修正バフ"
+SAKUYA_IG_5: "#v 左クリック#!で勢力を支援し、彼らをあなたの庇護の下で#P 風を起こさせる#!。#v 右クリック#!はその逆です。"
+SAKUYA_IG_6: "#v 左クリック#!で労働組合を支援し、#v 右クリック#!で制裁を加えます。"
+SAKUYA_IG_7: "#v 左クリック#!で脱都市化を支持し、#v 右クリック#!で彼らを(政治的に)無力化します。"
+SAKUYA_IG_8: "#v 左クリック#!で偉大な人民民主を支援し、#v 右クリック#!でこの小ブルジョアたちを排除します。"
+SAKUYA_IG_9: "#v 左クリック#!で地主を支持し、#v 右クリック#!で地主を抑えます。"
+SAKUYA_IG_10: "#v 左クリック#!で知識人を支持し、#v 右クリック#!で知識人を抑えます。"
+SAKUYA_IG_11: "#v 左クリック#!で996の福報を支持し、#v 右クリック#!で資本家に自ら福報を感じさせます。"
+SAKUYA_IG_12: "#v 左クリック#!で宗教を支持し、#v 右クリック#!で宗教を抑えます。"
+SAKUYA_IG_13: "#v 左クリック#!で武装勢力を支持し、#v 右クリック#!で武装勢力を抑えます。"
+SAKUYA_IG_14: "#v 左クリック#!で無知な大衆を増やし、#v 右クリック#!で大衆を目覚めさせます。"
+SAKUYA_IG_15: "#n これは労働組合#!。彼らは：#v プロレタリア#!，#v 平民主義者#!，#v 社会主義者#!，#v 廃奴#!，#v 平等主義者#!です。"
+SAKUYA_IG_16: "#n これは田舎の人々#!。彼らのイデオロギーは：#v 農本主義者#!，#v 特殊主義者#!，#v 孤立主義者#!です。"
+SAKUYA_IG_17: "#n これは小市民#!。彼らのイデオロギーは：#v 反動主義者#!，#v エリート主義者#!，#v 愛国主義者#!です。"
+SAKUYA_IG_18: "#n これは地主#!。彼らは通常：#v 伝統主義者#!，#v 家長制主義者#!，#v 階層主義者#!，#v 父権主義者#!です。"
+SAKUYA_IG_19: "#n これは知識人#!。彼らは：#v 反教権主義者#!，#v 共和主義者#!，#v 廃奴主義者#!，#v 自由主義者#!です。"
+SAKUYA_IG_20: "#n これは実業家#!。彼らのイデオロギーは：#v 財閥主義者#!，#v 自由放任主義者#!，#v 個人主義者#!です。"
+SAKUYA_IG_21: "#n これは教会#!。彼らのイデオロギーは：#v 道徳主義者#!，#v 父権主義者#!，#v 団体主義者#!です。"
+SAKUYA_IG_22: "#n これは軍隊#!。彼らのイデオロギーは：#v シャヴィニズム者#!，#v 忠誠派#!，#v 愛国主義者#!です。"
+SAKUYA_IG_23: "#n これは政治的中立者#!。一般的に大衆や無党派の人々を指します。通常は#v 穏健派#!と見なされます。"
+SAKUYA_IG_24: "#p 左クリック#!で現在の利益団体に対して、改造器による#v 力量#!の全ての増減をクリアします。"
+SAKUYA_IG_25: "#p 左クリック#!で現在の利益団体に対して、改造器による#v 力量#!の全ての増減をクリアします。"
+SAKUYA_IG_26: "#p 左クリック#!で現在の利益団体に対して、改造器による#v 力量#!の全ての増減をクリアします。"
+SAKUYA_IG_27: "#p 左クリック#!で現在の利益団体に対して、改造器による#v 力量#!の全ての増減をクリアします。"
+SAKUYA_IG_28: "#p 左クリック#!で現在の利益団体に対して、改造器による#v 力量#!の全ての増減をクリアします。"
+SAKUYA_IG_29: "#p 左クリック#!で現在の利益団体に対して、改造器による#v 力量#!の全ての増減をクリアします。"
+SAKUYA_IG_30: "#p 左クリック#!で現在の利益団体に対して、改造器による#v 力量#!の全ての増減をクリアします。"
+SAKUYA_IG_31: "#p 左クリック#!で現在の利益団体に対して、改造器による#v 力量#!の全ての増減をクリアします。"
+SAKUYA_IG_32: "#p 左クリック#!で現在の利益団体に対して、改造器による#v 力量#!の全ての増減をクリアします。"
+SAKUYA_IG_33: "#p 左クリック#!ですべての利益団体の勢力を大幅に強化し、#n 右クリック#!ですべての利益団体の勢力を大幅に弱体化します。 #lore 役に立たないボタンのようです...#! 注意！過度に削減すると、全体の勢力が均等になることがあります。最後の人は削減できないのだから。"
+SAKUYA_IG_34: "#p 左クリック#!このボタンを押すと、#broken すべてをリセット#!して改造器による#v #todo_in_tooltip いかなる#!#!増益と減益を解除します！  上のボタンの小さな赤い帯はきれいでしょう？1時間かけて試行錯誤した成果です…この小さな赤い帯は何の役にも立ちません。ただの見た目を楽しむだけです！  #v 右クリック#!で左の大ボタンの全ての増益または減益をクリアできます。"
+SAKUYA_IG_35: "#p 左クリック#!で対応する利益団体を支援し、彼らがあなたの国で自由に#v 威勢を振るう#!ことができます。                   #n 右クリック#!で彼らにあなたの慈愛のような#v 鉄拳の愛を感じさせます#!。"
+SAKUYA_IG_36: "#p 左クリック#!で#v 50#!ポイントの支持度を超倍増、#n 右クリック#!で超減少します。"
+SAKUYA_IG_37: "#p 左クリック#!で労働組合があなたに#v 溺れさせます#!、#n 右クリック#!で労働組合があなたに#v 嘲笑します#!。 #! 毎回増減#p 5#!ポイント。"
+SAKUYA_IG_38: "#p 左クリック#!で#v 50#!ポイントの支持度を超倍増、#n 右クリック#!で超減少します。"
+SAKUYA_IG_39: "#p 左クリック#!で田舎の人々があなたに#v 溺れさせます#!、#n 右クリック#!で田舎の人々があなたに#v 嘲笑します#!。 #! 毎回増減#p 5#!ポイント。"
+SAKUYA_IG_40: "#p 左クリック#!で#v 50#!ポイントの支持度を超倍増、#n 右クリック#!で超減少します。"
+SAKUYA_IG_41: "#p 左クリック#!で小市民があなたに#v 溺れさせます#!、#n 右クリック#!でこの小ブルジョアがあなたに#v 嘲笑します#!。 #! 毎回増減#p 5#!ポイント。"
+SAKUYA_IG_42: "#p 左クリック#!で#v 50#!ポイントの支持度を超倍増、#n 右クリック#!で超減少します。"
+SAKUYA_IG_43: "#p 左クリック#!で地主があなたに#v 溺れさせます#!、#n 右クリック#!で地主があなたに#v 嘲笑します#!。 #! 毎回増減#p 5#!ポイント。"
+SAKUYA_IG_44: "#p 左クリック#!で#v 50#!ポイントの支持度を超倍増、#n 右クリック#!で超減少します。"
+SAKUYA_IG_45: "#p 左クリック#!で知識人があなたに#v 溺れさせます#!、#n 右クリック#!で知識人があなたに#v 嘲笑します#!。 #! 毎回増減#p 5#!ポイント。"
+SAKUYA_IG_46: "#p 左クリック#!で#v 50#!ポイントの支持度を超倍増、#n 右クリック#!で超減少します。"
+SAKUYA_IG_47: "#p 左クリック#!で実業家があなたに#v 溺れさせます#!、#n 右クリック#!で実業家があなたに#v 嘲笑します#!。 #! 毎回増減#p 5#!ポイント。"
+SAKUYA_IG_48: "#p 左クリック#!で#v 50#!ポイントの支持度を超倍増、#n 右クリック#!で超減少します。"
+SAKUYA_IG_49: "#p 左クリック#!で信者があなたに#v 溺れさせます#!、#n 右クリック#!で信者があなたに#v 嘲笑します#!。 #! 毎回増減#p 5#!ポイント。"
+SAKUYA_IG_50: "#p 左クリック#!で#v 50#!ポイントの支持度を超倍増、#n 右クリック#!で超減少します。"
+SAKUYA_IG_51: "#p 左クリック#!で武装勢力があなたに#v 溺れさせます#!、#n 右クリック#!で武装勢力があなたに#v 嘲笑します#!。 #! 毎回増減#p 5#!ポイント。"
+SAKUYA_IG_52: "#p 左クリック#!毎回1ポイントだけ増加、#n 右クリック#!毎回1ポイントだけ減少。"
+SAKUYA_IG_53: "#p 左クリック#!毎回1ポイントだけ増加、#n 右クリック#!毎回1ポイントだけ減少。"
+SAKUYA_IG_54: "#p 左クリック#!毎回1ポイントだけ増加、#n 右クリック#!毎回1ポイントだけ減少。"
+SAKUYA_IG_55: "#p 左クリック#!毎回1ポイントだけ増加、#n 右クリック#!毎回1ポイントだけ減少。"
+SAKUYA_IG_56: "#p 左クリック#!毎回1ポイントだけ増加、#n 右クリック#!毎回1ポイントだけ減少。"
+SAKUYA_IG_57: "#p 左クリック#!毎回1ポイントだけ増加、#n 右クリック#!毎回1ポイントだけ減少。"
+SAKUYA_IG_58: "#p 左クリック#!毎回1ポイントだけ増加、#n 右クリック#!毎回1ポイントだけ減少。"
+SAKUYA_IG_59: "#p 左クリック#!毎回1ポイントだけ増加、#n 右クリック#!毎回1ポイントだけ減少。"
+SAKUYA_IG_60: "#p 左クリック#!ですべての修正を復元します。#grey 労働組合の党員たちは何事もなかったかのように過ごします#!..."
+SAKUYA_IG_61: "#p 左クリック#!ですべての修正を復元します。#grey 田舎の人々の党員たちは何事もなかったかのように過ごします#!..."
+SAKUYA_IG_62: "#p 左クリック#!ですべての修正を復元します。#grey この尖酸刻薄な小市民の党員たちは何事もなかったかのように過ごします#!..."
+SAKUYA_IG_63: "#p 左クリック#!ですべての修正を復元します。#grey 地主の党員たちは何事もなかったかのように過ごします#!..."
+SAKUYA_IG_64: "#p 左クリック#!ですべての修正を復元します。#grey 知識人の党員たちは何事もなかったかのように過ごします#!..."
+SAKUYA_IG_65: "#p 左クリック#!ですべての修正を復元します。#grey 実業家の党員たちは何事もなかったかのように過ごします#!..."
+SAKUYA_IG_66: "#p 左クリック#!ですべての修正を復元します。#grey 信者の党員たちは何事もなかったかのように過ごします#!..."
+SAKUYA_IG_67: "#p 左クリック#!ですべての修正を復元します。#grey 武装勢力の党員たちは何事もなかったかのように過ごします#!..."
+SAKUYA_IG_68: "#p 左クリック#!で労働組合をあなたの国の#v 唯一#!の政党にし、あなたに絶対的に忠誠心と支持を持たせます。#n 右クリック#!で直接鉄拳を取り出し、労働組合を#v 元の形に戻します、#! 自立できません。"
+SAKUYA_IG_69: "#p 左クリック#!で田舎の人々をあなたの国の#v 唯一#!の政党にし、あなたに絶対的に忠誠心と支持を持たせます。#n 右クリック#!で直接鉄拳を取り出し、田舎の人々を#v 元の形に戻します、#! 自立できません。"
+SAKUYA_IG_70: "#p 左クリック#!で小市民をあなたの国の#v 唯一#!の政党にし、あなたに絶対的に忠誠心と支持を持たせます。#n 右クリック#!で直接鉄拳を取り出し、小市民を#v 元の形に戻します、#! 自立できません。"
+SAKUYA_IG_71: "#p 左クリック#!で地主をあなたの国の#v 唯一#!の政党にし、あなたに絶対的に忠誠心と支持を持たせます。#n 右クリック#!で直接鉄拳を取り出し、地主を#v 元の形に戻します、#! 自立できません。"
+SAKUYA_IG_72: "#p 左クリック#!で知識人をあなたの国の#v 唯一#!の政党にし、あなたに絶対的に忠誠心と支持を持たせます。#n 右クリック#!で直接鉄拳を取り出し、知識人を#v 元の形に戻します、#! 自立できません。"
+SAKUYA_IG_73: "#p 左クリック#!で実業家をあなたの国の#v 唯一#!の政党にし、あなたに絶対的に忠誠心と支持を持たせます。#n 右クリック#!で直接鉄拳を取り出し、実業家を#v 元の形に戻します、#! 自立できません。"
+SAKUYA_IG_74: "#p 左クリック#!で信者をあなたの国の#v 唯一#!の政党にし、あなたに絶対的に忠誠心と支持を持たせます。#n 右クリック#!で直接鉄拳を取り出し、信者を#v 元の形に戻します、#! 自立できません。"
+SAKUYA_IG_75: "#p 左クリック#!で武装勢力をあなたの国の#v 唯一#!の政党にし、あなたに絶対的に忠誠心と支持を持たせます。#n 右クリック#!で直接鉄拳を取り出し、武装勢力を#v 元の形に戻します、#! 自立できません。"
+SAKUYA_IG_76: "#o @information!以下はボタンの説明#!。"
+SAKUYA_IG_77: "順序は左から右へ進みます。ご覧の通り、左側には4つの#green 緑のブロック#!ボタンがあり、右側には1つの#gold ゴールド#!の丸いボタンがあります。左側の最初のボタンは#p 増加#!#n 減少#!#v 50#!ポイントの支持度のボタンです。#v 左クリックは増加、右クリックは減少です。#! 極端な場合を除き、一般的には1回クリックで利益団体を満足させたり、空の支持にすることができます。大きなアイコンでは1回クリックして#p 増加#!#n 減少#!#v 5#!ポイントの支持度を変更できます。使用方法はあなた次第です。この種のボタンは通常のプレイに適しています。3番目のアイコンをクリックすると、#p 増加#!#n 減少#!#v 1#!ポイントの支持度が変更できます。微調整に適しており、特に特定の厳しい条件を満たす際に役立ちます。#v 右側#!のゴールドボタンは#broken 唯一の政権#!モードです。 @warning!#v 必要がない限り、この#gold ゴールドボタン#!は1回だけクリックしてください。#! また、同時に他のボタンをクリックしない方が良いです。"
+SAKUYA_IG_78: "#p クリック#!して#V 正の効果#!を持つすべての利益団体の支持度を#V 削除#!します。"
+SAKUYA_IG_79: "@red_cross!    #V 正の効果を削除#!"
+SAKUYA_IG_80: "#p クリック#!して#V 負の効果#!を持つすべての利益団体の支持度を#V 削除#!します。"
+SAKUYA_IG_81: "@red_cross!    #V 負の効果を削除#!"
+SAKUYA_IG_82: "#p クリック#!してすべての一党政権関連の#V モード#!を削除します！ #lore ボタンの説明を良く読んでください。しかし、このワンクリックリセットを用意しました。#!"
+SAKUYA_IG_83: "@red_cross!    #V 唯一の政権を削除#!"
+SAKUYA_IG_84: "#p 左クリック#!であなたが#V 星のように崇拝され#!、#n 右クリック#!であなたが#V 裏切られ#!ます。 #lore 実用性満載ではないですか？このボタンはメインメニューに置くべきです！もちろん、もともとメインメニューに置いてあったのですが...さて、人間の言葉に戻すと：クリックすると全ての利益団体の支持度が増加します。右クリックでその逆の効果があります。このボタンの修正だけをクリアしたい場合は、#V #n 右クリックしてください#!#! #v 右側#!の#V #blue リセット#!ボタンをクリックしてください。#!"
+SAKUYA_IG_85: "#p 左クリック#!で#broken すべてをリセット#!して、改造器による#v #todo_in_tooltip いかなる#!#!増益と減益を解除します！   上のボタンの小さな赤い帯はきれいでしょう？1時間かけて試行錯誤した成果です…この小さな赤い帯は何の役にも立ちません。ただの見た目を楽しむだけです！   #v 右クリック#!で左の大ボタンの全ての増益または減益をクリアできます。"
+SAKUYA_IG_86: "#v @information!大きなボタンはすべての利益団体を#p 和らげ#!または#n 怒らせます#!コントロールできない場合は#blue リセット#!ボタンを押してください。"
+SAKUYA_IG_87: "#v 以下は#blue 利益団体#!向けの一連のバフです。#!    これらのバフの重要性や実用性には疑問がありますが、中には完全に無用なものもあります。しかし、ここに置いておきました。必要があればクリックして試してみてください。"
+SAKUYA_IG_88: "#p 左クリック#!で#V すべての#!利益団体の関連人々への魅力の判定を増加させます。 #n 右クリック#!で増加を解除します。 #lore 減少関連はめんどくさくてやる気がありません、どうせほとんど無用です#!"
+SAKUYA_IG_89: "#p 左クリック#!で#V 支持されている#!利益団体の関連人々への魅力の判定を増加させます。 #n 右クリック#!で増加を解除します。 #!"
+SAKUYA_IG_90: "#p 左クリック#!で#V 抑圧されている#!利益団体の関連人々への魅力の判定を増加させます。 #n 右クリック#!で増加を解除します。 #!"
+SAKUYA_IG_91: "#p 左クリック#!で#V 労働組合#!利益団体の関連人々への魅力の判定を増加させます。 #n 右クリック#!で増加を解除します。 #!"
+SAKUYA_IG_92: "#p 左クリック#!で#V 田舎の人々#!利益団体の関連人々への魅力の判定を増加させます。 #n 右クリック#!で増加を解除します。 #!"
+SAKUYA_IG_93: "#p 左クリック#!で#V 小ブルジョア#!利益団体の関連人々への魅力の判定を増加させます。 #n 右クリック#!で増加を解除します。 #!"
+SAKUYA_IG_94: "#p 左クリック#!で#V 地主#!利益団体の関連人々への魅力の判定を増加させます。 #n 右クリック#!で増加を解除します。 #!"
+SAKUYA_IG_95: "#p 左クリック#!で#V 知識人#!利益団体の関連人々への魅力の判定を増加させます。 #n 右クリック#!で増加を解除します。 #!"
+SAKUYA_IG_96: "#p 左クリック#!で#V 実業家#!利益団体の関連人々への魅力の判定を増加させます。 #n 右クリック#!で増加を解除します。 #!"
+SAKUYA_IG_97: "#p 左クリック#!で#V 信者#!利益団体の関連人々への魅力の判定を増加させます。 #n 右クリック#!で増加を解除します。 #!"
+SAKUYA_IG_98: "#p 左クリック#!で#V 武装勢力#!利益団体の関連人々への魅力の判定を増加させます。 #n 右クリック#!で増加を解除します。 #!"
+SAKUYA_IG_99: "#p 左クリック#!で#V デフォルト設定#!に戻します。"
+SAKUYA_IG_100: "@information! #V これは利益団体の関連人々への魅力を影響するバフシリーズです。#!#lore 役に立たないでしょう？#!"
+SAKUYA_IG_101: "#p 左クリック#!で利益団体支援費用を減少させ、右クリックで解除します。 #lore 減少関連はやる気がありません、どうせほとんど無用です#!"
+SAKUYA_IG_102: "@green_checkmark! #V 支援費用削減！"
+SAKUYA_IG_103: "#p 左クリック#!で利益団体抑圧費用を減少させ、右クリックで解除します。 #lore 減少関連はやる気がありません、どうせほとんど無用です#!"
+SAKUYA_IG_104: "@red_cross! #V 抑圧費用削減！"
+SAKUYA_IG_105: "#p 左クリック#!で#V すべての#!利益団体の関連人々への魅力の判定を増加させます。 #n 右クリック#!で増加を解除します。 #lore 減少関連はやる気がありません、どうせほとんど無用です#!"
+SAKUYA_IG_106: "#V 現バージョンの利益団体に関する修正はこれだけです。次の大更新で新しい命令や新しい内容が追加される可能性があります。その際、私は最初に更新する予定です。"
+
+
+
+
+
+#######################################################################################
+#        /######  /###### /##   /##/##   /##/##     /##/######                        #
+#       /##__  ##/##__  #| ##  /##| ##  | #|  ##   /##/##__  ##   #######  #######    #
+#      | ##  \__| ##  \ #| ## /##/| ##  | ##\  ## /##| ##  \ ##   #######  #######    #
+#      |  ######| #######| #####/ | ##  | ## \  ####/| ########    #####    #####     #
+#       \____  #| ##__  #| ##  ## | ##  | ##  \  ##/ | ##__  ##                       #
+#       /##  \ #| ##  | #| ##\  ##| ##  | ##   | ##  | ##  | ##        #    #         #
+#      |  ######| ##  | #| ## \  #|  ######/   | ##  | ##  | ##         ####          #
+#       \______/|__/  |__|__/  \__/\______/    |__/  |__/  |__/                       #
+#######################################################################################
+
+SAKUYA_MIL_TEXT: "#v #bold 臨時設定の更新。#!#!\n建設機能に関連する更新で深刻な技術的問題が発生したため、これらの追加機能を先に更新しました。軍事ボタンと威望ボタンは今後のバージョンではメンテナンスされません。\n\n軍事および威望に関する機能は、将来的に外交や軍事のセクションでより完全な形式で皆様に提供される予定です。ご期待ください！   \n\n更新：技術的問題は解決されました。"
+
+SAKUYA_LAW_LAW: "法律"
+SAKUYA_LAW_POWER_STRUCTURE: "権力構造"
+SAKUYA_LAW_ECONOMY: "経済"
+SAKUYA_LAW_HUMAN_RIGHTS: "人権"
+SAKUYA_LAW_STATE: "国家"
+SAKUYA_LAW_MONARCHY_TOOLTIP: "君主制を実施するためにクリック。"
+SAKUYA_LAW_PRESIDENCY_TOOLTIP: "大統領になるためにクリック。"
+SAKUYA_LAW_PARLIAMENTARY_REPUBLIC_TOOLTIP: "議会共和制を実施するためにクリック。"
+SAKUYA_LAW_THEOCRACY_TOOLTIP: "神権政治を実施するためにクリック。"
+SAKUYA_LAW_SOVIET_REPUBLIC_TOOLTIP: "ソビエト共和国を実施するためにクリック。"
+SAKUYA_LAW_NON_RULER_TOOLTIP: "非支配者になるためにクリック。"
+SAKUYA_LAW_RELIGION: "宗教"
+SAKUYA_LAW_NATIONAL_CHURCH_TOOLTIP: "国教を制定するためにクリック。"
+SAKUYA_LAW_FREEDOM_OF_FAITH_TOOLTIP: "信教の自由政策を実施するためにクリック。"
+SAKUYA_LAW_SEPARATION_OF_CHURCH_AND_STATE_TOOLTIP: "政教分離政策を実施するためにクリック。"
+SAKUYA_LAW_STATE_ATHEISM_TOOLTIP: "国家無神論を実施するためにクリック。 #v 注意：自ら無神論の法律を実施するのが最良です。無神論の法律を実施する過程で独自のイベントが発生し、法律を直接変更するとトリガーされません。#!\nこの世界には救世主も神もいない！"
+SAKUYA_LAW_STABILITY: "安定"
+SAKUYA_LAW_IGNORE_POLICY_TOOLTIP: "何も気にせず放置するためにクリック。"
+SAKUYA_LAW_NATIONAL_GUARD_POLICY_TOOLTIP: "国家警備隊政策を実施するためにクリック。"
+SAKUYA_LAW_SECRET_POLICE_TOOLTIP: "秘密警察政策を実施するためにクリック。開け、グスタフ！"
+SAKUYA_LAW_RIGHTS_PROTECTION_POLICY_TOOLTIP: "権利保護政策を実施するためにクリック。"
+SAKUYA_LAW_POWER: "権力"
+SAKUYA_LAW_DICTATORSHIP_TOOLTIP: "独裁を実施するためにクリック。他の人は一応装うが、俺は演じない！俺こそ法律だ！権威だ！朕こそが国家だ！"
+SAKUYA_LAW_TECHNOCRACY_TOOLTIP: "技術治国を実施するためにクリック。専門的な者が専門の事をするべきだ、子供は立ち去れ！"
+SAKUYA_LAW_OLIGARCHY_TOOLTIP: "寡頭政治を実施するためにクリック。"
+SAKUYA_LAW_LANDBASED_SUFFRAGE_TOOLTIP: "土地による選挙権政策を実施するためにクリック。"
+SAKUYA_LAW_WEALTHBASED_SUFFRAGE_TOOLTIP: "富裕層による選挙権政策を実施するためにクリック。金持ちが大将だ。"
+SAKUYA_LAW_CENSUS_SUFFRAGE_TOOLTIP: "人口調査に基づく選挙権政策を実施するためにクリック。"
+SAKUYA_LAW_UNIVERSAL_SUFFRAGE_TOOLTIP: "普遍的な選挙権政策を実施するためにクリック。"
+SAKUYA_LAW_ANARCHY_TOOLTIP: "無政府を実施するためにクリック。あなたの言う通りだが、気が進まない…アナキズムの名前。"
+SAKUYA_LAW_SINGLE_PARTY_TOOLTIP: "一党制を実施し、選挙委員会の風味がより一層増す。"
+SAKUYA_LAW_ELDER_COUNCIL_TOOLTIP: "非支配者の長老会議を開くためにクリック。制度が非支配者でないと意図しないバグが発生する。"
+SAKUYA_LAW_BUREAUCRACY: "官僚"
+SAKUYA_LAW_HEREDITARY_BUREAUCRACY_TOOLTIP: "世襲官僚政策を実施するためにクリック。若き将軍は10歳だが、彼女はなんと慈愛に富んでいる！慈しみ深い！慈禧！"
+SAKUYA_LAW_APPOINTED_BUREAUCRACY_TOOLTIP: "任命官僚政策を実施するためにクリック。"
+SAKUYA_LAW_ELECTED_BUREAUCRACY_TOOLTIP: "選挙による官僚政策を実施するためにクリック。"
+SAKUYA_LAW_CITIZEN: "市民"
+SAKUYA_LAW_SINGLE_NATION_POLICY_TOOLTIP: "単一民族国家政策を実施するためにクリック。"
+SAKUYA_LAW_NATIONAL_SUPREMACY_TOOLTIP: "民族至上主義政策を実施するためにクリック。"
+SAKUYA_LAW_RACIAL_SEGREGATION_TOOLTIP: "人種隔離を実施するためにクリック。"
+SAKUYA_LAW_CULTURAL_EXCLUSION_TOOLTIP: "文化的排斥を実施するためにクリック。"
+SAKUYA_LAW_MULTICULTURALISM_TOOLTIP: "多文化主義を実施するためにクリック。"
+SAKUYA_LAW_MILITARY: "軍隊"
+SAKUYA_LAW_PEASANT_CONSCRIPTION_TOOLTIP: "農民徴兵制を実施するためにクリック。"
+SAKUYA_LAW_PROFESSIONAL_ARMY_TOOLTIP: "職業軍隊を実施するためにクリック。"
+SAKUYA_LAW_NATIONAL_MILITIA_TOOLTIP: "国民民兵を実施するためにクリック。"
+SAKUYA_LAW_MASS_CONSCRIPTION_TOOLTIP: "大規模徴兵を実施するためにクリック。"
+SAKUYA_LAW_ECONOMIC_SYSTEM: "経済システム"
+SAKUYA_LAW_TRADITIONALISM_TOOLTIP: "伝統主義を実施するためにクリック。"
+SAKUYA_LAW_INTERVENTIONISM_TOOLTIP: "干渉主義を実施するためにクリック。"
+SAKUYA_LAW_AGRARIANISM_TOOLTIP: "農本主義を実施するためにクリック。"
+SAKUYA_LAW_LAISSZ_FAIRE_TOOLTIP: "自由放任を実施するためにクリック。"
+SAKUYA_LAW_COOPERATIVE_OWNERSHIP_TOOLTIP: "協同組合所有制を実施するためにクリック。"
+SAKUYA_LAW_PLANNED_ECONOMY_TOOLTIP: "計画经济を実施するためにクリック。"
+SAKUYA_LAW_BAN_MACHINES_TOOLTIP: "あらゆる産業機器を禁止するためにクリック。"
+SAKUYA_LAW_COLONIAL_AFFAIRS: "植民"
+SAKUYA_LAW_NO_COLONIAL_AFFAIRS_TOOLTIP: "植民地問題を行わないためにクリック。"
+SAKUYA_LAW_ENCOURAGE_SETTLEMENT_TOOLTIP: "移民を奨励し新しい家を築くためにクリック。"
+SAKUYA_LAW_COLONIAL_EXPLOITATION_TOOLTIP: "植民地搾取を実施するためにクリック。"
+SAKUYA_LAW_BORDER_COLONIZATION_TOOLTIP: "国境植民を実施するためにクリック。"
+SAKUYA_LAW_HEALTH: "衛生"
+SAKUYA_LAW_IGNORE_WELLBEING_TOOLTIP: "市民の死活を無視するためにクリック。"
+SAKUYA_LAW_CHARITY_HOSPITALS_TOOLTIP: "慈善病院を実施するためにクリック。"
+SAKUYA_LAW_PRIVATE_HEALTH_INSURANCE_TOOLTIP: "私的医療保険を実施するためにクリック。"
+SAKUYA_LAW_PUBLIC_HEALTH_INSURANCE_TOOLTIP: "公共医療保険を実施するためにクリック。"
+SAKUYA_LAW_COMMERCE: "商貿"
+SAKUYA_LAW_MERCANTILISM_TOOLTIP: "重商主義を実施するためにクリック。"
+SAKUYA_LAW_PROTECTIONISM_TOOLTIP: "貿易保護主義を実施するためにクリック。"
+SAKUYA_LAW_FREE_TRADE_TOOLTIP: "自由貿易を実施するためにクリック。"
+SAKUYA_LAW_ISOLATIONISM_TOOLTIP: "孤立主義を実施するためにクリック。"
+SAKUYA_LAW_POLICE: "警察"
+SAKUYA_LAW_NO_POLICE_TOOLTIP: "警察を解体するためにクリック。"
+SAKUYA_LAW_LOCAL_POLICE_TOOLTIP: "地方警察を有効にするためにクリック。"
+SAKUYA_LAW_SPECIALIZED_POLICE_TOOLTIP: "専門の警察部隊を実施するためにクリック。"
+SAKUYA_LAW_MILITARIZED_POLICE_TOOLTIP: "軍事化された警察部隊を実施するためにクリック。"
+SAKUYA_LAW_LAND_REFORM: "土地改革"
+SAKUYA_LAW_SERFDOM_TOOLTIP: "農奴制を実施するためにクリック。"
+SAKUYA_LAW_YANG_BAILAO_TOOLTIP: "杨白劳になるためにクリック。あなたの地主のおじいさんが帰ってきた。"
+SAKUYA_LAW_COMMERCIAL_AGRICULTURE_TOOLTIP: "商業的農業を実施するためにクリック。"
+SAKUYA_LAW_HOMESTEAD_ACT_TOOLTIP: "宅地法令を実施するためにクリック。"
+SAKUYA_LAW_COLLECTIVE_FARM_TOOLTIP: "集団農場を設立するためにクリック。大鍋でご飯を食べ、モデル演劇を観て、群れのような人生を楽しむ。"
+SAKUYA_LAW_TAXATION: "税務"
+SAKUYA_LAW_CONSUMPTION_BASED_TAX_TOOLTIP: "消費に基づく税金を実施するためにクリック。"
+SAKUYA_LAW_LAND_BASED_TAX_TOOLTIP: "土地に基づく税金を実施するためにクリック。"
+SAKUYA_LAW_PER_CAPITA_TAX_TOOLTIP: "一人当たり税を実施するためにクリック。"
+SAKUYA_LAW_PROPORTIONAL_TAX_TOOLTIP: "比例税を実施するためにクリック。"
+SAKUYA_LAW_GRADUATED_TAX_TOOLTIP: "累進課税を実施するためにクリック。"
+SAKUYA_LAW_EDUCATION: "教育"
+SAKUYA_LAW_NO_SCHOOL_POLICY_TOOLTIP: "学校がない政策を実施するためにクリック。"
+SAKUYA_LAW_RELIGIOUS_SCHOOL_TOOLTIP: "宗教学校政策を実施するためにクリック。"
+SAKUYA_LAW_PRIVATE_SCHOOL_TOOLTIP: "私立学校政策を実施するためにクリック。"
+SAKUYA_LAW_PUBLIC_SCHOOL_TOOLTIP: "公立学校政策を実施するためにクリック。"
+SAKUYA_LAW_FREEDOM: "自由"
+SAKUYA_LAW_SUPPRESS_DISSIDENTS_TOOLTIP: "異議を取締る政策を実施するためにクリック。"
+SAKUYA_LAW_CENSORSHIP_TOOLTIP: "検閲制度を実施するためにクリック。**，****了，****の。"
+SAKUYA_LAW_ASSEMBLY_RIGHT_TOOLTIP: "集会権を実施するためにクリック。"
+SAKUYA_LAW_FREE_SPEECH_TOOLTIP: "言論の自由を実施するためにクリック。私はあなたが言うすべての言葉に反対しますが、あなたの言う権利を守ります。"
+SAKUYA_LAW_WOMENS_RIGHTS: "女性の権利"
+SAKUYA_LAW_GUARDIANSHIP_TOOLTIP: "法定後見制度を実施するためにクリック。"
+SAKUYA_LAW_PROPERTY_WOMEN_TOOLTIP: "資本家の女性の権利を実施するためにクリック。"
+SAKUYA_LAW_HALF_SKY_WOMEN_TOOLTIP: "女性が半分の空を支えるようにするためにクリック。"
+SAKUYA_LAW_WOMENS_SUFFRAGE_TOOLTIP: "女性選挙権政策を実施するためにクリック。"
+SAKUYA_LAW_SERVITUDE: "奴隷"
+SAKUYA_LAW_SUMMON_LINCOLN_TOOLTIP: "リンカーンを呼び寄せるためにクリック。"
+SAKUYA_LAW_DEBT_SLAVERY_TOOLTIP: "債務奴隷制を実施するためにクリック。"
+SAKUYA_LAW_SCALPING_TOOLTIP: "頭皮を剥いでブーツを作るためにクリック。"
+SAKUYA_LAW_TRADITIONAL_SLAVERY_TOOLTIP: "伝統的奴隷制度を実施するためにクリック。"
+SAKUYA_LAW_LABOR_RIGHTS: "労働権"
+SAKUYA_LAW_REPEAL_LABOR_RIGHTS_TOOLTIP: "すべての労働者の権利を廃止するためにクリック。"
+SAKUYA_LAW_REGULATORY_AGENCIES_TOOLTIP: "規制機関政策を実施するためにクリック。"
+SAKUYA_LAW_LABOR_PROTECTION_TOOLTIP: "労働者保護政策を実施するためにクリック。"
+SAKUYA_LAW_SOCIAL_SECURITY: "社会保障"
+SAKUYA_LAW_NO_SOCIAL_SECURITY_TOOLTIP: "社会保障がない政策を実施するためにクリック。"
+SAKUYA_LAW_POOR_LAWS_TOOLTIP: "貧者の法律を実施するためにクリック。"
+SAKUYA_LAW_WAGE_SUBSIDIES_TOOLTIP: "賃金補助政策を実施するためにクリック。"
+SAKUYA_LAW_PENSION_TOOLTIP: "年金政策を実施するためにクリック。"
+SAKUYA_LAW_CHILDREN: "子供"
+SAKUYA_LAW_ALLOW_CHILD_LABOR_TOOLTIP: "児童労働を許可する政策を実施するためにクリック。"
+SAKUYA_LAW_RESTRICT_CHILD_LABOR_TOOLTIP: "児童労働を制限する政策を実施するためにクリック。"
+SAKUYA_LAW_MANDATORY_EDUCATION_TOOLTIP: "義務教育政策を実施するためにクリック。"
+SAKUYA_LAW_IMMIGRATION: "移民"
+SAKUYA_LAW_NO_IMMIGRATION_CONTROL_TOOLTIP: "移民規制がない政策を実施するためにクリック。"
+SAKUYA_LAW_IMMIGRATION_CONTROL_TOOLTIP: "移民規制政策を実施するためにクリック。"
+SAKUYA_LAW_ISOLATIONISM_TOOLTIP: "閉鎖政策を実施するためにクリック。"
+SAKUYA_MONEY_TEXT_3: "経済、#gold 目に見えない手#!"
+SAKUYA_MONEY_TEXT_4: "#v #gold 金銭#!は鬼を動かす。"
+SAKUYA_MONEY_TEXT_5: "#v 金銭#!"
+SAKUYA_MONEY_TEXT_6: "#v 金銭#!"
+SAKUYA_MONEY_TEXT_7: "#v 収支#!"
+SAKUYA_MONEY_TEXT_8: "#v 収支#!"
+
+#######################################################################################
+#        /######  /###### /##   /##/##   /##/##     /##/######                        #
+#       /##__  ##/##__  #| ##  /##| ##  | #|  ##   /##/##__  ##   #######  #######    #
+#      | ##  \__| ##  \ #| ## /##/| ##  | ##\  ## /##| ##  \ ##   #######  #######    #
+#      |  ######| #######| #####/ | ##  | ## \  ####/| ########    #####    #####     #
+#       \____  #| ##__  #| ##  ## | ##  | ##  \  ##/ | ##__  ##                       #
+#       /##  \ #| ##  | #| ##\  ##| ##  | ##   | ##  | ##  | ##        #    #         #
+#      |  ######| ##  | #| ## \  #|  ######/   | ##  | ##  | ##         ####          #
+#       \______/|__/  |__|__/  \__/\______/    |__/  |__/  |__/                       #
+#######################################################################################
+
+MT0: "建設: 鉱産"
+MT0_linyu: "建設: 林漁"
+MT0_nongye: "建設: 農業"
+MT0_gongye: "建設: 工業"
+MT0_jijian: "建設: 基礎"
+MT1: "              建設"
+MT2: "                                                                                              · #lore 豊聡耳グループ · SMilEb前沿实验室 · "
+MB1T: "クリックして現在の建物を選択します。"
+MB1T_coffee: "なぜか、この国にコーヒー農園や関連のイベントがない場合、コーヒー農園は設定できません。\n理由は不明で、効果的な支援はできません。"
+MB1T_error: "これらの建物は効果を発揮しません。おそらく、ゲームに実装されていないからです。\nしかし、対応するコードが存在するので、追加しました。"
+MB1T_oil_rig: "クリックして現在の建物を選択します。\n油井は特別なもので、国家が石油を発見する能力を持つ必要があります。\nほとんどの国王、皇帝、大統領などが関連技術を開発していないため、右クリックにより「ポンプ」の技術を取得できます。"
+MB1T_trade_center: "修正しても意味がありません。貿易センターや金融区などの建物は、伝統的な建物ではなく、修正してもすぐに元の状態に戻ります。しかし、修正可能だから...追加しました。\n\n状態が更新されると、建物は元のレベルに戻ります。"
+MB1TT: "#bold #V 鉱産"
+MB1TTT: "いくつかの国は運に任せて生活しています。"
+MB2TT: "#bold #V 林漁"
+MB2TTT: "他のいくつかの国は土地を利用して生活しています。"
+MB3TT: "#bold #V 農業"
+MB3TTT: "しかし、人民は手を使って食べています。"
+MB4TT: "#bold #V 工業"
+MB4TTT: "資本家は搾取によって生きています。"
+MB5TT: "#bold #V 基礎"
+MB5TTT: "労働者が団結すれば、プロレタリアートは自らの力で食べることができます。"
+MB_gold_mine: "#v 金鉱"
+MB_coal_mine: "#v 石炭鉱"
+MB_iron_mine: "#v 鉄鉱"
+MB_lead_mine: "#v 鉛鉱"
+MB_sulfur_mine: "#v 硫黄鉱"
+MB_oil_rig: "#v 油井"
+MB2: "石炭鉱"
+MBC: "削除"
+MBCT: "名の通り、現在選択されている建物を削除します。\n #lore;COLOR:{0.48,0.4,0.4} 建物をクリアすることによって発生する潜在的なリスクに注意してください。例えば、怒った請負業者があなたの家の前にいるかもしれません...#! "
+MB_oil_rig_1y: "生産を増加"
+MB_oil_rig_1yt: "生産を増加します。左クリックで特定の省にボーナスを設定し、\n\n #l 右クリックで全国に転送できます。特定の省ではなく。#!"
+MB_oil_rig_2y: "投入を減少"
+MB_oil_rig_2yt: "投入を減少します。左クリックで特定の省にボーナスを設定し、右クリックは全国に転送します。"
+MB_oil_rig_3y: "ボーナスを削除"
+MB_oil_rig_3yt: "すべてのボーナスを削除します。左クリックで特定の省のボーナスを削除し、右クリックでは全国のボーナスを削除します。"
+MB_gold_mine_1y: "生産量を増加"
+MB_gold_mine_1yt: "金の生産量を増加します。左クリックで特定の鉱山にボーナスを設定し、\n\n #l 右クリックで全国に転送できます。特定の省ではなく。#!"
+MB_gold_mine_2y: "通貨鋳造税を追加"
+MB_gold_mine_2yt: "通貨鋳造税の方が迅速にお金を得るでしょう。\n\n #l 右クリックで全国に転送できます。特定の省ではなく。#!"
+MB_gold_mine_3y: "ボーナスを削除"
+MB_gold_mine_3yt: "すべての金のボーナスを削除します。\n\n #l 右クリックで全国に転送できます。特定の省ではなく。#!"
+MB_coal_mine_1y: "生産量を増加"
+MB_coal_mine_1yt: "山西省は異議を申し立てています。\n\n #l 右クリックで全国に転送できます。特定の省ではなく。#!"
+MB_coal_mine_2y: "コストを削減"
+MB_coal_mine_2yt: "石炭の採掘コストを削減？節約したお金で何台のトラックを買える？\n\n #l 右クリックで全国に転送できます。特定の省ではなく。#!"
+MB_coal_mine_3y: "ボーナスを削除"
+MB_coal_mine_3yt: "石炭ボーナスを削除しちゃうの？これで工場が停止するかも。\n\n #l 右クリックで全国に転送できます。特定の省ではなく。#!"
+MB_iron_mine_1y: "生産量を増加"
+MB_iron_mine_1yt: "あなたは無敵の艦隊を作るつもりですか？\n\n #l 右クリックで全国に転送できます。特定の省ではなく。#!"
+MB_iron_mine_2y: "コストを削減"
+MB_iron_mine_2yt: "鉄鉱石の採掘コストを削減します。\n\n #l 右クリックで全国に転送できます。特定の省ではなく。#!"
+MB_iron_mine_3y: "ボーナスを削除"
+MB_iron_mine_3yt: "あなたの兵工場が人員削減を始めるかもしれません。\n\n #l 右クリックで全国に転送できます。特定の省ではなく。#!"
+MB_lead_mine_1y: "生産量を増加"
+MB_lead_mine_1yt: "鉛鉱石の生産量を増加します。あなたは世界を少し重くするつもりですか？\n\n #l 右クリックで全国に転送できます。特定の省ではなく。#!"
+MB_lead_mine_2y: "コストを削減"
+MB_lead_mine_2yt: "鉛鉱石の採掘コストを削減します。節約したお金でお土産を買えるかもしれません...鉛キャンディーはいかがですか？\n\n #l 右クリックで全国に転送できます。特定の省ではなく。#!"
+MB_lead_mine_3y: "ボーナスを削除"
+MB_lead_mine_3yt: "鉛ボーナスを削除します。\n\n #l 右クリックで全国に転送できます。特定の省ではなく。#!"
+MB_sulfur_mine_1y: "生産量を増加"
+MB_sulfur_mine_1yt: "硫黄の生産量を増加します。あなたは花火に非常に興味があるようですね。\n\n #l 右クリックで全国に転送できます。特定の省ではなく。#!"
+MB_sulfur_mine_2y: "コストを削減"
+MB_sulfur_mine_2yt: "硫黄石鹸を聞いたことがありますか？\n\n #l 右クリックで全国に転送できます。特定の省ではなく。#!"
+MB_sulfur_mine_3y: "ボーナスを削除"
+MB_sulfur_mine_3yt: "硫黄ボーナスを削除します。あなたの火薬庫は少し空いているかもしれません。\n\n #l 右クリックで全国に転送できます。特定の省ではなく。#!"
+MB_logging_camp: "#v 伐採キャンプ"
+MB_rubber_plantation: "#v ゴム農園"
+MB_whaling_station: "#v 捕鯨基地"
+MB_fishing_wharf: "#v 漁港"
+MB_logging_camp_1y: "生産量を増加"
+MB_logging_camp_1yt: "伐採キャンプの生産量を増加します。"
+MB_logging_camp_2y: "コストを削減"
+MB_logging_camp_2yt: "伐採キャンプの運営コストを削減します。"
+MB_logging_camp_3y: "ボーナスを削除"
+MB_logging_camp_3yt: "伐採キャンプのすべてのボーナスを削除します。"
+MB_rubber_plantation_1y: "生産量を増加"
+MB_rubber_plantation_1yt: "ゴム農園の生産量を増加します。"
+MB_rubber_plantation_2y: "コストを削減"
+MB_rubber_plantation_2yt: "ゴム農園の運営コストを削減します。"
+MB_rubber_plantation_3y: "ボーナスを削除"
+MB_rubber_plantation_3yt: "ゴム農園のすべてのボーナスを削除します。"
+MB_whaling_station_1y: "生産量を増加"
+MB_whaling_station_1yt: "捕鯨基地の生産量を増加します。"
+MB_whaling_station_2y: "コストを削減"
+MB_whaling_station_2yt: "捕鯨基地の運営コストを削減します。"
+MB_whaling_station_3y: "ボーナスを削除"
+MB_whaling_station_3yt: "捕鯨基地のすべてのボーナスを削除します。"
+MB_fishing_wharf_1y: "生産量を増加"
+MB_fishing_wharf_1yt: "漁港の生産量を増加します。"
+MB_fishing_wharf_2y: "コストを削減"
+MB_fishing_wharf_2yt: "漁港の運営コストを削減します。"
+MB_fishing_wharf_3y: "ボーナスを削除"
+MB_fishing_wharf_3yt: "漁港のすべてのボーナスを削除します。"
+
+MB_rye_farm: "#v ライ麦農場"
+MB_wheat_farm: "#v 小麦農場"
+MB_rice_farm: "#v 水稲農場"
+MB_maize_farm: "#v トウモロコシ農場"
+MB_millet_farm: "#v 雑穀農場"
+MB_coffee_plantation: "#v コーヒー農園"
+MB_vineyard_plantation: "#v ブドウ農園"
+MB_cotton_plantation: "#v 綿花農園"
+MB_silk_plantation: "#v 絹農場"
+MB_dye_plantation: "#v 染料農園"
+MB_opium_plantation: "#v アヘン農場"
+MB_tea_plantation: "#v 茶葉農園"
+MB_tobacco_plantation: "#v タバコ農園"
+MB_sugar_plantation: "#v 砂糖農園"
+MB_banana_plantation: "#v バナナ農園"
+MB_silkworm_plantation: "#v 桑の木農園"
+MB_orchard: "#v 果樹園"
+MB_food_industry: "#v 食品工場"
+MB_textile_mills: "#v 繊維工場"
+MB_tooling_workshops: "#v 工具工房"
+MB_paper_mills: "#v 製紙工場"
+MB_shipyards: "#v 造船所"
+MB_military_shipyards: "#v 軍事造船所"
+MB_chemical_plants: "#v 化学工場"
+MB_explosives_factory: "#v 爆薬工場"
+MB_furniture_manufacturies: "#v 家具製造工場"
+MB_electrics_industry: "#v 電子工場"
+MB_arms_industry: "#v 武器工場"
+MB_artillery_foundries: "#v 大砲鋳造所"
+MB_war_machine_industry: "#v 戦争機械工場"
+MB_motor_industry: "#v 動力機械工場"
+MB_munition_plants: "#v 弾薬工場"
+MB_synthetics_plants: "#v 化学合成工場"
+MB_steel_mills: "#v 製鉄所"
+MB_glassworks: "#v ガラス工場"
+MB_port: "#v 港"
+MB_railway: "#v 鉄道"
+MB_trade_center: "#v 貿易センター"
+MB_university: "#v 大学"
+MB_arts_academy: "#v 芸術学院"
+MB_colony_military: "#v 軍事植民地"
+MB_colony_missionary: "#v 宣教師植民地"
+MB_colony_trade: "#v 貿易植民地"
+MB_barracks: "#v 兵舎"
+MB_naval_base: "#v 海軍基地"
+MB_conscription_center: "#v 徴兵センター"
+MB_government_administration: "#v 政府行政機関"
+MB_power_plant: "#v 発電所"
+MB_urban_center: "#v 都市中心"
+MB_construction_sector: "#v 建設部門"
+MB_manor_house: "#v 邸宅"
+MB_financial_district: "#v 金融区"
+MR_1: "鉱産類建物の採掘"
+MR_1T: "マークしたい省を右クリックし、ここで設置したい建物を選択します。"
+MR_1TT: "まず初めに説明しますが、国内の省のみマーク可能です。方法は2つあります：\n\n第一種：自国の省を右クリックして法令 - 駐在省を選択します。\n第二種：政治ビュー（ショートカット：ALT+2）を使用し、法令 - 駐在省を選択します。\n\n\n何？まだ見つからない？お願い、少し努力して探してください。法令が使えない？それはあなたの権威力が不足しているからです。私の改造器で少し取ってください。メインページにあります。"
+MR_2: "天然資源類建物"
+MR_2T: "ご覧の通り、私はこれらを鉱産から単独の新しいカテゴリに分けました。"
+MR_3: "田舎村"
+MR_3T: "可能であれば、ひまわり畑を一面にして、太陽の下にいたい。"
+MR_4: "製造業と工場"
+MR_4T: "ボタンの色を調整する余裕がない...もし可能であれば、一緒に改善してください！"
+MR_5: "インフラ"
+MR_5T: "幻想郷にはバスがありませんが、妖怪の山にはロープウェイがあります。私はロープウェイにさえ乗ったことがありません..."
+
+
+sakuya_mil_01: "爆発徴兵率"
+sakuya_mil_02: "爆発義務兵"
+sakuya_mil_03: "降次打撃"
+sakuya_mil_04: "絶対防御"
+sakuya_mil_05: "陸軍経験獲得"
+sakuya_mil_11: "海軍攻撃"
+sakuya_mil_12: "海軍防御"
+sakuya_mil_13: "海軍経験獲得"
+sakuya_mil_14: "最大利益"
+sakuya_mil_15: "純廃物ボタン"
+sakuya_mil_14_t: "ここには出現すべきでない。次回の更新の際に使用する予定である。"
+sakuya_weiwang_01: "潜在鼓動"
+sakuya_weiwang_02: "嫌戦度削減"
+sakuya_weiwang_03: "扶助影響"
+sakuya_weiwang_04: "資源発見"
+sakuya_weiwang_05: "皆が政治に関与"
+sakuya_weiwang_06: "門戸開放"
+sakuya_weiwang_07: "無料法令"
+sakuya_weiwang_08: "潤い人増加"
+sakuya_weiwang_09: "移民吸引"
+sakuya_weiwang_11: "批発博士"
+sakuya_weiwang_12: "汚染清除"
+sakuya_weiwang_13: "殺殺殺殺殺殺"
+sakuya_weiwang_14: "博弈行動力"
+sakuya_weiwang_15: "先発制人"
+sakuya_weiwang_16: "奇妙な合法性"
+sakuya_weiwang_17: "怠惰者排除"
+sakuya_weiwang_18: "選票の力"
+sakuya_weiwang_19: "基盤施設"
+sakuya_weiwang_21: "威望増加"
+sakuya_weiwang_21_t: "威望加999999999999、さようなら"
+sakuya_weiwang_31_t: ";D"
+sakuya_weiwang_31: "威望減少"
+sakuya_weiwang_22: "1"
+sakuya_weiwang_22_t: "威望が一増加。"
+sakuya_weiwang_22: "1"
+sakuya_weiwang_22_t: "威望が一増加。昨晩、植物と話したが、それらは非常に繁茂している。"
+sakuya_weiwang_23: "10"
+sakuya_weiwang_23_t: "威望が十増加。失望させないカレンダーを見つけました：昨日の。"
+sakuya_weiwang_24: "100"
+sakuya_weiwang_24_t: "威望が百増加。火曜日がなければ、水曜日は迷子になるかもしれない。"
+sakuya_weiwang_25: "1000"
+sakuya_weiwang_25_t: "威望が千増加。ファーストフードと呼ばれる理由は、それを説明する時間がないから。"
+sakuya_weiwang_26: "10000"
+sakuya_weiwang_26_t: "威望が一万増加。書店がいつも静かな理由をご存知ですか？それは図書館の近くにあるからです。"
+sakuya_weiwang_27: "100000"
+sakuya_weiwang_27_t: "威望が十万増加。私のコンピュータはいつも冷たい、なぜならファンがたくさんあるから。"
+sakuya_weiwang_28: "1000000"
+sakuya_weiwang_28_t: "威望が百万増加。昨日、銀行家が木の下でお金を数えているのを見た。"
+sakuya_weiwang_29: "加算のクリア"
+sakuya_weiwang_29_t: "威望は変わらない。鏡を塩で掃除しようとしたが、鏡は変わらなかったが、塩は良好だった。"
+sakuya_weiwang_TEXT: "私は何かを書く必要があるのでしょうか？ここが空いているのは無駄です。見ての通り、下には様々な奇妙なボタンが並んでいます。気軽に試してみてください。これらの修飾者は私が厳選したもので、しっかりと遊ぶ価値があります。しかし、これらの修飾者で問題や様々な奇妙な癖を発見した場合は、フィードバックを送らないでください。結局、このセクションと次の軍事セクションは将来的に私が手入れしないものです。"
+sakuya_weiwang_32: "-1"
+sakuya_weiwang_32_t: "威望が一減少。霧を捕まえようとしたが、外した。"
+sakuya_weiwang_33: "-10"
+sakuya_weiwang_33_t: "威望が十減少。十悪不赦と友人に言ったら、彼女は十一悪不赦だと答えた。"
+sakuya_weiwang_34: "-100"
+sakuya_weiwang_34_t: "威望が百減少。一曲と呼ばれる理由は、あなたが曲調にできるから。"
+sakuya_weiwang_35: "-1000"
+sakuya_weiwang_35_t: "威望が千減少。笑い話には料金がかかるそうだ、一つの笑い話に十元。"
+sakuya_weiwang_36: "-10000"
+sakuya_weiwang_36_t: "威望が一万減少。靴が壊れたので、靴に時間だと言った。"
+sakuya_weiwang_37: "-100000"
+sakuya_weiwang_37_t: "威望が十万減少。冷たいジョークがあるが、それは凍っている。"
+sakuya_weiwang_38: "-1000000"
+sakuya_weiwang_38_t: "威望が百万減少。かつて、冷たいジョークがあり、それは氷山になった。"
+sakuya_weiwang_39: "加算のクリア"
+sakuya_weiwang_39_t: "威望は変わらない。このジョークをもっと面白くしようとしたが、失敗した。"
+sakuya_weiwang_TEXT2: "これは多くの人が期待している威望の修正です。見ての通り、ほぼすべてのボタンは威望を增加する方法があり、パーセンテージでの増加ではなく、単純な数字の増加です。これは、過度のパーセンテージ加算が数値のオーバーフローを招く可能性があるためです。"
+sakuya_weiwang_01: "潜在鼓動"
+sakuya_weiwang_01_t: "潜在鼓動の利点を知っていますか？それは、湯浴みの最中に歌うようなもので、誰も聞こえない。"
+sakuya_weiwang_s: "承認される"
+sakuya_weiwang_st: "現行の国家が承認されているか自由に調整できます。左クリックはyes、右クリックはno。"
+sakuya_weiwang_02: "嫌戦度削減"
+sakuya_weiwang_02_t: "嫌戦度削減の効果は、雨の中で乾くことを維持しようとするのと同じです。"
+sakuya_weiwang_03: "扶助影響"
+sakuya_weiwang_03_t: "扶助影響の感じは、風の中でろうそくを吹くようなものです。"
+sakuya_weiwang_04: "資源発見"
+sakuya_weiwang_04_t: "資源発見は、砂漠で緑のオアシスを見つけるようなものです。"
+sakuya_weiwang_05: "皆が政治に関与"
+sakuya_weiwang_05_t: "皆が政治に関与するのは、インターネット上で猫と犬のどちらが良いかを争っているようなものです。"
+sakuya_weiwang_06: "門戸開放"
+sakuya_weiwang_06_t: "門戸開放は、村中の人々をあなたの誕生日パーティーに招待するようなものです。"
+sakuya_weiwang_07: "無料法令"
+sakuya_weiwang_07_t: "無料法令の効果は、店で無限に使える割引券を手に入れるようなものです。"
+sakuya_weiwang_08: "潤い人増加"
+sakuya_weiwang_08_t: "潤い人増加は、砂漠で突然雨が降るようなものです。"
+sakuya_weiwang_09: "移民吸引"
+sakuya_weiwang_09_t: "移民吸引は、蜜蜂が花に引き寄せられるように自然なことです。"
+sakuya_weiwang_11: "批発博士"
+sakuya_weiwang_11_t: "批発博士？それはスーパーマーケットで博士号を買うような響きです。"
+sakuya_weiwang_12: "汚染清除"
+sakuya_weiwang_12_t: "汚染清除は、掃除機で海を掃除するようなものです。"
+sakuya_weiwang_13: "殺殺殺殺殺殺"
+sakuya_weiwang_13_t: "万物は人を養うためにあり、人は天に何も返さない。"
+sakuya_weiwang_14: "博弈行動力"
+sakuya_weiwang_14_t: "博弈行動力は、ボード上であなたの駒を動かすことのようです。"
+sakuya_weiwang_15: "先発制人"
+sakuya_weiwang_15_t: "先発制人は、試合が始まる前にゴールに到達するようなものです。"
+sakuya_weiwang_16: "奇妙な合法性"
+sakuya_weiwang_16_t: "奇妙な合法性は、法律的な曲がりくねった冒険のように思えます。"
+sakuya_weiwang_17: "怠惰者排除"
+sakuya_weiwang_17_t: "怠惰者排除の感覚は、猫と犬を平和的に共存させようとするようなものです。"
+sakuya_weiwang_18: "選票の力"
+sakuya_weiwang_18_t: "選票の力は、風の中で旗を振るようなものです。"
+sakuya_weiwang_19: "基盤施設"
+sakuya_weiwang_19_t: "基盤施設の向上は、都市に新しい道路を敷設するようなものです。"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 貸出利率
+sakuya_money_remove_country_loan_interest_rate_mult_3: "貸出利率 #n 10000%#!"
+sakuya_money_remove_country_loan_interest_rate_mult_2: "貸出利率 #n 80%#!"
+sakuya_money_remove_country_loan_interest_rate_mult_1: "貸出利率 #n 20%#!"
+sakuya_money_add_country_loan_interest_rate_mult_1: "貸出利率 #p -50%#!"
+sakuya_money_add_country_loan_interest_rate_mult_2: "貸出利率 #p -100%#!"
+sakuya_money_add_country_loan_interest_rate_mult_3: "貸出利率 #p -10000%#!"
+
+# 金の上限
+sakuya_money_remove_country_gold_reserve_limit_mult_3: "金の上限 #n -10000%#!"
+sakuya_money_remove_country_gold_reserve_limit_mult_2: "金の上限 #n -50%#!"
+sakuya_money_remove_country_gold_reserve_limit_mult_1: "金の上限 #n -20%#!"
+sakuya_money_add_country_gold_reserve_limit_mult_1: "金の上限 #p 50%#!"
+sakuya_money_add_country_gold_reserve_limit_mult_2: "金の上限 #p 100%#!"
+sakuya_money_add_country_gold_reserve_limit_mult_3: "金の上限 #p 10000%#!"
+
+# 貨幣鋳造
+sakuya_money_remove_country_minting_mult_3: "貨幣鋳造 #n -1000%#!"
+sakuya_money_remove_country_minting_mult_2: "貨幣鋳造 #n -90%#!"
+sakuya_money_remove_country_minting_mult_1: "貨幣鋳造 #n -50%#!"
+sakuya_money_add_country_minting_mult_1: "貨幣鋳造 #p 50%#!"
+sakuya_money_add_country_minting_mult_2: "貨幣鋳造 #p 100%#!"
+sakuya_money_add_country_minting_mult_3: "貨幣鋳造 #p 1000%#!"
+
+# 政府の賃金
+sakuya_money_remove_country_government_wages_mult_3: "政府の賃金 #n 10000%#!"
+sakuya_money_remove_country_government_wages_mult_2: "政府の賃金 #n 100%#!"
+sakuya_money_remove_country_government_wages_mult_1: "政府の賃金 #n 50%#!"
+sakuya_money_add_country_government_wages_mult_1: "政府の賃金 #p 20%#!"
+sakuya_money_add_country_government_wages_mult_2: "政府の賃金 #p 80%#!"
+sakuya_money_add_country_government_wages_mult_3: "政府の賃金 #p 10000%#!"
+
+# 軍の賃金
+sakuya_money_remove_country_military_wages_mult_3: "軍の賃金 #n 100%#!"
+sakuya_money_remove_country_military_wages_mult_2: "軍の賃金 #n 100%#!"
+sakuya_money_remove_country_military_wages_mult_1: "軍の賃金 #n 50%#!"
+sakuya_money_add_country_military_wages_mult_1: "軍の賃金 #p 20%#!"
+sakuya_money_add_country_military_wages_mult_2: "軍の賃金 #p 80%#!"
+sakuya_money_add_country_military_wages_mult_3: "軍の賃金 #p 10000%#!"
+
+# 投資プールの無効化/有効化
+sakuya_money_add_country_disable_investment_pool: "投資プールを有効化(無効)"
+sakuya_money_remove_country_disable_investment_pool: "投資プールを無効化"
+
+# 収入
+sakuya_money_add_country_tax_income_add_1: "税収 #p 1000#!"
+sakuya_money_add_country_tax_income_add_2: "税収 #p 10000#!"
+sakuya_money_add_country_tax_income_add_3: "税収 #p 100000#!"
+sakuya_money_add_country_tax_income_add_4: "税収 #p 1000000#!"
+sakuya_money_add_country_tax_income_add_5: "税収 #p 10000000#!"
+sakuya_money_add_country_tax_income_add_6: "税収 #p 100000000#!"
+sakuya_money_add_country_tax_income_add_7: "税収 #p 1000000000#!"
+sakuya_money_add_country_tax_income_remove_1: "税収 #n -1000#!"
+sakuya_money_add_country_tax_income_remove_2: "税収 #n -10000#!"
+sakuya_money_add_country_tax_income_remove_3: "税収 #n -100000#!"
+sakuya_money_add_country_tax_income_remove_4: "税収 #n -1000000#!"
+sakuya_money_add_country_tax_income_remove_5: "税収 #n -10000000#!"
+sakuya_money_add_country_tax_income_remove_6: "税収 #n -100000000#!"
+sakuya_money_add_country_tax_income_remove_7: "税収 #n -1000000000#!"
+
+# 諸税
+sakuya_money_add_tariff_import_add: "輸入関税 #p 100%#!"
+sakuya_money_add_tariff_export_add: "輸出関税 #p 100%#!"
+sakuya_money_add_tax_income_add: "税収 #p 100%#!"
+sakuya_money_add_tax_consumption_add: "消費税 #p 100%#!"
+sakuya_money_add_tax_dividends_add: "配当税 #p 100%#!"
+sakuya_money_add_tax_per_capita_add: "人頭税 #p 100%#!"
+sakuya_money_add_tax_land_add: "土地税 #p 100%#!"
+sakuya_money_add_tax_heathen_add: "異教徒税 #p 100%#!"
+sakuya_money_remove_tariff_import_add: "輸入関税 #n -100%#!"
+sakuya_money_remove_tariff_export_add: "輸出関税 #n -100%#!"
+sakuya_money_remove_tax_income_add: "税収 #n -100%#!"
+sakuya_money_remove_tax_consumption_add: "消費税 #n -100%#!"
+sakuya_money_remove_tax_dividends_add: "配当税 #n -100%#!"
+sakuya_money_remove_tax_per_capita_add: "人頭税 #n -1%#!"
+sakuya_money_remove_tax_land_add: "土地税 #n -100%#!"
+sakuya_money_remove_tax_heathen_add: "異教徒税 #n -100%#!"
+
+# 企業建設効率
+sakuya_money_add_country_company_construction_efficiency_bonus_add_1: "企業建設効率 #p 10%#!"
+sakuya_money_remove_country_company_construction_efficiency_bonus_add_1: "企業建設効率 #n -10%#!"
+sakuya_money_add_country_company_construction_efficiency_bonus_add_2: "企業建設効率 #p 100%#!"
+sakuya_money_remove_country_company_construction_efficiency_bonus_add_2: "企業建設効率 #n -100%#!"
+
+# 貿易路線の競争力
+sakuya_money_add_country_trade_route_competitiveness_mult_1: "貿易路線競争力 #p 10%#!"
+sakuya_money_remove_country_trade_route_competitiveness_mult_1: "貿易路線競争力 #n -10%#!"
+sakuya_money_add_country_trade_route_competitiveness_mult_2: "貿易路線競争力 #p 50%#!"
+sakuya_money_remove_country_trade_route_competitiveness_mult_2: "貿易路線競争力 #n -50%#!"
+sakuya_money_add_country_trade_route_competitiveness_mult_3: "貿易路線競争力 #p 100%#!"
+sakuya_money_remove_country_trade_route_competitiveness_mult_3: "貿易路線競争力 #n -100%#!"
+sakuya_money_add_country_trade_route_competitiveness_mult_4: "貿易路線競争力 #p 1000%#!"
+sakuya_money_remove_country_trade_route_competitiveness_mult_4: "貿易路線競争力 #n -1000%#!"
+sakuya_money_add_country_trade_route_competitiveness_mult_5: "貿易路線競争力 #p 100000%#!"
+sakuya_money_remove_country_trade_route_competitiveness_mult_5: "貿易路線競争力 #n -100000%#!"
+
+# 貿易路線のコスト
+sakuya_money_add_country_trade_route_cost_mult_1: "貿易路線コスト #p -10%#!"
+sakuya_money_remove_country_trade_route_cost_mult_1: "貿易路線コスト #n 10%#!"
+sakuya_money_add_country_trade_route_cost_mult_2: "貿易路線コスト #p -50%#!"
+sakuya_money_remove_country_trade_route_cost_mult_2: "貿易路線コスト #n 50%#!"
+sakuya_money_add_country_trade_route_cost_mult_3: "貿易路線コスト #p -100%#!"
+sakuya_money_remove_country_trade_route_cost_mult_3: "貿易路線コスト #n 100%#!"
+sakuya_money_add_country_trade_route_cost_mult_4: "貿易路線コスト #p -1000%#!"
+sakuya_money_remove_country_trade_route_cost_mult_4: "貿易路線コスト #n 1000%#!"
+sakuya_money_add_country_trade_route_cost_mult_5: "貿易路線コスト #p -100000%#!"
+sakuya_money_remove_country_trade_route_cost_mult_5: "貿易路線コスト #n 100000%#!"
+
+# 貿易路線の数量
+sakuya_money_add_country_trade_route_quantity_mult_1: "貿易路線数量 #p 10%#!"
+sakuya_money_remove_country_trade_route_quantity_mult_1: "貿易路線数量 #n -10%#!"
+sakuya_money_add_country_trade_route_quantity_mult_2: "貿易路線数量 #p 50%#!"
+sakuya_money_remove_country_trade_route_quantity_mult_2: "貿易路線数量 #n -50%#!"
+sakuya_money_add_country_trade_route_quantity_mult_3: "貿易路線数量 #p 100%#!"
+sakuya_money_remove_country_trade_route_quantity_mult_3: "貿易路線数量 #n -100%#!"
+sakuya_money_add_country_trade_route_quantity_mult_4: "貿易路線数量 #p 1000%#!"
+sakuya_money_remove_country_trade_route_quantity_mult_4: "貿易路線数量 #n -1000%#!"
+sakuya_money_add_country_trade_route_quantity_mult_5: "貿易路線数量 #p 100000%#!"
+sakuya_money_remove_country_trade_route_quantity_mult_5: "貿易路線数量 #n -100000%#!"
+
+# 企業最大数
+sakuya_money_add_country_max_companies_add_1: "企業最大数 #p 1#!"
+sakuya_money_remove_country_max_companies_add_1: "企業最大数 #n -1#!"
+sakuya_money_add_country_max_companies_add_2: "企業最大数 #p 5#!"
+sakuya_money_remove_country_max_companies_add_2: "企業最大数 #n -5#!"
+sakuya_money_add_country_max_companies_add_3: "企業最大数 #p 10#!"
+sakuya_money_remove_country_max_companies_add_3: "企業最大数 #n -10#!"
+sakuya_money_add_country_max_companies_add_4: "企業最大数 #p 9999#!"
+sakuya_money_remove_country_max_companies_add_4: "企業最大数 #n -9999#!"
+
+# 企業の産出
+sakuya_money_add_country_company_throughput_bonus_add_2: "企業の産出 #p 100%#!"
+sakuya_money_remove_country_company_throughput_bonus_add_2: "企業の産出 #n -100%#!"
+sakuya_money_add_country_company_throughput_bonus_add_1: "企業の産出 #p 10%#!"
+sakuya_money_remove_country_company_throughput_bonus_add_1: "企業の産出 #n -10%#!"
+
+# 無料貿易路線
+sakuya_money_add_country_free_trade_routes_add_1: "無料貿易路線 #p 1#!"
+sakuya_money_remove_country_free_trade_routes_add_1: "無料貿易路線 #n -1#!"
+sakuya_money_add_country_free_trade_routes_add_2: "無料貿易路線 #p 10#!"
+sakuya_money_remove_country_free_trade_routes_add_2: "無料貿易路線 #n -10#!"
+sakuya_money_add_country_free_trade_routes_add_3: "無料貿易路線 #p 9999#!"
+sakuya_money_remove_country_free_trade_routes_add_3: "無料貿易路線 #n -9999#!"
+
+# 市場最大輸入
+sakuya_money_add_market_max_imports_add_mult_1: "最大輸入 #p 1%#!"
+sakuya_money_remove_market_max_imports_add_mult_1: "最大輸入 #n -1%#!"
+sakuya_money_add_market_max_imports_add_mult_2: "最大輸入 #p 5%#!"
+sakuya_money_remove_market_max_imports_add_mult_2: "最大輸入 #n -5%#!"
+sakuya_money_add_market_max_imports_add_mult_3: "最大輸入 #p 50%#!"
+sakuya_money_remove_market_max_imports_add_mult_3: "最大輸入 #n -50%#!"
+sakuya_money_add_market_max_imports_add_mult_4: "最大輸入 #p 100%#!"
+sakuya_money_remove_market_max_imports_add_mult_4: "最大輸入 #n -100%#!"
+sakuya_money_add_market_max_imports_add_mult_5: "最大輸入 #p 9999%#!"
+sakuya_money_remove_market_max_imports_add_mult_5: "最大輸入 #n -9999%#!"
+
+# 市場最大輸出
+sakuya_money_add_market_max_exports_add_mult_1: "最大輸出 #p 1%#!"
+sakuya_money_remove_market_max_exports_add_mult_1: "最大輸出 #n -1%#!"
+sakuya_money_add_market_max_exports_add_mult_2: "最大輸出 #p 5%#!"
+sakuya_money_remove_market_max_exports_add_mult_2: "最大輸出 #n -5%#!"
+sakuya_money_add_market_max_exports_add_mult_3: "最大輸出 #p 50%#!"
+sakuya_money_remove_market_max_exports_add_mult_3: "最大輸出 #n -50%#!"
+sakuya_money_add_market_max_exports_add_mult_4: "最大輸出 #p 100%#!"
+sakuya_money_remove_market_max_exports_add_mult_4: "最大輸出 #n -100%#!"
+sakuya_money_add_market_max_exports_add_mult_5: "最大輸出 #p 9999%#!"
+sakuya_money_remove_market_max_exports_add_mult_5: "最大輸出 #n -9999%#!"
+
+# 市場貿易路線の無効化/有効化
+sakuya_money_add_market_disallow_trade_routes: "市場貿易路線を無効化"
+sakuya_money_remove_market_disallow_trade_routes: "市場貿易路線を有効化"
+
+# 市場陸上貿易容量
+sakuya_money_add_market_land_trade_capacity_add_1: "陸上貿易容量 #p 1#!"
+sakuya_money_remove_market_land_trade_capacity_add_1: "陸上貿易容量 #n -1#!"
+sakuya_money_add_market_land_trade_capacity_add_2: "陸上貿易容量 #p 100#!"
+sakuya_money_remove_market_land_trade_capacity_add_2: "陸上貿易容量 #n -100#!"
+sakuya_money_add_market_land_trade_capacity_add_3: "陸上貿易容量 #p 10000#!"
+sakuya_money_remove_market_land_trade_capacity_add_3: "陸上貿易容量 #n -10000#!"
+
+# 国の護衛容量
+sakuya_money_add_country_convoys_capacity_add_1: "護衛容量 #p 10#!"
+sakuya_money_remove_country_convoys_capacity_add_1: "護衛容量 #n -10#!"
+sakuya_money_add_country_convoys_capacity_add_2: "護衛容量 #p 100#!"
+sakuya_money_remove_country_convoys_capacity_add_2: "護衛容量 #n -100#!"
+sakuya_money_add_country_convoys_capacity_add_3: "護衛容量 #p 1000#!"
+sakuya_money_remove_country_convoys_capacity_add_3: "護衛容量 #n -1000#!"
+sakuya_money_add_country_convoys_capacity_add_4: "護衛容量 #p 10000#!"
+sakuya_money_remove_country_convoys_capacity_add_4: "護衛容量 #n -10000#!"
+sakuya_money_add_country_convoys_capacity_add_5: "護衛容量 #p 100000#!"
+sakuya_money_remove_country_convoys_capacity_add_5: "護衛容量 #n -100000#!"
+sakuya_money_add_country_convoys_capacity_add_6: "護衛容量 #p 1000000#!"
+sakuya_money_remove_country_convoys_capacity_add_6: "護衛容量 #n -1000000#!"
+
+# 護航防御
+sakuya_money_add_unit_convoy_defense_mult_1: "護航防御 #p 100%#!"
+sakuya_money_remove_unit_convoy_defense_mult_1: "護航防御 #n -100%#!"
+
+# 護航略奪
+sakuya_money_add_unit_convoy_raiding_mult_1: "護航略奪 #p 100%#!"
+sakuya_money_remove_unit_convoy_raiding_mult_1: "護航略奪 #n -100%#!"
+
+# 護航需求
+sakuya_money_add_unit_convoy_requirements_mult_1: "護航需求 #n 100%#!"
+sakuya_money_remove_unit_convoy_requirements_mult_1: "護航需求 #p -100%#!"
+
+# 波爾布特再世
+advcm_add_sakuya_pol_pot: "ポル・ポト復活"
+
+# 建設
+advcm_add_sakuya_country_construction_add: "建設能力 #p 500#!"
+
+# 利益集団
+advcm_add_sakuya_interest_group_approval_add: "利益集団支持度 #p 10#!"
+
+# 建築産出
+advcm_add_building_throughput: "建築産出 #p 10%#!"
+
+# 建築投入
+advcm_add_building_input_reduction: "建築投入 #p -10%#!"
+
+# 攻撃
+advcm_add_offense: "攻撃力 #p 10%#!"
+
+# 防御
+advcm_add_defense: "防御力 #p 10%#!"
+
+# 殺敵率
+advcm_add_kill_rate: "殺敵率 #p 100%#!"
+
+# 回復率
+advcm_add_recovery_rate: "回復率 #p 100%#!"
+
+# 文化同化
+advcm_add_assimilation: "文化同化 #p 100%#!"
+
+# 教育
+advcm_add_education: "教育獲得 #p 100%#!"
+
+# 税収
+advcm_add_income: "税収 #p 1000000#currency#!"
+
+# 建設能力
+advcm_add_sakuya_country_construction: "建設能力 #p 500#!"
+advcm_add_construction: "建設能力 #p 5000#!"
+
+# 利益集団支持度
+advcm_add_sakuya_interest_group_approval: "利益集団支持度 #p 5#!"
+
+# 官僚
+advcm_add_bureaucracy: "官僚 #p 5000#!"
+
+# 権威
+advcm_add_authority: "権威 #p 5000#!"
+
+# 影響力
+advcm_add_influence: "影響力 #p 5000#!"
+
+# 科技普及
+advcm_add_tech_spread: "科技普及 #p 5000000#!"
+
+# 毎週の革新
+advcm_add_innovation: "毎週の革新 #p 500000#!"
+advcm_add_innovation_max: "毎週最大革新 #p 500000#!"
+
+#出生率
+advcm_add_birth_rate: "出生率 #p 10%#!"
+
+#ユニオンパワー
+advcm_add_sakuya_trade_unions_unit1: "組合力 #p 20%#!"
+advcm_add_sakuya_remove_trade_unions_unit1: "組合力 #n -20%#!"
+
+#田舎者の力
+advcm_add_sakuya_rural_folk_unit1: "田舎の民の力 #p 20%#!"
+advcm_add_sakuya_remove_rural_folk_unit1: "田舎の民の力 #n -20%#!"
+
+#小ブルジョワジー権力
+advcm_add_sakuya_petty_bourgeoisie_unit1: "プチブル権力 #p 20%#!"
+advcm_add_sakuya_remove_petty_bourgeoisie_unit1: "プチブル勢力 #n -20%#!"
+
+#大家パワー
+advcm_add_sakuya_landowners_unit1: "地主力 #p 20%#!"
+advcm_add_sakuya_remove_landowners_unit1: "地主の能力 #n -20%#!"
+
+#知識人の力
+advcm_add_sakuya_intelligensia_unit1: "知力 #p 20%#!"
+advcm_add_sakuya_remove_intelligensia_unit1: "インテリジェンシアパワー #n -20%#!"
+
+#資本主義権力
+advcm_add_sakuya_industrialists_unit1: "資本主義権力 #p 20%#!"
+advcm_add_sakuya_remove_industrialists_unit1: "資本主義の権力 #n -20%#!"
+
+#献身的な力
+advcm_add_sakuya_devout_unit1: "敬虔な者たちのパワー #p 20%#!"
+advcm_add_sakuya_remove_devout_unit1: "敬虔な力 #n -20%#!"
+
+# 軍隊
+advcm_add_sakuya_armed_forces_unit1: "国軍 #p 20%#!"
+advcm_add_sakuya_remove_armed_forces_unit1: "国軍部隊 #n -20%#!"
+
+# 政治的中立主義者の勢力拡大
+advcm_add_sakuya_politally_unaligned_unit1: "政治的に中立な派 #p -3%#! 対他のすべてのグループ"
+advcm_add_sakuya_remove_politally_unaligned_unit1: "政治的に中立な勢力 #n 3%#! vs 他のすべてのグループ"
+
+#全軍
+advcm_add_sakuya_all_unit1: "すべての利益団体が #p 30%# をパワーアップします!"
+advcm_add_sakuya_remove_all_unit1: "すべての利益団体が #n -50%# を強制します!"
+
+# 労働組合グループ
+advcm_add_sakuya_trade_unions_unit2: "労働組合グループ #p 5# をサポートします!"
+advcm_add_sakuya_remove_trade_unions_unit2: "労働組合グループ #n -5# をサポートします!"
+advcm_add_sakuya_trade_unions_unit2_plus: "労働組合グループ #p 50# をサポートします!"
+advcm_add_sakuya_remove_trade_unions_unit2_plus: "労働組合グループ #n -50# をサポートします!"
+advcm_add_sakuya_trade_unions_unit2_min: "労働組合グループ #p 1# をサポートします!"
+advcm_add_sakuya_remove_trade_unions_unit2_min: "ユニオングループサポート #n -1#!"
+
+#田舎の人々グループ
+advcm_add_sakuya_rural_folk_unit2: "農村民族団体 #p 5# を応援します!"
+advcm_add_sakuya_remove_rural_folk_unit2: "農村民族グループ #n -5# をサポートします!"
+advcm_add_sakuya_rural_folk_unit2_plus: "農村民族団体 #p 50# を応援します!"
+advcm_add_sakuya_remove_rural_folk_unit2_plus: "農村民族グループ #n -50# をサポートします!"
+advcm_add_sakuya_rural_folk_unit2_min: "農村民族団体 #p 1# を応援します!"
+advcm_add_sakuya_remove_rural_folk_unit2_min: "農村民族グループ #n -1# をサポートします!"
+
+#小ブルジョワジーグループ
+advcm_add_sakuya_petty_bourgeoisie_unit2: "プチブルグループ #p 5# を応援します!"
+advcm_add_sakuya_remove_petty_bourgeoisie_unit2: "プチブルグループ #n -5# を応援します!"
+advcm_add_sakuya_petty_bourgeoisie_unit2_plus: "プチブルグループ #p 50# を応援します!"
+advcm_add_sakuya_remove_petty_bourgeoisie_unit2_plus: "プチブルグループ支援 #n -50#!"
+advcm_add_sakuya_petty_bourgeoisie_unit2_min: "プチブルグループ #p 1# を応援します!"
+advcm_add_sakuya_remove_petty_bourgeoisie_unit2_min: "プチブルグループ #n -1# を応援します!"
+
+#大家グループ
+advcm_add_sakuya_landowners_unit2: "地主グループ #p 5# をサポートします!"
+advcm_add_sakuya_remove_landowners_unit2: "地主グループ #n -5# をサポートします!"
+advcm_add_sakuya_landowners_unit2_plus: "地主グループ #p 50# をサポートします!"
+advcm_add_sakuya_remove_landowners_unit2_plus: "地主グループ #n -50# をサポートします!"
+advcm_add_sakuya_landowners_unit2_min: "地主グループ #p 1# をサポートします!"
+advcm_add_sakuya_remove_landowners_unit2_min: "地主グループ #n -1# をサポートします!"
+
+# 知的集団
+advcm_add_sakuya_intelligensia_unit2: "インテリジェンシアグループ #p 5# をサポートします!"
+advcm_add_sakuya_remove_intelligensia_unit2: "インテリジェンシアグループ #n -5# をサポートします!"
+advcm_add_sakuya_intelligensia_unit2_plus: "インテリジェンシアグループ #p 50# をサポートします!"
+advcm_add_sakuya_remove_intelligensia_unit2_plus: "知的集団支援 #n -50#!"
+advcm_add_sakuya_intelligensia_unit2_min: "インテリジェンシアグループ #p 1# をサポートします!"
+advcm_add_sakuya_remove_intelligensia_unit2_min: "インテリジェンシア グループ #n -1# をサポートします!"
+
+#産業主義者グループ
+advcm_add_sakuya_industrialists_unit2: "産業主義者グループ #p 5# をサポートします!"
+advcm_add_sakuya_remove_industrialists_unit2: "産業主義者グループ #n -5# をサポートします!"
+advcm_add_sakuya_industrialists_unit2_plus: "産業主義者グループ #p 50# をサポートします!"
+advcm_add_sakuya_remove_industrialists_unit2_plus: "産業主義者グループは #n -50# をサポートします!"
+advcm_add_sakuya_industrialists_unit2_min: "産業主義者グループ #p 1# をサポートします!"
+advcm_add_sakuya_remove_industrialists_unit2_min: "産業主義者グループは #n -1# をサポートします!"
+
+#敬虔なグループ
+advcm_add_sakuya_devout_unit2: "敬虔なグループ #p 5# をサポートします!"
+advcm_add_sakuya_remove_devout_unit2: "敬虔なグループ #n -5# をサポートします!"
+advcm_add_sakuya_devout_unit2_plus: "敬虔なグループ #p 50# をサポートします!"
+advcm_add_sakuya_remove_devout_unit2_plus: "敬虔なグループ #n -50# をサポートします!"
+advcm_add_sakuya_devout_unit2_min: "敬虔なグループ #p 1# をサポートします!"
+advcm_add_sakuya_remove_devout_unit2_min: "敬虔なグループ #n -1# をサポートします!"
+
+#軍隊グループ
+advcm_add_sakuya_armed_forces_unit2: "国軍部隊 #p 5# を支援します!"
+advcm_add_sakuya_remove_armed_forces_unit2: "国軍部隊支援 #n -5#!"
+advcm_add_sakuya_armed_forces_unit2_plus: "国軍部隊 #p 50# を支援します!"
+advcm_add_sakuya_remove_armed_forces_unit2_plus: "国軍部隊支援 #n -50#!"
+advcm_add_sakuya_armed_forces_unit2_min: "国軍部隊 #p 1# を支援します!"
+advcm_add_sakuya_remove_armed_forces_unit2_min: "国軍部隊支援 #n -1#!"
+
+# 労働組合専用
+advcm_add_sakuya_trade_unions_unit2_only: "労働組合 批准増幅"
+
+# 田舎の人々専用
+advcm_add_sakuya_rural_folk_unit2_only: "田舎の人々 批准増幅"
+
+# 小資本階級専用
+advcm_add_sakuya_petty_bourgeoisie_unit2_only: "小資本階級 批准増幅"
+
+# 地主専用
+advcm_add_sakuya_landowners_unit2_only: "地主 批准増幅"
+
+# 知識人専用
+advcm_add_sakuya_intelligensia_unit2_only: "知識人 批准増幅"
+
+# 工業家専用
+advcm_add_sakuya_industrialists_unit2_only: "工業家 批准増幅"
+
+# 信者専用
+advcm_add_sakuya_devout_unit2_only: "信者 批准増幅"
+
+# 武装勢力専用
+advcm_add_sakuya_armed_forces_unit2_only: "武装勢力 批准増幅"
+
+# 全体の支援度増加
+advcm_add_sakuya_all_unit2: "すべての利益集団 支持度 #p 50#!"
+advcm_add_sakuya_remove_all_unit2: "すべての利益集団 支持度 #n -50#!"
+
+# 全体の魅力
+advcm_add_sakuya_interest_group_approval_add_all: "すべての利益集団 魅力 #p 130%#!"
+
+# 魅力の促進
+advcm_add_sakuya_interest_group_in_government_approval_add_all: "支援されている利益集団の魅力判定 #p 130%#!"
+
+# 魅力の抑制
+advcm_add_sakuya_interest_group_in_opposition_approval_add_all: "抑圧されている利益集団の魅力判定 #p 130%#!"
+
+# 労働組合の魅力
+advcm_add_sakuya_interest_group_trade_unions_approval_add_all: "労働組合 魅力 #p 130%#!"
+
+# 田舎の人々の魅力
+advcm_add_sakuya_interest_group_rural_folk_approval_add_all: "田舎の人々 魅力 #p 130%#!"
+
+# 小資本階級の魅力
+advcm_add_sakuya_interest_group_petty_bourgeoisie_approval_add_all: "小資本階級 魅力 #p 130%#!"
+
+# 地主の魅力
+advcm_add_sakuya_interest_group_landowners_approval_add_all: "地主 魅力 #p 130%#!"
+
+# 知識人の魅力
+advcm_add_sakuya_interest_group_intelligentsia_approval_add_all: "知識人 魅力 #p 130%#!"
+
+# 工業家の魅力
+advcm_add_sakuya_interest_group_industrialists_approval_add_all: "工業家 魅力 #p 130%#!"
+
+# 信者の魅力
+advcm_add_sakuya_interest_group_devout_approval_add_all: "信者 魅力 #p 130%#!"
+
+# 武装勢力の魅力
+advcm_add_sakuya_interest_group_armed_forces_approval_add_all: "武装勢力 魅力 #p 130%#!"
+
+#######################################################################################
+#        /######  /###### /##   /##/##   /##/##     /##/######                        #
+#       /##__  ##/##__  #| ##  /##| ##  | #|  ##   /##/##__  ##   #######  #######    #
+#      | ##  \__| ##  \ #| ## /##/| ##  | ##\  ## /##| ##  \ ##   #######  #######    #
+#      |  ######| #######| #####/ | ##  | ## \  ####/| ########    #####    #####     #
+#       \____  #| ##__  #| ##  ## | ##  | ##  \  ##/ | ##__  ##                       #
+#       /##  \ #| ##  | #| ##\  ##| ##  | ##   | ##  | ##  | ##        #    #         #
+#      |  ######| ##  | #| ## \  #|  ######/   | ##  | ##  | ##         ####          #
+#       \______/|__/  |__|__/  \__/\______/    |__/  |__/  |__/                       #
+#######################################################################################
+
+SAKUYA_POWER_BLOC_1: "[GetVariableSystem]"
+SAKUYA_POWER_BLOC_2: "[GetPlayer]"
+SAKUYA_POWER_BLOC_3: "筆は剣より強し"
+SAKUYA_POWER_BLOC_4: "#v 国家集団"
+SAKUYA_POWER_BLOC_5: "#v 威望 #lore これは一時的にここに置いたものです。将来的にはこの場所に外交を配置する予定です。#!"
+SAKUYA_POWER_BLOC_6: "#v 軍事 #lore これは一時的にここに置いたものです。軍事は将来的に独立したメニューとして作成される予定です。#!"
+SAKUYA_POWER_BLOC_7: "SAKUYA_MONEY_TEXT_4"
+SAKUYA_POWER_BLOC_8: "国家集団"
+SAKUYA_POWER_BLOC_9: "威望/雑項"
+SAKUYA_POWER_BLOC_10: "軍事"
+SAKUYA_POWER_BLOC_11: "[Country.GetPowerBloc]"
+SAKUYA_POWER_BLOC_12: "[concept_power_bloc]"
+SAKUYA_POWER_BLOC_13: "[PowerBloc.GetNameNoIcon]"
+SAKUYA_POWER_BLOC_14: "POWER_BLOC_RANK_FORMATTED"
+SAKUYA_POWER_BLOC_15: "[Country.GetRankTooltip]"
+SAKUYA_POWER_BLOC_16: "#BOLD [Country.GetCountryScorePositionDesc]"
+SAKUYA_POWER_BLOC_17: "#BOLD [Country.GetCountryScorePositionDesc]"
+SAKUYA_POWER_BLOC_18: "[concept_rank]"
+SAKUYA_POWER_BLOC_19: "#v [Country.GetRank]#!"
+SAKUYA_POWER_BLOC_20: "[Country.GetPowerBloc]"
+SAKUYA_POWER_BLOC_21: " "
+SAKUYA_POWER_BLOC_22: " "
+SAKUYA_POWER_BLOC_23: "                                                                 · #lore 豊聡耳神子™政策法務コンサルティング株式会社 ·  "
+SAKUYA_POWER_BLOC_24: "                                                             · #lore 豊聡耳神子®内閣及び国務コンサルティング株式会社 ·  "
+SAKUYA_POWER_BLOC_25: "私はかつて、政府の外交問題を私的企業に委託する人がいるとは思わなかった...  ——豊聡耳神子"
+SAKUYA_POWER_BLOC_26: "                                                                            · #lore 豊聡耳・物布®産業グループ ·  "
+SAKUYA_POWER_BLOC_27: "スーパー軍産複合体...  ——咲夜"
+SAKUYA_POWER_BLOC_28: " "
+SAKUYA_POWER_BLOC_29: "悪名の防止"
+SAKUYA_POWER_BLOC_30: " "
+SAKUYA_POWER_BLOC_31: "関係の改善"
+SAKUYA_POWER_BLOC_32: " "
+SAKUYA_POWER_BLOC_33: "列強になる"
+SAKUYA_POWER_BLOC_34: "#lore あああああああああ！ #!#v 豊聡耳神子は皇太子でありながら、顧客に対しては尽力している。#! このボタンをクリックすると、神子は彼の知識と能力を駆使し、耳を傾け、多様な国々と連携して、あなたの国を1日でハバール再来にし、本ページのすべてのバフを瞬時に取得します。しかし、過ぎたるは及ばざるが如しに注意してください、神子は神仙であっても、基は肉体的存在です。そして、神子は政治と外交をのみ知っており、経済や他の事項には無知です... 経済を発展させたければ、#green 河城荷取#!小姐に相談してください。"
+SAKUYA_POWER_BLOC_35: "太子、助て！"
+SAKUYA_POWER_BLOC_36: "#v #gold @information!集団の凝集力ボタン使用説明#!#!                            このボタンは、#p 左クリック#!モードと#n 右クリック#!モードの2つのモードに分かれています。 #p 左クリックモード#!#!: 左から右へ、各ボタンは凝集力を#V #bold 100、60、20、0に設定します。#broken 第5のボタンは元の値に5ポイント加えます。#! #! #!   #v   例:#!#!#! 私は第3のボタンをクリックしました。私の国家集団の凝集力は20になります。さらに第5のボタンを3回クリックすると、国家集団の凝集力は35になりました。  #!#!#! #v #n 右クリックボタンはバフに基づいて凝集力に影響を与えます。#! 右クリックで第5のボタンをクリックすると、バフが解除されます。    #!#!#!#! @innovation! このボタン: 左クリックで国家の凝集力を最大値に設定し、右クリックでできるだけ多くのバフを加えます。"
+SAKUYA_POWER_BLOC_37: "集団の凝集力"
+SAKUYA_POWER_BLOC_38: " @innovation!凝集力を60に設定。右クリックで大幅なバフを設定。"
+SAKUYA_POWER_BLOC_39: "60x"
+SAKUYA_POWER_BLOC_40: " @innovation!凝集力を20に設定。右クリックで中程度のバフを設定。"
+SAKUYA_POWER_BLOC_41: "20x"
+SAKUYA_POWER_BLOC_42: " @innovation!凝集力をクリア。右クリックで微調整バフ。"
+SAKUYA_POWER_BLOC_43: "0x"
+SAKUYA_POWER_BLOC_44: " @innovation! クリックして5ポイントのバフを加算、これは重複可能。右クリックで全ての凝集力のバフをクリアします。"
+SAKUYA_POWER_BLOC_45: "リセット"
+SAKUYA_POWER_BLOC_46: "国内影響力。小物を治療します。"
+SAKUYA_POWER_BLOC_47: "国内影響力"
+SAKUYA_POWER_BLOC_48: " +100%、状況は同様、以下同様。 "
+SAKUYA_POWER_BLOC_49: "100x"
+SAKUYA_POWER_BLOC_50: "+10%、同様。"
+SAKUYA_POWER_BLOC_51: "10x"
+SAKUYA_POWER_BLOC_52: "+1%、同様。 "
+SAKUYA_POWER_BLOC_53: "1x"
+SAKUYA_POWER_BLOC_54: " "
+SAKUYA_POWER_BLOC_55: "リセット"
+SAKUYA_POWER_BLOC_56: "#v 神子は他のリーダーを魅了するための花言葉を用いています。#! 彼女の魅力を高めるために、彼女は弾幕を使った公演をすることを申し出ているといいます。  「弾幕ショーを終えるたびに疲れてしまいます。神子も疲れないのですか？」 「恋符「マスター・スパーク」を使わなければならないですか？本当に大丈夫ですか…？観客に影響はないでしょうか？」"
+SAKUYA_POWER_BLOC_57: "国外影響力"
+SAKUYA_POWER_BLOC_58: " "
+SAKUYA_POWER_BLOC_59: "100x"
+SAKUYA_POWER_BLOC_60: " "
+SAKUYA_POWER_BLOC_61: "10x"
+SAKUYA_POWER_BLOC_62: " "
+SAKUYA_POWER_BLOC_63: "1x"
+SAKUYA_POWER_BLOC_64: " "
+SAKUYA_POWER_BLOC_65: "リセット"
+SAKUYA_POWER_BLOC_66: "クリックすると、毎週3つの権限が与えられ、空きがなくなるまで続きます。"
+SAKUYA_POWER_BLOC_67: "毎週の権限度"
+SAKUYA_POWER_BLOC_68: "ボタンをクリックすると、バフを考慮するだけで良いですが、#v 豊聡耳神子#!は考慮することが多くなります。"
+SAKUYA_POWER_BLOC_69: "100x"
+SAKUYA_POWER_BLOC_70: "近代的な原神、発動！ #lore ちょっと待って: ヴィクトリア3には本当に座れる椅子が存在しますか？"
+SAKUYA_POWER_BLOC_71: "10x"
+SAKUYA_POWER_BLOC_72: "パロディはもうやめます。しかし、後ろのボタンは誰も押さないでしょうね？"
+SAKUYA_POWER_BLOC_73: "1x"
+SAKUYA_POWER_BLOC_74: "小さな知識：左クリックと右クリックはどちらもバフを消去しますが、実際には完全に異なるイベントが発生します。信じられないですか？sakuya_seven.guiと関連するsguiスクリプトを開けばわかります。 #v さらに、#n 制御するのは難しい#!この行の文字： #! #green 右クリックでショートカットメニューを開きます。#! 理論的にはツールチップを定義して変更できるはずですが、私はできませんし、非常に面倒です。"
+SAKUYA_POWER_BLOC_75: "リセット"
+SAKUYA_POWER_BLOC_76: "[Country.GetPowerBloc]"
+SAKUYA_POWER_BLOC_77: "ss510"
+SAKUYA_POWER_BLOC_78: "ss51"
+SAKUYA_POWER_BLOC_79: " "
+SAKUYA_POWER_BLOC_80: "100x"
+SAKUYA_POWER_BLOC_81: " "
+SAKUYA_POWER_BLOC_82: "10x"
+SAKUYA_POWER_BLOC_83: " "
+SAKUYA_POWER_BLOC_84: "1x"
+SAKUYA_POWER_BLOC_85: " "
+SAKUYA_POWER_BLOC_86: "リセット"
+SAKUYA_POWER_BLOC_87: "「#lore 神子よ、この方は...」"
+SAKUYA_POWER_BLOC_88: "[Country.GetPowerBloc]"
+SAKUYA_POWER_BLOC_89: "親愛なる[GetPlayer.GetRuler.GetPrimaryRoleTitle]陛下、豊聡耳神子よりお手紙を預かりました。"
+SAKUYA_POWER_BLOC_90: "[GetPlayer.GetNameNoFlag]は本当に美しいですね。私は[PowerBloc.GetNameNoIcon]の本拠地の都市、[Country.GetCapital.GetName]に行ってきました。 あなたの使者に[PowerBloc.GetNameNoIcon]の現在の状況を尋ねました。[PowerBloc.GetLeader.GetName]の指導の下、[PowerBloc.GetNameNoIcon]は世界で第[PowerBloc.GetRankRaw]の国家集団です。我々の集団は[PowerBloc.GetCohesionLevel.GetNameNoFormatting]であり、具体的なポイントは[SelectLocalization(EqualTo_CFixedPoint(PowerBloc.GetCohesion, PowerBloc.GetCohesionTarget), 'COHESION_CURRENT_VALUE_WITHOUT_TARGET', 'COHESION_CURRENT_VALUE_WITH_TARGET')]点です。我々の集団は合計で[PowerBloc.GetNumMembers]の加盟国があり、総GDPは[PowerBloc.GetGdp|D]ポンドを生み出しています。軍事面では、[PowerBloc.GetRegularBattalions]の常備師と、[PowerBloc.GetConscriptableBattalions]の予備師を擁しています。広大な海を見つめ、そこには[PowerBloc.GetFlotillas|v]隻の艦船が、高貴な[GetPlayer.GetRuler.GetPrimaryRoleTitle]、[GetPlayer.GetRuler.GetFullName]の命令を待っています。"
+SAKUYA_POWER_BLOC_92: "親愛なる[GetPlayer.GetRuler.GetPrimaryRoleTitle]陛下、豊聡耳神子よりお手紙を預かりました。"
+SAKUYA_POWER_BLOC_93: "[GetPlayer.GetNameNoFlag]は本当に美しいですね。[Country.GetCapital.GetName]で私をもてなしていただき、感謝します。この手紙を書く理由は、いくつかの問題をお話しすることができなかったからです。宮廷や邸宅などの場では、詳細を話すことはできないことがあることは理解しています。私と物布家の状況は現在においても似ています。 率直に言いますが、親愛なる[GetPlayer.GetRuler.GetPrimaryRoleTitle]、[GetPlayer.GetRuler.GetFullName]、私はあなたのために働くことはできません。#broken あなたはまだ国家集団を設立または加入していないからです#! もしかしたら、あなたの力が不足しているか、まだ考慮していないのかもしれませんが、私たちは機会と挑戦の前に、私たちの兄弟国と団結すべきであり、孤独な狼になるべきではありません。この原則は、飛行鳥の時代や幻想郷、そしてこのスチームパンクのヴィクトリア時代にも当てはまります。"
+SAKUYA_POWER_BLOC_95: "貿易連合"
+SAKUYA_POWER_BLOC_97: "至高帝国"
+SAKUYA_POWER_BLOC_98: " @innovation!腹が立つ国家の代理人を壁に叩きつけて、出られなくする！"
+SAKUYA_POWER_BLOC_99: "主義同盟"
+SAKUYA_POWER_BLOC_100: " @innovation! 誰でも殴れる、しかも無料！"
+SAKUYA_POWER_BLOC_101: "軍事同盟"
+SAKUYA_POWER_BLOC_102: " @innovation! 一神格、一信仰！この世界は道教だけを信じる！ #lore 「神子様、巫女の近くでそのことを言わないでください...#!」"
+SAKUYA_POWER_BLOC_103: "神秘協会"
+SAKUYA_POWER_BLOC_104: "人口爆発の恐れあり"
+SAKUYA_POWER_BLOC_106: "人口爆発の恐れあり。#v 豊聡耳神子#!の考慮が多くなります"
+SAKUYA_POWER_BLOC_108: "陸軍。"
+SAKUYA_POWER_BLOC_110: "パロディはもうやめます。しかし、この後ろのボタンは誰も押さないでしょうね？"
+SAKUYA_POWER_BLOC_112: "役に立たない。"
+SAKUYA_POWER_BLOC_116: "ボタンを押すと、あなたは毎週3つの権限を持ち、空きがなくなるまで続きます。"
+SAKUYA_POWER_BLOC_118: "海軍の原神、発動！ #lore ちょっと待って: ヴィクトリア3には本当に座れる椅子がありますか？"
+SAKUYA_POWER_BLOC_120: "パロディはもうやめます。しかし、この後ろのボタンは誰も押さないでしょうね？"
+SAKUYA_POWER_BLOC_122: "小さな知識：左クリックと右クリックはどちらもバフを消去しますが、実際には完全に異なるイベントが発生します。信じられないですか？sakuya_seven.guiと関連するsguiスクリプトを開けばわかります。 #v さらに、#n 制御するのは難しい#!この行の文字： #! #green 右クリックでショートカットメニューを開きます。#! 理論的にはツールチップを定義して変更できるはずですが、私はできませんし、非常に面倒です。"
+
+TEST_TEXTBOX_1: "#bold #v #red 警告 \Nこのテスト版インターフェースの作業量は非常に大きいため、このページは無期限に無効化されます。私はこの極めて複雑なGUIを維持し、更新する能力がまったくないため、半ば放棄するしかありません。どんなに完成度が高くても...もしあなたがこのGUIを再構築する能力があるなら、私はあなたに私が大切にしているフィギュアを贈ります。"

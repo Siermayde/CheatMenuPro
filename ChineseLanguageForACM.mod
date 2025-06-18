@@ -1,0 +1,5 @@
+name="Chinese Language for Advanced Cheat Menu"
+path="mod/ChineseLanguageForACM"
+supported_version="1.9.*"
+picture="thumbnail.png"
+version="1.0"

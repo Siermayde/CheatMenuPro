@@ -1,0 +1,830 @@
+废案导航 · 代码的垃圾堆世界
+
+@15  原军事按钮废案
+@353 去除的建筑加成按钮 原因 懒得搞
+
+
+
+
+
+
+
+
+
+
+##########################################################
+
+
+
+widget = {  #按钮占位 #下方按钮
+    position = { 4% 23% }
+    size = { 640 60 }
+    hbox = {
+        vbox = {
+            button_icon_square = {
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.4 0.9 0.8 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/41.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('mil_01').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('mil_010').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "点了这个，你就可以每周都有三个授权，直到用完空置。"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 100 40 }
+                    text = "100x"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.7 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/42.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('mil_02').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('mil_020').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "点了按钮，只需要考虑加成就行了，但#v 丰聪耳神子#!小姐要考虑的就多了"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 100 40 }
+                    text = "100x"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.6 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/43.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('mil_03').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('mil_030').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "近代原神，启动！ #lore 等等:维多利亚3 真的存在可以坐的椅子吗？"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "10x"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.5 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/41.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('mil_04').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('mil_040').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "不玩烂梗了。不过话说后排这些按钮也没人点吧？"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "1x"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.4 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/42.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('mil_05').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('mil_050').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" #你发现咯！
+                tooltip = "小知识：虽然左键与右键都是清除BUFF，但本质上左右两键触发的是完全两个不同的事件。 不信？打开sakuya_seven.gui和对应的sgui脚本，你就知道了。 #v 另外，我#n 很难控制#!下面这行字： #! #green 右键点击打开快捷菜单。#!理论上可以通过定义tooltip修改，但我不会，而且很繁琐。"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "重置"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+
+
+widget = {  #按钮占位 #下方按钮
+    position = { 4% 31% }
+    size = { 640 60 }
+    hbox = {
+        vbox = {
+            button_icon_square = {
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.4 0.9 0.8 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/11.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('mil_14').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('mil_140').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "点了这个，你就可以每周都有三个授权，直到用完空置。"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 100 40 }
+                    text = "100x"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.7 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/13.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('mil_15').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('mil_150').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "点了按钮，只需要考虑加成就行了，但#v 丰聪耳神子#!小姐要考虑的就多了"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 100 40 }
+                    text = "100x"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.6 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/53.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('mil_11').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('mil_110').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "近代原神，启动！ #lore 等等:维多利亚3 真的存在可以坐的椅子吗？"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "10x"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.5 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/52.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('mil_12').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('mil_120').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "不玩烂梗了。不过话说后排这些按钮也没人点吧？"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "1x"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+            	alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    #color = { 0.9 0.9 0.4 0.4 }
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/51.png" #信仰是为了虚幻之人
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_seven_add_country_loan_interest_broken"
+                onclick = "[GetScriptedGui('mil_13').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('mil_130').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]" #你发现咯！
+                tooltip = "小知识：虽然左键与右键都是清除BUFF，但本质上左右两键触发的是完全两个不同的事件。 不信？打开sakuya_seven.gui和对应的sgui脚本，你就知道了。 #v 另外，我#n 很难控制#!下面这行字： #! #green 右键点击打开快捷菜单。#!理论上可以通过定义tooltip修改，但我不会，而且很繁琐。"
+                using = tooltip_ne
+                size = { 120 60 }
+                text_multi = {
+                    position = { 5% 30% }
+                    size = { 140 40 }
+                    text = "重置"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+
+widget = {
+                position = { 40 385}
+                size = { 620 155 }
+                    hbox = {
+                    visible = "yes" 
+                    vbox = {
+                        spacing = 5
+                    text_multi = {
+                    text = "SAKUYA_MIL_TEXT"  # 利益集团更新 提示
+                        size = { 620 155 }
+                        default_format = "#medium"  
+                            }
+                        }
+                    }
+                }
+
+
+#################### 353
+
+
+widget = {  #按钮占位 #下方按钮
+    visible = "[GetVariableSystem.HasValue( 'mil_linyu_tabs', 'mil_linyu_tabs_rubber_plantation' ) )]"
+    visible = "yes"
+    position = { 50 445 } #260
+    size = { 570 55 }
+    hbox = {
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds" 
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/42.png" #信仰是为了虚幻之人
+                    color = { 0.7 0.7 0.66 1 }
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_mil_building_rubber_plantation"
+                onclick = "[GetScriptedGui('building_rubber_plantation1y').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('building_rubber_plantation1yr').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "MB_rubber_plantation_1yt"
+                using = tooltip_ne
+                size = { 190 60 }
+                text_multi = {
+                    position = { 5% 50% }
+                    size = { 60 30 }
+                    text = "MB_rubber_plantation_1y"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds" 
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/42.png" #信仰是为了虚幻之人
+                    color = { 0.7 0.7 0.66 1 }
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_mil_building_rubber_plantation"
+                onclick = "[GetScriptedGui('building_rubber_plantation2y').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('building_rubber_plantation2yr').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "MB_rubber_plantation_2yt"
+                using = tooltip_ne
+                size = { 190 60 }
+                text_multi = {
+                    position = { 5% 50% }
+                    size = { 60 30 }
+                    text = "MB_rubber_plantation_2y"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds" 
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/42.png" #信仰是为了虚幻之人
+                    color = { 0.7 0.7 0.66 1 }
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_mil_building_rubber_plantation"
+                onclick = "[GetScriptedGui('building_rubber_plantation3y').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('building_rubber_plantation3yr').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "MB_rubber_plantation_3yt"
+                using = tooltip_ne
+                size = { 190 60 }
+                text_multi = {
+                    position = { 5% 50% }
+                    size = { 60 30 }
+                    text = "MB_rubber_plantation_3y"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+######################################################################################################################
+##############################################         按钮的地狱        ##############################################
+######################################################################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+widget = {  #按钮占位 #下方按钮
+    visible = "[GetVariableSystem.HasValue( 'mil_linyu_tabs', 'mil_linyu_tabs_whaling_station' ) )]"
+    visible = "yes"
+    position = { 50 445 } #260
+    size = { 570 55 }
+    hbox = {
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds" 
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/61.png" #信仰是为了虚幻之人
+                    #color = { 0.7 0.7 0.66 1 }
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_mil_building_whaling_station"
+                onclick = "[GetScriptedGui('building_whaling_station1y').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('building_whaling_station1yr').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "MB_whaling_station_1yt"
+                using = tooltip_ne
+                size = { 190 60 }
+                text_multi = {
+                    position = { 5% 50% }
+                    size = { 60 30 }
+                    text = "MB_whaling_station_1y"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds" 
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/61.png" #信仰是为了虚幻之人
+                    #color = { 0.7 0.7 0.66 1 }
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_mil_building_whaling_station"
+                onclick = "[GetScriptedGui('building_whaling_station2y').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('building_whaling_station2yr').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "MB_whaling_station_2yt"
+                using = tooltip_ne
+                size = { 190 60 }
+                text_multi = {
+                    position = { 5% 50% }
+                    size = { 60 30 }
+                    text = "MB_whaling_station_2y"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds" 
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/61.png" #信仰是为了虚幻之人
+                    #color = { 0.7 0.7 0.66 1 }
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_mil_building_whaling_station"
+                onclick = "[GetScriptedGui('building_whaling_station3y').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('building_whaling_station3yr').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "MB_whaling_station_3yt"
+                using = tooltip_ne
+                size = { 190 60 }
+                text_multi = {
+                    position = { 5% 50% }
+                    size = { 60 30 }
+                    text = "MB_whaling_station_3y"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+######################################################################################################################
+##############################################         按钮的地狱        ##############################################
+######################################################################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+widget = {  #按钮占位 #下方按钮
+    visible = "[GetVariableSystem.HasValue( 'mil_linyu_tabs', 'mil_linyu_tabs_logging_camp' ) )]"
+    visible = "yes"
+    position = { 50 445 } #260
+    size = { 570 55 }
+    hbox = {
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds" 
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/63.png" #信仰是为了虚幻之人
+                    #color = { 0.7 0.7 0.66 1 }
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_mil_building_logging_camp"
+                onclick = "[GetScriptedGui('building_logging_camp1y').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('building_logging_camp1yr').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "MB_logging_camp_1yt"
+                using = tooltip_ne
+                size = { 190 60 }
+                text_multi = {
+                    position = { 5% 50% }
+                    size = { 60 30 }
+                    text = "MB_logging_camp_1y"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds" 
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/63.png" #信仰是为了虚幻之人
+                    #color = { 0.7 0.7 0.66 1 }
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_mil_building_logging_camp"
+                onclick = "[GetScriptedGui('building_logging_camp2y').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('building_logging_camp2yr').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "MB_logging_camp_2yt"
+                using = tooltip_ne
+                size = { 190 60 }
+                text_multi = {
+                    position = { 5% 50% }
+                    size = { 60 30 }
+                    text = "MB_logging_camp_2y"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds" 
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/63.png" #信仰是为了虚幻之人
+                    #color = { 0.7 0.7 0.66 1 }
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_mil_building_logging_camp"
+                onclick = "[GetScriptedGui('building_logging_camp3y').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('building_logging_camp3yr').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "MB_logging_camp_3yt"
+                using = tooltip_ne
+                size = { 190 60 }
+                text_multi = {
+                    position = { 5% 50% }
+                    size = { 60 30 }
+                    text = "MB_logging_camp_3y"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+######################################################################################################################
+##############################################         按钮的地狱        ##############################################
+######################################################################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+widget = {  #按钮占位 #下方按钮
+    visible = "[GetVariableSystem.HasValue( 'mil_linyu_tabs', 'mil_linyu_tabs_fishing_wharf' ) )]"
+    visible = "yes"
+    position = { 50 445 } #260
+    size = { 570 55 }
+    hbox = {
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds" 
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/65.png" #信仰是为了虚幻之人
+                    #color = { 0.7 0.7 0.66 1 }
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_mil_building_fishing_wharf"
+                onclick = "[GetScriptedGui('building_fishing_wharf1y').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('building_fishing_wharf1yr').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "MB_fishing_wharf_1yt"
+                using = tooltip_ne
+                size = { 190 60 }
+                text_multi = {
+                    position = { 5% 50% }
+                    size = { 60 30 }
+                    text = "MB_fishing_wharf_1y"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds" 
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/65.png" #信仰是为了虚幻之人
+                    #color = { 0.7 0.7 0.66 1 }
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_mil_building_fishing_wharf"
+                onclick = "[GetScriptedGui('building_fishing_wharf2y').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('building_fishing_wharf2yr').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "MB_fishing_wharf_2yt"
+                using = tooltip_ne
+                size = { 190 60 }
+                text_multi = {
+                    position = { 5% 50% }
+                    size = { 60 30 }
+                    text = "MB_fishing_wharf_2y"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+        vbox = {
+            button_icon_square = {
+                alpha = 1
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds" 
+                }
+                blockoverride "icon" {
+                    texture = "gfx/interface/sakuya/seven/65.png" #信仰是为了虚幻之人
+                    #color = { 0.7 0.7 0.66 1 }
+                    scissor = yes
+                    alpha = 0.8
+                    
+                }
+                name = "sakuya_mil_building_fishing_wharf"
+                onclick = "[GetScriptedGui('building_fishing_wharf3y').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('building_fishing_wharf3yr').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                tooltip = "MB_fishing_wharf_3yt"
+                using = tooltip_ne
+                size = { 190 60 }
+                text_multi = {
+                    position = { 5% 50% }
+                    size = { 60 30 }
+                    text = "MB_fishing_wharf_3y"
+                    using = header_font_fancy
+                    using = header_font
+                    default_format = "#medium"        
+                }
+            }
+        }
+    }
+}
+
