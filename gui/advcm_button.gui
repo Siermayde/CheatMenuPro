@@ -1,31 +1,33 @@
 widget = {
+    visible = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
     layer = top
-    
-    name = advcm_button
-    position = { -10 870}
+
+    name = "advcm_button"
+    parentanchor = bottom
+    position = { 20 -120 } 
+
     size = { 80 80 }
-    alpha = 0.7
     using = Animation_ShowHide_Quick
-    
 
     sidepanel_button_small = {
-            tooltip = "SAKUYA_TEXT_MENU_BUTTON_1"
-            onclick = "[GetVariableSystem.Toggle('advcm_main_visible')]"
-            using = maplens_generic_sound
-            input_action = go_to_details
+        tooltip = "SAKUYA_TEXT_MENU_BUTTON_1"
+        onclick = "[GetVariableSystem.Toggle('advcm_main_visible')]"
+        using = maplens_generic_sound
+        # 'input_action = go_to_details' 这行在新版可能已弃用或用法改变，如果还报错可以暂时注释掉
+        input_action = go_to_details 
+
         name = "advcm_shortcut_button"
         size = { 80 80 }
-        alpha = 0.6
+        alpha = 0.7 
+
         blockoverride "icon" {
             texture = "gfx/interface/icons/character_role_icons/ruler.dds"
-            alpha = 0.6
-                }
-                
+        }
 
-            blockoverride "icon_size" {
-                    size = { 120 120 }
-                }
-        
+        blockoverride "icon_size" {
+            size = { 120 120 }
+        }
+
         state = {
             name = _mouse_enter
             alpha = 1
