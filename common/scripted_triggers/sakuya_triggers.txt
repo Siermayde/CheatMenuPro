@@ -1,0 +1,13 @@
+trigger_sakuya_building = {
+    any_scope_building = {
+        is_building_type = $build$
+        level < 100
+        }
+    NOT = { has_building = $build$ }
+}
+
+trigger_sakuya_decree = {
+    any_scope_state = {
+        has_decree = decree_my_dear_sakuya
+    }
+}

@@ -1,0 +1,178 @@
+sakuya_main_heir = {
+		scope = country
+
+    is_shown = {
+
+        heir ?= { #Thanks for Discord, @Doodlez | VTM and @6AP6APbCKA
+            age >= 16
+        }
+    }
+}
+sakuya_main_heir_too_young = {
+		scope = country
+
+    is_shown = {
+        heir ?= {
+            age < 16
+        }
+    }
+}
+advcm_treasury_add = {
+	scope = country
+	
+	effect = {
+		add_treasury = 1000000
+	}
+}
+
+advcm_treasury_remove = {
+	scope = country
+	
+	effect = {
+		add_treasury = -1000000
+	}
+}
+
+advcm_bureaucracy_add = {
+	scope = country
+	
+	effect = {
+		add_modifier = advcm_add_bureaucracy
+	}
+}
+
+advcm_bureaucracy_remove = {
+	scope = country
+	
+	effect = {
+		remove_modifier = advcm_add_bureaucracy
+	}
+}
+
+advcm_authority_add = {
+	scope = country
+	
+	effect = {
+		add_modifier = advcm_add_authority
+	}
+}
+
+advcm_authority_remove = {
+	scope = country
+	
+	effect = {
+		remove_modifier = advcm_add_authority
+	}
+}
+
+advcm_influence_add = {
+	scope = country
+	
+	effect = {
+		add_modifier = advcm_add_influence
+	}
+}
+
+advcm_influence_remove = {
+	scope = country
+	
+	effect = {
+		remove_modifier = advcm_add_influence
+	}
+}
+
+advcm_tech_add = {
+	scope = country
+	
+	effect = {
+		add_modifier = advcm_add_tech_spread
+		add_modifier = advcm_add_innovation
+		add_modifier = advcm_add_innovation_max
+	}
+}
+
+advcm_tech_remove = {
+	scope = country
+	
+	effect = {
+		remove_modifier = advcm_add_tech_spread
+		remove_modifier = advcm_add_innovation
+		remove_modifier = advcm_add_innovation_max
+	}
+}
+
+advcm_infamy_add = {
+	scope = country
+	
+	effect = {
+		change_infamy = 10
+	}
+}
+
+advcm_infamy_remove = {
+	scope = country
+	
+	effect = {
+		change_infamy = -10
+	}
+}
+
+advcm_birth_add = {
+	scope = country
+	
+	effect = {
+		every_scope_state = {
+			add_modifier = advcm_add_birth_rate
+		}
+	}
+}
+
+advcm_birth_remove = {
+	scope = country
+	
+	effect = {
+		every_scope_state = {
+			remove_modifier = advcm_add_birth_rate
+		}
+	}
+}
+
+advcm_add_sakuya_country_construction = {
+	scope = country
+	
+	effect = {
+		every_scope_state = {
+			add_modifier = advcm_add_sakuya_country_construction
+		}
+	}
+}
+
+advcm_remove_sakuya_country_construction = {
+	scope = country
+	
+	effect = {
+		every_scope_state = {
+			remove_modifier = advcm_add_sakuya_country_construction
+		}
+	}
+}
+
+advcm_add_sakuya_interest_group_approval = {
+	scope = country
+	
+	effect = {
+		every_scope_state = {
+			add_modifier = advcm_add_sakuya_interest_group_approval
+		}
+	}
+}
+
+advcm_remove_sakuya_interest_group_approval = {
+	scope = country
+	
+	effect = {
+		every_scope_state = {
+			add_modifier = advcm_remove_sakuya_interest_group_approval
+		}
+	}
+}

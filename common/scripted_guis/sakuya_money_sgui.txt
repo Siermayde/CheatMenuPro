@@ -1,0 +1,878 @@
+
+############################### 加钱组 ###############################
+
+sakuya_money_1_add_1 = {
+    scope = country
+    effect = {
+        add_treasury = 1
+    }
+}
+sakuya_money_1_add_10 = {
+    scope = country
+    effect = {
+        add_treasury = 10
+    }
+}
+sakuya_money_1_add_100 = {
+    scope = country
+    effect = {
+        add_treasury = 100
+    }
+}
+sakuya_money_1_add_1000 = {
+    scope = country
+    effect = {
+        add_treasury = 1000
+    }
+}
+sakuya_money_1_add_10000 = {
+    scope = country
+    effect = {
+        add_treasury = 10000
+    }
+}
+sakuya_money_1_add_100000 = {
+    scope = country
+    effect = {
+        add_treasury = 100000
+    }
+}
+sakuya_money_1_add_1000000 = {
+    scope = country
+    effect = {
+        add_treasury = 1000000
+    }
+}
+sakuya_money_1_add_10000000 = {
+    scope = country
+    effect = {
+        add_treasury = 10000000
+    }
+}
+sakuya_money_1_add_100000000 = {
+    scope = country
+    effect = {
+        add_treasury = 100000000
+    }
+}
+sakuya_money_1_add_1000000000 = {
+    scope = country
+    effect = {
+        add_treasury = 1000000000
+    }
+}
+sakuya_money_1_add_ex = {
+    scope = country
+    effect = {
+        add_treasury = 272400000000
+    }
+}
+sakuya_money_1_remove_1 = {
+    scope = country
+    effect = {
+        add_treasury = -1
+    }
+}
+sakuya_money_1_remove_10 = {
+    scope = country
+    effect = {
+        add_treasury = -10
+    }
+}
+sakuya_money_1_remove_100 = {
+    scope = country
+    effect = {
+        add_treasury = -100
+    }
+}
+sakuya_money_1_remove_1000 = {
+    scope = country
+    effect = {
+        add_treasury = -1000
+    }
+}
+sakuya_money_1_remove_10000 = {
+    scope = country
+    effect = {
+        add_treasury = -10000
+    }
+}
+sakuya_money_1_remove_100000 = {
+    scope = country
+    effect = {
+        add_treasury = -100000
+    }
+}
+sakuya_money_1_remove_1000000 = {
+    scope = country
+    effect = {
+        add_treasury = -1000000
+    }
+}
+sakuya_money_1_remove_10000000 = {
+    scope = country
+    effect = {
+        add_treasury = -10000000
+    }
+}
+sakuya_money_1_remove_100000000 = {
+    scope = country
+    effect = {
+        add_treasury = -100000000
+    }
+}
+sakuya_money_1_remove_1000000000 = {
+    scope = country
+    effect = {
+        add_treasury = -1000000000
+    }
+}
+sakuya_money_1_remove_ex = {
+    scope = country
+    effect = {
+        add_treasury = -114514191981
+    }
+}
+
+
+################################ 苛捐杂税组 ###########################
+
+sakuya_money_clear_tax = {
+    scope = country
+
+    effect = {
+        remove_modifier = sakuya_money_add_tariff_import_add
+        remove_modifier = sakuya_money_add_tariff_export_add
+        remove_modifier = sakuya_money_add_tax_income_add
+        remove_modifier = sakuya_money_add_tax_consumption_add
+        remove_modifier = sakuya_money_add_tax_dividends_add
+        remove_modifier = sakuya_money_add_tax_per_capita_add
+        remove_modifier = sakuya_money_add_tax_land_add
+        remove_modifier = sakuya_money_add_tax_heathen_add
+        remove_modifier = sakuya_money_remove_tariff_import_add
+        remove_modifier = sakuya_money_remove_tariff_export_add
+        remove_modifier = sakuya_money_remove_tax_income_add
+        remove_modifier = sakuya_money_remove_tax_consumption_add
+        remove_modifier = sakuya_money_remove_tax_dividends_add
+        remove_modifier = sakuya_money_remove_tax_per_capita_add
+        remove_modifier = sakuya_money_remove_tax_land_add
+        remove_modifier = sakuya_money_remove_tax_heathen_add
+    }
+}
+
+
+sakuya_money_add_tariff_import_add = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_tariff_import_add
+    }
+}
+sakuya_money_add_tariff_export_add = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_tariff_export_add
+    }
+}
+sakuya_money_add_tax_income_add = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_tax_income_add
+    }
+}
+sakuya_money_add_tax_consumption_add = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_tax_consumption_add
+    }
+}
+sakuya_money_add_tax_dividends_add = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_tax_dividends_add
+    }
+}
+sakuya_money_add_tax_per_capita_add = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_tax_per_capita_add
+    }
+}
+sakuya_money_add_tax_land_add = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_tax_land_add
+    }
+}
+sakuya_money_add_tax_heathen_add = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_tax_heathen_add
+    }
+}
+
+sakuya_money_remove_tariff_import_add = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_remove_tariff_import_add
+    }
+}
+sakuya_money_remove_tariff_export_add = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_remove_tariff_export_add
+    }
+}
+sakuya_money_remove_tax_income_add = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_remove_tax_income_add
+    }
+}
+sakuya_money_remove_tax_consumption_add = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_remove_tax_consumption_add
+    }
+}
+sakuya_money_remove_tax_dividends_add = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_remove_tax_dividends_add
+    }
+}
+sakuya_money_remove_tax_per_capita_add = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_remove_tax_per_capita_add
+    }
+}
+sakuya_money_remove_tax_land_add = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_remove_tax_land_add
+    }
+}
+sakuya_money_remove_tax_heathen_add = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_remove_tax_heathen_add
+    }
+}
+
+
+################################### 利率组 ############################
+
+sakuya_money_clear_country_loan_interest_rate_mult = {
+	scope = country
+
+	effect = {
+		remove_modifier = sakuya_money_remove_country_loan_interest_rate_mult_3
+		remove_modifier = sakuya_money_remove_country_loan_interest_rate_mult_2
+		remove_modifier = sakuya_money_remove_country_loan_interest_rate_mult_1
+		remove_modifier = sakuya_money_add_country_loan_interest_rate_mult_1
+		remove_modifier = sakuya_money_add_country_loan_interest_rate_mult_2
+		remove_modifier = sakuya_money_add_country_loan_interest_rate_mult_3
+	}
+}
+sakuya_money_remove_country_loan_interest_rate_mult_3 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_remove_country_loan_interest_rate_mult_3
+	}
+}
+
+sakuya_money_remove_country_loan_interest_rate_mult_2 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_remove_country_loan_interest_rate_mult_2
+	}
+}
+
+sakuya_money_remove_country_loan_interest_rate_mult_1 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_remove_country_loan_interest_rate_mult_1
+	}
+}
+
+sakuya_money_add_country_loan_interest_rate_mult_1 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_add_country_loan_interest_rate_mult_1
+	}
+}
+
+sakuya_money_add_country_loan_interest_rate_mult_2 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_add_country_loan_interest_rate_mult_2
+	}
+}
+
+sakuya_money_add_country_loan_interest_rate_mult_3 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_add_country_loan_interest_rate_mult_3
+	}
+}
+#################################黄金上限##############################
+sakuya_money_clear_country_gold_reserve_limit_mult = {
+	scope = country
+
+	effect = {
+
+remove_modifier = sakuya_money_remove_country_gold_reserve_limit_mult_3
+remove_modifier = sakuya_money_remove_country_gold_reserve_limit_mult_2
+remove_modifier = sakuya_money_remove_country_gold_reserve_limit_mult_1
+remove_modifier = sakuya_money_add_country_gold_reserve_limit_mult_1
+remove_modifier = sakuya_money_add_country_gold_reserve_limit_mult_2
+remove_modifier = sakuya_money_add_country_gold_reserve_limit_mult_3
+	}
+}
+
+sakuya_money_remove_country_gold_reserve_limit_mult_3 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_remove_country_gold_reserve_limit_mult_3
+	}
+}
+
+sakuya_money_remove_country_gold_reserve_limit_mult_2 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_remove_country_gold_reserve_limit_mult_2
+	}
+}
+
+sakuya_money_remove_country_gold_reserve_limit_mult_1 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_remove_country_gold_reserve_limit_mult_1
+	}
+}
+
+sakuya_money_add_country_gold_reserve_limit_mult_3 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_add_country_gold_reserve_limit_mult_3
+	}
+}
+
+sakuya_money_add_country_gold_reserve_limit_mult_2 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_add_country_gold_reserve_limit_mult_2
+	}
+}
+
+sakuya_money_add_country_gold_reserve_limit_mult_1 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_add_country_gold_reserve_limit_mult_1
+	}
+}
+
+
+
+############################ 铸币 ####################
+
+sakuya_money_clear_country_minting_mult = {
+	scope = country
+
+	effect = {
+		remove_modifier = sakuya_money_remove_country_minting_mult_3
+		remove_modifier = sakuya_money_remove_country_minting_mult_2
+		remove_modifier = sakuya_money_remove_country_minting_mult_1
+		remove_modifier = sakuya_money_add_country_minting_mult_1
+		remove_modifier = sakuya_money_add_country_minting_mult_2
+		remove_modifier = sakuya_money_add_country_minting_mult_3
+	}
+}
+
+sakuya_money_remove_country_minting_mult_3 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_remove_country_minting_mult_3
+	}
+}
+
+sakuya_money_remove_country_minting_mult_2 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_remove_country_minting_mult_2
+	}
+}
+
+sakuya_money_remove_country_minting_mult_1 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_remove_country_minting_mult_1
+	}
+}
+
+sakuya_money_add_country_minting_mult_1 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_add_country_minting_mult_1
+	}
+}
+
+sakuya_money_add_country_minting_mult_2 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_add_country_minting_mult_2
+	}
+}
+
+sakuya_money_add_country_minting_mult_3 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_add_country_minting_mult_3
+	}
+}
+
+######################## 政府工资 ############################
+
+
+sakuya_money_clear_country_government_wages_mult = {
+	scope = country
+
+	effect = {
+		remove_modifier = sakuya_money_remove_country_government_wages_mult_3
+		remove_modifier = sakuya_money_remove_country_government_wages_mult_2
+		remove_modifier = sakuya_money_remove_country_government_wages_mult_1
+		remove_modifier = sakuya_money_add_country_government_wages_mult_1
+		remove_modifier = sakuya_money_add_country_government_wages_mult_2
+		remove_modifier = sakuya_money_add_country_government_wages_mult_3
+	}
+}
+
+
+sakuya_money_remove_country_government_wages_mult_3 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_remove_country_government_wages_mult_3
+	}
+}
+
+sakuya_money_remove_country_government_wages_mult_2 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_remove_country_government_wages_mult_2
+	}
+}
+
+sakuya_money_remove_country_government_wages_mult_1 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_remove_country_government_wages_mult_1
+	}
+}
+
+sakuya_money_add_country_government_wages_mult_1 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_add_country_government_wages_mult_1
+	}
+}
+
+sakuya_money_add_country_government_wages_mult_2 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_add_country_government_wages_mult_2
+	}
+}
+
+sakuya_money_add_country_government_wages_mult_3 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_add_country_government_wages_mult_3
+	}
+}
+
+################### 军队工资 ############################
+
+sakuya_money_clear_country_military_wages_mult = {
+	scope = country
+
+	effect = {
+		remove_modifier = sakuya_money_remove_country_military_wages_mult_3
+		remove_modifier = sakuya_money_remove_country_military_wages_mult_2
+		remove_modifier = sakuya_money_remove_country_military_wages_mult_1
+		remove_modifier = sakuya_money_add_country_military_wages_mult_1
+		remove_modifier = sakuya_money_add_country_military_wages_mult_2
+		remove_modifier = sakuya_money_add_country_military_wages_mult_3
+	}
+}
+
+
+sakuya_money_remove_country_military_wages_mult_3 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_remove_country_military_wages_mult_3
+	}
+}
+
+sakuya_money_remove_country_military_wages_mult_2 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_remove_country_military_wages_mult_2
+	}
+}
+
+sakuya_money_remove_country_military_wages_mult_1 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_remove_country_military_wages_mult_1
+	}
+}
+
+sakuya_money_add_country_military_wages_mult_1 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_add_country_military_wages_mult_1
+	}
+}
+
+sakuya_money_add_country_military_wages_mult_2 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_add_country_military_wages_mult_2
+	}
+}
+
+sakuya_money_add_country_military_wages_mult_3 = {
+	scope = country
+
+	effect = {
+		add_modifier = sakuya_money_add_country_military_wages_mult_3
+	}
+}
+
+################# 投资池 #######################
+
+sakuya_money_clear_country_disable_investment_pool = {
+    scope = country
+    
+    effect = {
+        remove_modifier = sakuya_money_add_country_disable_investment_pool
+        remove_modifier = sakuya_money_remove_country_disable_investment_pool
+    }
+}
+
+
+sakuya_money_add_country_disable_investment_pool= {
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_country_disable_investment_pool
+    }
+}
+
+
+sakuya_money_remove_country_disable_investment_pool = {
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_remove_country_disable_investment_pool
+    }
+}
+
+##############################  流水  ############################
+
+sakuya_money_add_country_tax_income_clear = {
+    scope = country
+    
+    effect = {
+        remove_modifier = sakuya_money_add_country_tax_income_add_1
+        remove_modifier = sakuya_money_add_country_tax_income_add_2
+        remove_modifier = sakuya_money_add_country_tax_income_add_3
+        remove_modifier = sakuya_money_add_country_tax_income_add_4
+        remove_modifier = sakuya_money_add_country_tax_income_add_5
+        remove_modifier = sakuya_money_add_country_tax_income_add_6
+        remove_modifier = sakuya_money_add_country_tax_income_add_7
+    }
+}
+
+sakuya_money_remove_country_tax_income_clear = {
+    scope = country
+    
+    effect = {
+        remove_modifier = sakuya_money_add_country_tax_income_remove_1
+        remove_modifier = sakuya_money_add_country_tax_income_remove_2
+        remove_modifier = sakuya_money_add_country_tax_income_remove_3
+        remove_modifier = sakuya_money_add_country_tax_income_remove_4
+        remove_modifier = sakuya_money_add_country_tax_income_remove_5
+        remove_modifier = sakuya_money_add_country_tax_income_remove_6
+        remove_modifier = sakuya_money_add_country_tax_income_remove_7
+    }
+}
+
+
+
+sakuya_money_remove_country_tax_income = {
+    scope = country
+    
+    effect = {
+        remove_modifier = sakuya_money_add_country_tax_income_add_1
+        remove_modifier = sakuya_money_add_country_tax_income_add_2
+        remove_modifier = sakuya_money_add_country_tax_income_add_3
+        remove_modifier = sakuya_money_add_country_tax_income_add_4
+        remove_modifier = sakuya_money_add_country_tax_income_add_5
+        remove_modifier = sakuya_money_add_country_tax_income_add_6
+        remove_modifier = sakuya_money_add_country_tax_income_add_7
+        remove_modifier = sakuya_money_add_country_tax_income_remove_1
+        remove_modifier = sakuya_money_add_country_tax_income_remove_2
+        remove_modifier = sakuya_money_add_country_tax_income_remove_3
+        remove_modifier = sakuya_money_add_country_tax_income_remove_4
+        remove_modifier = sakuya_money_add_country_tax_income_remove_5
+        remove_modifier = sakuya_money_add_country_tax_income_remove_6
+        remove_modifier = sakuya_money_add_country_tax_income_remove_7
+    }
+}
+
+
+sakuya_money_add_country_tax_income_add_1 = {
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_country_tax_income_add_1
+    }
+}
+sakuya_money_add_country_tax_income_add_2 = {
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_country_tax_income_add_2
+    }
+}
+sakuya_money_add_country_tax_income_add_3 = {
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_country_tax_income_add_3
+    }
+}
+sakuya_money_add_country_tax_income_add_4 = {
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_country_tax_income_add_4
+    }
+}
+sakuya_money_add_country_tax_income_add_5 = {
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_country_tax_income_add_5
+    }
+}
+sakuya_money_add_country_tax_income_add_6 = {
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_country_tax_income_add_6
+    }
+}
+sakuya_money_add_country_tax_income_add_7 = {
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_country_tax_income_add_7
+    }
+}
+sakuya_money_add_country_tax_income_remove_1 = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_country_tax_income_remove_1
+    }
+}
+
+sakuya_money_add_country_tax_income_remove_2 = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_country_tax_income_remove_2
+    }
+}
+
+sakuya_money_add_country_tax_income_remove_3 = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_country_tax_income_remove_3
+    }
+}
+
+sakuya_money_add_country_tax_income_remove_4 = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_country_tax_income_remove_4
+    }
+}
+
+sakuya_money_add_country_tax_income_remove_5 = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_country_tax_income_remove_5
+    }
+}
+
+sakuya_money_add_country_tax_income_remove_6 = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_country_tax_income_remove_6
+    }
+}
+
+sakuya_money_add_country_tax_income_remove_7 = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_country_tax_income_remove_7
+    }
+}
+
+
+##################################
+#遗漏附加
+
+sakuya_money_add_market_land_trade_capacity_add_1 = {
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_market_land_trade_capacity_add_1
+    }
+}
+
+sakuya_money_add_market_land_trade_capacity_add_2 = {
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_market_land_trade_capacity_add_2
+    }
+}
+
+sakuya_money_add_market_land_trade_capacity_add_3 = {
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_market_land_trade_capacity_add_3
+    }
+}
+
+sakuya_money_remove_market_land_trade_capacity_add_1 = {
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_remove_market_land_trade_capacity_add_1
+    }
+}
+
+sakuya_money_remove_market_land_trade_capacity_add_2 = {
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_remove_market_land_trade_capacity_add_2
+    }
+}
+
+sakuya_money_remove_market_land_trade_capacity_add_3 = {
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_remove_market_land_trade_capacity_add_3
+    }
+}
+
+sakuya_money_clear_market_land_trade_capacity_add = {
+    scope = country
+    
+    effect = {
+        remove_modifier = sakuya_money_add_market_land_trade_capacity_add_1
+        remove_modifier = sakuya_money_add_market_land_trade_capacity_add_2
+        remove_modifier = sakuya_money_add_market_land_trade_capacity_add_3
+        remove_modifier = sakuya_money_remove_market_land_trade_capacity_add_1
+        remove_modifier = sakuya_money_remove_market_land_trade_capacity_add_2
+        remove_modifier = sakuya_money_remove_market_land_trade_capacity_add_3
+    }
+}
+
+###########################################################
+
+sakuya_money_add_market_disallow_trade_routes = {
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_market_disallow_trade_routes
+    }
+}
+
+sakuya_money_remove_market_disallow_trade_routes = {
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_remove_market_disallow_trade_routes
+    }
+}
+
+sakuya_money_clear_market_disallow_trade_routes = {
+    scope = country
+    
+    effect = {
+        remove_modifier = sakuya_money_add_market_disallow_trade_routes
+        remove_modifier = sakuya_money_remove_market_disallow_trade_routes
+    }
+}
+
+###########################################################
+

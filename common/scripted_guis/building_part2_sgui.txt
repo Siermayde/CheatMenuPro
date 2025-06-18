@@ -1,0 +1,354 @@
+building_oil_rig1y = { 
+    scope = country
+    
+    effect = {
+        every_scope_state = {
+            limit = {
+                has_decree = decree_my_dear_sakuya
+            }
+            add_modifier = MB_oil_rig_1y
+        }
+    }
+}
+building_oil_rig1yr = { 
+    scope = country
+    
+    effect = {
+            add_modifier = MB_oil_rig_1y
+        }
+    }
+building_oil_rig2y = { 
+    scope = country
+    
+    effect = {
+        every_scope_state = {
+            limit = {
+                has_decree = decree_my_dear_sakuya
+            }
+            add_modifier = MB_oil_rig_2y
+        }
+    }
+}
+building_oil_rig2yr = { 
+    scope = country
+    
+    effect = {
+            add_modifier = MB_oil_rig_2y
+    }
+}
+building_oil_rig3y = { 
+    scope = country
+    
+    effect = {
+        every_scope_state = {
+            limit = {
+                has_decree = decree_my_dear_sakuya
+            }
+            remove_modifier = MB_oil_rig_1y
+            remove_modifier = MB_oil_rig_2y
+        }
+    }
+}
+building_oil_rig3yr = { 
+    scope = country
+    
+    effect = {
+            remove_modifier = MB_oil_rig_1y
+            remove_modifier = MB_oil_rig_2y
+        }
+}
+building_gold_mine1y = { 
+    scope = country
+    
+    effect = {
+        every_scope_state = {
+            limit = {
+                has_decree = decree_my_dear_sakuya
+            }
+            add_modifier = MB_gold_mine_1y
+        }
+    }
+}
+building_gold_mine1yr = { 
+    scope = country
+    
+    effect = {
+            add_modifier = MB_gold_mine_1y
+        }
+    }
+building_gold_mine2y = { 
+    scope = country
+    
+    effect = {
+        every_scope_state = {
+            limit = {
+                has_decree = decree_my_dear_sakuya
+            }
+            add_modifier = MB_gold_mine_2y
+        }
+    }
+}
+building_gold_mine2yr = { 
+    scope = country
+    
+    effect = {
+            add_modifier = MB_gold_mine_2y
+    }
+}
+building_gold_mine3y = { 
+    scope = country
+    
+    effect = {
+        every_scope_state = {
+            limit = {
+                has_decree = decree_my_dear_sakuya
+            }
+            remove_modifier = MB_gold_mine_1y
+            remove_modifier = MB_gold_mine_2y
+        }
+    }
+}
+building_gold_mine3yr = { 
+    scope = country
+    
+    effect = {
+            remove_modifier = MB_gold_mine_1y
+            remove_modifier = MB_gold_mine_2y
+        }
+}
+building_coal_mine1y = { 
+    scope = country
+    
+    effect = {
+        every_scope_state = {
+            limit = {
+                has_decree = decree_my_dear_sakuya
+            }
+            add_modifier = MB_coal_mine_1y
+        }
+    }
+}
+building_coal_mine1yr = { 
+    scope = country
+    
+    effect = {
+            add_modifier = MB_coal_mine_1y
+        }
+    }
+building_coal_mine2y = { 
+    scope = country
+    
+    effect = {
+        every_scope_state = {
+            limit = {
+                has_decree = decree_my_dear_sakuya
+            }
+            add_modifier = MB_coal_mine_2y
+        }
+    }
+}
+building_coal_mine2yr = { 
+    scope = country
+    
+    effect = {
+            add_modifier = MB_coal_mine_2y
+    }
+}
+building_coal_mine3y = { 
+    scope = country
+    
+    effect = {
+        every_scope_state = {
+            limit = {
+                has_decree = decree_my_dear_sakuya
+            }
+            remove_modifier = MB_coal_mine_1y
+            remove_modifier = MB_coal_mine_2y
+        }
+    }
+}
+building_coal_mine3yr = { 
+    scope = country
+    
+    effect = {
+            remove_modifier = MB_coal_mine_1y
+            remove_modifier = MB_coal_mine_2y
+        }
+}
+building_iron_mine1y = { 
+    scope = country
+    
+    effect = {
+        every_scope_state = {
+            limit = {
+                has_decree = decree_my_dear_sakuya
+            }
+            add_modifier = MB_iron_mine_1y
+        }
+    }
+}
+building_iron_mine1yr = { 
+    scope = country
+    
+    effect = {
+            add_modifier = MB_iron_mine_1y
+        }
+    }
+building_iron_mine2y = { 
+    scope = country
+    
+    effect = {
+        every_scope_state = {
+            limit = {
+                has_decree = decree_my_dear_sakuya
+            }
+            add_modifier = MB_iron_mine_2y
+        }
+    }
+}
+building_iron_mine2yr = { 
+    scope = country
+    
+    effect = {
+            add_modifier = MB_iron_mine_2y
+    }
+}
+building_iron_mine3y = { 
+    scope = country
+    
+    effect = {
+        every_scope_state = {
+            limit = {
+                has_decree = decree_my_dear_sakuya
+            }
+            remove_modifier = MB_iron_mine_1y
+            remove_modifier = MB_iron_mine_2y
+        }
+    }
+}
+building_iron_mine3yr = { 
+    scope = country
+    
+    effect = {
+            remove_modifier = MB_iron_mine_1y
+            remove_modifier = MB_iron_mine_2y
+        }
+}
+building_lead_mine1y = { 
+    scope = country
+    
+    effect = {
+        every_scope_state = {
+            limit = {
+                has_decree = decree_my_dear_sakuya
+            }
+            add_modifier = MB_lead_mine_1y
+        }
+    }
+}
+building_lead_mine1yr = { 
+    scope = country
+    
+    effect = {
+            add_modifier = MB_lead_mine_1y
+        }
+    }
+building_lead_mine2y = { 
+    scope = country
+    
+    effect = {
+        every_scope_state = {
+            limit = {
+                has_decree = decree_my_dear_sakuya
+            }
+            add_modifier = MB_lead_mine_2y
+        }
+    }
+}
+building_lead_mine2yr = { 
+    scope = country
+    
+    effect = {
+            add_modifier = MB_lead_mine_2y
+    }
+}
+building_lead_mine3y = { 
+    scope = country
+    
+    effect = {
+        every_scope_state = {
+            limit = {
+                has_decree = decree_my_dear_sakuya
+            }
+            remove_modifier = MB_lead_mine_1y
+            remove_modifier = MB_lead_mine_2y
+        }
+    }
+}
+building_lead_mine3yr = { 
+    scope = country
+    
+    effect = {
+            remove_modifier = MB_lead_mine_1y
+            remove_modifier = MB_lead_mine_2y
+        }
+}
+building_sulfur_mine1y = { 
+    scope = country
+    
+    effect = {
+        every_scope_state = {
+            limit = {
+                has_decree = decree_my_dear_sakuya
+            }
+            add_modifier = MB_sulfur_mine_1y
+        }
+    }
+}
+building_sulfur_mine1yr = { 
+    scope = country
+    
+    effect = {
+            add_modifier = MB_sulfur_mine_1y
+        }
+    }
+building_sulfur_mine2y = { 
+    scope = country
+    
+    effect = {
+        every_scope_state = {
+            limit = {
+                has_decree = decree_my_dear_sakuya
+            }
+            add_modifier = MB_sulfur_mine_2y
+        }
+    }
+}
+building_sulfur_mine2yr = { 
+    scope = country
+    
+    effect = {
+            add_modifier = MB_sulfur_mine_2y
+    }
+}
+building_sulfur_mine3y = { 
+    scope = country
+    
+    effect = {
+        every_scope_state = {
+            limit = {
+                has_decree = decree_my_dear_sakuya
+            }
+            remove_modifier = MB_sulfur_mine_1y
+            remove_modifier = MB_sulfur_mine_2y
+        }
+    }
+}
+building_sulfur_mine3yr = { 
+    scope = country
+    
+    effect = {
+            remove_modifier = MB_sulfur_mine_1y
+            remove_modifier = MB_sulfur_mine_2y
+        }
+}

@@ -1,0 +1,527 @@
+#advcm_ad#d_sakuya_tex#t = { #1
+#	i#con = gfx/interface/icons/timed_m#odifier_icon#s/modifier_gea#r_negative#.dds
+#	countr#y_legitim#acy_base_add = -0.1 #非法政#府，哈哈哈
+#	country_tax_income#_a#d#d = -1 #国库倒欠火星银行钱
+#	country_bur#eau#cracy_add = -#1 #测试专用代码部分。封印住。
+#################################################################
+#################################################################
+
+advcm_add_sakuya_trade_unions_unit1 = { #工会 势力
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	interest_group_ig_trade_unions_pol_str_mult = 0.2
+}
+advcm_add_sakuya_remove_trade_unions_unit1 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	interest_group_ig_trade_unions_pol_str_mult = -0.2
+}
+
+advcm_add_sakuya_rural_folk_unit1 = { #乡野民众 势力
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	interest_group_ig_trade_unions_pol_str_mult = 0.2
+}
+advcm_add_sakuya_remove_rural_folk_unit1 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	interest_group_ig_trade_unions_pol_str_mult = -0.2
+}
+advcm_add_sakuya_petty_bourgeoisie_unit1 = { #小资产阶级 势力
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.2
+}
+advcm_add_sakuya_remove_petty_bourgeoisie_unit1 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	interest_group_ig_petty_bourgeoisie_pol_str_mult = -0.2
+}
+
+advcm_add_sakuya_landowners_unit1 = { #地主 势力
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	interest_group_ig_landowners_pol_str_mult = 0.2
+}
+advcm_add_sakuya_remove_landowners_unit1 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	interest_group_ig_landowners_pol_str_mult = -0.2
+}
+
+advcm_add_sakuya_intelligensia_unit1 = { #知识分子 势力
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	interest_group_ig_intelligentsia_pol_str_mult = 0.2
+}
+advcm_add_sakuya_remove_intelligensia_unit1 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	interest_group_ig_intelligentsia_pol_str_mult = -0.2
+}
+
+advcm_add_sakuya_industrialists_unit1 = { #资本家 势力
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	interest_group_ig_industrialists_pol_str_mult = 0.2
+}
+advcm_add_sakuya_remove_industrialists_unit1 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	interest_group_ig_industrialists_pol_str_mult = -0.2
+}
+
+advcm_add_sakuya_devout_unit1 = { #虔诚者 势力
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	interest_group_ig_devout_pol_str_mult = 0.2
+}
+advcm_add_sakuya_remove_devout_unit1 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	interest_group_ig_devout_pol_str_mult = -0.2
+}
+
+advcm_add_sakuya_armed_forces_unit1 = { #武装力量 势力
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	interest_group_ig_armed_forces_pol_str_mult = 0.2
+}
+advcm_add_sakuya_remove_armed_forces_unit1 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	interest_group_ig_armed_forces_pol_str_mult = -0.2
+}
+
+advcm_add_sakuya_politically_unaligned_unit1 = { #政治中立者 势力增加
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    interest_group_ig_trade_unions_pol_str_mult = -0.03
+    interest_group_ig_rural_folk_pol_str_mult = -0.03
+    interest_group_ig_petty_bourgeoisie_pol_str_mult = -0.03
+    interest_group_ig_landowners_pol_str_mult = -0.03
+    interest_group_ig_intelligentsia_pol_str_mult = -0.03
+    interest_group_ig_industrialists_pol_str_mult = -0.03
+    interest_group_ig_devout_pol_str_mult = -0.03
+    interest_group_ig_armed_forces_pol_str_mult = -0.03
+}
+
+advcm_add_sakuya_remove_politically_unaligned_unit1 = { #政治中立者 势力减少
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    interest_group_ig_trade_unions_pol_str_mult = 0.03
+    interest_group_ig_rural_folk_pol_str_mult = 0.03
+    interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.03
+    interest_group_ig_landowners_pol_str_mult = 0.03
+    interest_group_ig_intelligentsia_pol_str_mult = 0.03
+    interest_group_ig_industrialists_pol_str_mult = 0.03
+    interest_group_ig_devout_pol_str_mult = 0.03
+    interest_group_ig_armed_forces_pol_str_mult = 0.03
+}
+
+
+advcm_add_sakuya_all_unit1 = { #全部 势力
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+    interest_group_ig_trade_unions_pol_str_mult = 0.3
+    interest_group_ig_rural_folk_pol_str_mult = 0.3
+    interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.3
+    interest_group_ig_landowners_pol_str_mult = 0.3
+    interest_group_ig_intelligentsia_pol_str_mult = 0.3
+    interest_group_ig_industrialists_pol_str_mult = 0.3
+    interest_group_ig_devout_pol_str_mult = 0.3
+    interest_group_ig_armed_forces_pol_str_mult = 0.3
+}
+advcm_add_sakuya_remove_all_unit1 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+    interest_group_ig_trade_unions_pol_str_mult = -0.5
+    interest_group_ig_rural_folk_pol_str_mult = -0.5
+    interest_group_ig_petty_bourgeoisie_pol_str_mult = -0.5
+    interest_group_ig_landowners_pol_str_mult = -0.5
+    interest_group_ig_intelligentsia_pol_str_mult = -0.5
+    interest_group_ig_industrialists_pol_str_mult = -0.5
+    interest_group_ig_devout_pol_str_mult = -0.5
+    interest_group_ig_armed_forces_pol_str_mult = -0.5
+}
+
+################################################################
+################################################################
+
+advcm_add_sakuya_trade_unions_unit2 = { #工会组
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	interest_group_ig_trade_unions_approval_add = 5
+}
+advcm_add_sakuya_remove_trade_unions_unit2 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	interest_group_ig_trade_unions_approval_add = -5
+}
+advcm_add_sakuya_trade_unions_unit2_plus = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	interest_group_ig_trade_unions_approval_add = 50
+}
+advcm_add_sakuya_remove_trade_unions_unit2_plus = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	interest_group_ig_trade_unions_approval_add = -50
+}
+advcm_add_sakuya_trade_unions_unit2_min = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	interest_group_ig_trade_unions_approval_add = 1
+}
+advcm_add_sakuya_remove_trade_unions_unit2_min = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	interest_group_ig_trade_unions_approval_add = -1
+}
+
+advcm_add_sakuya_rural_folk_unit2 = { #乡野民众组
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    interest_group_ig_rural_folk_approval_add = 5
+}
+advcm_add_sakuya_remove_rural_folk_unit2 = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    interest_group_ig_rural_folk_approval_add = -5
+}
+advcm_add_sakuya_rural_folk_unit2_plus = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    interest_group_ig_rural_folk_approval_add = 50
+}
+advcm_add_sakuya_remove_rural_folk_unit2_plus = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    interest_group_ig_rural_folk_approval_add = -50
+}
+advcm_add_sakuya_rural_folk_unit2_min = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    interest_group_ig_rural_folk_approval_add = 1
+}
+advcm_add_sakuya_remove_rural_folk_unit2_min = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    interest_group_ig_rural_folk_approval_add = -1
+}
+
+advcm_add_sakuya_petty_bourgeoisie_unit2 = { #小资产阶级组
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    interest_group_ig_petty_bourgeoisie_approval_add = 5
+}
+advcm_add_sakuya_remove_petty_bourgeoisie_unit2 = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    interest_group_ig_petty_bourgeoisie_approval_add = -5
+}
+advcm_add_sakuya_petty_bourgeoisie_unit2_plus = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    interest_group_ig_petty_bourgeoisie_approval_add = 50
+}
+advcm_add_sakuya_remove_petty_bourgeoisie_unit2_plus = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    interest_group_ig_petty_bourgeoisie_approval_add = -50
+}
+advcm_add_sakuya_petty_bourgeoisie_unit2_min = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    interest_group_ig_petty_bourgeoisie_approval_add = 1
+}
+advcm_add_sakuya_remove_petty_bourgeoisie_unit2_min = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    interest_group_ig_petty_bourgeoisie_approval_add = -1
+}
+
+advcm_add_sakuya_landowners_unit2 = { #地主组
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    interest_group_ig_landowners_approval_add = 5
+}
+advcm_add_sakuya_remove_landowners_unit2 = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    interest_group_ig_landowners_approval_add = -5
+}
+advcm_add_sakuya_landowners_unit2_plus = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    interest_group_ig_landowners_approval_add = 50
+}
+advcm_add_sakuya_remove_landowners_unit2_plus = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    interest_group_ig_landowners_approval_add = -50
+}
+advcm_add_sakuya_landowners_unit2_min = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    interest_group_ig_landowners_approval_add = 1
+}
+advcm_add_sakuya_remove_landowners_unit2_min = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    interest_group_ig_landowners_approval_add = -1
+}
+
+advcm_add_sakuya_intelligensia_unit2 = { #知识分子组
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    interest_group_ig_intelligentsia_approval_add = 5
+}
+advcm_add_sakuya_remove_intelligensia_unit2 = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    interest_group_ig_intelligentsia_approval_add = -5
+}
+advcm_add_sakuya_intelligensia_unit2_plus = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    interest_group_ig_intelligentsia_approval_add = 50
+}
+advcm_add_sakuya_remove_intelligensia_unit2_plus = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    interest_group_ig_intelligentsia_approval_add = -50
+}
+advcm_add_sakuya_intelligensia_unit2_min = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    interest_group_ig_intelligentsia_approval_add = 1
+}
+advcm_add_sakuya_remove_intelligensia_unit2_min = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    interest_group_ig_intelligentsia_approval_add = -1
+}
+
+advcm_add_sakuya_industrialists_unit2 = { #工业家组
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    interest_group_ig_industrialists_approval_add = 5
+}
+advcm_add_sakuya_remove_industrialists_unit2 = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    interest_group_ig_industrialists_approval_add = -5
+}
+advcm_add_sakuya_industrialists_unit2_plus = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    interest_group_ig_industrialists_approval_add = 50
+}
+advcm_add_sakuya_remove_industrialists_unit2_plus = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    interest_group_ig_industrialists_approval_add = -50
+}
+advcm_add_sakuya_industrialists_unit2_min = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    interest_group_ig_industrialists_approval_add = 1
+}
+advcm_add_sakuya_remove_industrialists_unit2_min = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    interest_group_ig_industrialists_approval_add = -1
+}
+
+advcm_add_sakuya_devout_unit2 = { #虔诚者组
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    interest_group_ig_devout_approval_add = 5
+}
+advcm_add_sakuya_remove_devout_unit2 = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    interest_group_ig_devout_approval_add = -5
+}
+advcm_add_sakuya_devout_unit2_plus = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    interest_group_ig_devout_approval_add = 50
+}
+advcm_add_sakuya_remove_devout_unit2_plus = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    interest_group_ig_devout_approval_add = -50
+}
+advcm_add_sakuya_devout_unit2_min = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    interest_group_ig_devout_approval_add = 1
+}
+advcm_add_sakuya_remove_devout_unit2_min = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    interest_group_ig_devout_approval_add = -1
+}
+
+advcm_add_sakuya_armed_forces_unit2 = { #武装力量组
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    interest_group_ig_armed_forces_approval_add = 5
+}
+advcm_add_sakuya_remove_armed_forces_unit2 = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    interest_group_ig_armed_forces_approval_add = -5
+}
+advcm_add_sakuya_armed_forces_unit2_plus = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    interest_group_ig_armed_forces_approval_add = 50
+}
+advcm_add_sakuya_remove_armed_forces_unit2_plus = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    interest_group_ig_armed_forces_approval_add = -50
+}
+advcm_add_sakuya_armed_forces_unit2_min = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    interest_group_ig_armed_forces_approval_add = 1
+}
+advcm_add_sakuya_remove_armed_forces_unit2_min = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    interest_group_ig_armed_forces_approval_add = -1
+}
+
+################################################
+
+advcm_add_sakuya_trade_unions_unit2_only = {
+   icon = gfx/interface/buttons/sort_button_icons/sort_icon_profitability.dds
+    interest_group_ig_trade_unions_approval_add = 150
+    interest_group_approval_add = -50
+
+    interest_group_ig_trade_unions_pol_str_mult = 10 #当前政党增加
+    interest_group_ig_rural_folk_pol_str_mult = -2 #其他政党削弱
+    interest_group_ig_petty_bourgeoisie_pol_str_mult = -2
+    interest_group_ig_landowners_pol_str_mult = -2
+    interest_group_ig_intelligentsia_pol_str_mult = -2
+    interest_group_ig_industrialists_pol_str_mult = -2
+    interest_group_ig_devout_pol_str_mult = -2
+    interest_group_ig_armed_forces_pol_str_mult = -2
+    country_legitimacy_base_add = 50 #合法性
+}
+
+advcm_add_sakuya_rural_folk_unit2_only = {
+   icon = gfx/interface/buttons/sort_button_icons/sort_icon_profitability.dds
+    interest_group_ig_rural_folk_approval_add = 150
+    interest_group_approval_add = -50
+
+    interest_group_ig_trade_unions_pol_str_mult = -2
+    interest_group_ig_rural_folk_pol_str_mult = 10 #当前政党增加
+    interest_group_ig_petty_bourgeoisie_pol_str_mult = -2
+    interest_group_ig_landowners_pol_str_mult = -2
+    interest_group_ig_intelligentsia_pol_str_mult = -2
+    interest_group_ig_industrialists_pol_str_mult = -2
+    interest_group_ig_devout_pol_str_mult = -2
+    interest_group_ig_armed_forces_pol_str_mult = -2
+    country_legitimacy_base_add = 50 #合法性
+}
+
+advcm_add_sakuya_petty_bourgeoisie_unit2_only = {
+   icon = gfx/interface/buttons/sort_button_icons/sort_icon_profitability.dds
+    interest_group_ig_petty_bourgeoisie_approval_add = 150
+    interest_group_approval_add = -50
+
+    interest_group_ig_trade_unions_pol_str_mult = -2
+    interest_group_ig_rural_folk_pol_str_mult = -2
+    interest_group_ig_petty_bourgeoisie_pol_str_mult = 10 #当前政党增加
+    interest_group_ig_landowners_pol_str_mult = -2
+    interest_group_ig_intelligentsia_pol_str_mult = -2
+    interest_group_ig_industrialists_pol_str_mult = -2
+    interest_group_ig_devout_pol_str_mult = -2
+    interest_group_ig_armed_forces_pol_str_mult = -2
+    country_legitimacy_base_add = 50 #合法性
+}
+
+advcm_add_sakuya_landowners_unit2_only = {
+   icon = gfx/interface/buttons/sort_button_icons/sort_icon_profitability.dds
+    interest_group_ig_landowners_approval_add = 150
+    interest_group_approval_add = -50
+
+    interest_group_ig_trade_unions_pol_str_mult = -2
+    interest_group_ig_rural_folk_pol_str_mult = -2
+    interest_group_ig_petty_bourgeoisie_pol_str_mult = -2
+    interest_group_ig_landowners_pol_str_mult = 10 #当前政党增加
+    interest_group_ig_intelligentsia_pol_str_mult = -2
+    interest_group_ig_industrialists_pol_str_mult = -2
+    interest_group_ig_devout_pol_str_mult = -2
+    interest_group_ig_armed_forces_pol_str_mult = -2
+    country_legitimacy_base_add = 50 #合法性
+}
+
+advcm_add_sakuya_intelligensia_unit2_only = {
+   icon = gfx/interface/buttons/sort_button_icons/sort_icon_profitability.dds
+    interest_group_ig_intelligentsia_approval_add = 150
+    interest_group_approval_add = -50
+
+    interest_group_ig_trade_unions_pol_str_mult = -2
+    interest_group_ig_rural_folk_pol_str_mult = -2
+    interest_group_ig_petty_bourgeoisie_pol_str_mult = -2
+    interest_group_ig_landowners_pol_str_mult = -2
+    interest_group_ig_intelligensia_pol_str_mult = 10 #当前政党增加
+    interest_group_ig_industrialists_pol_str_mult = -2
+    interest_group_ig_devout_pol_str_mult = -2
+    interest_group_ig_armed_forces_pol_str_mult = -2
+    country_legitimacy_base_add = 50 #合法性
+}
+
+advcm_add_sakuya_industrialists_unit2_only = {
+   icon = gfx/interface/buttons/sort_button_icons/sort_icon_profitability.dds
+    interest_group_ig_industrialists_approval_add = 150
+    interest_group_approval_add = -50
+
+    interest_group_ig_trade_unions_pol_str_mult = -2
+    interest_group_ig_rural_folk_pol_str_mult = -2
+    interest_group_ig_petty_bourgeoisie_pol_str_mult = -2
+    interest_group_ig_landowners_pol_str_mult = -2
+    interest_group_ig_intelligensia_pol_str_mult = -2
+    interest_group_ig_industrialists_pol_str_mult = 10 #当前政党增加
+    interest_group_ig_devout_pol_str_mult = -2
+    interest_group_ig_armed_forces_pol_str_mult = -2
+    country_legitimacy_base_add = 50 #合法性
+}
+
+advcm_add_sakuya_devout_unit2_only = {
+   icon = gfx/interface/buttons/sort_button_icons/sort_icon_profitability.dds
+    interest_group_ig_devout_approval_add = 150
+    interest_group_approval_add = -50
+
+    interest_group_ig_trade_unions_pol_str_mult = -2
+    interest_group_ig_rural_folk_pol_str_mult = -2
+    interest_group_ig_petty_bourgeoisie_pol_str_mult = -2
+    interest_group_ig_landowners_pol_str_mult = -2
+    interest_group_ig_intelligensia_pol_str_mult = -2
+    interest_group_ig_industrialists_pol_str_mult = -2
+    interest_group_ig_devout_pol_str_mult = 10 #当前政党增加
+    interest_group_ig_armed_forces_pol_str_mult = -2
+    country_legitimacy_base_add = 50 #合法性
+}
+
+advcm_add_sakuya_armed_forces_unit2_only = {
+   icon = gfx/interface/buttons/sort_button_icons/sort_icon_profitability.dds
+    interest_group_ig_armed_forces_approval_add = 150
+    interest_group_approval_add = -50
+
+    interest_group_ig_trade_unions_pol_str_mult = -2
+    interest_group_ig_rural_folk_pol_str_mult = -2
+    interest_group_ig_petty_bourgeoisie_pol_str_mult = -2
+    interest_group_ig_landowners_pol_str_mult = -2
+    interest_group_ig_intelligensia_pol_str_mult = -2
+    interest_group_ig_industrialists_pol_str_mult = -2
+    interest_group_ig_devout_pol_str_mult = -2
+    interest_group_ig_armed_forces_pol_str_mult = 10 #当前政党增加
+    country_legitimacy_base_add = 50 #合法性
+}
+
+advcm_add_sakuya_all_unit2 = { #全部，加
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    interest_group_approval_add = 50
+}
+advcm_add_sakuya_remove_all_unit2 = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+    interest_group_approval_add = -50
+}
+
+#########################################################
+#########################################################
+
+advcm_add_sakuya_interest_group_approval_add_all = { #全部，加
+    icon = gfx/interface/buttons/sort_button_icons/sort_icon_population.dds
+    interest_group_pop_attraction_mult = 1.3
+}
+
+advcm_add_sakuya_interest_group_in_government_approval_add_all = { #促进
+    icon = gfx/interface/buttons/sort_button_icons/sort_icon_population.dds
+    country_promotion_ig_attraction_mult = 1.3
+}
+
+advcm_add_sakuya_interest_group_in_opposition_approval_add_all = { #镇压
+    icon = gfx/interface/buttons/sort_button_icons/sort_icon_population.dds
+    country_suppression_ig_attraction_mult = 1.3
+}
+
+advcm_add_sakuya_interest_group_trade_unions_approval_add_all = { #工会
+    icon = gfx/interface/buttons/sort_button_icons/sort_icon_population.dds
+    interest_group_ig_trade_unions_pop_attraction_mult = 1.3
+}
+advcm_add_sakuya_interest_group_rural_folk_approval_add_all = { #乡野民众
+    icon = gfx/interface/buttons/sort_button_icons/sort_icon_population.dds
+    interest_group_ig_rural_folk_pop_attraction_mult = 1.3
+}
+
+advcm_add_sakuya_interest_group_petty_bourgeoisie_approval_add_all = { #小资产阶级
+    icon = gfx/interface/buttons/sort_button_icons/sort_icon_population.dds
+    interest_group_ig_petty_bourgeoisie_pop_attraction_mult = 1.3
+}
+
+advcm_add_sakuya_interest_group_landowners_approval_add_all = { #地主
+    icon = gfx/interface/buttons/sort_button_icons/sort_icon_population.dds
+    interest_group_ig_landowners_pop_attraction_mult = 1.3
+}
+
+advcm_add_sakuya_interest_group_intelligentsia_approval_add_all = { #知识分子
+    icon = gfx/interface/buttons/sort_button_icons/sort_icon_population.dds
+    interest_group_ig_intelligentsia_pop_attraction_mult = 1.3
+}
+
+advcm_add_sakuya_interest_group_industrialists_approval_add_all = { #工业家
+    icon = gfx/interface/buttons/sort_button_icons/sort_icon_population.dds
+    interest_group_ig_industrialists_pop_attraction_mult = 1.3
+}
+
+advcm_add_sakuya_interest_group_devout_approval_add_all = { #虔诚者
+    icon = gfx/interface/buttons/sort_button_icons/sort_icon_population.dds
+    interest_group_ig_devout_pop_attraction_mult = 1.3
+}
+
+advcm_add_sakuya_interest_group_armed_forces_approval_add_all = { #武装力量
+    icon = gfx/interface/buttons/sort_button_icons/sort_icon_population.dds
+    interest_group_ig_armed_forces_pop_attraction_mult = 1.3
+}
+
+

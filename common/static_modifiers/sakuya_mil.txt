@@ -1,0 +1,222 @@
+sakuya_mil_01 = { 
+	icon = gfx/interface/war/lens_war_indicator_cannon.dds
+	#country_cannot_cancel_law_enactment_bool = yes #不允许制定法律
+	#country_cannot_start_law_enactment_bool = yes #不允许制定新法律
+	#country_must_have_movement_to_enact_laws_bool = yes #强制法律
+	state_conscription_rate_add = 10
+}
+sakuya_mil_02 = {
+	icon = gfx/interface/war/lens_war_indicator_drums.dds
+	state_conscription_rate_mult = 10
+}
+sakuya_mil_03 = { 
+	icon = gfx/interface/war/lens_war_indicator_horse.dds
+	unit_army_offense_add = 10000
+	country_prestige_from_army_power_projection_mult = -0.9999
+	country_prestige_from_navy_power_projection_mult = -0.9999
+	#country_prestige_add = -16200
+}
+sakuya_mil_04 = {
+	icon = gfx/interface/war/lens_war_indicator_soldier_left.dds
+	unit_army_defense_add = 10000
+	country_prestige_from_army_power_projection_mult = -0.9999
+	country_prestige_from_navy_power_projection_mult = -0.9999
+}
+sakuya_mil_05 = { 
+	icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+	unit_army_experience_gain_add = 10000
+}
+
+sakuya_mil_11 = { 
+	icon = gfx/interface/war/lens_war_indicator_horse.dds
+	unit_navy_offense_add = 10000
+}
+sakuya_mil_12 = {
+	icon = gfx/interface/war/lens_war_indicator_soldier_left.dds
+	unit_navy_defense_add = 10000
+	country_prestige_from_army_power_projection_mult = -0.9999
+	country_prestige_from_navy_power_projection_mult = -0.9999
+}
+sakuya_mil_13 = { 
+	icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+	unit_navy_experience_gain_add = 10000
+	country_prestige_from_army_power_projection_mult = -0.9999
+	country_prestige_from_navy_power_projection_mult = -0.9999
+}
+sakuya_mil_14 = {
+	icon = gfx/interface/war/lens_war_indicator_soldier_left.dds
+    country_max_declared_interests_add = 10
+}
+sakuya_mil_15 = { 
+	icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+country_prestige_add = -1 
+}
+
+sakuya_weiwang_01 = { 
+	icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+country_agitator_slots_add = 10 
+}
+
+sakuya_weiwang_02 = { 
+	icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+country_war_exhaustion_casualties_mult = -1 
+}
+
+sakuya_weiwang_03 = { 
+	icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+country_bolster_ig_attraction_mult = 9999
+}
+
+sakuya_weiwang_04 = { 
+	icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+country_resource_discovery_chance_mult = 9999 
+}
+
+sakuya_weiwang_05 = { 
+	icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+state_pop_pol_str_mult = 1 
+}
+
+sakuya_weiwang_06 = { 
+	icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+state_migration_quota_mult = 9999
+}
+
+sakuya_weiwang_07 = { 
+	icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+state_decree_cost_mult = -9999
+}
+
+sakuya_weiwang_08 = { 
+	icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+state_migration_push_mult = -9999 
+}
+
+sakuya_weiwang_09 = { 
+	icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+state_migration_pull_mult = 9999 
+}
+
+sakuya_weiwang_11 = { 
+	icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+state_education_access_add = 10 
+}
+
+sakuya_weiwang_12 = { 
+	icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+state_pollution_generation_add = -999999
+}
+
+sakuya_weiwang_13 = { 
+	icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+state_mortality_mult = 99
+}
+
+sakuya_weiwang_14 = { 
+	icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+country_diplomatic_play_maneuvers_add = 1000000	
+}
+
+sakuya_weiwang_15 = { 
+	icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+country_initiator_war_goal_maneuver_cost_mult = -0.99 
+}
+sakuya_weiwang_16 = { 
+	icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+country_legitimacy_govt_leader_clout_add = 100
+country_legitimacy_ideological_incoherence_mult = -0.99
+country_legitimacy_govt_total_votes_add = 100
+country_radicals_from_legitimacy_mult = -1
+country_loyalists_from_legitimacy_mult = 1
+}
+
+sakuya_weiwang_17 = { 
+	icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+state_working_adult_ratio_add = 0.5
+}
+
+sakuya_weiwang_18 = { 
+	icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+country_voting_power_base_add = 9999
+}
+
+sakuya_weiwang_19 = { 
+	icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+state_infrastructure_add = 9999	
+}
+
+sakuya_weiwang_21 = { 
+	icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+country_prestige_add = 999999999	
+}
+
+sakuya_weiwang_22 = { 
+    icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+    country_prestige_add = 1
+}
+sakuya_weiwang_23 = { 
+    icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+    country_prestige_add = 10
+}
+sakuya_weiwang_24 = { 
+    icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+    country_prestige_add = 100
+}
+sakuya_weiwang_25 = { 
+    icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+    country_prestige_add = 1000
+}
+sakuya_weiwang_26 = { 
+    icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+    country_prestige_add = 10000
+}
+sakuya_weiwang_27 = { 
+    icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+    country_prestige_add = 100000
+}
+sakuya_weiwang_28 = { 
+    icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+    country_prestige_add = 1000000
+}
+sakuya_weiwang_29 = { 
+    icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+    country_prestige_add = 0
+}
+
+
+sakuya_weiwang_31 = { 
+    icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+    country_prestige_mult = -9999
+}
+sakuya_weiwang_32 = { 
+    icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+    country_prestige_add = -1
+}
+sakuya_weiwang_33 = { 
+    icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+    country_prestige_add = -10
+}
+sakuya_weiwang_34 = { 
+    icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+    country_prestige_add = -100
+}
+sakuya_weiwang_35 = { 
+    icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+    country_prestige_add = -1000
+}
+sakuya_weiwang_36 = { 
+    icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+    country_prestige_add = -10000
+}
+sakuya_weiwang_37 = { 
+    icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+    country_prestige_add = -100000
+}
+sakuya_weiwang_38 = { 
+    icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+    country_prestige_add = -1000000
+}
+sakuya_weiwang_39 = { 
+    icon = gfx/interface/war/lens_war_indicator_soldier_right.dds
+    country_prestige_add = 0
+}

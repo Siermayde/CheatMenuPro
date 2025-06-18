@@ -1,0 +1,604 @@
+mil_01 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_mil_01
+	}
+}
+
+mil_010 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_mil_01
+	}
+}
+
+mil_02 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_mil_02
+	}
+}
+
+mil_020 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_mil_02
+	}
+}
+
+mil_03 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_mil_03
+	}
+}
+
+mil_030 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_mil_03
+	}
+}
+
+mil_04 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_mil_04
+	}
+}
+
+mil_040 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_mil_04
+	}
+}
+
+mil_05 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_mil_05
+	}
+}
+
+mil_050 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_mil_05
+	}
+}
+
+mil_11 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_mil_11
+	}
+}
+
+mil_110 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_mil_11
+	}
+}
+
+mil_12 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_mil_12
+	}
+}
+
+mil_120 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_mil_12
+	}
+}
+
+mil_13 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_mil_13
+	}
+}
+
+mil_130 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_mil_13
+	}
+}
+
+mil_14 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_mil_14
+	}
+}
+
+mil_140 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_mil_14
+	}
+}
+
+mil_15 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_mil_15
+	}
+}
+
+mil_150 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_mil_15
+	}
+}
+
+weiwang_01 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_01
+	}
+}
+
+weiwang_010 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_weiwang_01
+	}
+}
+
+weiwang_02 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_02
+	}
+}
+
+weiwang_020 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_weiwang_02
+	}
+}
+
+weiwang_03 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_03
+	}
+}
+
+weiwang_030 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_weiwang_03
+	}
+}
+
+weiwang_04 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_04
+	}
+}
+
+weiwang_040 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_weiwang_04
+	}
+}
+
+weiwang_05 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_05
+	}
+}
+
+weiwang_050 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_weiwang_05
+	}
+} 
+
+weiwang_050 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_weiwang_05
+	}
+}
+
+weiwang_06 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_06
+	}
+}
+
+weiwang_060 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_weiwang_06
+	}
+}
+
+weiwang_07 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_07
+	}
+}
+
+weiwang_070 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_weiwang_07
+	}
+}
+
+weiwang_08 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_08
+	}
+}
+
+weiwang_080 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_weiwang_08
+	}
+}
+
+weiwang_09 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_09
+	}
+}
+
+weiwang_090 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_weiwang_09
+	}
+} 
+weiwang_11 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_11
+	}
+}
+
+weiwang_110 = {
+	scope = country
+	effect = {
+		remove_modifier = sakuya_weiwang_11
+	}
+}
+weiwang_12 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_12
+	}
+}
+
+weiwang_120 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_weiwang_12
+	}
+}
+
+weiwang_13 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_13
+	}
+}
+
+weiwang_130 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_weiwang_13
+	}
+}
+
+weiwang_14 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_14
+	}
+}
+
+weiwang_140 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_weiwang_14
+	}
+}
+
+weiwang_15 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_15
+	}
+}
+
+weiwang_150 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_weiwang_15
+	}
+}
+
+weiwang_16 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_16
+	}
+}
+
+weiwang_160 = {
+	scope = country
+	effect = {
+		remove_modifier = sakuya_weiwang_16
+	}
+}
+weiwang_17 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_17
+	}
+}
+
+weiwang_170 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_weiwang_17
+	}
+}
+
+weiwang_18 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_18
+	}
+}
+
+weiwang_180 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_weiwang_18
+	}
+}
+
+weiwang_19 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_19
+	}
+}
+
+weiwang_190 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_weiwang_19
+	}
+}
+weiwang_21 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_21
+	}
+}
+weiwang_22 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_22
+	}
+}
+weiwang_23 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_23
+	}
+}
+weiwang_24 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_24
+	}
+}
+weiwang_25 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_25
+	}
+}
+weiwang_26 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_26
+	}
+}
+weiwang_27 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_27
+	}
+}
+weiwang_28 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_28
+	}
+}
+weiwang_31 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_31
+	}
+}
+weiwang_32 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_32
+	}
+}
+weiwang_33 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_33
+	}
+}
+weiwang_34 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_34
+	}
+}
+weiwang_35 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_35
+	}
+}
+weiwang_36 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_36
+	}
+}
+weiwang_37 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_37
+	}
+}
+weiwang_38 = {
+	scope = country
+	
+	effect = {
+		add_modifier = sakuya_weiwang_38
+	}
+}
+weiwang_29 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_weiwang_21
+		remove_modifier = sakuya_weiwang_22
+		remove_modifier = sakuya_weiwang_23
+		remove_modifier = sakuya_weiwang_24
+		remove_modifier = sakuya_weiwang_25
+		remove_modifier = sakuya_weiwang_26
+		remove_modifier = sakuya_weiwang_27
+		remove_modifier = sakuya_weiwang_28
+	}
+}
+weiwang_39 = {
+	scope = country
+	
+	effect = {
+		remove_modifier = sakuya_weiwang_31
+		remove_modifier = sakuya_weiwang_32
+		remove_modifier = sakuya_weiwang_33
+		remove_modifier = sakuya_weiwang_34
+		remove_modifier = sakuya_weiwang_35
+		remove_modifier = sakuya_weiwang_36
+		remove_modifier = sakuya_weiwang_37
+		remove_modifier = sakuya_weiwang_38
+	}
+}
+weiwang_s = {
+	scope = country
+	
+	effect = {
+		set_country_type = recognized
+	}
+}
+weiwang_s1 = {
+	scope = country
+	
+	effect = {
+		set_country_type = unrecognized
+	}
+}

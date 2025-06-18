@@ -1,0 +1,1245 @@
+#advcm_add_sakuya_#test = {
+#	scope = count#ry
+#	
+#	effect = {
+#		add_#modifier = advcm#_add_sakuya_text
+#	}
+#}
+#advcm_#rem#ove_sakuya_#test = {
+#	scope = country
+#	
+#	effect = {
+#		remove_#modifier = adv#cm_add_sakuya_#text
+#	}
+#} #测试代码连通性，已封印。复原请使用正则表达。
+#################################################
+
+advcm_add_sakuya_trade_unions_1 = {
+	scope = country
+	
+	effect = {
+		add_modifier = advcm_add_sakuya_trade_unions_unit1
+	}
+}
+advcm_remove_sakuya_trade_unions_1 = {
+	scope = country
+	
+	effect = {
+		add_modifier = advcm_add_sakuya_remove_trade_unions_unit1
+	}
+}
+
+advcm_add_sakuya_rural_folk_1 = {
+	scope = country
+	
+	effect = {
+		add_modifier = advcm_add_sakuya_rural_folk_unit1
+	}
+}
+advcm_remove_sakuya_rural_folk_1 = {
+	scope = country
+	
+	effect = {
+		add_modifier = advcm_add_sakuya_remove_rural_folk_unit1
+	}
+}
+
+advcm_add_sakuya_petty_bourgeoisie_1 = {
+	scope = country
+	
+	effect = {
+		add_modifier = advcm_add_sakuya_petty_bourgeoisie_unit1
+	}
+}
+advcm_remove_sakuya_petty_bourgeoisie_1 = {
+	scope = country
+	
+	effect = {
+		add_modifier = advcm_add_sakuya_remove_petty_bourgeoisie_unit1
+	}
+}
+
+advcm_add_sakuya_landowners_1 = {
+	scope = country
+	
+	effect = {
+		add_modifier = advcm_add_sakuya_landowners_unit1
+	}
+}
+advcm_remove_sakuya_landowners_1 = {
+	scope = country
+	
+	effect = {
+		add_modifier = advcm_add_sakuya_remove_landowners_unit1
+	}
+}
+
+advcm_add_sakuya_intelligensia_1 = {
+	scope = country
+	
+	effect = {
+		add_modifier = advcm_add_sakuya_intelligensia_unit1
+	}
+}
+advcm_remove_sakuya_intelligensia_1 = {
+	scope = country
+	
+	effect = {
+		add_modifier = advcm_add_sakuya_remove_intelligensia_unit1
+	}
+}
+
+advcm_add_sakuya_industrialists_1 = {
+	scope = country
+	
+	effect = {
+		add_modifier = advcm_add_sakuya_industrialists_unit1
+	}
+}
+advcm_remove_sakuya_industrialists_1 = {
+	scope = country
+	
+	effect = {
+		add_modifier = advcm_add_sakuya_remove_industrialists_unit1
+	}
+}
+
+advcm_add_sakuya_devout_1 = {
+	scope = country
+	
+	effect = {
+		add_modifier = advcm_add_sakuya_devout_unit1
+	}
+}
+advcm_remove_sakuya_devout_1 = {
+	scope = country
+	
+	effect = {
+		add_modifier = advcm_add_sakuya_remove_devout_unit1
+	}
+}
+
+advcm_add_sakuya_armed_forces_1 = {
+	scope = country
+	
+	effect = {
+		add_modifier = advcm_add_sakuya_armed_forces_unit1
+	}
+}
+advcm_remove_sakuya_armed_forces_1 = {
+	scope = country
+	
+	effect = {
+		add_modifier = advcm_add_sakuya_remove_armed_forces_unit1
+	}
+}
+
+advcm_add_sakuya_politically_unaligned_1 = {
+	scope = country
+	
+	effect = {
+		add_modifier = advcm_add_sakuya_politically_unaligned_unit1
+	}
+}
+advcm_remove_sakuya_politically_unaligned_1 = {
+	scope = country
+	
+	effect = {
+		add_modifier = advcm_add_sakuya_remove_politically_unaligned_unit1
+	}
+}
+
+###################以下是对应的BUFF加强###############
+
+
+advcm_add_sakuya_trade_unions_1_clear = {
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_trade_unions_unit1
+        remove_modifier = advcm_add_sakuya_remove_trade_unions_unit1
+    }
+}
+advcm_add_sakuya_rural_folk_1_clear = {
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_rural_folk_unit1
+        remove_modifier = advcm_add_sakuya_remove_rural_folk_unit1
+    }
+}
+
+advcm_add_sakuya_petty_bourgeoisie_1_clear = {
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_petty_bourgeoisie_unit1
+        remove_modifier = advcm_add_sakuya_remove_petty_bourgeoisie_unit1
+    }
+}
+
+advcm_add_sakuya_landowners_1_clear = {
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_landowners_unit1
+        remove_modifier = advcm_add_sakuya_remove_landowners_unit1
+    }
+}
+
+advcm_add_sakuya_intelligensia_1_clear = {
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_intelligensia_unit1
+        remove_modifier = advcm_add_sakuya_remove_intelligensia_unit1
+    }
+}
+
+advcm_add_sakuya_industrialists_1_clear = {
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_industrialists_unit1
+        remove_modifier = advcm_add_sakuya_remove_industrialists_unit1
+    }
+}
+
+advcm_add_sakuya_devout_1_clear = {
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_devout_unit1
+        remove_modifier = advcm_add_sakuya_remove_devout_unit1
+    }
+}
+
+advcm_add_sakuya_armed_forces_1_clear = {
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_armed_forces_unit1
+        remove_modifier = advcm_add_sakuya_remove_armed_forces_unit1
+    }
+}
+
+advcm_add_sakuya_politically_unaligned_1_clear = {
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_politically_unaligned_unit1
+        remove_modifier = advcm_add_sakuya_remove_politically_unaligned_unit1
+    }
+}
+
+
+################以下是大按钮#########################
+
+
+advcm_add_sakuya_all_1 = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_all_unit1
+    }
+}
+advcm_remove_sakuya_all_1 = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_all_unit1
+    }
+}
+
+advcm_add_sakuya_all_remove_1 = {
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_trade_unions_unit1
+        remove_modifier = advcm_add_sakuya_remove_trade_unions_unit1
+        remove_modifier = advcm_add_sakuya_rural_folk_unit1
+        remove_modifier = advcm_add_sakuya_remove_rural_folk_unit1
+        remove_modifier = advcm_add_sakuya_petty_bourgeoisie_unit1
+        remove_modifier = advcm_add_sakuya_remove_petty_bourgeoisie_unit1
+        remove_modifier = advcm_add_sakuya_landowners_unit1
+        remove_modifier = advcm_add_sakuya_remove_landowners_unit1
+        remove_modifier = advcm_add_sakuya_intelligensia_unit1
+        remove_modifier = advcm_add_sakuya_remove_intelligensia_unit1
+        remove_modifier = advcm_add_sakuya_industrialists_unit1
+        remove_modifier = advcm_add_sakuya_remove_industrialists_unit1
+        remove_modifier = advcm_add_sakuya_devout_unit1
+        remove_modifier = advcm_add_sakuya_remove_devout_unit1
+        remove_modifier = advcm_add_sakuya_armed_forces_unit1
+        remove_modifier = advcm_add_sakuya_remove_armed_forces_unit1
+        remove_modifier = advcm_add_sakuya_politically_unaligned_unit1
+        remove_modifier = advcm_add_sakuya_remove_politically_unaligned_unit1
+        remove_modifier = advcm_add_sakuya_all_unit1
+        remove_modifier = advcm_add_sakuya_remove_all_unit1
+    }
+}
+advcm_remove_sakuya_all_remove_1 = {
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_all_unit1
+        remove_modifier = advcm_add_sakuya_remove_all_unit1
+    }
+}
+
+
+#你以为我不想做成每个圆按钮消除对应集团的修改吗？我试了无数次，做不到！
+#这就是为什么我开始设计了这么多按钮，结果被迫只能改成普通按钮的加强版。
+#开启第二章节：支持度部分。
+#最新补充：做到了。哈哈
+
+advcm_add_sakuya_trade_unions_2_plus = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_trade_unions_unit2_plus
+    }
+}
+advcm_remove_sakuya_trade_unions_2_plus = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_trade_unions_unit2_plus
+    }
+}
+advcm_add_sakuya_trade_unions_2 = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_trade_unions_unit2
+    }
+}
+advcm_remove_sakuya_trade_unions_2 = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_trade_unions_unit2
+    }
+}
+advcm_add_sakuya_trade_unions_2_min = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_trade_unions_unit2_min
+    }
+}
+advcm_remove_sakuya_trade_unions_2_min = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_trade_unions_unit2_min
+    }
+}
+advcm_add_sakuya_trade_unions_2_clear = {
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_trade_unions_unit2_plus
+        remove_modifier = advcm_add_sakuya_remove_trade_unions_unit2_plus
+        remove_modifier = advcm_add_sakuya_trade_unions_unit2
+        remove_modifier = advcm_add_sakuya_remove_trade_unions_unit2
+        remove_modifier = advcm_add_sakuya_trade_unions_unit2_min
+        remove_modifier = advcm_add_sakuya_remove_trade_unions_unit2_min
+    }
+}
+
+advcm_add_sakuya_rural_folk_2_plus = {  #乡野民众修饰符组 极端加强
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_rural_folk_unit2_plus
+    }
+}
+advcm_remove_sakuya_rural_folk_2_plus = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_rural_folk_unit2_plus
+    }
+}
+advcm_add_sakuya_rural_folk_2 = {  #乡野民众修饰符组
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_rural_folk_unit2
+    }
+}
+advcm_remove_sakuya_rural_folk_2 = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_rural_folk_unit2
+    }
+}
+advcm_add_sakuya_rural_folk_2_min = {  #乡野民众修饰符组 微弱
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_rural_folk_unit2_min
+    }
+}
+advcm_remove_sakuya_rural_folk_2_min = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_rural_folk_unit2_min
+    }
+}
+advcm_add_sakuya_rural_folk_2_clear = {  #乡野民众清除所有修饰符
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_rural_folk_unit2_plus
+        remove_modifier = advcm_add_sakuya_remove_rural_folk_unit2_plus
+        remove_modifier = advcm_add_sakuya_rural_folk_unit2
+        remove_modifier = advcm_add_sakuya_remove_rural_folk_unit2
+        remove_modifier = advcm_add_sakuya_rural_folk_unit2_min
+        remove_modifier = advcm_add_sakuya_remove_rural_folk_unit2_min
+    }
+}
+
+advcm_add_sakuya_petty_bourgeoisie_2_plus = {  #小资产阶级修饰符组 极端加强
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_petty_bourgeoisie_unit2_plus
+    }
+}
+advcm_remove_sakuya_petty_bourgeoisie_2_plus = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_petty_bourgeoisie_unit2_plus
+    }
+}
+advcm_add_sakuya_petty_bourgeoisie_2 = {  #小资产阶级修饰符组
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_petty_bourgeoisie_unit2
+    }
+}
+advcm_remove_sakuya_petty_bourgeoisie_2 = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_petty_bourgeoisie_unit2
+    }
+}
+advcm_add_sakuya_petty_bourgeoisie_2_min = {  #小资产阶级修饰符组 微弱
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_petty_bourgeoisie_unit2_min
+    }
+}
+advcm_remove_sakuya_petty_bourgeoisie_2_min = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_petty_bourgeoisie_unit2_min
+    }
+}
+advcm_add_sakuya_petty_bourgeoisie_2_clear = {  #小资产阶级清除所有修饰符
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_petty_bourgeoisie_unit2_plus
+        remove_modifier = advcm_add_sakuya_remove_petty_bourgeoisie_unit2_plus
+        remove_modifier = advcm_add_sakuya_petty_bourgeoisie_unit2
+        remove_modifier = advcm_add_sakuya_remove_petty_bourgeoisie_unit2
+        remove_modifier = advcm_add_sakuya_petty_bourgeoisie_unit2_min
+        remove_modifier = advcm_add_sakuya_remove_petty_bourgeoisie_unit2_min
+    }
+}
+
+advcm_add_sakuya_landowners_2_plus = {  #地主修饰符组 极端加强
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_landowners_unit2_plus
+    }
+}
+advcm_remove_sakuya_landowners_2_plus = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_landowners_unit2_plus
+    }
+}
+advcm_add_sakuya_landowners_2 = {  #地主修饰符组
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_landowners_unit2
+    }
+}
+advcm_remove_sakuya_landowners_2 = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_landowners_unit2
+    }
+}
+advcm_add_sakuya_landowners_2_min = {  #地主修饰符组 微弱
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_landowners_unit2_min
+    }
+}
+advcm_remove_sakuya_landowners_2_min = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_landowners_unit2_min
+    }
+}
+advcm_add_sakuya_landowners_2_clear = {  #地主清除所有修饰符
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_landowners_unit2_plus
+        remove_modifier = advcm_add_sakuya_remove_landowners_unit2_plus
+        remove_modifier = advcm_add_sakuya_landowners_unit2
+        remove_modifier = advcm_add_sakuya_remove_landowners_unit2
+        remove_modifier = advcm_add_sakuya_landowners_unit2_min
+        remove_modifier = advcm_add_sakuya_remove_landowners_unit2_min
+    }
+}
+
+advcm_add_sakuya_intelligensia_2_plus = {  #知识分子修饰符组 极端加强
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_intelligensia_unit2_plus
+    }
+}
+advcm_remove_sakuya_intelligensia_2_plus = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_intelligensia_unit2_plus
+    }
+}
+advcm_add_sakuya_intelligensia_2 = {  #知识分子修饰符组
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_intelligensia_unit2
+    }
+}
+advcm_remove_sakuya_intelligensia_2 = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_intelligensia_unit2
+    }
+}
+advcm_add_sakuya_intelligensia_2_min = {  #知识分子修饰符组 微弱
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_intelligensia_unit2_min
+    }
+}
+advcm_remove_sakuya_intelligensia_2_min = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_intelligensia_unit2_min
+    }
+}
+advcm_add_sakuya_intelligensia_2_clear = {  #知识分子清除所有修饰符
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_intelligensia_unit2_plus
+        remove_modifier = advcm_add_sakuya_remove_intelligensia_unit2_plus
+        remove_modifier = advcm_add_sakuya_intelligensia_unit2
+        remove_modifier = advcm_add_sakuya_remove_intelligensia_unit2
+        remove_modifier = advcm_add_sakuya_intelligensia_unit2_min
+        remove_modifier = advcm_add_sakuya_remove_intelligensia_unit2_min
+    }
+}
+
+advcm_add_sakuya_industrialists_2_plus = {  #工业家修饰符组 极端加强
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_industrialists_unit2_plus
+    }
+}
+advcm_remove_sakuya_industrialists_2_plus = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_industrialists_unit2_plus
+    }
+}
+advcm_add_sakuya_industrialists_2 = {  #工业家修饰符组
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_industrialists_unit2
+    }
+}
+advcm_remove_sakuya_industrialists_2 = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_industrialists_unit2
+    }
+}
+advcm_add_sakuya_industrialists_2_min = {  #工业家修饰符组 微弱
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_industrialists_unit2_min
+    }
+}
+advcm_remove_sakuya_industrialists_2_min = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_industrialists_unit2_min
+    }
+}
+advcm_add_sakuya_industrialists_2_clear = {  #工业家清除所有修饰符
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_industrialists_unit2_plus
+        remove_modifier = advcm_add_sakuya_remove_industrialists_unit2_plus
+        remove_modifier = advcm_add_sakuya_industrialists_unit2
+        remove_modifier = advcm_add_sakuya_remove_industrialists_unit2
+        remove_modifier = advcm_add_sakuya_industrialists_unit2_min
+        remove_modifier = advcm_add_sakuya_remove_industrialists_unit2_min
+    }
+}
+
+advcm_add_sakuya_devout_2_plus = {  #虔诚者修饰符组 极端加强
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_devout_unit2_plus
+    }
+}
+advcm_remove_sakuya_devout_2_plus = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_devout_unit2_plus
+    }
+}
+advcm_add_sakuya_devout_2 = {  #虔诚者修饰符组
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_devout_unit2
+    }
+}
+advcm_remove_sakuya_devout_2 = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_devout_unit2
+    }
+}
+advcm_add_sakuya_devout_2_min = {  #虔诚者修饰符组 微弱
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_devout_unit2_min
+    }
+}
+advcm_remove_sakuya_devout_2_min = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_devout_unit2_min
+    }
+}
+advcm_add_sakuya_devout_2_clear = {  #虔诚者清除所有修饰符
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_devout_unit2_plus
+        remove_modifier = advcm_add_sakuya_remove_devout_unit2_plus
+        remove_modifier = advcm_add_sakuya_devout_unit2
+        remove_modifier = advcm_add_sakuya_remove_devout_unit2
+        remove_modifier = advcm_add_sakuya_devout_unit2_min
+        remove_modifier = advcm_add_sakuya_remove_devout_unit2_min
+    }
+}
+
+advcm_add_sakuya_armed_forces_2_plus = {  #武装力量修饰符组 极端加强
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_armed_forces_unit2_plus
+    }
+}
+advcm_remove_sakuya_armed_forces_2_plus = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_armed_forces_unit2_plus
+    }
+}
+advcm_add_sakuya_armed_forces_2 = {  #武装力量修饰符组
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_armed_forces_unit2
+    }
+}
+advcm_remove_sakuya_armed_forces_2 = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_armed_forces_unit2
+    }
+}
+advcm_add_sakuya_armed_forces_2_min = {  #武装力量修饰符组 微弱
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_armed_forces_unit2_min
+    }
+}
+advcm_remove_sakuya_armed_forces_2_min = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_armed_forces_unit2_min
+    }
+}
+advcm_add_sakuya_armed_forces_2_clear = {  #武装力量清除所有修饰符
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_armed_forces_unit2_plus
+        remove_modifier = advcm_add_sakuya_remove_armed_forces_unit2_plus
+        remove_modifier = advcm_add_sakuya_armed_forces_unit2
+        remove_modifier = advcm_add_sakuya_remove_armed_forces_unit2
+        remove_modifier = advcm_add_sakuya_armed_forces_unit2_min
+        remove_modifier = advcm_add_sakuya_remove_armed_forces_unit2_min
+    }
+}
+
+advcm_add_sakuya_trade_unions_2_only = { #工会 唯一政党模式修饰符
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_trade_unions_unit2_only
+    }
+}
+advcm_remove_sakuya_trade_unions_2_only = {
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_trade_unions_unit2_only
+    }
+}
+
+advcm_add_sakuya_rural_folk_2_only = { #乡野民众 唯一政党模式修饰符
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_rural_folk_unit2_only
+    }
+}
+advcm_remove_sakuya_rural_folk_2_only = {
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_rural_folk_unit2_only
+    }
+}
+
+advcm_add_sakuya_petty_bourgeoisie_2_only = { #小资产阶级 唯一政党模式修饰符
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_petty_bourgeoisie_unit2_only
+    }
+}
+advcm_remove_sakuya_petty_bourgeoisie_2_only = {
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_petty_bourgeoisie_unit2_only
+    }
+}
+
+advcm_add_sakuya_landowners_2_only = { #地主 唯一政党模式修饰符
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_landowners_unit2_only
+    }
+}
+advcm_remove_sakuya_landowners_2_only = {
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_landowners_unit2_only
+    }
+}
+
+advcm_add_sakuya_intelligensia_2_only = { #知识分子 唯一政党模式修饰符
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_intelligensia_unit2_only
+    }
+}
+advcm_remove_sakuya_intelligensia_2_only = {
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_intelligensia_unit2_only
+    }
+}
+
+advcm_add_sakuya_industrialists_2_only = { #工业家 唯一政党模式修饰符
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_industrialists_unit2_only
+    }
+}
+advcm_remove_sakuya_industrialists_2_only = {
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_industrialists_unit2_only
+    }
+}
+
+advcm_add_sakuya_devout_2_only = { #虔诚者 唯一政党模式修饰符
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_devout_unit2_only
+    }
+}
+advcm_remove_sakuya_devout_2_only = {
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_devout_unit2_only
+    }
+}
+
+advcm_add_sakuya_armed_forces_2_only = { #武装力量 唯一政党模式修饰符
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_armed_forces_unit2_only
+    }
+}
+advcm_remove_sakuya_armed_forces_2_only = {
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_armed_forces_unit2_only
+    }
+}
+
+#小按钮结束。接下来是大按钮。
+
+
+
+advcm_add_sakuya_all_remove_2_positive = {  #大按钮 删除全部正面效果
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_trade_unions_unit2_plus
+        remove_modifier = advcm_add_sakuya_trade_unions_unit2
+        remove_modifier = advcm_add_sakuya_trade_unions_unit2_min
+
+        remove_modifier = advcm_add_sakuya_rural_folk_unit2_plus
+        remove_modifier = advcm_add_sakuya_rural_folk_unit2
+        remove_modifier = advcm_add_sakuya_rural_folk_unit2_min
+
+        remove_modifier = advcm_add_sakuya_petty_bourgeoisie_unit2_plus
+        remove_modifier = advcm_add_sakuya_petty_bourgeoisie_unit2
+        remove_modifier = advcm_add_sakuya_petty_bourgeoisie_unit2_min
+
+        remove_modifier = advcm_add_sakuya_landowners_unit2_plus
+        remove_modifier = advcm_add_sakuya_landowners_unit2
+        remove_modifier = advcm_add_sakuya_landowners_unit2_min
+
+        remove_modifier = advcm_add_sakuya_intelligensia_unit2_plus
+        remove_modifier = advcm_add_sakuya_intelligensia_unit2
+        remove_modifier = advcm_add_sakuya_intelligensia_unit2_min
+
+        remove_modifier = advcm_add_sakuya_industrialists_unit2_plus
+        remove_modifier = advcm_add_sakuya_industrialists_unit2
+        remove_modifier = advcm_add_sakuya_industrialists_unit2_min
+
+        remove_modifier = advcm_add_sakuya_devout_unit2_plus
+        remove_modifier = advcm_add_sakuya_devout_unit2
+        remove_modifier = advcm_add_sakuya_devout_unit2_min
+
+        remove_modifier = advcm_add_sakuya_armed_forces_unit2_plus
+        remove_modifier = advcm_add_sakuya_armed_forces_unit2
+        remove_modifier = advcm_add_sakuya_armed_forces_unit2_min
+    }
+}
+
+advcm_add_sakuya_all_remove_2_negative = {  #大按钮 删除全部反面效果
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_remove_trade_unions_unit2_plus
+        remove_modifier = advcm_add_sakuya_remove_trade_unions_unit2
+        remove_modifier = advcm_add_sakuya_remove_trade_unions_unit2_min
+
+        remove_modifier = advcm_add_sakuya_remove_rural_folk_unit2_plus
+        remove_modifier = advcm_add_sakuya_remove_rural_folk_unit2
+        remove_modifier = advcm_add_sakuya_remove_rural_folk_unit2_min
+
+        remove_modifier = advcm_add_sakuya_remove_petty_bourgeoisie_unit2_plus
+        remove_modifier = advcm_add_sakuya_remove_petty_bourgeoisie_unit2
+        remove_modifier = advcm_add_sakuya_remove_petty_bourgeoisie_unit2_min
+
+        remove_modifier = advcm_add_sakuya_remove_landowners_unit2_plus
+        remove_modifier = advcm_add_sakuya_remove_landowners_unit2
+        remove_modifier = advcm_add_sakuya_remove_landowners_unit2_min
+
+        remove_modifier = advcm_add_sakuya_remove_intelligensia_unit2_plus
+        remove_modifier = advcm_add_sakuya_remove_intelligensia_unit2
+        remove_modifier = advcm_add_sakuya_remove_intelligensia_unit2_min
+
+        remove_modifier = advcm_add_sakuya_remove_industrialists_unit2_plus
+        remove_modifier = advcm_add_sakuya_remove_industrialists_unit2
+        remove_modifier = advcm_add_sakuya_remove_industrialists_unit2_min
+
+        remove_modifier = advcm_add_sakuya_remove_devout_unit2_plus
+        remove_modifier = advcm_add_sakuya_remove_devout_unit2
+        remove_modifier = advcm_add_sakuya_remove_devout_unit2_min
+
+        remove_modifier = advcm_add_sakuya_remove_armed_forces_unit2_plus
+        remove_modifier = advcm_add_sakuya_remove_armed_forces_unit2
+        remove_modifier = advcm_add_sakuya_remove_armed_forces_unit2_min
+    }
+}
+
+advcm_add_sakuya_all_remove_2_only = {  #大按钮 删除全部唯一执政模式
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_trade_unions_unit2_only
+        remove_modifier = advcm_add_sakuya_rural_folk_unit2_only
+        remove_modifier = advcm_add_sakuya_petty_bourgeoisie_unit2_only
+        remove_modifier = advcm_add_sakuya_landowners_unit2_only
+        remove_modifier = advcm_add_sakuya_intelligensia_unit2_only
+        remove_modifier = advcm_add_sakuya_industrialists_unit2_only
+        remove_modifier = advcm_add_sakuya_devout_unit2_only
+        remove_modifier = advcm_add_sakuya_armed_forces_unit2_only
+    }
+}
+
+#终极大按钮，两个
+#一个是添加一切，一个是删除一切。
+
+advcm_add_sakuya_all_2 = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_all_unit2
+    }
+}
+advcm_remove_sakuya_all_2 = {
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_remove_all_unit2
+    }
+}
+
+advcm_add_sakuya_all_remove_2 = {
+	scope = country
+    
+    effect = {
+    	remove_modifier = advcm_add_sakuya_trade_unions_unit2_plus
+        remove_modifier = advcm_add_sakuya_trade_unions_unit2
+        remove_modifier = advcm_add_sakuya_trade_unions_unit2_min
+
+        remove_modifier = advcm_add_sakuya_rural_folk_unit2_plus
+        remove_modifier = advcm_add_sakuya_rural_folk_unit2
+        remove_modifier = advcm_add_sakuya_rural_folk_unit2_min
+
+        remove_modifier = advcm_add_sakuya_petty_bourgeoisie_unit2_plus
+        remove_modifier = advcm_add_sakuya_petty_bourgeoisie_unit2
+        remove_modifier = advcm_add_sakuya_petty_bourgeoisie_unit2_min
+
+        remove_modifier = advcm_add_sakuya_landowners_unit2_plus
+        remove_modifier = advcm_add_sakuya_landowners_unit2
+        remove_modifier = advcm_add_sakuya_landowners_unit2_min
+
+        remove_modifier = advcm_add_sakuya_intelligensia_unit2_plus
+        remove_modifier = advcm_add_sakuya_intelligensia_unit2
+        remove_modifier = advcm_add_sakuya_intelligensia_unit2_min
+
+        remove_modifier = advcm_add_sakuya_industrialists_unit2_plus
+        remove_modifier = advcm_add_sakuya_industrialists_unit2
+        remove_modifier = advcm_add_sakuya_industrialists_unit2_min
+
+        remove_modifier = advcm_add_sakuya_devout_unit2_plus
+        remove_modifier = advcm_add_sakuya_devout_unit2
+        remove_modifier = advcm_add_sakuya_devout_unit2_min
+
+        remove_modifier = advcm_add_sakuya_armed_forces_unit2_plus
+        remove_modifier = advcm_add_sakuya_armed_forces_unit2
+        remove_modifier = advcm_add_sakuya_armed_forces_unit2_min
+
+        remove_modifier = advcm_add_sakuya_remove_trade_unions_unit2_plus
+        remove_modifier = advcm_add_sakuya_remove_trade_unions_unit2
+        remove_modifier = advcm_add_sakuya_remove_trade_unions_unit2_min
+
+        remove_modifier = advcm_add_sakuya_remove_rural_folk_unit2_plus
+        remove_modifier = advcm_add_sakuya_remove_rural_folk_unit2
+        remove_modifier = advcm_add_sakuya_remove_rural_folk_unit2_min
+
+        remove_modifier = advcm_add_sakuya_remove_petty_bourgeoisie_unit2_plus
+        remove_modifier = advcm_add_sakuya_remove_petty_bourgeoisie_unit2
+        remove_modifier = advcm_add_sakuya_remove_petty_bourgeoisie_unit2_min
+
+        remove_modifier = advcm_add_sakuya_remove_landowners_unit2_plus
+        remove_modifier = advcm_add_sakuya_remove_landowners_unit2
+        remove_modifier = advcm_add_sakuya_remove_landowners_unit2_min
+
+        remove_modifier = advcm_add_sakuya_remove_intelligensia_unit2_plus
+        remove_modifier = advcm_add_sakuya_remove_intelligensia_unit2
+        remove_modifier = advcm_add_sakuya_remove_intelligensia_unit2_min
+
+        remove_modifier = advcm_add_sakuya_remove_industrialists_unit2_plus
+        remove_modifier = advcm_add_sakuya_remove_industrialists_unit2
+        remove_modifier = advcm_add_sakuya_remove_industrialists_unit2_min
+
+        remove_modifier = advcm_add_sakuya_remove_devout_unit2_plus
+        remove_modifier = advcm_add_sakuya_remove_devout_unit2
+        remove_modifier = advcm_add_sakuya_remove_devout_unit2_min
+
+        remove_modifier = advcm_add_sakuya_remove_armed_forces_unit2_plus
+        remove_modifier = advcm_add_sakuya_remove_armed_forces_unit2
+        remove_modifier = advcm_add_sakuya_remove_armed_forces_unit2_min
+
+        remove_modifier = advcm_add_sakuya_trade_unions_unit2_only
+        remove_modifier = advcm_add_sakuya_rural_folk_unit2_only
+        remove_modifier = advcm_add_sakuya_petty_bourgeoisie_unit2_only
+        remove_modifier = advcm_add_sakuya_landowners_unit2_only
+        remove_modifier = advcm_add_sakuya_intelligensia_unit2_only
+        remove_modifier = advcm_add_sakuya_industrialists_unit2_only
+        remove_modifier = advcm_add_sakuya_devout_unit2_only
+        remove_modifier = advcm_add_sakuya_armed_forces_unit2_only
+
+        remove_modifier = advcm_add_sakuya_all_unit2
+        remove_modifier = advcm_add_sakuya_remove_all_unit2
+    }
+}
+
+advcm_remove_sakuya_all_remove_2 = {
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_remove_all_unit2
+        remove_modifier = advcm_add_sakuya_all_unit2
+    }
+}
+
+###################################################
+###################################################
+#本组尾缀使用字符 all 。将错就错而已，又不是不能用
+
+advcm_add_sakuya_interest_group_approval_add = { #批准法律组 全部 添加
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_interest_group_approval_add_all
+    }
+}
+advcm_remove_sakuya_interest_group_approval_add = { #批准法律组 全部 移除
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_interest_group_approval_add_all
+    }
+}
+
+advcm_add_sakuya_interest_group_in_government_approval_add = { #批准法律组 执政 添加
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_interest_group_in_government_approval_add_all
+    }
+}
+advcm_remove_sakuya_interest_group_in_government_approval_add = { #批准法律组 执政 移除
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_interest_group_in_government_approval_add_all
+    }
+}
+
+advcm_add_sakuya_interest_group_in_opposition_approval_add = { #批准法律组 在野 添加
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_interest_group_in_opposition_approval_add_all
+    }
+}
+advcm_remove_sakuya_interest_group_in_opposition_approval_add = { #批准法律组 在野 移除
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_interest_group_in_opposition_approval_add_all
+    }
+}
+
+advcm_add_sakuya_interest_group_trade_unions_approval_add = { #批准法律组 工会 添加
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_interest_group_trade_unions_approval_add_all
+    }
+}
+advcm_remove_sakuya_interest_group_trade_unions_approval_add = { #批准法律组 工会 移除
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_interest_group_trade_unions_approval_add_all
+    }
+}
+
+advcm_add_sakuya_interest_group_rural_folk_approval_add = { #批准法律组 乡野民众 添加
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_interest_group_rural_folk_approval_add_all
+    }
+}
+advcm_remove_sakuya_interest_group_rural_folk_approval_add = { #批准法律组 乡野民众 移除
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_interest_group_rural_folk_approval_add_all
+    }
+}
+
+advcm_add_sakuya_interest_group_petty_bourgeoisie_approval_add = { #批准法律组 小资产阶级 添加
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_interest_group_petty_bourgeoisie_approval_add_all
+    }
+}
+advcm_remove_sakuya_interest_group_petty_bourgeoisie_approval_add = { #批准法律组 小资产阶级 移除
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_interest_group_petty_bourgeoisie_approval_add_all
+    }
+}
+
+advcm_add_sakuya_interest_group_landowners_approval_add = { #批准法律组 地主 添加
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_interest_group_landowners_approval_add_all
+    }
+}
+advcm_remove_sakuya_interest_group_landowners_approval_add = { #批准法律组 地主 移除
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_interest_group_landowners_approval_add_all
+    }
+}
+
+advcm_add_sakuya_interest_group_intelligensia_approval_add = { #批准法律组 知识分子 添加
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_interest_group_intelligensia_approval_add_all
+    }
+}
+advcm_remove_sakuya_interest_group_intelligensia_approval_add = { #批准法律组 知识分子 移除
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_interest_group_intelligensia_approval_add_all
+    }
+}
+
+advcm_add_sakuya_interest_group_industrialists_approval_add = { #批准法律组 工业家 添加
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_interest_group_industrialists_approval_add_all
+    }
+}
+advcm_remove_sakuya_interest_group_industrialists_approval_add = { #批准法律组 工业家 移除
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_interest_group_industrialists_approval_add_all
+    }
+}
+
+advcm_add_sakuya_interest_group_devout_approval_add = { #批准法律组 虔诚者 添加
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_interest_group_devout_approval_add_all
+    }
+}
+advcm_remove_sakuya_interest_group_devout_approval_add = { #批准法律组 虔诚者 移除
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_interest_group_devout_approval_add_all
+    }
+}
+
+advcm_add_sakuya_interest_group_armed_forces_approval_add = { #批准法律组 武装力量 添加
+    scope = country
+    
+    effect = {
+        add_modifier = advcm_add_sakuya_interest_group_armed_forces_approval_add_all
+    }
+}
+advcm_remove_sakuya_interest_group_armed_forces_approval_add = { #批准法律组 武装力量 移除
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_interest_group_armed_forces_approval_add_all
+    }
+}
+
+
+advcm_add_sakuya_interest_group_approval_clear = { #批准法律组 全部 移除
+    scope = country
+    
+    effect = {
+        remove_modifier = advcm_add_sakuya_interest_group_approval_add_all
+        remove_modifier = advcm_add_sakuya_interest_group_in_government_approval_add_all
+        remove_modifier = advcm_add_sakuya_interest_group_in_opposition_approval_add_all
+        remove_modifier = advcm_add_sakuya_interest_group_trade_unions_approval_add_all
+        remove_modifier = advcm_add_sakuya_interest_group_rural_folk_approval_add_all
+        remove_modifier = advcm_add_sakuya_interest_group_petty_bourgeoisie_approval_add_all
+        remove_modifier = advcm_add_sakuya_interest_group_landowners_approval_add_all
+        remove_modifier = advcm_add_sakuya_interest_group_intelligensia_approval_add_all
+        remove_modifier = advcm_add_sakuya_interest_group_industrialists_approval_add_all
+        remove_modifier = advcm_add_sakuya_interest_group_devout_approval_add_all
+        remove_modifier = advcm_add_sakuya_interest_group_armed_forces_approval_add_all
+    }
+}

@@ -1,0 +1,557 @@
+#B Group
+    sakuya_force_b = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_b
+        }
+    }
+    sakuya_force_b_remove = {
+        scope = country
+        effect = {
+            remove_modifier = sakuya_force_b
+            remove_modifier = sakuya_force_b1
+            remove_modifier = sakuya_force_b1_minus
+            remove_modifier = sakuya_force_b2
+            remove_modifier = sakuya_force_b2_minus
+            remove_modifier = sakuya_force_b3
+            remove_modifier = sakuya_force_b3_minus
+            remove_modifier = sakuya_force_b4
+            remove_modifier = sakuya_force_b4_minus
+            remove_modifier = sakuya_force_b5
+            remove_modifier = sakuya_force_b5_minus
+            remove_modifier = sakuya_force_b6
+            remove_modifier = sakuya_force_b6_minus
+            remove_modifier = sakuya_force_b7
+            remove_modifier = sakuya_force_b7_minus
+            remove_modifier = sakuya_force_b8
+            remove_modifier = sakuya_force_b8_minus
+            remove_modifier = sakuya_force_b9
+            remove_modifier = sakuya_force_b9_minus
+            remove_modifier = sakuya_force_b10
+            remove_modifier = sakuya_force_b10_minus
+            remove_modifier = sakuya_force_b11
+            remove_modifier = sakuya_force_b11_minus
+        }
+    }
+
+    
+    sakuya_force_b1 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_b1
+        }
+    }
+    sakuya_force_b2 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_b2
+        }
+    }
+    sakuya_force_b3 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_b3
+        }
+    }
+    sakuya_force_b4 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_b4
+        }
+    }
+    sakuya_force_b5 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_b5
+        }
+    }
+    sakuya_force_b6 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_b6
+        }
+    }
+    sakuya_force_b7 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_b7
+        }
+    }
+    sakuya_force_b8 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_b8
+        }
+    }
+    sakuya_force_b9 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_b9
+        }
+    }
+    sakuya_force_b10 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_b10
+        }
+    }
+    sakuya_force_b11 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_b11
+        }
+    }
+    sakuya_force_b1_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_b1_minus
+        }
+    }
+    sakuya_force_b2_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_b2_minus
+        }
+    }
+    sakuya_force_b3_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_b3_minus
+        }
+    }
+    sakuya_force_b4_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_b4_minus
+        }
+    }
+    sakuya_force_b5_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_b5_minus
+        }
+    }
+    sakuya_force_b6_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_b6_minus
+        }
+    }
+    sakuya_force_b7_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_b7_minus
+        }
+    }
+    sakuya_force_b8_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_b8_minus
+        }
+    }
+    sakuya_force_b9_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_b9_minus
+        }
+    }
+    sakuya_force_b10_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_b10_minus
+        }
+    }
+    sakuya_force_b11_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_b11_minus
+        }
+    }
+
+#B Group
+    sakuya_force_c = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_c
+        }
+    }
+    sakuya_force_c_remove = {
+        scope = country
+        effect = {
+            remove_modifier = sakuya_force_c
+            remove_modifier = sakuya_force_c1
+            remove_modifier = sakuya_force_c1_minus
+            remove_modifier = sakuya_force_c2
+            remove_modifier = sakuya_force_c2_minus
+            remove_modifier = sakuya_force_c3
+            remove_modifier = sakuya_force_c3_minus
+            remove_modifier = sakuya_force_c4
+            remove_modifier = sakuya_force_c4_minus
+            remove_modifier = sakuya_force_c5
+            remove_modifier = sakuya_force_c5_minus
+            remove_modifier = sakuya_force_c6
+            remove_modifier = sakuya_force_c6_minus
+            remove_modifier = sakuya_force_c7
+            remove_modifier = sakuya_force_c7_minus
+            remove_modifier = sakuya_force_c8
+            remove_modifier = sakuya_force_c8_minus
+            remove_modifier = sakuya_force_c9
+            remove_modifier = sakuya_force_c9_minus
+            remove_modifier = sakuya_force_c10
+            remove_modifier = sakuya_force_c10_minus
+            remove_modifier = sakuya_force_c11
+            remove_modifier = sakuya_force_c11_minus
+        }
+    }
+
+    
+    sakuya_force_c1 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_c1
+        }
+    }
+    sakuya_force_c2 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_c2
+        }
+    }
+    sakuya_force_c3 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_c3
+        }
+    }
+    sakuya_force_c4 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_c4
+        }
+    }
+    sakuya_force_c5 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_c5
+        }
+    }
+    sakuya_force_c6 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_c6
+        }
+    }
+    sakuya_force_c7 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_c7
+        }
+    }
+    sakuya_force_c8 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_c8
+        }
+    }
+    sakuya_force_c9 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_c9
+        }
+    }
+    sakuya_force_c10 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_c10
+        }
+    }
+    sakuya_force_c11 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_c11
+        }
+    }
+    sakuya_force_c1_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_c1_minus
+        }
+    }
+    sakuya_force_c2_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_c2_minus
+        }
+    }
+    sakuya_force_c3_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_c3_minus
+        }
+    }
+    sakuya_force_c4_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_c4_minus
+        }
+    }
+    sakuya_force_c5_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_c5_minus
+        }
+    }
+    sakuya_force_c6_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_c6_minus
+        }
+    }
+    sakuya_force_c7_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_c7_minus
+        }
+    }
+    sakuya_force_c8_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_c8_minus
+        }
+    }
+    sakuya_force_c9_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_c9_minus
+        }
+    }
+    sakuya_force_c10_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_c10_minus
+        }
+    }
+    sakuya_force_c11_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_c11_minus
+        }
+    }
+
+    #B Group
+    sakuya_force_d = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_d
+        }
+    }
+    sakuya_force_d_remove = {
+        scope = country
+        effect = {
+            remove_modifier = sakuya_force_d
+            remove_modifier = sakuya_force_d1
+            remove_modifier = sakuya_force_d1_minus
+            remove_modifier = sakuya_force_d2
+            remove_modifier = sakuya_force_d2_minus
+            remove_modifier = sakuya_force_d3
+            remove_modifier = sakuya_force_d3_minus
+            remove_modifier = sakuya_force_d4
+            remove_modifier = sakuya_force_d4_minus
+            remove_modifier = sakuya_force_d5
+            remove_modifier = sakuya_force_d5_minus
+            remove_modifier = sakuya_force_d6
+            remove_modifier = sakuya_force_d6_minus
+            remove_modifier = sakuya_force_d7
+            remove_modifier = sakuya_force_d7_minus
+            remove_modifier = sakuya_force_d8
+            remove_modifier = sakuya_force_d8_minus
+            remove_modifier = sakuya_force_d9
+            remove_modifier = sakuya_force_d9_minus
+            remove_modifier = sakuya_force_d10
+            remove_modifier = sakuya_force_d10_minus
+            remove_modifier = sakuya_force_d11
+            remove_modifier = sakuya_force_d11_minus
+        }
+    }
+
+    
+    sakuya_force_d1 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_d1
+        }
+    }
+    sakuya_force_d2 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_d2
+        }
+    }
+    sakuya_force_d3 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_d3
+        }
+    }
+    sakuya_force_d4 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_d4
+        }
+    }
+    sakuya_force_d5 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_d5
+        }
+    }
+    sakuya_force_d6 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_d6
+        }
+    }
+    sakuya_force_d7 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_d7
+        }
+    }
+    sakuya_force_d8 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_d8
+        }
+    }
+    sakuya_force_d9 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_d9
+        }
+    }
+    sakuya_force_d10 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_d10
+        }
+    }
+    sakuya_force_d11 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_d11
+        }
+    }
+    sakuya_force_d1_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_d1_minus
+        }
+    }
+    sakuya_force_d2_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_d2_minus
+        }
+    }
+    sakuya_force_d3_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_d3_minus
+        }
+    }
+    sakuya_force_d4_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_d4_minus
+        }
+    }
+    sakuya_force_d5_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_d5_minus
+        }
+    }
+    sakuya_force_d6_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_d6_minus
+        }
+    }
+    sakuya_force_d7_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_d7_minus
+        }
+    }
+    sakuya_force_d8_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_d8_minus
+        }
+    }
+    sakuya_force_d9_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_d9_minus
+        }
+    }
+    sakuya_force_d10_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_d10_minus
+        }
+    }
+    sakuya_force_d11_minus = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_d11_minus
+        }
+    }
+    sakuya_force_e1 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_e1
+        }
+    }
+    sakuya_force_e2 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_e2
+        }
+    }
+    sakuya_force_e3 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_e3
+        }
+    }
+    sakuya_force_e4 = {
+        scope = country
+        effect = {
+            add_modifier = sakuya_force_e4
+        }
+    }
+    sakuya_force_e1_remove = {
+        scope = country
+        effect = {
+            remove_modifier = sakuya_force_e1
+        }
+    }
+    sakuya_force_e2_remove = {
+        scope = country
+        effect = {
+            remove_modifier = sakuya_force_e2
+        }
+    }
+    sakuya_force_e3_remove = {
+        scope = country
+        effect = {
+            remove_modifier = sakuya_force_e3
+        }
+    }
+    sakuya_force_e4_remove = {
+        scope = country
+        effect = {
+            remove_modifier = sakuya_force_e4
+        }
+    }

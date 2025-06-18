@@ -1,0 +1,734 @@
+seven_11 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_cohesion_percent = -1 }
+        power_bloc = { add_cohesion_percent = 1 }
+    }
+}
+
+seven_12 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_cohesion_percent = -1 }
+        power_bloc = { add_cohesion_percent = 0.6 }
+    }
+}
+
+seven_13 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_cohesion_percent = -1 }
+        power_bloc = { add_cohesion_percent = 0.2 }
+    }
+}
+seven_14 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_cohesion_percent = -1 }
+    }
+}
+seven_15 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_cohesion_percent = 0.05 }
+    }
+}
+
+seven_21 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { add_modifier = { name = sakuya_seven_21 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_22 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { add_modifier = { name = sakuya_seven_22 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_23 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { add_modifier = { name = sakuya_seven_23 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_24 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { add_modifier = { name = sakuya_seven_24 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_25 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { remove_modifier = sakuya_seven_21 }
+        power_bloc = { remove_modifier = sakuya_seven_22 }
+        power_bloc = { remove_modifier = sakuya_seven_23 }
+        power_bloc = { remove_modifier = sakuya_seven_24 }
+        power_bloc = { remove_modifier = sakuya_seven_210 }
+        power_bloc = { remove_modifier = sakuya_seven_220 }
+        power_bloc = { remove_modifier = sakuya_seven_230 }
+        power_bloc = { remove_modifier = sakuya_seven_240 }
+    }
+}
+
+seven_31 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_31 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_32 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_32 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_33 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_33 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_34 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_34 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_35 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { remove_modifier = sakuya_seven_31 }
+        power_bloc = { remove_modifier = sakuya_seven_32 }
+        power_bloc = { remove_modifier = sakuya_seven_33 }
+        power_bloc = { remove_modifier = sakuya_seven_34 }
+        power_bloc = { remove_modifier = sakuya_seven_310 }
+        power_bloc = { remove_modifier = sakuya_seven_320 }
+        power_bloc = { remove_modifier = sakuya_seven_330 }
+        power_bloc = { remove_modifier = sakuya_seven_340 }
+    }
+}
+
+seven_41 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_41 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_42 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_42 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_43 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_43 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_44 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_44 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_45 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { remove_modifier = sakuya_seven_41 }
+        power_bloc = { remove_modifier = sakuya_seven_42 }
+        power_bloc = { remove_modifier = sakuya_seven_43 }
+        power_bloc = { remove_modifier = sakuya_seven_44 }
+        power_bloc = { remove_modifier = sakuya_seven_410 }
+        power_bloc = { remove_modifier = sakuya_seven_420 }
+        power_bloc = { remove_modifier = sakuya_seven_430 }
+        power_bloc = { remove_modifier = sakuya_seven_440 }
+    }
+}
+
+seven_51 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_51 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_52 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_52 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_53 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_53 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_54 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_54 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_55 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { remove_modifier = sakuya_seven_51 }
+        power_bloc = { remove_modifier = sakuya_seven_52 }
+        power_bloc = { remove_modifier = sakuya_seven_53 }
+        power_bloc = { remove_modifier = sakuya_seven_54 }
+        power_bloc = { remove_modifier = sakuya_seven_510 }
+        power_bloc = { remove_modifier = sakuya_seven_520 }
+        power_bloc = { remove_modifier = sakuya_seven_530 }
+        power_bloc = { remove_modifier = sakuya_seven_540 }
+    }
+}
+
+
+#######################################
+
+seven_110 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_11 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_120 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_12 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_130 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_13 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_140 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_14 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_150 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { remove_modifier = sakuya_seven_11 }
+        power_bloc = { remove_modifier = sakuya_seven_12 }
+        power_bloc = { remove_modifier = sakuya_seven_13 }
+        power_bloc = { remove_modifier = sakuya_seven_14 }
+    }
+}
+
+seven_210 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { add_modifier = { name = sakuya_seven_210 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_220 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { add_modifier = { name = sakuya_seven_220 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_230 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { add_modifier = { name = sakuya_seven_230 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_240 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { add_modifier = { name = sakuya_seven_240 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_250 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { remove_modifier = sakuya_seven_21 }
+        power_bloc = { remove_modifier = sakuya_seven_22 }
+        power_bloc = { remove_modifier = sakuya_seven_23 }
+        power_bloc = { remove_modifier = sakuya_seven_24 }
+        power_bloc = { remove_modifier = sakuya_seven_210 }
+        power_bloc = { remove_modifier = sakuya_seven_220 }
+        power_bloc = { remove_modifier = sakuya_seven_230 }
+        power_bloc = { remove_modifier = sakuya_seven_240 }
+    }
+}
+
+seven_310 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_310 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_320 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_320 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_330 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_330 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_340 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_340 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_350 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { remove_modifier = sakuya_seven_31 }
+        power_bloc = { remove_modifier = sakuya_seven_32 }
+        power_bloc = { remove_modifier = sakuya_seven_33 }
+        power_bloc = { remove_modifier = sakuya_seven_34 }
+        power_bloc = { remove_modifier = sakuya_seven_310 }
+        power_bloc = { remove_modifier = sakuya_seven_320 }
+        power_bloc = { remove_modifier = sakuya_seven_330 }
+        power_bloc = { remove_modifier = sakuya_seven_340 }
+    }
+}
+
+seven_410 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_410 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_420 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_420 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_430 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_430 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_440 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_440 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_450 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { remove_modifier = sakuya_seven_41 }
+        power_bloc = { remove_modifier = sakuya_seven_42 }
+        power_bloc = { remove_modifier = sakuya_seven_43 }
+        power_bloc = { remove_modifier = sakuya_seven_44 }
+        power_bloc = { remove_modifier = sakuya_seven_410 }
+        power_bloc = { remove_modifier = sakuya_seven_420 }
+        power_bloc = { remove_modifier = sakuya_seven_430 }
+        power_bloc = { remove_modifier = sakuya_seven_440 }
+    }
+}
+
+seven_510 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_510 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_520 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_520 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_530 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_530 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_540 = { 
+    scope = country
+    
+    effect = {
+        power_bloc = { add_modifier = { name = sakuya_seven_540 months = -1 multiplier = 1 } }
+    }
+}
+seven_550 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { remove_modifier = sakuya_seven_51 }
+        power_bloc = { remove_modifier = sakuya_seven_52 }
+        power_bloc = { remove_modifier = sakuya_seven_53 }
+        power_bloc = { remove_modifier = sakuya_seven_54 }
+        power_bloc = { remove_modifier = sakuya_seven_510 }
+        power_bloc = { remove_modifier = sakuya_seven_520 }
+        power_bloc = { remove_modifier = sakuya_seven_530 }
+        power_bloc = { remove_modifier = sakuya_seven_540 }
+    }
+}
+
+
+
+
+##############################
+sakuya_ig_1 = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_ig_1
+    }
+}
+sakuya_ig_10 = { 
+    scope = country
+    
+    effect = {
+        remove_modifier = sakuya_ig_1
+    }
+}
+sakuya_ig_2 = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_ig_2
+    }
+}
+sakuya_ig_20 = { 
+    scope = country
+    
+    effect = {
+        remove_modifier = sakuya_ig_2
+    }
+}
+
+#########################################
+
+sakuya_mo_1 = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_mo_1
+    }
+}
+sakuya_mo_10 = { 
+    scope = country
+    
+    effect = {
+        remove_modifier = sakuya_mo_1
+    }
+}
+sakuya_mo_2 = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_mo_2
+    }
+}
+sakuya_mo_20 = { 
+    scope = country
+    
+    effect = {
+        remove_modifier = sakuya_mo_2
+    }
+}
+sakuya_mo_3 = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_mo_3
+    }
+}
+sakuya_mo_30 = { 
+    scope = country
+    
+    effect = {
+        remove_modifier = sakuya_mo_3
+    }
+}
+sakuya_mo_4 = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_mo_4
+    }
+}
+sakuya_mo_40 = { 
+    scope = country
+    
+    effect = {
+        remove_modifier = sakuya_mo_4
+    }
+}
+
+##############################
+seven_p1 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { add_modifier = { name = sakuya_seven_p1 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_p2 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { add_modifier = { name = sakuya_seven_p2 months = -1 multiplier = 1 } }
+    }
+}
+
+seven_p3 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { add_modifier = { name = sakuya_seven_p3 months = -1 multiplier = 1 } }
+    }
+}
+seven_p4 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { add_modifier = { name = sakuya_seven_p4 months = -1 multiplier = 1 } }
+    }
+}
+seven_p5 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { add_modifier = { name = sakuya_seven_p5 months = -1 multiplier = 1 } }
+    }
+}
+seven_p10 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { remove_modifier = sakuya_seven_p1 }
+    }
+}
+seven_p20 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { remove_modifier = sakuya_seven_p2 }
+    }
+}
+seven_p30 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { remove_modifier = sakuya_seven_p3 }
+    }
+}
+seven_p40 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { remove_modifier = sakuya_seven_p4 }
+    }
+}
+seven_p50 = { 
+    scope = country
+    
+    effect = {
+         power_bloc = { remove_modifier = sakuya_seven_p5 }
+    }
+}
+
+######################################################################
+
+seven_a1 = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_seven_a1
+        change_infamy = -100
+    }
+}
+seven_a10 = { 
+    scope = country
+    
+    effect = {
+        remove_modifier = sakuya_seven_a1
+    }
+}
+seven_a2 = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_seven_a2
+    }
+}
+seven_a20 = { 
+    scope = country
+    
+    effect = {
+        remove_modifier = sakuya_seven_a2
+    }
+}
+seven_a3 = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_seven_a3
+    }
+}
+seven_a30 = { 
+    scope = country
+    
+    effect = {
+        remove_modifier = sakuya_seven_a3
+    }
+}
+
+seven_s1 = { 
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_seventeen_Lasers
+        power_bloc = { add_modifier = { name = sakuya_i_am_the_destined_by_fate months = -1 multiplier = 1 } }
+    }
+}
+seven_s10 = { 
+    scope = country
+    
+    effect = {
+        remove_modifier = sakuya_seventeen_Lasers
+        power_bloc = { remove_modifier = sakuya_i_am_the_destined_by_fate }
+        remove_modifier = sakuya_seven_a1
+        remove_modifier = sakuya_seven_a2
+        remove_modifier = sakuya_seven_a3
+        power_bloc = { remove_modifier = sakuya_seven_21 }
+        power_bloc = { remove_modifier = sakuya_seven_22 }
+        power_bloc = { remove_modifier = sakuya_seven_23 }
+        power_bloc = { remove_modifier = sakuya_seven_24 }
+        power_bloc = { remove_modifier = sakuya_seven_210 }
+        power_bloc = { remove_modifier = sakuya_seven_220 }
+        power_bloc = { remove_modifier = sakuya_seven_230 }
+        power_bloc = { remove_modifier = sakuya_seven_240 }
+        power_bloc = { remove_modifier = sakuya_seven_51 }
+        power_bloc = { remove_modifier = sakuya_seven_52 }
+        power_bloc = { remove_modifier = sakuya_seven_53 }
+        power_bloc = { remove_modifier = sakuya_seven_54 }
+        power_bloc = { remove_modifier = sakuya_seven_510 }
+        power_bloc = { remove_modifier = sakuya_seven_520 }
+        power_bloc = { remove_modifier = sakuya_seven_530 }
+        power_bloc = { remove_modifier = sakuya_seven_540 }
+        power_bloc = { remove_modifier = sakuya_seven_41 }
+        power_bloc = { remove_modifier = sakuya_seven_42 }
+        power_bloc = { remove_modifier = sakuya_seven_43 }
+        power_bloc = { remove_modifier = sakuya_seven_44 }
+        power_bloc = { remove_modifier = sakuya_seven_410 }
+        power_bloc = { remove_modifier = sakuya_seven_420 }
+        power_bloc = { remove_modifier = sakuya_seven_430 }
+        power_bloc = { remove_modifier = sakuya_seven_440 }
+        power_bloc = { remove_modifier = sakuya_seven_11 }
+        power_bloc = { remove_modifier = sakuya_seven_12 }
+        power_bloc = { remove_modifier = sakuya_seven_13 }
+        power_bloc = { remove_modifier = sakuya_seven_14 }
+        power_bloc = { remove_modifier = sakuya_seven_31 }
+        power_bloc = { remove_modifier = sakuya_seven_32 }
+        power_bloc = { remove_modifier = sakuya_seven_33 }
+        power_bloc = { remove_modifier = sakuya_seven_34 }
+        power_bloc = { remove_modifier = sakuya_seven_310 }
+        power_bloc = { remove_modifier = sakuya_seven_320 }
+        power_bloc = { remove_modifier = sakuya_seven_330 }
+        power_bloc = { remove_modifier = sakuya_seven_340 }
+        power_bloc = { remove_modifier = sakuya_seven_p5 }
+        power_bloc = { remove_modifier = sakuya_seven_p4 }
+        power_bloc = { remove_modifier = sakuya_seven_p3 }
+        power_bloc = { remove_modifier = sakuya_seven_p2 }
+        power_bloc = { remove_modifier = sakuya_seven_p1 }
+    }
+}

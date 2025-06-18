@@ -1,0 +1,84 @@
+﻿advcm_add_sakuya_pol_pot = { #波尔布特再世
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	country_legitimacy_base_add = -100 #非法政府，哈哈哈
+	country_tax_income_add = -114514 #国库倒欠火星银行钱
+	country_bureaucracy_add = -3000
+	country_authority_add = -3000
+	country_influence_add = -3000 #三维削弱到负数
+	country_tech_spread_add = -1000 
+	state_birth_rate_mult = -0.5 #图图图 从本行开始，以下负面标签将作为实验性测试。
+	state_mortality_mult = 0.5 #死亡率，1为100%
+	state_pollution_generation_add = -0.85 #去城市化导致环境变好，很合理吧？
+	state_capitalists_mortality_mult = 1.14514 #杂鱼资本家❤~
+	country_private_buildings_protected = no #不存在私有财产
+	country_revolution_progress_mult = 1 #忽有狂徒夜磨刀....
+	state_expected_sol_from_literacy = 15 #不要知道的太多
+	state_non_homeland_mortality_mult = 100
+	country_construction_add = -100
+	country_law_enactment_success_add = -0.99
+	change_infamy = 100
+	building_input_mult = -0.75
+	country_improve_relations_speed_mult = -50
+	country_damage_relations_speed_mult = 50
+	state_poor_expected_sol = 10
+	state_middle_expected_sol = 10
+	state_rich_expected_sol = 50 #癞蛤蟆想吃天鹅肉
+	interest_group_approval_add = -10
+	add_pollution = -100 #这种一次性指令似乎不适用于tag。不过先放在这
+
+}
+
+advcm_add_sakuya_country_construction_add = {   #建造
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	country_construction_add = 500
+}
+
+advcm_add_sakuya_interest_group_approval_add = {   #利益集团
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	interest_group_approval_add = 10
+}
+
+advcm_add_building_throughput = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	building_throughput_add = 0.1 #由贴吧 @十二个星璿□ 发现并修复，在此表示感谢
+}
+
+advcm_add_building_input_reduction = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	building_goods_input_mult = -0.1 #由贴吧 @十二个星璿□ 发现并修复，在此表示感谢
+}
+
+advcm_add_offense = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	unit_offense_mult = 0.1
+}
+
+advcm_add_defense = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	unit_defense_mult = 0.1
+}
+
+advcm_add_kill_rate = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	unit_kill_rate_add = 1
+}
+
+advcm_add_recovery_rate = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	unit_recovery_rate_add = 1
+}
+
+advcm_add_assimilation = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	state_assimilation_mult = 1
+}
+
+advcm_add_education = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	state_education_access_add = 1
+}
+
+advcm_add_income = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	country_tax_income_add = 1000000
+}

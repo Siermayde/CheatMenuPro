@@ -1,0 +1,123 @@
+
+test_1_b = {
+    ai_chance = {
+        base = 0
+    }
+    effect = {
+        sakuya_building = {
+            building_type = building_railway
+        }
+    }
+}
+
+
+
+
+
+
+test_1_y = {
+    
+    effect = {
+        power_bloc = { add_modifier = { name = test_1_y months = -1 multiplier = 1 } }
+    }
+}
+test_1_n = {
+    scope = country
+    
+    effect = {
+        power_bloc = { remove_modifier = test_1_y }
+    }
+}
+
+test_2_y = {
+    scope = country
+    
+    effect = {
+        add_modifier = test_2_y
+    }
+}
+test_2_n = {
+    scope = country
+    
+    effect = {
+        remove_modifier = test_2_y
+    }
+}
+
+test_3_y = {
+    scope = country
+    
+    effect = {
+        add_modifier = test_3_y
+    }
+}
+test_3_n = {
+    scope = country
+    
+    effect = {
+        remove_modifier = test_3_y
+    }
+}
+
+test_4_y = {
+    scope = country
+    
+    effect = {
+        add_modifier = test_4_y
+    }
+}
+test_4_n = {
+    scope = country
+    
+    effect = {
+        remove_modifier = test_4_y
+    }
+}
+
+test_5_y = {
+    scope = country
+    
+    effect = {
+        add_modifier = test_5_y
+    }
+}
+test_5_n = {
+    scope = country
+    
+    effect = {
+        remove_modifier = test_5_y
+    }
+}
+
+test_6_y = {
+    scope = country
+    
+    effect = {
+        add_modifier = test_6_y
+    }
+}
+test_6_n = {
+    scope = country
+    
+    effect = {
+        remove_modifier = test_6_y
+    }
+}
+
+test_7_y = {
+    scope = country
+    
+    effect = {
+        add_modifier = test_7_y
+    }
+}
+test_7_n = {
+    scope = country
+    
+    effect = {
+        remove_modifier = test_7_y
+    }
+}
+
+
+########

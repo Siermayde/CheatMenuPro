@@ -1,0 +1,48 @@
+MB_oil_rig_1y = {
+	texture = gfx/interface/icons/building_icons/oil_rig.dds
+	goods_output_oil_mult = 1
+}
+MB_oil_rig_2y = {
+	texture = gfx/interface/icons/building_icons/oil_rig.dds
+	goods_input_oil_mult = -0.99
+}
+MB_sulfur_mine_1y = {
+    texture = gfx/interface/icons/building_icons/sulfur_mine.dds
+    goods_output_sulfur_mult = 1
+}
+MB_sulfur_mine_2y = {
+    texture = gfx/interface/icons/building_icons/sulfur_mine.dds
+    goods_input_sulfur_add = -9999
+}
+MB_iron_mine_1y = {
+    texture = gfx/interface/icons/building_icons/iron_mine.dds
+    goods_output_iron_mult = 1
+}
+MB_iron_mine_2y = {
+    texture = gfx/interface/icons/building_icons/iron_mine.dds
+    goods_input_iron_add = -9999
+}
+MB_coal_mine_1y = {
+    texture = gfx/interface/icons/building_icons/coal_mine.dds
+    goods_output_coal_mult = 1
+}
+MB_coal_mine_2y = {
+    texture = gfx/interface/icons/building_icons/coal_mine.dds
+    goods_input_coal_add = -9999
+}
+MB_gold_mine_1y = {
+    texture = gfx/interface/icons/building_icons/gold_mine.dds
+    goods_output_gold_mult = 1
+}
+MB_gold_mine_2y = {
+    texture = gfx/interface/icons/building_icons/gold_mine.dds
+    country_minting_mult = 1
+}
+MB_lead_mine_1y = {
+    texture = gfx/interface/icons/building_icons/lead_mine.dds
+    goods_output_lead_mult = 1
+}
+MB_lead_mine_2y = {
+    texture = gfx/interface/icons/building_icons/lead_mine.dds
+    goods_input_lead_add = -9999
+}

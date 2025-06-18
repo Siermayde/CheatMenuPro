@@ -1,0 +1,259 @@
+sakuya_seventeen_Lasers = {
+	icon = gfx/interface/icons/war_goals/unify_germany.dds
+	country_infamy_generation_against_unrecognized_mult = -100
+	country_infamy_decay_mult = 100
+	country_infamy_generation_mult = -100
+	country_improve_relations_speed_mult = 9999
+	country_damage_relations_speed_mult = 9999
+	country_tension_decay_mult = 100
+	country_prestige_add = 1000
+	country_prestige_from_army_power_projection_mult = 0.5
+	country_prestige_from_navy_power_projection_mult = 0.5
+	country_bolster_cost_mult = -100
+	country_suppression_cost_mult = -100
+	power_bloc_customs_union_bool = yes #关税同盟
+	power_bloc_leader_can_make_subjects_bool = yes #降伏
+	power_bloc_leader_can_regime_change_bool = yes #政权更迭
+	power_bloc_leader_can_add_wargoal_bool = yes #免费战争目标
+	power_bloc_leader_can_force_state_religion_bool = yes#强推国教
+	country_influence_add = 10000
+}
+
+sakuya_i_am_the_destined_by_fate = {
+	icon = gfx/interface/icons/politics_icons/radicalized.dds
+	power_bloc_cohesion_mult = 1000
+	power_bloc_cohesion_add = 1000
+	power_bloc_leverage_generation_mult = 999999
+	country_leverage_generation_mult = 999999
+	power_bloc_invite_acceptance_add = 9999
+	power_bloc_mandate_progress_mult = 999999
+}
+
+sakuya_seven_a1 = {
+	icon = gfx/interface/diplomatic_plays/phase_countdown_to_war_small.dds
+	country_infamy_generation_against_unrecognized_mult = -100
+	country_infamy_decay_mult = 100
+	country_infamy_generation_mult = -100
+}
+sakuya_seven_a2 = {
+	icon = gfx/interface/diplomatic_plays/phase_diplomatic_maneuvers_small.dds
+	country_improve_relations_speed_mult = 9999
+	country_damage_relations_speed_mult = 9999
+	country_tension_decay_mult = 100
+}
+sakuya_seven_a3 = {
+	icon = gfx/interface/diplomatic_plays/phase_opening_moves_small.dds
+	country_prestige_add = 1000
+	country_prestige_from_army_power_projection_mult = 0.5
+	country_prestige_from_navy_power_projection_mult = 0.5
+}
+
+
+
+sakuya_ig_1 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_bolster_cost_mult = -100
+
+}
+sakuya_ig_2 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_suppression_cost_mult = -100
+}
+
+
+
+sakuya_mo_1 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_disable_privatization_bool = yes
+}
+sakuya_mo_2 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_force_privatization_bool = yes
+}
+sakuya_mo_3 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_disable_nationalization_bool = yes
+}
+sakuya_mo_4 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_allow_trade_routes_without_interest_bool = yes
+}
+
+
+sakuya_seven_11 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	power_bloc_cohesion_mult = 1000
+	power_bloc_cohesion_add = 1000
+}
+sakuya_seven_12 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	power_bloc_cohesion_add = 100
+	power_bloc_cohesion_mult = 1
+}
+sakuya_seven_13 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	power_bloc_cohesion_add = 10
+	power_bloc_cohesion_mult = 0.1
+}
+sakuya_seven_14 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	power_bloc_cohesion_add = 1
+	power_bloc_cohesion_mult = 0.01
+}
+
+
+sakuya_seven_21 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	power_bloc_leverage_generation_mult = 999999
+}
+sakuya_seven_22 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	power_bloc_leverage_generation_mult = 1
+}
+sakuya_seven_23 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	power_bloc_leverage_generation_mult = 0.1
+}
+sakuya_seven_24 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	power_bloc_leverage_generation_mult = 0.01
+}
+sakuya_seven_210 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	power_bloc_leverage_generation_mult = -999999
+}
+sakuya_seven_220 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	power_bloc_leverage_generation_mult = -1
+}
+sakuya_seven_230 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	power_bloc_leverage_generation_mult = -0.1
+}
+sakuya_seven_240 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	power_bloc_leverage_generation_mult = -0.01
+}
+
+sakuya_seven_31 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_leverage_generation_mult = 999999
+}
+sakuya_seven_32 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_leverage_generation_mult = 1
+}
+sakuya_seven_33 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_leverage_generation_mult = 0.1
+}
+sakuya_seven_34 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_leverage_generation_mult = 0.01
+}
+sakuya_seven_310 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_leverage_generation_mult = -999999
+}
+sakuya_seven_320 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_leverage_generation_mult = -1
+}
+sakuya_seven_330 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_leverage_generation_mult = -0.1
+}
+sakuya_seven_340 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_leverage_generation_mult = -0.01
+}
+
+
+sakuya_seven_41 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	power_bloc_mandate_progress_mult = 999999
+}
+sakuya_seven_42 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	power_bloc_mandate_progress_mult = 1
+}
+sakuya_seven_43 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	power_bloc_mandate_progress_mult = 0.1
+}
+sakuya_seven_44 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	power_bloc_mandate_progress_mult = 0.01
+}
+sakuya_seven_410 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	power_bloc_mandate_progress_mult = -999999
+}
+sakuya_seven_420 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	power_bloc_mandate_progress_mult = -1
+}
+sakuya_seven_430 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	power_bloc_mandate_progress_mult = -0.1
+}
+sakuya_seven_440 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	power_bloc_mandate_progress_mult = -0.01
+}
+
+sakuya_seven_51 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	power_bloc_invite_acceptance_add = 9999
+}
+sakuya_seven_52 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	power_bloc_invite_acceptance_add = 100
+}
+sakuya_seven_53 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	power_bloc_invite_acceptance_add = 10
+}
+sakuya_seven_54 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	power_bloc_invite_acceptance_add = 1
+}
+sakuya_seven_510 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	power_bloc_invite_acceptance_add = -9999999
+}
+sakuya_seven_520 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	power_bloc_invite_acceptance_add = -100
+}
+sakuya_seven_530 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	power_bloc_invite_acceptance_add = -10
+}
+sakuya_seven_540 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	power_bloc_invite_acceptance_add = -1
+}
+
+
+
+sakuya_seven_p1 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	power_bloc_customs_union_bool = yes #关税同盟
+}
+sakuya_seven_p2 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	power_bloc_leader_can_make_subjects_bool = yes #降伏
+}
+sakuya_seven_p3 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	power_bloc_leader_can_regime_change_bool = yes #政权更迭
+}
+sakuya_seven_p4 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	power_bloc_leader_can_add_wargoal_bool = yes #免费战争目标
+}
+sakuya_seven_p5 = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	power_bloc_leader_can_force_state_religion_bool = yes#强推国教
+}

@@ -1,0 +1,93 @@
+test_1_y = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_leverage_generation_mult = 1
+    country_leverage_lobby_generation_mult = 1 #无效。拼写错误还是？
+    country_pact_leverage_generation_mult = 1
+    allow_trade_routes_without_interest_bool = yes #无效
+    state_migration_quota_mult = 1 #移民
+    country_leverage_resistance_per_population_add = 1
+    power_bloc_worst_economic_dependence = 1
+    power_bloc_worst_leader_religion_population_fraction = 1
+    country_cannot_be_target_for_law_imposition_bool = yes #强制立法
+    country_law_enactment_imposition_success_add = 1 #强制立法成功概率
+    power_bloc_cohesion_mult = 1000
+}
+
+test_2_y = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    unit_offense_add = 5
+    unit_offense_mult = 0.05
+    unit_defense_add = 5
+    unit_defense_mult = 0.05
+    unit_kill_rate_add = 0.05
+    unit_morale_damage_mult = 0.05
+    unit_morale_recovery_mult = 0.05
+    unit_provinces_captured_mult = 0.05
+    unit_recovery_rate_add = 0.05
+    unit_supply_consumption_mult = -0.04
+}
+
+test_3_y = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+        military_formation_mobilization_speed_mult = 0.25
+        military_formation_movement_speed_mult = 0.1
+        add_organization { multiply = -0.5 }
+}
+
+test_4_y = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    unit_morale_loss_mult = -1 #士气损失倍率减少（对玩家有利）
+unit_offense_mult = 1 #进攻能力倍率增加
+unit_defense_mult = 1 #防御能力倍率增加
+unit_morale_recovery_mult = 1 #士气恢复倍率增加
+military_formation_movement_speed_mult = 1 #编队移动速度倍率增加
+military_formation_mobilization_speed_mult = 1 #编队动员速度倍率增加
+unit_kill_rate_add = 1 #击杀率增加
+unit_recovery_rate_add = 1 #恢复率增加（原值为负，调整为对玩家有利）
+unit_devastation_mult = 1 #破坏能力倍率增加
+unit_morale_damage_mult = 1 #士气伤害倍率增加
+unit_occupation_mult = 1 #占领能力倍率增加
+character_battle_condition_surprise_maneuver_mult = 1 #战斗条件：突袭机动倍率增加
+military_formation_attrition_risk_mult = -1 #编队损耗风险倍率减少（对玩家有利）
+character_battle_condition_charted_terrain_mult = 1 #战斗条件：地形图倍率增加
+character_battle_condition_rapid_advance_mult = 1 #战斗条件：快速推进倍率增加
+character_battle_condition_lost_mult = -1 #战斗条件：迷失倍率减少（对玩家有利）
+}
+
+test_5_y = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    tariff_import_add = 1
+}
+
+test_6_y = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    tariff_import_add = 1
+}
+
+test_7_y = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    tariff_import_add = 1
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#####################################################################
+#####################################################################
+test_100_y = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+#速度组
+        military_formation_mobilization_speed_mult = 0.25
+        unit_morale_loss_mult = 0.1
+}
+#####################################################################
+#####################################################################
+#综合

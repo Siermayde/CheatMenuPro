@@ -1,0 +1,1151 @@
+
+sakuya_money_clear_market_max_imports_add_mult = {
+    scope = country
+
+    effect = {
+        remove_modifier = sakuya_money_add_market_max_imports_add_mult_1
+        remove_modifier = sakuya_money_add_market_max_imports_add_mult_2
+        remove_modifier = sakuya_money_add_market_max_imports_add_mult_3
+        remove_modifier = sakuya_money_add_market_max_imports_add_mult_4
+        remove_modifier = sakuya_money_add_market_max_imports_add_mult_5
+        remove_modifier = sakuya_money_remove_market_max_imports_add_mult_1
+        remove_modifier = sakuya_money_remove_market_max_imports_add_mult_2
+        remove_modifier = sakuya_money_remove_market_max_imports_add_mult_3
+        remove_modifier = sakuya_money_remove_market_max_imports_add_mult_4
+        remove_modifier = sakuya_money_remove_market_max_imports_add_mult_5
+    }
+}
+
+sakuya_money_add_market_max_imports_add_mult_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_market_max_imports_add_mult_1
+    }
+}
+
+sakuya_money_remove_market_max_imports_add_mult_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_market_max_imports_add_mult_1
+    }
+}
+
+sakuya_money_add_market_max_imports_add_mult_2= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_market_max_imports_add_mult_2
+    }
+}
+
+sakuya_money_remove_market_max_imports_add_mult_2= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_market_max_imports_add_mult_2
+    }
+}
+
+sakuya_money_add_market_max_imports_add_mult_3= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_market_max_imports_add_mult_3
+    }
+}
+
+sakuya_money_remove_market_max_imports_add_mult_3= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_market_max_imports_add_mult_3
+    }
+}
+
+sakuya_money_add_market_max_imports_add_mult_4= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_market_max_imports_add_mult_4
+    }
+}
+
+sakuya_money_remove_market_max_imports_add_mult_4= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_market_max_imports_add_mult_4
+    }
+}
+
+sakuya_money_add_market_max_imports_add_mult_5= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_market_max_imports_add_mult_5
+    }
+}
+
+sakuya_money_remove_market_max_imports_add_mult_5= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_market_max_imports_add_mult_5
+    }
+}
+
+
+
+
+############################################################################
+
+sakuya_money_clear_market_max_exports_add_mult = {
+    scope = country
+
+    effect = {
+        remove_modifier = sakuya_money_add_market_max_exports_add_mult_1
+        remove_modifier = sakuya_money_add_market_max_exports_add_mult_2
+        remove_modifier = sakuya_money_add_market_max_exports_add_mult_3
+        remove_modifier = sakuya_money_add_market_max_exports_add_mult_4
+        remove_modifier = sakuya_money_add_market_max_exports_add_mult_5
+        remove_modifier = sakuya_money_remove_market_max_exports_add_mult_1
+        remove_modifier = sakuya_money_remove_market_max_exports_add_mult_2
+        remove_modifier = sakuya_money_remove_market_max_exports_add_mult_3
+        remove_modifier = sakuya_money_remove_market_max_exports_add_mult_4
+        remove_modifier = sakuya_money_remove_market_max_exports_add_mult_5
+    }
+}
+
+
+sakuya_money_add_market_max_exports_add_mult_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_market_max_exports_add_mult_1
+    }
+}
+
+sakuya_money_add_market_max_exports_add_mult_2= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_market_max_exports_add_mult_2
+    }
+}
+
+sakuya_money_add_market_max_exports_add_mult_3= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_market_max_exports_add_mult_3
+    }
+}
+
+sakuya_money_add_market_max_exports_add_mult_4= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_market_max_exports_add_mult_4
+    }
+}
+
+sakuya_money_add_market_max_exports_add_mult_5= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_market_max_exports_add_mult_5
+    }
+}
+
+sakuya_money_remove_market_max_exports_add_mult_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_market_max_exports_add_mult_1
+    }
+}
+
+sakuya_money_remove_market_max_exports_add_mult_2= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_market_max_exports_add_mult_2
+    }
+}
+
+sakuya_money_remove_market_max_exports_add_mult_3= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_market_max_exports_add_mult_3
+    }
+}
+
+sakuya_money_remove_market_max_exports_add_mult_4= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_market_max_exports_add_mult_4
+    }
+}
+
+sakuya_money_remove_market_max_exports_add_mult_5= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_market_max_exports_add_mult_5
+    }
+}
+
+
+
+##############################################################################
+
+
+sakuya_money_remove_market_land_trade_capacity_add_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_market_land_trade_capacity_add_1
+    }
+}
+
+sakuya_money_add_market_land_trade_capacity_add_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_market_land_trade_capacity_add_1
+    }
+}
+
+sakuya_money_remove_market_land_trade_capacity_add_2= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_market_land_trade_capacity_add_2
+    }
+}
+
+sakuya_money_add_market_land_trade_capacity_add_2= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_market_land_trade_capacity_add_2
+    }
+}
+
+sakuya_money_remove_market_land_trade_capacity_add_3= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_market_land_trade_capacity_add_3
+    }
+}
+
+sakuya_money_add_market_land_trade_capacity_add_3= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_market_land_trade_capacity_add_3
+    }
+}
+
+sakuya_money_clear_market_land_trade_capacity_add= {
+    scope = country
+
+    effect = {
+        remove_modifier = sakuya_money_add_market_land_trade_capacity_add_3
+        remove_modifier = sakuya_money_remove_market_land_trade_capacity_add_3
+        remove_modifier = sakuya_money_add_market_land_trade_capacity_add_2
+        remove_modifier = sakuya_money_remove_market_land_trade_capacity_add_2
+        remove_modifier = sakuya_money_add_market_land_trade_capacity_add_1
+        remove_modifier = sakuya_money_remove_market_land_trade_capacity_add_1
+
+    }
+}
+
+
+
+#######################################################################
+
+sakuya_money_remove_market_disallow_trade_routes= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_market_disallow_trade_routes
+    }
+}
+
+sakuya_money_add_market_disallow_trade_routes= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_market_disallow_trade_routes
+    }
+}
+
+sakuya_money_clear_market_disallow_trade_routes= {
+    scope = country
+
+    effect = {
+        remove_modifier = sakuya_money_add_market_disallow_trade_routes
+        remove_modifier = sakuya_money_remove_market_disallow_trade_routes
+    }
+}
+
+
+################################################################################
+
+sakuya_money_clear_country_convoys_capacity_add = {
+    scope = country
+
+    effect = {
+        remove_modifier = sakuya_money_add_country_convoys_capacity_add_1
+        remove_modifier = sakuya_money_add_country_convoys_capacity_add_2
+        remove_modifier = sakuya_money_add_country_convoys_capacity_add_3
+        remove_modifier = sakuya_money_add_country_convoys_capacity_add_4
+        remove_modifier = sakuya_money_add_country_convoys_capacity_add_5
+        remove_modifier = sakuya_money_add_country_convoys_capacity_add_6
+        remove_modifier = sakuya_money_remove_country_convoys_capacity_add_1
+        remove_modifier = sakuya_money_remove_country_convoys_capacity_add_2
+        remove_modifier = sakuya_money_remove_country_convoys_capacity_add_3
+        remove_modifier = sakuya_money_remove_country_convoys_capacity_add_4
+        remove_modifier = sakuya_money_remove_country_convoys_capacity_add_5
+        remove_modifier = sakuya_money_remove_country_convoys_capacity_add_6
+    }
+}
+
+
+sakuya_money_add_country_convoys_capacity_add_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_convoys_capacity_add_1
+    }
+}
+
+sakuya_money_add_country_convoys_capacity_add_2= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_convoys_capacity_add_2
+    }
+}
+
+sakuya_money_add_country_convoys_capacity_add_3= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_convoys_capacity_add_3
+    }
+}
+
+sakuya_money_add_country_convoys_capacity_add_4= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_convoys_capacity_add_4
+    }
+}
+
+sakuya_money_add_country_convoys_capacity_add_5= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_convoys_capacity_add_5
+    }
+}
+
+sakuya_money_add_country_convoys_capacity_add_6= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_convoys_capacity_add_6
+    }
+}
+
+sakuya_money_remove_country_convoys_capacity_add_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_convoys_capacity_add_1
+    }
+}
+
+sakuya_money_remove_country_convoys_capacity_add_2= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_convoys_capacity_add_2
+    }
+}
+
+sakuya_money_remove_country_convoys_capacity_add_3= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_convoys_capacity_add_3
+    }
+}
+
+sakuya_money_remove_country_convoys_capacity_add_4= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_convoys_capacity_add_4
+    }
+}
+
+sakuya_money_remove_country_convoys_capacity_add_5= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_convoys_capacity_add_5
+    }
+}
+
+sakuya_money_remove_country_convoys_capacity_add_6= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_convoys_capacity_add_6
+    }
+}
+
+#####################################################################
+
+sakuya_money_clear_unit_convoy_defense_mult = {
+    scope = country
+
+    effect = {
+        remove_modifier = sakuya_money_add_unit_convoy_defense_mult_1
+        remove_modifier = sakuya_money_remove_unit_convoy_defense_mult_1
+    }
+}
+
+
+sakuya_money_add_unit_convoy_defense_mult_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_unit_convoy_defense_mult_1
+    }
+}
+
+sakuya_money_remove_unit_convoy_defense_mult_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_unit_convoy_defense_mult_1
+    }
+}
+
+
+
+
+###############################################################
+
+sakuya_money_clear_unit_convoy_raiding_mult = {
+    scope = country
+
+    effect = {
+        remove_modifier = sakuya_money_add_unit_convoy_raiding_mult_1
+        remove_modifier = sakuya_money_remove_unit_convoy_raiding_mult_1
+    }
+}
+
+sakuya_money_add_unit_convoy_raiding_mult_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_unit_convoy_raiding_mult_1
+    }
+}
+
+sakuya_money_remove_unit_convoy_raiding_mult_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_unit_convoy_raiding_mult_1
+    }
+}
+
+
+
+
+sakuya_money_clear_unit_convoy_requirements_mult = {
+    scope = country
+
+    effect = {
+        remove_modifier = sakuya_money_add_unit_convoy_requirements_mult_1
+        remove_modifier = sakuya_money_remove_unit_convoy_requirements_mult_1
+    }
+}
+
+
+sakuya_money_remove_unit_convoy_requirements_mult_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_unit_convoy_requirements_mult_1
+    }
+}
+
+sakuya_money_add_unit_convoy_requirements_mult_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_unit_convoy_requirements_mult_1
+    }
+}
+
+
+########################################################################
+
+
+sakuya_money_clear_country_trade_route_competitiveness_mult = {
+    scope = country
+
+    effect = {
+        remove_modifier = sakuya_money_add_country_trade_route_competitiveness_mult_1
+        remove_modifier = sakuya_money_add_country_trade_route_competitiveness_mult_2
+        remove_modifier = sakuya_money_add_country_trade_route_competitiveness_mult_3
+        remove_modifier = sakuya_money_add_country_trade_route_competitiveness_mult_4
+        remove_modifier = sakuya_money_add_country_trade_route_competitiveness_mult_5
+        remove_modifier = sakuya_money_remove_country_trade_route_competitiveness_mult_1
+        remove_modifier = sakuya_money_remove_country_trade_route_competitiveness_mult_2
+        remove_modifier = sakuya_money_remove_country_trade_route_competitiveness_mult_3
+        remove_modifier = sakuya_money_remove_country_trade_route_competitiveness_mult_4
+        remove_modifier = sakuya_money_remove_country_trade_route_competitiveness_mult_5
+    }
+}
+
+
+sakuya_money_add_country_trade_route_competitiveness_mult_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_trade_route_competitiveness_mult_1
+    }
+}
+
+sakuya_money_add_country_trade_route_competitiveness_mult_2= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_trade_route_competitiveness_mult_2
+    }
+}
+
+sakuya_money_add_country_trade_route_competitiveness_mult_3= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_trade_route_competitiveness_mult_3
+    }
+}
+
+sakuya_money_add_country_trade_route_competitiveness_mult_4= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_trade_route_competitiveness_mult_4
+    }
+}
+
+sakuya_money_add_country_trade_route_competitiveness_mult_5= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_trade_route_competitiveness_mult_5
+    }
+}
+
+sakuya_money_remove_country_trade_route_competitiveness_mult_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_trade_route_competitiveness_mult_1
+    }
+}
+
+sakuya_money_remove_country_trade_route_competitiveness_mult_2= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_trade_route_competitiveness_mult_2
+    }
+}
+
+sakuya_money_remove_country_trade_route_competitiveness_mult_3= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_trade_route_competitiveness_mult_3
+    }
+}
+
+sakuya_money_remove_country_trade_route_competitiveness_mult_4= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_trade_route_competitiveness_mult_4
+    }
+}
+
+sakuya_money_remove_country_trade_route_competitiveness_mult_5= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_trade_route_competitiveness_mult_5
+    }
+}
+
+
+##############################################################
+
+sakuya_money_clear_country_trade_route_cost_mult = {
+    scope = country
+
+    effect = {
+        remove_modifier = sakuya_money_add_country_trade_route_cost_mult_1
+        remove_modifier = sakuya_money_add_country_trade_route_cost_mult_2
+        remove_modifier = sakuya_money_add_country_trade_route_cost_mult_3
+        remove_modifier = sakuya_money_add_country_trade_route_cost_mult_4
+        remove_modifier = sakuya_money_add_country_trade_route_cost_mult_5
+        remove_modifier = sakuya_money_remove_country_trade_route_cost_mult_1
+        remove_modifier = sakuya_money_remove_country_trade_route_cost_mult_2
+        remove_modifier = sakuya_money_remove_country_trade_route_cost_mult_3
+        remove_modifier = sakuya_money_remove_country_trade_route_cost_mult_4
+        remove_modifier = sakuya_money_remove_country_trade_route_cost_mult_5
+    }
+}
+
+
+sakuya_money_add_country_trade_route_cost_mult_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_trade_route_cost_mult_1
+    }
+}
+
+sakuya_money_add_country_trade_route_cost_mult_2= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_trade_route_cost_mult_2
+    }
+}
+
+sakuya_money_add_country_trade_route_cost_mult_3= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_trade_route_cost_mult_3
+    }
+}
+
+sakuya_money_add_country_trade_route_cost_mult_4= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_trade_route_cost_mult_4
+    }
+}
+
+sakuya_money_add_country_trade_route_cost_mult_5= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_trade_route_cost_mult_5
+    }
+}
+
+sakuya_money_remove_country_trade_route_cost_mult_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_trade_route_cost_mult_1
+    }
+}
+
+sakuya_money_remove_country_trade_route_cost_mult_2= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_trade_route_cost_mult_2
+    }
+}
+
+sakuya_money_remove_country_trade_route_cost_mult_3= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_trade_route_cost_mult_3
+    }
+}
+
+sakuya_money_remove_country_trade_route_cost_mult_4= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_trade_route_cost_mult_4
+    }
+}
+
+sakuya_money_remove_country_trade_route_cost_mult_5= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_trade_route_cost_mult_5
+    }
+}
+
+
+###########################################################################
+
+
+sakuya_money_clear_country_trade_route_quantity_mult = {
+    scope = country
+
+    effect = {
+        remove_modifier = sakuya_money_add_country_trade_route_quantity_mult_1
+        remove_modifier = sakuya_money_add_country_trade_route_quantity_mult_2
+        remove_modifier = sakuya_money_add_country_trade_route_quantity_mult_3
+        remove_modifier = sakuya_money_add_country_trade_route_quantity_mult_4
+        remove_modifier = sakuya_money_add_country_trade_route_quantity_mult_5
+        remove_modifier = sakuya_money_remove_country_trade_route_quantity_mult_1
+        remove_modifier = sakuya_money_remove_country_trade_route_quantity_mult_2
+        remove_modifier = sakuya_money_remove_country_trade_route_quantity_mult_3
+        remove_modifier = sakuya_money_remove_country_trade_route_quantity_mult_4
+        remove_modifier = sakuya_money_remove_country_trade_route_quantity_mult_5
+    }
+}
+
+
+sakuya_money_add_country_trade_route_quantity_mult_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_trade_route_quantity_mult_1
+    }
+}
+
+sakuya_money_add_country_trade_route_quantity_mult_2= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_trade_route_quantity_mult_2
+    }
+}
+
+sakuya_money_add_country_trade_route_quantity_mult_3= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_trade_route_quantity_mult_3
+    }
+}
+
+sakuya_money_add_country_trade_route_quantity_mult_4= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_trade_route_quantity_mult_4
+    }
+}
+
+sakuya_money_add_country_trade_route_quantity_mult_5= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_trade_route_quantity_mult_5
+    }
+}
+
+sakuya_money_remove_country_trade_route_quantity_mult_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_trade_route_quantity_mult_1
+    }
+}
+
+sakuya_money_remove_country_trade_route_quantity_mult_2= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_trade_route_quantity_mult_2
+    }
+}
+
+sakuya_money_remove_country_trade_route_quantity_mult_3= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_trade_route_quantity_mult_3
+    }
+}
+
+sakuya_money_remove_country_trade_route_quantity_mult_4= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_trade_route_quantity_mult_4
+    }
+}
+
+sakuya_money_remove_country_trade_route_quantity_mult_5= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_trade_route_quantity_mult_5
+    }
+}
+
+
+###############################################################
+
+sakuya_money_clear_country_free_trade_routes_add = {
+    scope = country
+
+    effect = {
+        remove_modifier = sakuya_money_add_country_free_trade_routes_add_1
+        remove_modifier = sakuya_money_add_country_free_trade_routes_add_2
+        remove_modifier = sakuya_money_add_country_free_trade_routes_add_3
+        remove_modifier = sakuya_money_remove_country_free_trade_routes_add_1
+        remove_modifier = sakuya_money_remove_country_free_trade_routes_add_2
+        remove_modifier = sakuya_money_remove_country_free_trade_routes_add_3
+    }
+}
+
+sakuya_money_add_country_free_trade_routes_add_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_free_trade_routes_add_1
+    }
+}
+
+sakuya_money_add_country_free_trade_routes_add_2= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_free_trade_routes_add_2
+    }
+}
+
+sakuya_money_add_country_free_trade_routes_add_3= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_free_trade_routes_add_3
+    }
+}
+
+sakuya_money_remove_country_free_trade_routes_add_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_free_trade_routes_add_1
+    }
+}
+
+sakuya_money_remove_country_free_trade_routes_add_2= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_free_trade_routes_add_2
+    }
+}
+
+sakuya_money_remove_country_free_trade_routes_add_3= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_free_trade_routes_add_3
+    }
+}
+
+
+################################################################
+
+sakuya_money_clear_country_max_companies_add = {
+    scope = country
+
+    effect = {
+        remove_modifier = sakuya_money_add_country_max_companies_add_1
+        remove_modifier = sakuya_money_add_country_max_companies_add_2
+        remove_modifier = sakuya_money_add_country_max_companies_add_3
+        remove_modifier = sakuya_money_add_country_max_companies_add_4
+        remove_modifier = sakuya_money_remove_country_max_companies_add_1
+        remove_modifier = sakuya_money_remove_country_max_companies_add_2
+        remove_modifier = sakuya_money_remove_country_max_companies_add_3
+        remove_modifier = sakuya_money_remove_country_max_companies_add_4
+    }
+}
+
+
+sakuya_money_add_country_max_companies_add_4= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_max_companies_add_4
+    }
+}
+
+sakuya_money_remove_country_max_companies_add_4= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_max_companies_add_4
+    }
+}
+
+sakuya_money_add_country_max_companies_add_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_max_companies_add_1
+    }
+}
+
+sakuya_money_remove_country_max_companies_add_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_max_companies_add_1
+    }
+}
+
+sakuya_money_add_country_max_companies_add_2= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_max_companies_add_2
+    }
+}
+
+sakuya_money_remove_country_max_companies_add_2= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_max_companies_add_2
+    }
+}
+
+sakuya_money_add_country_max_companies_add_3= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_max_companies_add_3
+    }
+}
+
+sakuya_money_remove_country_max_companies_add_3= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_max_companies_add_3
+    }
+}
+
+###################################################################
+
+sakuya_money_clear_country_company_throughput_bonus_add = {
+    scope = country
+
+    effect = {
+        remove_modifier = sakuya_money_add_country_company_throughput_bonus_add_2
+        remove_modifier = sakuya_money_remove_country_company_throughput_bonus_add_2
+        remove_modifier = sakuya_money_add_country_company_throughput_bonus_add_1
+        remove_modifier = sakuya_money_remove_country_company_throughput_bonus_add_1
+    }
+}
+
+
+sakuya_money_add_country_company_throughput_bonus_add_2= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_company_throughput_bonus_add_2
+    }
+}
+
+sakuya_money_remove_country_company_throughput_bonus_add_2= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_company_throughput_bonus_add_2
+    }
+}
+
+sakuya_money_add_country_company_throughput_bonus_add_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_company_throughput_bonus_add_1
+    }
+}
+
+sakuya_money_remove_country_company_throughput_bonus_add_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_company_throughput_bonus_add_1
+    }
+}
+
+
+
+######################################################################
+
+
+sakuya_money_clear_country_company_construction_efficiency_bonus_add = {
+    scope = country
+
+    effect = {
+        remove_modifier = sakuya_money_add_country_company_construction_efficiency_bonus_add_2
+        remove_modifier = sakuya_money_remove_country_company_construction_efficiency_bonus_add_2
+        remove_modifier = sakuya_money_add_country_company_construction_efficiency_bonus_add_1
+        remove_modifier = sakuya_money_remove_country_company_construction_efficiency_bonus_add_1
+    }
+}
+
+
+sakuya_money_add_country_company_construction_efficiency_bonus_add_2= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_company_construction_efficiency_bonus_add_2
+    }
+}
+
+sakuya_money_remove_country_company_construction_efficiency_bonus_add_2= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_company_construction_efficiency_bonus_add_2
+    }
+}
+
+sakuya_money_add_country_company_construction_efficiency_bonus_add_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_add_country_company_construction_efficiency_bonus_add_1
+    }
+}
+
+sakuya_money_remove_country_company_construction_efficiency_bonus_add_1= {
+    scope = country
+
+    effect = {
+        add_modifier = sakuya_money_remove_country_company_construction_efficiency_bonus_add_1
+    }
+}
+
+
+
+############################################
+
+sakuya_money_add_country_company_construction_efficiency_bonus_add_1 = {
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_country_company_construction_efficiency_bonus_add_1
+    }
+}
+
+sakuya_money_remove_country_company_construction_efficiency_bonus_add_1 = {
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_remove_country_company_construction_efficiency_bonus_add_1
+    }
+}
+
+sakuya_money_add_country_company_construction_efficiency_bonus_add_2 = {
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_add_country_company_construction_efficiency_bonus_add_2
+    }
+}
+
+sakuya_money_remove_country_company_construction_efficiency_bonus_add_2 = {
+    scope = country
+    
+    effect = {
+        add_modifier = sakuya_money_remove_country_company_construction_efficiency_bonus_add_2
+    }
+}
+
+
+
+
+
+##########################################################
+########################################################################
+####################################################################################
+
+sakuya_money_clear_trade = {
+    scope = country
+    
+    effect = {
+        remove_modifier = sakuya_money_add_country_company_construction_efficiency_bonus_add_1
+        remove_modifier = sakuya_money_remove_country_company_construction_efficiency_bonus_add_1
+        remove_modifier = sakuya_money_add_country_company_construction_efficiency_bonus_add_2
+        remove_modifier = sakuya_money_remove_country_company_construction_efficiency_bonus_add_2
+                remove_modifier = sakuya_money_add_country_trade_route_competitiveness_mult_1
+        remove_modifier = sakuya_money_add_country_trade_route_competitiveness_mult_2
+        remove_modifier = sakuya_money_add_country_trade_route_competitiveness_mult_3
+        remove_modifier = sakuya_money_add_country_trade_route_competitiveness_mult_4
+        remove_modifier = sakuya_money_add_country_trade_route_competitiveness_mult_5
+        remove_modifier = sakuya_money_remove_country_trade_route_competitiveness_mult_1
+        remove_modifier = sakuya_money_remove_country_trade_route_competitiveness_mult_2
+        remove_modifier = sakuya_money_remove_country_trade_route_competitiveness_mult_3
+        remove_modifier = sakuya_money_remove_country_trade_route_competitiveness_mult_4
+        remove_modifier = sakuya_money_remove_country_trade_route_competitiveness_mult_5
+                remove_modifier = sakuya_money_add_country_trade_route_cost_mult_1
+        remove_modifier = sakuya_money_add_country_trade_route_cost_mult_2
+        remove_modifier = sakuya_money_add_country_trade_route_cost_mult_3
+        remove_modifier = sakuya_money_add_country_trade_route_cost_mult_4
+        remove_modifier = sakuya_money_add_country_trade_route_cost_mult_5
+        remove_modifier = sakuya_money_remove_country_trade_route_cost_mult_1
+        remove_modifier = sakuya_money_remove_country_trade_route_cost_mult_2
+        remove_modifier = sakuya_money_remove_country_trade_route_cost_mult_3
+        remove_modifier = sakuya_money_remove_country_trade_route_cost_mult_4
+        remove_modifier = sakuya_money_remove_country_trade_route_cost_mult_5
+                remove_modifier = sakuya_money_add_country_trade_route_quantity_mult_1
+        remove_modifier = sakuya_money_add_country_trade_route_quantity_mult_2
+        remove_modifier = sakuya_money_add_country_trade_route_quantity_mult_3
+        remove_modifier = sakuya_money_add_country_trade_route_quantity_mult_4
+        remove_modifier = sakuya_money_add_country_trade_route_quantity_mult_5
+        remove_modifier = sakuya_money_remove_country_trade_route_quantity_mult_1
+        remove_modifier = sakuya_money_remove_country_trade_route_quantity_mult_2
+        remove_modifier = sakuya_money_remove_country_trade_route_quantity_mult_3
+        remove_modifier = sakuya_money_remove_country_trade_route_quantity_mult_4
+        remove_modifier = sakuya_money_remove_country_trade_route_quantity_mult_5
+                remove_modifier = sakuya_money_add_country_max_companies_add_1
+        remove_modifier = sakuya_money_add_country_max_companies_add_2
+        remove_modifier = sakuya_money_add_country_max_companies_add_3
+        remove_modifier = sakuya_money_add_country_max_companies_add_4
+        remove_modifier = sakuya_money_remove_country_max_companies_add_1
+        remove_modifier = sakuya_money_remove_country_max_companies_add_2
+        remove_modifier = sakuya_money_remove_country_max_companies_add_3
+        remove_modifier = sakuya_money_remove_country_max_companies_add_4
+                remove_modifier = sakuya_money_add_country_company_throughput_bonus_add_2
+        remove_modifier = sakuya_money_remove_country_company_throughput_bonus_add_2
+        remove_modifier = sakuya_money_add_country_company_throughput_bonus_add_1
+        remove_modifier = sakuya_money_remove_country_company_throughput_bonus_add_1
+        remove_modifier = sakuya_money_add_country_company_construction_efficiency_bonus_add_2
+        remove_modifier = sakuya_money_remove_country_company_construction_efficiency_bonus_add_2
+        remove_modifier = sakuya_money_add_country_company_construction_efficiency_bonus_add_1
+        remove_modifier = sakuya_money_remove_country_company_construction_efficiency_bonus_add_1
+
+    }
+}

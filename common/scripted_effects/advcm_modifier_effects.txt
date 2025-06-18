@@ -1,0 +1,23 @@
+advcm_add_modifier = {
+	add_modifier = $MODIFIER$
+}
+
+advcm_remove_modifier = {
+	remove_modifier = $MODIFIER$
+}
+
+sakuya_building = {
+	create_building ={
+		building = $build$
+		level = 100
+	}
+	set_variable = $build$
+}
+
+sakuya_decree = {
+	every_scope_state = {
+		limit = {
+			has_decree = decree_my_dear_sakuya
+		}
+	}
+}

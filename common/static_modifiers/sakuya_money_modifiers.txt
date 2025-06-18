@@ -1,0 +1,326 @@
+sakuya_money_remove_country_loan_interest_rate_mult_3 = { #贷款利率 负3
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_loan_interest_rate_mult = 100
+}
+
+sakuya_money_remove_country_loan_interest_rate_mult_2 = { #贷款利率 负2
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_loan_interest_rate_mult = 0.8
+}
+
+sakuya_money_remove_country_loan_interest_rate_mult_1 = { #贷款利率 负1
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_loan_interest_rate_mult = 0.2
+}
+
+sakuya_money_add_country_loan_interest_rate_mult_1 = { #贷款利率 正1
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_loan_interest_rate_mult = -0.5
+}
+
+sakuya_money_add_country_loan_interest_rate_mult_2 = { #贷款利率 正2
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_loan_interest_rate_mult = -1
+}
+
+sakuya_money_add_country_loan_interest_rate_mult_3 = { #贷款利率 正3
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_loan_interest_rate_mult = -100
+}
+
+################黄金上限#################
+
+sakuya_money_remove_country_gold_reserve_limit_mult_3 = { #黄金上限 负3
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_gold_reserve_limit_mult = -10000
+}
+
+sakuya_money_remove_country_gold_reserve_limit_mult_2 = { #黄金上限 负2
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_gold_reserve_limit_mult = -0.5
+}
+
+sakuya_money_remove_country_gold_reserve_limit_mult_1 = { #黄金上限 负1
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_gold_reserve_limit_mult = -0.2
+}
+
+sakuya_money_add_country_gold_reserve_limit_mult_1 = { #黄金上限 正1
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_gold_reserve_limit_mult = 0.5
+}
+
+sakuya_money_add_country_gold_reserve_limit_mult_2 = { #黄金上限 正2
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_gold_reserve_limit_mult = 1
+}
+
+sakuya_money_add_country_gold_reserve_limit_mult_3 = { #黄金上限 正3
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_gold_reserve_limit_mult = 10000
+}
+############################ 铸币 ####################
+
+sakuya_money_remove_country_minting_mult_3 = { #铸币 负3
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_minting_mult = -1000
+}
+
+sakuya_money_remove_country_minting_mult_2 = { #铸币 负2
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_minting_mult = -0.9
+}
+
+sakuya_money_remove_country_minting_mult_1 = { #铸币 负1
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_minting_mult = -0.5
+}
+
+sakuya_money_add_country_minting_mult_1 = { #铸币 正1
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_minting_mult = 0.5
+}
+
+sakuya_money_add_country_minting_mult_2 = { #铸币 正2
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_minting_mult = 1
+}
+
+sakuya_money_add_country_minting_mult_3 = { #铸币 正3
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_minting_mult = 1000
+}
+
+
+############################ 政府工资 #########################
+
+
+sakuya_money_remove_country_government_wages_mult_3 = { #政府工资 负3
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_government_wages_mult = 100
+}
+
+sakuya_money_remove_country_government_wages_mult_2 = { #政府工资 负2
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_government_wages_mult = 1
+}
+
+sakuya_money_remove_country_government_wages_mult_1 = { #政府工资 负1
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_government_wages_mult = 0.5
+}
+
+sakuya_money_add_country_government_wages_mult_1 = { #政府工资 正1
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_government_wages_mult = -0.2
+}
+
+sakuya_money_add_country_government_wages_mult_2 = { #政府工资 正2
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_government_wages_mult = -0.8
+}
+
+sakuya_money_add_country_government_wages_mult_3 = { #政府工资 正3
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_government_wages_mult = -100
+}
+
+################### 军队工资 ############################
+
+sakuya_money_remove_country_military_wages_mult_3 = { #军队工资 负3
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_military_wages_mult = 100
+}
+
+sakuya_money_remove_country_military_wages_mult_2 = { #军队工资 负2
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_military_wages_mult = 1
+}
+
+sakuya_money_remove_country_military_wages_mult_1 = { #军队工资 负1
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_military_wages_mult = 0.5
+}
+
+sakuya_money_add_country_military_wages_mult_1 = { #军队工资 正1
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_military_wages_mult = -0.2
+}
+
+sakuya_money_add_country_military_wages_mult_2 = { #军队工资 正2
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_military_wages_mult = -0.8
+}
+
+sakuya_money_add_country_military_wages_mult_3 = { #军队工资 正3
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_military_wages_mult = -100
+}
+
+################### 投资池 ############################
+
+sakuya_money_add_country_disable_investment_pool = { #禁用投资池
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_disable_investment_pool_bool = no # 禁用投资池
+}
+
+sakuya_money_remove_country_disable_investment_pool = { #启用投资池
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_disable_investment_pool_bool = yes # 启用投资池
+}
+
+################## 流水 ###############################
+
+
+sakuya_money_add_country_tax_income_add_1 = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_tax_income_add = 1000
+}
+
+sakuya_money_add_country_tax_income_add_2 = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_tax_income_add = 10000
+}
+
+sakuya_money_add_country_tax_income_add_3 = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_tax_income_add = 100000
+}
+
+sakuya_money_add_country_tax_income_add_4 = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_tax_income_add = 1000000
+}
+
+sakuya_money_add_country_tax_income_add_5 = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_tax_income_add = 10000000
+}
+
+sakuya_money_add_country_tax_income_add_6 = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_tax_income_add = 100000000
+}
+
+sakuya_money_add_country_tax_income_add_7 = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_tax_income_add = 1000000000
+}
+
+
+sakuya_money_add_country_tax_income_remove_1 = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_tax_income_add = -1000
+}
+
+sakuya_money_add_country_tax_income_remove_2 = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_tax_income_add = -10000
+}
+
+sakuya_money_add_country_tax_income_remove_3 = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_tax_income_add = -100000
+}
+
+sakuya_money_add_country_tax_income_remove_4 = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_tax_income_add = -1000000
+}
+
+sakuya_money_add_country_tax_income_remove_5 = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_tax_income_add = -10000000
+}
+
+sakuya_money_add_country_tax_income_remove_6 = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_tax_income_add = -100000000
+}
+
+sakuya_money_add_country_tax_income_remove_7 = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_tax_income_add = -1000000000
+}
+
+##################### 苛捐杂税 #############################
+
+sakuya_money_add_tariff_import_add = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    tariff_import_add = 1
+}
+
+sakuya_money_add_tariff_export_add = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    tariff_export_add = 1
+}
+
+sakuya_money_add_tax_income_add = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    tax_income_add = 1
+}
+
+sakuya_money_add_tax_consumption_add = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    tax_consumption_add = 1
+}
+
+sakuya_money_add_tax_dividends_add = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    tax_dividends_add = 1
+}
+
+sakuya_money_add_tax_per_capita_add = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    tax_per_capita_add = 1
+}
+
+sakuya_money_add_tax_land_add = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    tax_land_add = 1
+}
+
+sakuya_money_add_tax_heathen_add = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    tax_heathen_add = 1
+}
+
+sakuya_money_remove_tariff_import_add = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    tariff_import_add = -1
+}
+
+sakuya_money_remove_tariff_export_add = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    tariff_export_add = -1
+}
+
+sakuya_money_remove_tax_income_add = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    tax_income_add = -1
+}
+
+sakuya_money_remove_tax_consumption_add = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    tax_consumption_add = -1
+}
+
+sakuya_money_remove_tax_dividends_add = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    tax_dividends_add = -1
+}
+
+sakuya_money_remove_tax_per_capita_add = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    tax_per_capita_add = -1
+}
+
+sakuya_money_remove_tax_land_add = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    tax_land_add = -1
+}
+
+sakuya_money_remove_tax_heathen_add = { 
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    tax_heathen_add = -1
+}
