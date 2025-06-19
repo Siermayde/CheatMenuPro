@@ -154,36 +154,6 @@ window = {
                             }
                         }
                     }
-                    #vbox = {#你看见隐藏的废弃代码了。
-
-                    #   layoutpolicy_horizontal = expanding
-                #       button_icon_square = {
-#
-                        #   blockoverride "primary_visible" {
-                        #       texture = none
-                        #   }
-                        #   blockoverride "primary_texture" {
-                        #       texture = "gfx/interface/buttons/expand_button_bg.dds"
-                        #   }
-
-                        #   layoutpolicy_horizontal = expanding
-                        #   name = "sakuya_money_1"
-
-                        #   onclick = "[GetVariableSystem.Set( 'seven_tabs', 'seven_tabs_3' )]" down = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_3' ) )]"
-
-                        #   tooltip = "SAKUYA_POWER_BLOC_7"
-                        #   using = tooltip_ne
-                        #   size = { 150 60 }
-                        #   
-                        #   blockoverride "icon" {
-                        #       texture = "gfx/interface/icons/ai_strategy_icons/economic_imperialism.dds"
-                        #                                   }
-                        #   blockoverride "icon_size" {
-                        #       size = { 35 35 }
-                        #   }
-                    #   }
-                #   }
-
                 }
             }
             ###############################
@@ -191,8 +161,8 @@ window = {
                  position = { 550 77 }
                 size = { 450 60 }
                     hbox = {
-                    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
-                    visible = "yes" 
+                    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' )]"
+                    #visible = "yes" 
                     vbox = {
                         spacing = 5
                     text_multi = {
@@ -215,7 +185,7 @@ window = {
                 size = { 450 60 }
                     hbox = {
                     visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_2' ) )]"
-                    visible = "yes" 
+                    #visible = "yes" 
                     vbox = {
                         spacing = 5
                     text_multi = {
@@ -238,7 +208,7 @@ window = {
                 size = { 450 60 }
                     hbox = {
                     visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_3' ) )]"
-                    visible = "yes" 
+                    #visible = "yes" 
                     vbox = {
                         spacing = 5
                     text_multi = {
@@ -262,7 +232,7 @@ widget = {
                 size = { 450 60 }
                     hbox = {
                     visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
-                    visible = "yes" 
+                    #visible = "yes" 
                     vbox = {
                         country_stats_entry = {
                     visible = "[Country.IsInPowerBloc]"
@@ -318,250 +288,240 @@ widget = {
                         }
                     }
                 }
-            widget = {
-                 position = { 800 77 }
-                size = { 450 60 }
-                    hbox = {
-                    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_2' ) )]"
-                    visible = "yes" 
-                    vbox = {
-                        country_stats_entry = {
-                    blockoverride "stats_tooltip" {
-                        tooltip = "SAKUYA_POWER_BLOC_15"
-                    }
+# ================= 请从这里开始复制替换 =================
 
-                    blockoverride "entire_icon" {
-                        rank_badge = {
-                            size = { 50 50 }
-                            parentanchor = right|vcenter
-
-                            blockoverride "datacontext " {}
-
-                            blockoverride "rank_text" {
-                                raw_text = "SAKUYA_POWER_BLOC_16"
-                            }
-                            blockoverride "rank_text_2" {
-                                raw_text = "SAKUYA_POWER_BLOC_17"
-                                visible = no
-                            }
-                        }
-                    }
-
-                    blockoverride "information_icon" {
-                        texture = "gfx/interface/icons/generic_icons/gdp.dds"
-                    }
-
-                    blockoverride "stats_label" {
-                        text = "SAKUYA_POWER_BLOC_18"
-                    }
-                    
-                    blockoverride "stats_value" {
-                        raw_text = "SAKUYA_POWER_BLOC_19"
-                    }
-
-                    blockoverride "textsize" {
-                        size = { 160 20 }
-                        elide = right
-                        fontsize_min = 15
-                    }
+widget = {
+    position = { 800 77 }
+    size = { 450 60 }
+    hbox = {
+        #【已修正】: 删除了多余的括号
+        visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_2' )]"
+        #visible = "yes" 
+        vbox = {
+            country_stats_entry = {
+                blockoverride "stats_tooltip" {
+                    tooltip = "SAKUYA_POWER_BLOC_15"
                 }
+
+                blockoverride "entire_icon" {
+                    rank_badge = {
+                        size = { 50 50 }
+                        parentanchor = right|vcenter
+                        
+                        #【已修正】: 删除了 "datacontext " 中的空格
+                        blockoverride "datacontext" {}
+
+                        blockoverride "rank_text" {
+                            raw_text = "SAKUYA_POWER_BLOC_16"
+                        }
+                        blockoverride "rank_text_2" {
+                            raw_text = "SAKUYA_POWER_BLOC_17"
+                            visible = no
                         }
                     }
                 }
 
-                widget = { #大标志隐藏
-                    alpha = 0.001
-                 position = { 600 500 }
-                size = { 1 1 }
-                    hbox = {
-                    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
-                    visible = "yes" 
-                    vbox = {
-                        country_stats_entry = {
-                    visible = "[Country.IsInPowerBloc]"
-                    datacontext = "[Country.GetPowerBloc]" #生效领域
-
-                    blockoverride "stats_tooltip" {
-                        tooltipwidget = {
-                            FancyTooltip_PowerBloc = {}
-                        }
-                    }
-
-                    ### POWER BLOC EMBLEM BUTTON
-
-                    blockoverride "entire_icon" {
-                        button_icon_round = {
-                            alpha = 0.00001
-                            scissor = yes
-                            parentanchor = right|vcenter
-                            position = { -5 0 }
-                            alpha = 1
-                            blockoverride "size" {
-                                size = { 800 800 }
-                            }
-                            blockoverride "icon" {
-                                scissor = yes
-                                position = { -400 0 }
-                                alpha = 10000000 #想不到吧？我怕虽然不知道怎么直接放图标，但我可以用透明度控制！
-                                texture = "[PowerBloc.GetFlag.GetMediumPowerBlocCoaTexture]"
-                                size = { 45 45 }
-                                frame = "[PowerBloc.GetFlag.GetMediumPowerBlocCoaFrame]"
-                                framesize = "[GetMediumPowerBlocCoaFrameSize]"
-                            }
-                        }
-                    }
-
-                    
+                blockoverride "information_icon" {
+                    texture = "gfx/interface/icons/generic_icons/gdp.dds"
                 }
-                        }
-                    }
-                }
-                widget = {
-                position = { -287 150 }
-                size = { 1200 50 }
-                    hbox = {
-                    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1','seven_tabs_2' ) )]"
-                    visible = "yes" 
-                    vbox = {
 
-                        spacing = 5
-                    default_header_clean = {
-                        maximumsize = { 494 -1 }
-                        blockoverride "text" {
-                            parentanchor = left
-                            raw_text = "SAKUYA_POWER_BLOC_21"
-                            autoresize = yes
-                        multiline = yes
-                        using = fontsize_xl
-                        default_format = "#medium" 
-                                        }
-                        autoresize = yes
-                        multiline = yes
-                        default_format = "#medium"  
-                            }
-                        }
-
-                    }
+                blockoverride "stats_label" {
+                    text = "SAKUYA_POWER_BLOC_18"
                 }
                 
-                widget = {
-                position = { 350 150 }
-                size = { 1200 50 }
-                    hbox = {
-                    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1','seven_tabs_2' ) )]"
-                    visible = "yes" 
-                    vbox = {
-
-                        spacing = 5
-                    default_header_clean = {
-                        maximumsize = { 494 -1 }
-                        blockoverride "text" {
-                            parentanchor = left
-                            raw_text = "SAKUYA_POWER_BLOC_22"
-                            autoresize = yes
-                        multiline = yes
-                        using = fontsize_xl
-                        default_format = "#medium" 
-                                        }
-                        autoresize = yes
-                        multiline = yes
-                        default_format = "#medium"  
-                            }
-                        }
-                        
-                    }
+                blockoverride "stats_value" {
+                    raw_text = "SAKUYA_POWER_BLOC_19"
                 }
-                widget = {
-                position = { 200 150 }
-                size = { 1200 50 }
-                    hbox = {
-                    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
-                    visible = "yes" 
-                    vbox = {
 
-                        spacing = 5
-                    default_header_clean = {
-                        maximumsize = { 494 -1 }
-                        blockoverride "text" {
-                            parentanchor = left
-                            raw_text = "SAKUYA_POWER_BLOC_23"
-                            autoresize = yes
-                        multiline = yes
-                        using = fontsize_xl
-                        default_format = "#medium" 
-                                        }
-                        autoresize = yes
-                        multiline = yes
-                        default_format = "#medium"  
-                            }
-                        }
-                        
-                    }
+                blockoverride "textsize" {
+                    size = { 160 20 }
+                    elide = right
+                    fontsize_min = 15
                 }
-                widget = {
-                position = { 200 150 }
-                size = { 1200 50 }
-                    hbox = {
-                    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_2' ) )]"
-                    visible = "yes" 
-                    vbox = {
+            }
+        }
+    }
+}
 
-                        spacing = 5
-                    default_header_clean = {
-                        maximumsize = { 494 -1 }
-                        blockoverride "text" {
-                            parentanchor = left
-                            raw_text = "SAKUYA_POWER_BLOC_24"
-                            tooltip = "SAKUYA_POWER_BLOC_25"
-                            autoresize = yes
-                        multiline = yes
-                        using = fontsize_xl
-                        default_format = "#medium" 
-                                        }
-                        autoresize = yes
-                        multiline = yes
-                        default_format = "#medium"  
-                            }
-                        }
-                        
-                    }
-                }
-                widget = {
-                position = { 200 150 }
-                size = { 1200 50 }
-                    hbox = {
-                    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_3' ) )]"
-                    visible = "yes" 
-                    vbox = {
-
-                        spacing = 5
-                    default_header_clean = {
-                        maximumsize = { 494 -1 }
-                        blockoverride "text" {
-                            parentanchor = left
-                            raw_text = "SAKUYA_POWER_BLOC_26"
-                            tooltip = "SAKUYA_POWER_BLOC_27"
-                            autoresize = yes
-                        multiline = yes
-                        using = fontsize_xl
-                        default_format = "#medium" 
-                                        }
-                        autoresize = yes
-                        multiline = yes
-                        default_format = "#medium"  
-                            }
-                        }
-                        
+widget = { #大标志隐藏
+    alpha = 0.001
+    position = { 600 500 }
+    size = { 1 1 }
+    hbox = {
+        #【已修正】: 删除了多余的括号
+        visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' )]"
+        #visible = "yes" 
+        vbox = {
+            country_stats_entry = {
+                visible = "[Country.IsInPowerBloc]"
+                #【注意】: 如果之后还有 const context 错误, 请将下面这行注释掉
+                datacontext = "[Country.GetPowerBloc]" #生效领域
+                blockoverride "stats_tooltip" {
+                    tooltipwidget = {
+                        FancyTooltip_PowerBloc = {}
                     }
                 }
 
+                ### POWER BLOC EMBLEM BUTTON
+                blockoverride "entire_icon" {
+                    button_icon_round = {
+                        alpha = 0.00001
+                        scissor = yes
+                        parentanchor = right|vcenter
+                        position = { -5 0 }
+                        # alpha = 1 # 您这里有两个alpha，后面的会覆盖前面的，如果需要显示请保留此行并删除上面一行
+                        blockoverride "size" {
+                            size = { 800 800 }
+                        }
+                        blockoverride "icon" {
+                            scissor = yes
+                            position = { -400 0 }
+                            alpha = 10000000
+                            texture = "[PowerBloc.GetFlag.GetMediumPowerBlocCoaTexture]"
+                            size = { 45 45 }
+                            frame = "[PowerBloc.GetFlag.GetMediumPowerBlocCoaFrame]"
+                            framesize = "[GetMediumPowerBlocCoaFrameSize]"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+widget = {
+    position = { -287 150 }
+    size = { 1200 50 }
+    hbox = {
+        #【已修正】: 删除了多余的括号
+        visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1','seven_tabs_2' )]"
+        #visible = "yes" 
+        vbox = {
+            spacing = 5
+            default_header_clean = {
+                maximumsize = { 494 -1 }
+                blockoverride "text" {
+                    parentanchor = left
+                    raw_text = "SAKUYA_POWER_BLOC_21"
+                    autoresize = yes
+                    multiline = yes
+                    using = fontsize_xl
+                    default_format = "#medium" 
+                }
+                #【已修正】: 删除了错误位置的属性
+            }
+        }
+    }
+}
+
+widget = {
+    position = { 350 150 } # 您可以根据需要调整这里的 position
+    size = { 1200 50 }
+    hbox = {
+        # (这部分代码原本就是正确的)
+        visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1', 'seven_tabs_2' )]"
+        vbox = {
+            spacing = 5
+            default_header_clean = {
+                maximumsize = { 494 -1 }
+                blockoverride "text" {
+                    parentanchor = left
+                    raw_text = "SAKUYA_POWER_BLOC_22" # 如果需要，可以改回 ...21
+                    autoresize = yes
+                    multiline = yes
+                    using = fontsize_xl
+                    default_format = "#medium"
+                }
+            }
+        }
+    }
+}
+
+widget = {
+    position = { 200 150 }
+    size = { 1200 50 }
+    hbox = {
+        #【已修正】: 删除了多余的括号
+        visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' )]"
+        #visible = "yes" 
+        vbox = {
+            spacing = 5
+            default_header_clean = {
+                maximumsize = { 494 -1 }
+                blockoverride "text" {
+                    parentanchor = left
+                    raw_text = "SAKUYA_POWER_BLOC_23"
+                    autoresize = yes
+                    multiline = yes
+                    using = fontsize_xl
+                    default_format = "#medium" 
+                }
+                #【已修正】: 删除了错误位置的属性
+            }
+        }
+    }
+}
+
+widget = {
+    position = { 200 150 }
+    size = { 1200 50 }
+    hbox = {
+        #【已修正】: 删除了多余的括号
+        visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_2' )]"
+        #visible = "yes" 
+        vbox = {
+            spacing = 5
+            default_header_clean = {
+                maximumsize = { 494 -1 }
+                blockoverride "text" {
+                    parentanchor = left
+                    raw_text = "SAKUYA_POWER_BLOC_24"
+                    tooltip = "SAKUYA_POWER_BLOC_25"
+                    autoresize = yes
+                    multiline = yes
+                    using = fontsize_xl
+                    default_format = "#medium" 
+                }
+                #【已修正】: 删除了错误位置的属性
+            }
+        }
+    }
+}
+
+widget = {
+    position = { 200 150 }
+    size = { 1200 50 }
+    hbox = {
+        #【已修正】: 删除了多余的括号
+        visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_3' )]"
+        #visible = "yes" 
+        vbox = {
+            spacing = 5
+            default_header_clean = {
+                maximumsize = { 494 -1 }
+                blockoverride "text" {
+                    parentanchor = left
+                    raw_text = "SAKUYA_POWER_BLOC_26"
+                    tooltip = "SAKUYA_POWER_BLOC_27"
+                    autoresize = yes
+                    multiline = yes
+                    using = fontsize_xl
+                    default_format = "#medium" 
+                }
+                #【已修正】: 删除了错误位置的属性
+            }
+        }
+    }
+}
+
+# ================= 请在这里结束复制替换 =================
 
 widget = {  #按钮占位 #下方按钮
     position = { 60 75.4% }
     size = { 200 160 }
     vbox = {
         visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
-                    visible = "yes" 
+                    #visible = "yes" 
         hbox = {
             button_icon_square = {
                 alpha = 1
@@ -661,7 +621,7 @@ widget = {  #按钮占位 #下方按钮
 
     hbox = {
         visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
-                    visible = "yes" 
+                    #visible = "yes" 
         vbox = {
             button_icon_square = {
                 vfx = {
@@ -718,7 +678,7 @@ widget = {  #按钮占位 #下方按钮
     size = { 600 100 }
     hbox = {
         visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
-                    visible = "yes" 
+                    #visible = "yes" 
         vbox = {
             button_icon_square = {
                 alpha = 1
@@ -877,7 +837,7 @@ widget = {  #按钮占位 #下方按钮
     size = { 600 100 }
     hbox = {
         visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
-                    visible = "yes" 
+                    #visible = "yes" 
         vbox = {
             button_icon_square = {
                 alpha = 1
@@ -1036,7 +996,7 @@ widget = {  #按钮占位 #下方按钮
     size = { 600 100 }
     hbox = {
         visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
-                    visible = "yes" 
+                    #visible = "yes" 
         vbox = {
             button_icon_square = {
                 alpha = 1
@@ -1194,7 +1154,7 @@ widget = {  #按钮占位 #下方按钮
     size = { 600 100 }
     hbox = {
                             visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
-                    visible = "yes" 
+                    #visible = "yes" 
         vbox = {
             button_icon_square = {
                 alpha = 1
@@ -1352,7 +1312,7 @@ widget = {  #按钮占位 #下方按钮
     size = { 600 100 }
     hbox = {
                             visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
-                    visible = "yes" 
+                    #visible = "yes" 
         vbox = {
             button_icon_square = {
                 datacontext = "[Country.GetPowerBloc]"
@@ -1508,12 +1468,12 @@ widget = {  #按钮占位 #下方按钮
 }
             widget = {
                     visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
-                    visible = "yes" 
+                    #visible = "yes" 
                 position = { 60 290 }
                 size = { 400 50 }
                     hbox = {
                     #visible = "[GetVariableSystem.HasValue( 'sakuya_money_tabs', 'sakuya_money_tabs_1' ) )]"
-                    #visible = "yes" 
+                    ##visible = "yes" 
                     vbox = {
                         spacing = 5
                     default_header_clean = {
@@ -1533,55 +1493,50 @@ widget = {  #按钮占位 #下方按钮
                         }
                     }
                 }
-                widget = {  #背景
-                    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
-                datacontext = "[Country.GetPowerBloc]"
-                position = { 60 335 }
-                size = { 0 0 }
-                vbox = {
-
-                    #visible = "[GetVariableSystem.HasValue( 'sakuya_money_tabs', 'sakuya_money_tabs_1' ) )]"
-                    hbox = {
-                        visible = "[(Country.IsInPowerBloc)]"
-                        button_icon_square = {
-
-                            alpha = 0.4
-                            blockoverride "primary_visible" {}
-                            blockoverride "primary_texture" {
-                                texture = "gfx/interface/buttons/expand_button_bg.dds"
-                                color = { 0.1 0.02 0.1 1 } #按钮自身是绿色的。为了更加纯粹，需要适当调整RGB。
-                            }
-                            name = "sakuya_money_1_back_1"
-                            using = tooltip_ne
-                            size = { 455 340 }
-                            
-                            text_multi = {
-                                alpha = 4
+# 1541附近区域的修正后代码
+widget = { #背景
+    # 1. 修正了括号
+    visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' )]"
+    # 3. 暂时保留 datacontext，如果语法修正后还报错，再处理这里
+    datacontext = "[Country.GetPowerBloc]"
+    position = { 60 335 }
+    size = { 0 0 }
+    vbox = {
+        hbox = {
+            visible = "[(Country.IsInPowerBloc)]"
+            button_icon_square = {
+                alpha = 0.4
+                blockoverride "primary_visible" {}
+                blockoverride "primary_texture" {
+                    texture = "gfx/interface/buttons/expand_button_bg.dds"
+                    color = { 0.1 0.02 0.1 1 }
+                }
+                name = "sakuya_money_1_back_1"
+                using = tooltip_ne
+                size = { 455 340 }
+                text_multi = {
+                    alpha = 4
                     position = { 3% 5% }
                     size = { 440 40 }
                     text = "SAKUYA_POWER_BLOC_89"
                     using = header_font_fancy
-                    #using = header_font
-                    default_format = "#medium"        
+                    default_format = "#medium"
                 }
                 text_multi = {
-                                alpha = 4
+                    alpha = 4
                     position = { 3% 19% }
                     size = { 435 240 }
                     text = "SAKUYA_POWER_BLOC_90"
-"
-                    #using = header_font_fancy
-                    #using = header_font
-                    default_format = "#medium"        
-                }
-                            }
-                        }
-                    }
+                    # 2. 删除了下面那行多余的引号 "
+                    default_format = "#medium"
                 }
             }
+        }
+    }
+}
                 widget = {  #背景
                     visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
-                    visible = "yes" 
+                    #visible = "yes" 
                 datacontext = "[Country.GetPowerBloc]"
                 position = { 60 335 }
                 size = { 0 0 }
@@ -1657,7 +1612,7 @@ widget = {  #按钮占位 #下方按钮
     size = { 600 50 }
     hbox = {
         visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_1' ) )]"
-                    visible = "yes" 
+                    #visible = "yes" 
         vbox = {
             button_icon_square = {
                 alpha = 1
@@ -1814,7 +1769,7 @@ widget = {  #按钮占位 #下方按钮
 
 widget = {  #按钮占位 #下方按钮
     visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_3' ) )]"
-                    visible = "yes" 
+                    #visible = "yes" 
     position = { 4% 23% }
     size = { 640 60 }
     hbox = {
@@ -1974,7 +1929,7 @@ widget = {  #按钮占位 #下方按钮
 
 widget = {  #按钮占位 #下方按钮
     visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_3' ) )]"
-                    visible = "yes" 
+                    #visible = "yes" 
     position = { 4% 31% }
     size = { 640 60 }
     hbox = {
@@ -2134,11 +2089,11 @@ widget = {  #按钮占位 #下方按钮
 
 widget = {
     visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_3' ) )]"
-                    visible = "yes" 
+                    #visible = "yes" 
                 position = { 60 385}
                 size = { 620 155 }
                     hbox = {
-                    visible = "yes" 
+                    #visible = "yes" 
                     vbox = {
                         spacing = 5
                     text_multi = {
@@ -2153,7 +2108,7 @@ widget = {
 
 widget = {  #按钮占位 #下方按钮
     visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_2' ) )]"
-                    visible = "yes" 
+                    #visible = "yes" 
     position = { 4% 38% }
     size = { 1100 60 }
     hbox = {
@@ -2433,7 +2388,7 @@ widget = {  #按钮占位 #下方按钮
 
 widget = {  #按钮占位 #下方按钮
     visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_2' ) )]"
-                    visible = "yes" 
+                    #visible = "yes" 
     position = { 4% 45% }
     size = { 1100 60 }
     hbox = {
@@ -2712,7 +2667,7 @@ vbox = {
 }
 widget = {  #按钮占位 #下方按钮
     visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_2' ) )]"
-                    visible = "yes" 
+                    #visible = "yes" 
     position = { 4% 61% }
     size = { 1100 60 }
     hbox = {
@@ -2995,7 +2950,7 @@ vbox = {
 
 widget = {  #按钮占位 #下方按钮
     visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_2' ) )]"
-                    visible = "yes" 
+                    #visible = "yes" 
     position = { 4% 67% }
     size = { 1100 60 }
     hbox = {
@@ -3276,7 +3231,7 @@ vbox = {
 
 widget = {  #按钮占位 #下方按钮
     visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_2' ) )]"
-                    visible = "yes" 
+                    #visible = "yes" 
     position = { 4% 53.5% }
     size = { 1100 60 }
     hbox = {
@@ -3316,11 +3271,11 @@ widget = {  #按钮占位 #下方按钮
 
 widget = {
     visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_2' ) )]"
-                    visible = "yes" 
+                    #visible = "yes" 
                 position = { 50 245}
                 size = { 1100 155 }
                     hbox = {
-                    visible = "yes" 
+                    #visible = "yes" 
                     vbox = {
                         spacing = 5
                     text_multi = {
@@ -3333,11 +3288,11 @@ widget = {
                 }
 widget = {
     visible = "[GetVariableSystem.HasValue( 'seven_tabs', 'seven_tabs_2' ) )]"
-                    visible = "yes" 
+                    #visible = "yes" 
                 position = { 50 445}
                 size = { 1100 605 }
                     hbox = {
-                    visible = "yes" 
+                    #visible = "yes" 
                     vbox = {
                         spacing = 5
                     text_multi = {
